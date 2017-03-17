@@ -30,25 +30,25 @@ class OtaehiServiceProvider extends ServiceProvider
     public function register()
     {
         $this->app->bind(OTAV::class, function ($app) {
-            return new OTAV([
+            $otav = new OTAV([
                 AbstractSoapClientBase::WSDL_URL => config('services.ehi.wsdl'),
                 AbstractSoapClientBase::WSDL_LOGIN => config('services.ehi.login'),
                 AbstractSoapClientBase::WSDL_PASSWORD => config('services.ehi.password'),
-                AbstractSoapClientBase::setLocation(config('services.ehi.location')),
                 AbstractSoapClientBase::WSDL_SOAP_VERSION => SOAP_1_1,
                 AbstractSoapClientBase::WSDL_CLASSMAP => ClassMap::get(),
             ]);
+            return $otav::setLocation(config('services.ehi.location'));
         });
 
         $this->app->bind(OTAP::class, function ($app) {
-            return new OTAP([
+            $otap = new OTAP([
                 AbstractSoapClientBase::WSDL_URL => config('services.ehi.wsdl'),
                 AbstractSoapClientBase::WSDL_LOGIN => config('services.ehi.login'),
                 AbstractSoapClientBase::WSDL_PASSWORD => config('services.ehi.password'),
-                AbstractSoapClientBase::setLocation(config('services.ehi.location')),
                 AbstractSoapClientBase::WSDL_SOAP_VERSION => SOAP_1_1,
                 AbstractSoapClientBase::WSDL_CLASSMAP => ClassMap::get(),
             ]);
+            return $otap::setLocation(config('services.ehi.location'));
         });
     }
 
