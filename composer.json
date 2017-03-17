@@ -1,14 +1,16 @@
 {
     "name": "ammonkc/ota-ehi",
     "description": "Package generated from https://cis1-xmldirect.ehi.com/services30/OTA30-Vendor.wsdl using wsdltophp/packagegenerator",
+    "homepage": "https://github.com/ammonkc/ota-ehi",
     "require": {
         "php": ">=5.3.3",
         "ext-soap": "*",
-        "wsdltophp/packagebase": "~1.0"
+        "wsdltophp/packagebase": "~1.0",
+        "illuminate/support": "5.4.*"
     },
     "autoload": {
-        "psr-4": {
-            "ammonkc\\otaehi\\": "./src/"
+        "psr-0": {
+            "Ammonkc\\Otaehi": "src/"
         }
     }
 }
