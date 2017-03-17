@@ -19,16 +19,16 @@ require_once __DIR__ . '/vendor/autoload.php';
  */
 $options = array(
     \WsdlToPhp\PackageBase\AbstractSoapClientBase::WSDL_URL => 'https://cis1-xmldirect.ehi.com/services30/OTA30-Vendor.wsdl',
-    \WsdlToPhp\PackageBase\AbstractSoapClientBase::WSDL_CLASSMAP => \ammonkc\otaehi\ClassMap::get(),
+    \WsdlToPhp\PackageBase\AbstractSoapClientBase::WSDL_CLASSMAP => \Ammonkc\Otaehi\ClassMap::get(),
 );
 /**
  * Samples for OTAV ServiceType
  */
-$oTAV = new \ammonkc\otaehi\ServiceType\OTAV($options);
+$oTAV = new \Ammonkc\Otaehi\ServiceType\OTAV($options);
 /**
  * Sample call for OTA_VehAvailRate operation/method
  */
-if ($oTAV->OTA_VehAvailRate(new \ammonkc\otaehi\StructType\OTA_VehAvailRateRQ()) !== false) {
+if ($oTAV->OTA_VehAvailRate(new \Ammonkc\Otaehi\StructType\OTA_VehAvailRateRQ()) !== false) {
     print_r($oTAV->getResult());
 } else {
     print_r($oTAV->getLastError());
@@ -36,7 +36,7 @@ if ($oTAV->OTA_VehAvailRate(new \ammonkc\otaehi\StructType\OTA_VehAvailRateRQ())
 /**
  * Sample call for OTA_VehRes operation/method
  */
-if ($oTAV->OTA_VehRes(new \ammonkc\otaehi\StructType\OTA_VehResRQ()) !== false) {
+if ($oTAV->OTA_VehRes(new \Ammonkc\Otaehi\StructType\OTA_VehResRQ()) !== false) {
     print_r($oTAV->getResult());
 } else {
     print_r($oTAV->getLastError());
@@ -44,7 +44,7 @@ if ($oTAV->OTA_VehRes(new \ammonkc\otaehi\StructType\OTA_VehResRQ()) !== false) 
 /**
  * Sample call for OTA_VehRetRes operation/method
  */
-if ($oTAV->OTA_VehRetRes(new \ammonkc\otaehi\StructType\OTA_VehRetResRQ()) !== false) {
+if ($oTAV->OTA_VehRetRes(new \Ammonkc\Otaehi\StructType\OTA_VehRetResRQ()) !== false) {
     print_r($oTAV->getResult());
 } else {
     print_r($oTAV->getLastError());
@@ -52,7 +52,7 @@ if ($oTAV->OTA_VehRetRes(new \ammonkc\otaehi\StructType\OTA_VehRetResRQ()) !== f
 /**
  * Sample call for OTA_VehModify operation/method
  */
-if ($oTAV->OTA_VehModify(new \ammonkc\otaehi\StructType\OTA_VehModifyRQ()) !== false) {
+if ($oTAV->OTA_VehModify(new \Ammonkc\Otaehi\StructType\OTA_VehModifyRQ()) !== false) {
     print_r($oTAV->getResult());
 } else {
     print_r($oTAV->getLastError());
@@ -60,7 +60,7 @@ if ($oTAV->OTA_VehModify(new \ammonkc\otaehi\StructType\OTA_VehModifyRQ()) !== f
 /**
  * Sample call for OTA_VehCancel operation/method
  */
-if ($oTAV->OTA_VehCancel(new \ammonkc\otaehi\StructType\OTA_VehCancelRQ()) !== false) {
+if ($oTAV->OTA_VehCancel(new \Ammonkc\Otaehi\StructType\OTA_VehCancelRQ()) !== false) {
     print_r($oTAV->getResult());
 } else {
     print_r($oTAV->getLastError());
@@ -68,7 +68,7 @@ if ($oTAV->OTA_VehCancel(new \ammonkc\otaehi\StructType\OTA_VehCancelRQ()) !== f
 /**
  * Sample call for OTA_VehCheckIn operation/method
  */
-if ($oTAV->OTA_VehCheckIn(new \ammonkc\otaehi\StructType\OTA_VehCheckInRQ()) !== false) {
+if ($oTAV->OTA_VehCheckIn(new \Ammonkc\Otaehi\StructType\OTA_VehCheckInRQ()) !== false) {
     print_r($oTAV->getResult());
 } else {
     print_r($oTAV->getLastError());
@@ -76,7 +76,7 @@ if ($oTAV->OTA_VehCheckIn(new \ammonkc\otaehi\StructType\OTA_VehCheckInRQ()) !==
 /**
  * Sample call for OTA_VehLocDetail operation/method
  */
-if ($oTAV->OTA_VehLocDetail(new \ammonkc\otaehi\StructType\OTA_VehLocDetailRQ()) !== false) {
+if ($oTAV->OTA_VehLocDetail(new \Ammonkc\Otaehi\StructType\OTA_VehLocDetailRQ()) !== false) {
     print_r($oTAV->getResult());
 } else {
     print_r($oTAV->getLastError());
@@ -84,7 +84,7 @@ if ($oTAV->OTA_VehLocDetail(new \ammonkc\otaehi\StructType\OTA_VehLocDetailRQ())
 /**
  * Sample call for OTA_VehLocSearch operation/method
  */
-if ($oTAV->OTA_VehLocSearch(new \ammonkc\otaehi\StructType\OTA_VehLocSearchRQ()) !== false) {
+if ($oTAV->OTA_VehLocSearch(new \Ammonkc\Otaehi\StructType\OTA_VehLocSearchRQ()) !== false) {
     print_r($oTAV->getResult());
 } else {
     print_r($oTAV->getLastError());
@@ -92,11 +92,11 @@ if ($oTAV->OTA_VehLocSearch(new \ammonkc\otaehi\StructType\OTA_VehLocSearchRQ())
 /**
  * Samples for OTAP ServiceType
  */
-$oTAP = new \ammonkc\otaehi\ServiceType\OTAP($options);
+$oTAP = new \Ammonkc\Otaehi\ServiceType\OTAP($options);
 /**
  * Sample call for OTA_Ping operation/method
  */
-if ($oTAP->OTA_Ping(new \ammonkc\otaehi\StructType\OTA_PingRQ()) !== false) {
+if ($oTAP->OTA_Ping(new \Ammonkc\Otaehi\StructType\OTA_PingRQ()) !== false) {
     print_r($oTAP->getResult());
 } else {
     print_r($oTAP->getLastError());

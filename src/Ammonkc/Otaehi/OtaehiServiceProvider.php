@@ -10,6 +10,8 @@ use WsdlToPhp\PackageBase\AbstractSoapClientBase;
 
 class OtaehiServiceProvider extends ServiceProvider
 {
+    protected $defer = true;
+
     /**
      * Bootstrap the application services.
      *
@@ -48,5 +50,13 @@ class OtaehiServiceProvider extends ServiceProvider
                 AbstractSoapClientBase::WSDL_CLASSMAP => ClassMap::get(),
             ]);
         });
+    }
+
+    public function provides()
+    {
+        return [
+            OTAV::class,
+            OTAP::class,
+        ];
     }
 }

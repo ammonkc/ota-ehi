@@ -9,8 +9,8 @@
         "illuminate/support": "5.4.*"
     },
     "autoload": {
-        "psr-0": {
-            "Ammonkc\\Otaehi": "src/"
+        "psr-4": {
+            "Ammonkc\\Otaehi\\": "src/"
         }
     }
 }
