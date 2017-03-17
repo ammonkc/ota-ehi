@@ -2,6 +2,12 @@
     "name": "ammonkc/ota-ehi",
     "description": "Package generated from https://cis1-xmldirect.ehi.com/services30/OTA30-Vendor.wsdl using wsdltophp/packagegenerator",
     "homepage": "https://github.com/ammonkc/ota-ehi",
+    "authors": [
+        {
+            "name": "Ammon Casey",
+            "email": "ammonkc@gmail.com"
+        }
+    ],
     "require": {
         "php": ">=5.3.3",
         "ext-soap": "*",

@@ -2,7 +2,7 @@
 
 namespace Ammonkc\Otaehi\ServiceType;
 
-use \WsdlToPhp\PackageBase\AbstractSoapClientBase;
+use WsdlToPhp\PackageBase\AbstractSoapClientBase;
 
 /**
  * This class stands for OTAP ServiceType

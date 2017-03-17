@@ -2,7 +2,7 @@
 
 namespace Ammonkc\Otaehi\StructType;
 
-use \WsdlToPhp\PackageBase\AbstractStructBase;
+use WsdlToPhp\PackageBase\AbstractStructBase;
 
 /**
  * This class stands for OtherSrvcPrefType StructType
