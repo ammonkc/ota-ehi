@@ -37,7 +37,7 @@ class OtaehiServiceProvider extends ServiceProvider
                 AbstractSoapClientBase::WSDL_SOAP_VERSION => SOAP_1_1,
                 AbstractSoapClientBase::WSDL_CLASSMAP => ClassMap::get(),
             ]);
-            return $otav::setLocation(config('services.ehi.location'));
+            return $otav->setLocation(config('services.ehi.location'));
         });
 
         $this->app->bind(OTAP::class, function ($app) {
@@ -48,7 +48,7 @@ class OtaehiServiceProvider extends ServiceProvider
                 AbstractSoapClientBase::WSDL_SOAP_VERSION => SOAP_1_1,
                 AbstractSoapClientBase::WSDL_CLASSMAP => ClassMap::get(),
             ]);
-            return $otap::setLocation(config('services.ehi.location'));
+            return $otap->setLocation(config('services.ehi.location'));
         });
     }
 
