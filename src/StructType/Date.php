@@ -29,9 +29,8 @@ class Date extends AbstractStructBase
      */
     public function __construct(\DateTime $pickUpDateTime = null, \DateTime $returnDateTime = null)
     {
-        $this
-            ->setPickUpDateTime($pickUpDateTime)
-            ->setReturnDateTime($returnDateTime);
+        $this->setPickUpDateTime($pickUpDateTime)
+             ->setReturnDateTime($returnDateTime);
     }
     /**
      * Get PickUpDateTime value

@@ -155,27 +155,26 @@ class OTA_VehLocDetailRQ extends AbstractStructBase
      */
     public function __construct(\Ammonkc\Otaehi\StructType\POS_Type $pOS = null, \Ammonkc\Otaehi\StructType\Location $location = null, \Ammonkc\Otaehi\StructType\CompanyNameType $vendor = null, \Ammonkc\Otaehi\StructType\ResponseFilter $responseFilter = null, \Ammonkc\Otaehi\StructType\Date $date = null, \Ammonkc\Otaehi\StructType\Keyword $keyword = null, $tPA_Extensions = null,  $echoToken = null, $timeStamp = null, $target = null,  $targetName = null, $version = null, $transactionIdentifier = null, $sequenceNmbr = null, $transactionStatusCode = null, $retransmissionIndicator = null,  $correlationID = null, $primaryLangID = null, $altLangID = null,  $reqRespVersion = null)
     {
-        $this
-            ->setPOS($pOS)
-            ->setLocation($location)
-            ->setVendor($vendor)
-            ->setResponseFilter($responseFilter)
-            ->setDate($date)
-            ->setKeyword($keyword)
-            ->setTPA_Extensions($tPA_Extensions)
-            ->setEchoToken($echoToken)
-            ->setTimeStamp($timeStamp)
-            ->setTarget($target)
-            ->setTargetName($targetName)
-            ->setVersion($version)
-            ->setTransactionIdentifier($transactionIdentifier)
-            ->setSequenceNmbr($sequenceNmbr)
-            ->setTransactionStatusCode($transactionStatusCode)
-            ->setRetransmissionIndicator($retransmissionIndicator)
-            ->setCorrelationID($correlationID)
-            ->setPrimaryLangID($primaryLangID)
-            ->setAltLangID($altLangID)
-            ->setReqRespVersion($reqRespVersion);
+        $this->setPOS($pOS)
+             ->setLocation($location)
+             ->setVendor($vendor)
+             ->setResponseFilter($responseFilter)
+             ->setDate($date)
+             ->setKeyword($keyword)
+             ->setTPA_Extensions($tPA_Extensions)
+             ->setEchoToken($echoToken)
+             ->setTimeStamp($timeStamp)
+             ->setTarget($target)
+             ->setTargetName($targetName)
+             ->setVersion($version)
+             ->setTransactionIdentifier($transactionIdentifier)
+             ->setSequenceNmbr($sequenceNmbr)
+             ->setTransactionStatusCode($transactionStatusCode)
+             ->setRetransmissionIndicator($retransmissionIndicator)
+             ->setCorrelationID($correlationID)
+             ->setPrimaryLangID($primaryLangID)
+             ->setAltLangID($altLangID)
+             ->setReqRespVersion($reqRespVersion);
     }
     /**
      * Get POS value
