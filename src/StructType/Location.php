@@ -8,7 +8,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for Location StructType
  * @subpackage Structs
  */
-class Location extends LocationType
+class Location extends AbstractStructBase
 {
     /**
      * The _
