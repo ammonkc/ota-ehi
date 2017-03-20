@@ -8,7 +8,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for Location StructType
  * @subpackage Structs
  */
-class Location extends AbstractStructBase
+class Location extends LocationType
 {
     /**
      * The _
@@ -34,7 +34,7 @@ class Location extends AbstractStructBase
      * @param StringLength1to8 $extendedLocationCode
      * @param OTA_CodeType $counterLocation
      */
-    public function __construct(\Ammonkc\Otaehi\StructType\LocationType $_ = null, StringLength1to8 $extendedLocationCode = null, OTA_CodeType $counterLocation = null)
+    public function __construct($_ = null, StringLength1to8 $extendedLocationCode = null, OTA_CodeType $counterLocation = null)
     {
         $this->set_($_)
              ->setExtendedLocationCode($extendedLocationCode)
@@ -50,10 +50,10 @@ class Location extends AbstractStructBase
     }
     /**
      * Set _ value
-     * @param \Ammonkc\Otaehi\StructType\LocationType $_
+     * @param $_
      * @return \Ammonkc\Otaehi\StructType\Location
      */
-    public function set_(\Ammonkc\Otaehi\StructType\LocationType $_ = null)
+    public function set_($_ = null)
     {
         $this->_ = $_;
         return $this;
