@@ -15,6 +15,22 @@ class LocationType extends AbstractStructBase
      * @var string
      */
     public $_;
+
+    /**
+     * A code used to identify a location.
+     *
+     * @property string $LocationCode
+     */
+    public $LocationCode = null;
+
+    /**
+     * Identifies the context of the identifying code (e.g., IATA, ARC, or internal
+     * code).
+     *  IATA
+     *
+     * @property string $CodeContext
+     */
+    public $CodeContext = null;
     /**
      * Constructor method for LocationType
      * @uses LocationType::set_()
@@ -22,8 +38,7 @@ class LocationType extends AbstractStructBase
      */
     public function __construct($_ = null)
     {
-        $this
-            ->set_($_);
+        $this->set_($_);
     }
     /**
      * Get _ value
@@ -45,6 +60,61 @@ class LocationType extends AbstractStructBase
             throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($_)), __LINE__);
         }
         $this->_ = $_;
+        return $this;
+    }
+    /**
+     * Gets as LocationCode
+     *
+     * A code used to identify a location.
+     *
+     * @return string
+     */
+    public function getLocationCode()
+    {
+        return $this->LocationCode;
+    }
+
+    /**
+     * Sets a new LocationCode
+     *
+     * A code used to identify a location.
+     *
+     * @param string $LocationCode
+     * @return self
+     */
+    public function setLocationCode($LocationCode)
+    {
+        $this->LocationCode = $LocationCode;
+        return $this;
+    }
+
+    /**
+     * Gets as CodeContext
+     *
+     * Identifies the context of the identifying code (e.g., IATA, ARC, or internal
+     * code).
+     *  IATA
+     *
+     * @return string
+     */
+    public function getCodeContext()
+    {
+        return $this->CodeContext;
+    }
+
+    /**
+     * Sets a new CodeContext
+     *
+     * Identifies the context of the identifying code (e.g., IATA, ARC, or internal
+     * code).
+     *  IATA
+     *
+     * @param string $CodeContext
+     * @return self
+     */
+    public function setCodeContext($CodeContext)
+    {
+        $this->CodeContext = $CodeContext;
         return $this;
     }
     /**
