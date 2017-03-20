@@ -12,7 +12,7 @@ class TicketDistribPrefType extends AbstractStructBase
 {
     /**
      * The DistribType
-     * @var UNKNOWN
+     * @var
      */
     public $DistribType;
     /**
@@ -22,7 +22,7 @@ class TicketDistribPrefType extends AbstractStructBase
     public $TicketTime;
     /**
      * The Remark
-     * @var UNKNOWN
+     * @var
      */
     public $Remark;
     /**
@@ -30,11 +30,11 @@ class TicketDistribPrefType extends AbstractStructBase
      * @uses TicketDistribPrefType::setDistribType()
      * @uses TicketDistribPrefType::setTicketTime()
      * @uses TicketDistribPrefType::setRemark()
-     * @param UNKNOWN $distribType
+     * @param  $distribType
      * @param string $ticketTime
-     * @param UNKNOWN $remark
+     * @param  $remark
      */
-    public function __construct(UNKNOWN $distribType = null, $ticketTime = null, UNKNOWN $remark = null)
+    public function __construct( $distribType = null, $ticketTime = null,  $remark = null)
     {
         $this
             ->setDistribType($distribType)
@@ -43,7 +43,7 @@ class TicketDistribPrefType extends AbstractStructBase
     }
     /**
      * Get DistribType value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getDistribType()
     {
@@ -51,10 +51,10 @@ class TicketDistribPrefType extends AbstractStructBase
     }
     /**
      * Set DistribType value
-     * @param UNKNOWN $distribType
+     * @param  $distribType
      * @return \Ammonkc\Otaehi\StructType\TicketDistribPrefType
      */
-    public function setDistribType(UNKNOWN $distribType = null)
+    public function setDistribType( $distribType = null)
     {
         $this->DistribType = $distribType;
         return $this;
@@ -83,7 +83,7 @@ class TicketDistribPrefType extends AbstractStructBase
     }
     /**
      * Get Remark value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getRemark()
     {
@@ -91,10 +91,10 @@ class TicketDistribPrefType extends AbstractStructBase
     }
     /**
      * Set Remark value
-     * @param UNKNOWN $remark
+     * @param  $remark
      * @return \Ammonkc\Otaehi\StructType\TicketDistribPrefType
      */
-    public function setRemark(UNKNOWN $remark = null)
+    public function setRemark( $remark = null)
     {
         $this->Remark = $remark;
         return $this;

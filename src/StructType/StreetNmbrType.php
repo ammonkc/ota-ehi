@@ -12,22 +12,22 @@ class StreetNmbrType extends AbstractStructBase
 {
     /**
      * The PO_Box
-     * @var UNKNOWN
+     * @var
      */
     public $PO_Box;
     /**
      * Constructor method for StreetNmbrType
      * @uses StreetNmbrType::setPO_Box()
-     * @param UNKNOWN $pO_Box
+     * @param  $pO_Box
      */
-    public function __construct(UNKNOWN $pO_Box = null)
+    public function __construct( $pO_Box = null)
     {
         $this
             ->setPO_Box($pO_Box);
     }
     /**
      * Get PO_Box value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getPO_Box()
     {
@@ -35,10 +35,10 @@ class StreetNmbrType extends AbstractStructBase
     }
     /**
      * Set PO_Box value
-     * @param UNKNOWN $pO_Box
+     * @param  $pO_Box
      * @return \Ammonkc\Otaehi\StructType\StreetNmbrType
      */
-    public function setPO_Box(UNKNOWN $pO_Box = null)
+    public function setPO_Box( $pO_Box = null)
     {
         $this->PO_Box = $pO_Box;
         return $this;

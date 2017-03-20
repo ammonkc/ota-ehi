@@ -22,7 +22,7 @@ class Results extends AbstractStructBase
     public $CAVV;
     /**
      * The PAResStatus
-     * @var UNKNOWN
+     * @var
      */
     public $PAResStatus;
     /**
@@ -50,12 +50,12 @@ class Results extends AbstractStructBase
      * @uses Results::setXID()
      * @param mixed $tPA_Extensions
      * @param string $cAVV
-     * @param UNKNOWN $pAResStatus
+     * @param  $pAResStatus
      * @param string $signatureVerfication
      * @param string $transactionID
      * @param string $xID
      */
-    public function __construct($tPA_Extensions = null, $cAVV = null, UNKNOWN $pAResStatus = null, $signatureVerfication = null, $transactionID = null, $xID = null)
+    public function __construct($tPA_Extensions = null, $cAVV = null,  $pAResStatus = null, $signatureVerfication = null, $transactionID = null, $xID = null)
     {
         $this
             ->setTPA_Extensions($tPA_Extensions)
@@ -107,7 +107,7 @@ class Results extends AbstractStructBase
     }
     /**
      * Get PAResStatus value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getPAResStatus()
     {
@@ -115,10 +115,10 @@ class Results extends AbstractStructBase
     }
     /**
      * Set PAResStatus value
-     * @param UNKNOWN $pAResStatus
+     * @param  $pAResStatus
      * @return \Ammonkc\Otaehi\StructType\Results
      */
-    public function setPAResStatus(UNKNOWN $pAResStatus = null)
+    public function setPAResStatus( $pAResStatus = null)
     {
         $this->PAResStatus = $pAResStatus;
         return $this;

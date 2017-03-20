@@ -27,7 +27,7 @@ class Vehicle extends AbstractStructBase
     public $Model;
     /**
      * The IncludeExclude
-     * @var UNKNOWN
+     * @var
      */
     public $IncludeExclude;
     /**
@@ -42,12 +42,12 @@ class Vehicle extends AbstractStructBase
     public $IsConfirmableInd;
     /**
      * The DistanceUnit
-     * @var UNKNOWN
+     * @var
      */
     public $DistanceUnit;
     /**
      * The DistancePerFuelUnit
-     * @var UNKNOWN
+     * @var
      */
     public $DistancePerFuelUnit;
     /**
@@ -69,14 +69,14 @@ class Vehicle extends AbstractStructBase
      * @param \Ammonkc\Otaehi\StructType\_Class $class
      * @param \Ammonkc\Otaehi\StructType\Make $make
      * @param \Ammonkc\Otaehi\StructType\Model $model
-     * @param UNKNOWN $includeExclude
+     * @param  $includeExclude
      * @param mixed $text
      * @param bool $isConfirmableInd
-     * @param UNKNOWN $distanceUnit
-     * @param UNKNOWN $distancePerFuelUnit
+     * @param  $distanceUnit
+     * @param  $distancePerFuelUnit
      * @param mixed $vehRentalDetails
      */
-    public function __construct(\Ammonkc\Otaehi\StructType\_Class $class = null, \Ammonkc\Otaehi\StructType\Make $make = null, \Ammonkc\Otaehi\StructType\Model $model = null, UNKNOWN $includeExclude = null, $text = null, $isConfirmableInd = null, UNKNOWN $distanceUnit = null, UNKNOWN $distancePerFuelUnit = null, $vehRentalDetails = null)
+    public function __construct(\Ammonkc\Otaehi\StructType\_Class $class = null, \Ammonkc\Otaehi\StructType\Make $make = null, \Ammonkc\Otaehi\StructType\Model $model = null,  $includeExclude = null, $text = null, $isConfirmableInd = null,  $distanceUnit = null,  $distancePerFuelUnit = null, $vehRentalDetails = null)
     {
         $this
             ->setClass($class)
@@ -145,7 +145,7 @@ class Vehicle extends AbstractStructBase
     }
     /**
      * Get IncludeExclude value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getIncludeExclude()
     {
@@ -153,10 +153,10 @@ class Vehicle extends AbstractStructBase
     }
     /**
      * Set IncludeExclude value
-     * @param UNKNOWN $includeExclude
+     * @param  $includeExclude
      * @return \Ammonkc\Otaehi\StructType\Vehicle
      */
-    public function setIncludeExclude(UNKNOWN $includeExclude = null)
+    public function setIncludeExclude( $includeExclude = null)
     {
         $this->IncludeExclude = $includeExclude;
         return $this;
@@ -199,7 +199,7 @@ class Vehicle extends AbstractStructBase
     }
     /**
      * Get DistanceUnit value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getDistanceUnit()
     {
@@ -207,17 +207,17 @@ class Vehicle extends AbstractStructBase
     }
     /**
      * Set DistanceUnit value
-     * @param UNKNOWN $distanceUnit
+     * @param  $distanceUnit
      * @return \Ammonkc\Otaehi\StructType\Vehicle
      */
-    public function setDistanceUnit(UNKNOWN $distanceUnit = null)
+    public function setDistanceUnit( $distanceUnit = null)
     {
         $this->DistanceUnit = $distanceUnit;
         return $this;
     }
     /**
      * Get DistancePerFuelUnit value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getDistancePerFuelUnit()
     {
@@ -225,10 +225,10 @@ class Vehicle extends AbstractStructBase
     }
     /**
      * Set DistancePerFuelUnit value
-     * @param UNKNOWN $distancePerFuelUnit
+     * @param  $distancePerFuelUnit
      * @return \Ammonkc\Otaehi\StructType\Vehicle
      */
-    public function setDistancePerFuelUnit(UNKNOWN $distancePerFuelUnit = null)
+    public function setDistancePerFuelUnit( $distancePerFuelUnit = null)
     {
         $this->DistancePerFuelUnit = $distancePerFuelUnit;
         return $this;

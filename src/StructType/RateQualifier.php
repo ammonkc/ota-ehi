@@ -12,17 +12,17 @@ class RateQualifier extends AbstractStructBase
 {
     /**
      * The TourInfoRPH
-     * @var UNKNOWN
+     * @var
      */
     public $TourInfoRPH;
     /**
      * The CustLoyaltyRPH
-     * @var UNKNOWN
+     * @var
      */
     public $CustLoyaltyRPH;
     /**
      * The QuoteID
-     * @var UNKNOWN
+     * @var
      */
     public $QuoteID;
     /**
@@ -32,32 +32,32 @@ class RateQualifier extends AbstractStructBase
     public $VendorRateID;
     /**
      * The TravelPurpose
-     * @var UNKNOWN
+     * @var
      */
     public $TravelPurpose;
     /**
      * The RateCategory
-     * @var UNKNOWN
+     * @var
      */
     public $RateCategory;
     /**
      * The CorpDiscountNmbr
-     * @var UNKNOWN
+     * @var
      */
     public $CorpDiscountNmbr;
     /**
      * The PromotionCode
-     * @var UNKNOWN
+     * @var
      */
     public $PromotionCode;
     /**
      * The PromotionVendorCode
-     * @var UNKNOWN
+     * @var
      */
     public $PromotionVendorCode;
     /**
      * The RateQualifier
-     * @var UNKNOWN
+     * @var
      */
     public $RateQualifier;
     /**
@@ -84,20 +84,20 @@ class RateQualifier extends AbstractStructBase
      * @uses RateQualifier::setRateQualifier()
      * @uses RateQualifier::setRatePeriod()
      * @uses RateQualifier::setGuaranteedInd()
-     * @param UNKNOWN $tourInfoRPH
-     * @param UNKNOWN $custLoyaltyRPH
-     * @param UNKNOWN $quoteID
+     * @param  $tourInfoRPH
+     * @param  $custLoyaltyRPH
+     * @param  $quoteID
      * @param StringLength1to32 $vendorRateID
-     * @param UNKNOWN $travelPurpose
-     * @param UNKNOWN $rateCategory
-     * @param UNKNOWN $corpDiscountNmbr
-     * @param UNKNOWN $promotionCode
-     * @param UNKNOWN $promotionVendorCode
-     * @param UNKNOWN $rateQualifier
+     * @param  $travelPurpose
+     * @param  $rateCategory
+     * @param  $corpDiscountNmbr
+     * @param  $promotionCode
+     * @param  $promotionVendorCode
+     * @param  $rateQualifier
      * @param string $ratePeriod
      * @param bool $guaranteedInd
      */
-    public function __construct(UNKNOWN $tourInfoRPH = null, UNKNOWN $custLoyaltyRPH = null, UNKNOWN $quoteID = null, StringLength1to32 $vendorRateID = null, UNKNOWN $travelPurpose = null, UNKNOWN $rateCategory = null, UNKNOWN $corpDiscountNmbr = null, UNKNOWN $promotionCode = null, UNKNOWN $promotionVendorCode = null, UNKNOWN $rateQualifier = null, $ratePeriod = null, $guaranteedInd = null)
+    public function __construct( $tourInfoRPH = null,  $custLoyaltyRPH = null,  $quoteID = null, StringLength1to32 $vendorRateID = null,  $travelPurpose = null,  $rateCategory = null,  $corpDiscountNmbr = null,  $promotionCode = null,  $promotionVendorCode = null,  $rateQualifier = null, $ratePeriod = null, $guaranteedInd = null)
     {
         $this
             ->setTourInfoRPH($tourInfoRPH)
@@ -115,7 +115,7 @@ class RateQualifier extends AbstractStructBase
     }
     /**
      * Get TourInfoRPH value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getTourInfoRPH()
     {
@@ -123,17 +123,17 @@ class RateQualifier extends AbstractStructBase
     }
     /**
      * Set TourInfoRPH value
-     * @param UNKNOWN $tourInfoRPH
+     * @param  $tourInfoRPH
      * @return \Ammonkc\Otaehi\StructType\RateQualifier
      */
-    public function setTourInfoRPH(UNKNOWN $tourInfoRPH = null)
+    public function setTourInfoRPH( $tourInfoRPH = null)
     {
         $this->TourInfoRPH = $tourInfoRPH;
         return $this;
     }
     /**
      * Get CustLoyaltyRPH value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getCustLoyaltyRPH()
     {
@@ -141,17 +141,17 @@ class RateQualifier extends AbstractStructBase
     }
     /**
      * Set CustLoyaltyRPH value
-     * @param UNKNOWN $custLoyaltyRPH
+     * @param  $custLoyaltyRPH
      * @return \Ammonkc\Otaehi\StructType\RateQualifier
      */
-    public function setCustLoyaltyRPH(UNKNOWN $custLoyaltyRPH = null)
+    public function setCustLoyaltyRPH( $custLoyaltyRPH = null)
     {
         $this->CustLoyaltyRPH = $custLoyaltyRPH;
         return $this;
     }
     /**
      * Get QuoteID value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getQuoteID()
     {
@@ -159,10 +159,10 @@ class RateQualifier extends AbstractStructBase
     }
     /**
      * Set QuoteID value
-     * @param UNKNOWN $quoteID
+     * @param  $quoteID
      * @return \Ammonkc\Otaehi\StructType\RateQualifier
      */
-    public function setQuoteID(UNKNOWN $quoteID = null)
+    public function setQuoteID( $quoteID = null)
     {
         $this->QuoteID = $quoteID;
         return $this;
@@ -187,7 +187,7 @@ class RateQualifier extends AbstractStructBase
     }
     /**
      * Get TravelPurpose value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getTravelPurpose()
     {
@@ -195,17 +195,17 @@ class RateQualifier extends AbstractStructBase
     }
     /**
      * Set TravelPurpose value
-     * @param UNKNOWN $travelPurpose
+     * @param  $travelPurpose
      * @return \Ammonkc\Otaehi\StructType\RateQualifier
      */
-    public function setTravelPurpose(UNKNOWN $travelPurpose = null)
+    public function setTravelPurpose( $travelPurpose = null)
     {
         $this->TravelPurpose = $travelPurpose;
         return $this;
     }
     /**
      * Get RateCategory value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getRateCategory()
     {
@@ -213,17 +213,17 @@ class RateQualifier extends AbstractStructBase
     }
     /**
      * Set RateCategory value
-     * @param UNKNOWN $rateCategory
+     * @param  $rateCategory
      * @return \Ammonkc\Otaehi\StructType\RateQualifier
      */
-    public function setRateCategory(UNKNOWN $rateCategory = null)
+    public function setRateCategory( $rateCategory = null)
     {
         $this->RateCategory = $rateCategory;
         return $this;
     }
     /**
      * Get CorpDiscountNmbr value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getCorpDiscountNmbr()
     {
@@ -231,17 +231,17 @@ class RateQualifier extends AbstractStructBase
     }
     /**
      * Set CorpDiscountNmbr value
-     * @param UNKNOWN $corpDiscountNmbr
+     * @param  $corpDiscountNmbr
      * @return \Ammonkc\Otaehi\StructType\RateQualifier
      */
-    public function setCorpDiscountNmbr(UNKNOWN $corpDiscountNmbr = null)
+    public function setCorpDiscountNmbr( $corpDiscountNmbr = null)
     {
         $this->CorpDiscountNmbr = $corpDiscountNmbr;
         return $this;
     }
     /**
      * Get PromotionCode value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getPromotionCode()
     {
@@ -249,17 +249,17 @@ class RateQualifier extends AbstractStructBase
     }
     /**
      * Set PromotionCode value
-     * @param UNKNOWN $promotionCode
+     * @param  $promotionCode
      * @return \Ammonkc\Otaehi\StructType\RateQualifier
      */
-    public function setPromotionCode(UNKNOWN $promotionCode = null)
+    public function setPromotionCode( $promotionCode = null)
     {
         $this->PromotionCode = $promotionCode;
         return $this;
     }
     /**
      * Get PromotionVendorCode value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getPromotionVendorCode()
     {
@@ -267,17 +267,17 @@ class RateQualifier extends AbstractStructBase
     }
     /**
      * Set PromotionVendorCode value
-     * @param UNKNOWN $promotionVendorCode
+     * @param  $promotionVendorCode
      * @return \Ammonkc\Otaehi\StructType\RateQualifier
      */
-    public function setPromotionVendorCode(UNKNOWN $promotionVendorCode = null)
+    public function setPromotionVendorCode( $promotionVendorCode = null)
     {
         $this->PromotionVendorCode = $promotionVendorCode;
         return $this;
     }
     /**
      * Get RateQualifier value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getRateQualifier()
     {
@@ -285,10 +285,10 @@ class RateQualifier extends AbstractStructBase
     }
     /**
      * Set RateQualifier value
-     * @param UNKNOWN $rateQualifier
+     * @param  $rateQualifier
      * @return \Ammonkc\Otaehi\StructType\RateQualifier
      */
-    public function setRateQualifier(UNKNOWN $rateQualifier = null)
+    public function setRateQualifier( $rateQualifier = null)
     {
         $this->RateQualifier = $rateQualifier;
         return $this;

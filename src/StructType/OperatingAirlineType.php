@@ -12,12 +12,12 @@ class OperatingAirlineType extends AbstractStructBase
 {
     /**
      * The FlightNumber
-     * @var UNKNOWN
+     * @var
      */
     public $FlightNumber;
     /**
      * The ResBookDesigCode
-     * @var UNKNOWN
+     * @var
      */
     public $ResBookDesigCode;
     /**
@@ -27,17 +27,17 @@ class OperatingAirlineType extends AbstractStructBase
     public $MarketingInd;
     /**
      * The BookedRBD
-     * @var UNKNOWN
+     * @var
      */
     public $BookedRBD;
     /**
      * The TicketedRBD
-     * @var UNKNOWN
+     * @var
      */
     public $TicketedRBD;
     /**
      * The FrequentFlierMiles
-     * @var UNKNOWN
+     * @var
      */
     public $FrequentFlierMiles;
     /**
@@ -48,14 +48,14 @@ class OperatingAirlineType extends AbstractStructBase
      * @uses OperatingAirlineType::setBookedRBD()
      * @uses OperatingAirlineType::setTicketedRBD()
      * @uses OperatingAirlineType::setFrequentFlierMiles()
-     * @param UNKNOWN $flightNumber
-     * @param UNKNOWN $resBookDesigCode
+     * @param  $flightNumber
+     * @param  $resBookDesigCode
      * @param bool $marketingInd
-     * @param UNKNOWN $bookedRBD
-     * @param UNKNOWN $ticketedRBD
-     * @param UNKNOWN $frequentFlierMiles
+     * @param  $bookedRBD
+     * @param  $ticketedRBD
+     * @param  $frequentFlierMiles
      */
-    public function __construct(UNKNOWN $flightNumber = null, UNKNOWN $resBookDesigCode = null, $marketingInd = null, UNKNOWN $bookedRBD = null, UNKNOWN $ticketedRBD = null, UNKNOWN $frequentFlierMiles = null)
+    public function __construct( $flightNumber = null,  $resBookDesigCode = null, $marketingInd = null,  $bookedRBD = null,  $ticketedRBD = null,  $frequentFlierMiles = null)
     {
         $this
             ->setFlightNumber($flightNumber)
@@ -67,7 +67,7 @@ class OperatingAirlineType extends AbstractStructBase
     }
     /**
      * Get FlightNumber value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getFlightNumber()
     {
@@ -75,17 +75,17 @@ class OperatingAirlineType extends AbstractStructBase
     }
     /**
      * Set FlightNumber value
-     * @param UNKNOWN $flightNumber
+     * @param  $flightNumber
      * @return \Ammonkc\Otaehi\StructType\OperatingAirlineType
      */
-    public function setFlightNumber(UNKNOWN $flightNumber = null)
+    public function setFlightNumber( $flightNumber = null)
     {
         $this->FlightNumber = $flightNumber;
         return $this;
     }
     /**
      * Get ResBookDesigCode value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getResBookDesigCode()
     {
@@ -93,10 +93,10 @@ class OperatingAirlineType extends AbstractStructBase
     }
     /**
      * Set ResBookDesigCode value
-     * @param UNKNOWN $resBookDesigCode
+     * @param  $resBookDesigCode
      * @return \Ammonkc\Otaehi\StructType\OperatingAirlineType
      */
-    public function setResBookDesigCode(UNKNOWN $resBookDesigCode = null)
+    public function setResBookDesigCode( $resBookDesigCode = null)
     {
         $this->ResBookDesigCode = $resBookDesigCode;
         return $this;
@@ -121,7 +121,7 @@ class OperatingAirlineType extends AbstractStructBase
     }
     /**
      * Get BookedRBD value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getBookedRBD()
     {
@@ -129,17 +129,17 @@ class OperatingAirlineType extends AbstractStructBase
     }
     /**
      * Set BookedRBD value
-     * @param UNKNOWN $bookedRBD
+     * @param  $bookedRBD
      * @return \Ammonkc\Otaehi\StructType\OperatingAirlineType
      */
-    public function setBookedRBD(UNKNOWN $bookedRBD = null)
+    public function setBookedRBD( $bookedRBD = null)
     {
         $this->BookedRBD = $bookedRBD;
         return $this;
     }
     /**
      * Get TicketedRBD value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getTicketedRBD()
     {
@@ -147,17 +147,17 @@ class OperatingAirlineType extends AbstractStructBase
     }
     /**
      * Set TicketedRBD value
-     * @param UNKNOWN $ticketedRBD
+     * @param  $ticketedRBD
      * @return \Ammonkc\Otaehi\StructType\OperatingAirlineType
      */
-    public function setTicketedRBD(UNKNOWN $ticketedRBD = null)
+    public function setTicketedRBD( $ticketedRBD = null)
     {
         $this->TicketedRBD = $ticketedRBD;
         return $this;
     }
     /**
      * Get FrequentFlierMiles value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getFrequentFlierMiles()
     {
@@ -165,10 +165,10 @@ class OperatingAirlineType extends AbstractStructBase
     }
     /**
      * Set FrequentFlierMiles value
-     * @param UNKNOWN $frequentFlierMiles
+     * @param  $frequentFlierMiles
      * @return \Ammonkc\Otaehi\StructType\OperatingAirlineType
      */
-    public function setFrequentFlierMiles(UNKNOWN $frequentFlierMiles = null)
+    public function setFrequentFlierMiles( $frequentFlierMiles = null)
     {
         $this->FrequentFlierMiles = $frequentFlierMiles;
         return $this;

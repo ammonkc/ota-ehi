@@ -17,7 +17,7 @@ class VideoItemType extends AbstractStructBase
     public $URL;
     /**
      * The UnitOfMeasureCode
-     * @var UNKNOWN
+     * @var
      */
     public $UnitOfMeasureCode;
     /**
@@ -55,14 +55,14 @@ class VideoItemType extends AbstractStructBase
      * @uses VideoItemType::setLength()
      * @uses VideoItemType::setStreamingSource()
      * @param string $uRL
-     * @param UNKNOWN $unitOfMeasureCode
+     * @param  $unitOfMeasureCode
      * @param int $width
      * @param int $height
      * @param int $bitRate
      * @param int $length
      * @param string $streamingSource
      */
-    public function __construct($uRL = null, UNKNOWN $unitOfMeasureCode = null, $width = null, $height = null, $bitRate = null, $length = null, $streamingSource = null)
+    public function __construct($uRL = null,  $unitOfMeasureCode = null, $width = null, $height = null, $bitRate = null, $length = null, $streamingSource = null)
     {
         $this
             ->setURL($uRL)
@@ -97,7 +97,7 @@ class VideoItemType extends AbstractStructBase
     }
     /**
      * Get UnitOfMeasureCode value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getUnitOfMeasureCode()
     {
@@ -105,10 +105,10 @@ class VideoItemType extends AbstractStructBase
     }
     /**
      * Set UnitOfMeasureCode value
-     * @param UNKNOWN $unitOfMeasureCode
+     * @param  $unitOfMeasureCode
      * @return \Ammonkc\Otaehi\StructType\VideoItemType
      */
-    public function setUnitOfMeasureCode(UNKNOWN $unitOfMeasureCode = null)
+    public function setUnitOfMeasureCode( $unitOfMeasureCode = null)
     {
         $this->UnitOfMeasureCode = $unitOfMeasureCode;
         return $this;

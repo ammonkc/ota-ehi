@@ -22,7 +22,7 @@ class MemberPreferences extends AbstractStructBase
     public $Offer;
     /**
      * The Awareness
-     * @var UNKNOWN
+     * @var
      */
     public $Awareness;
     /**
@@ -38,10 +38,10 @@ class MemberPreferences extends AbstractStructBase
      * @uses MemberPreferences::setAwardsPreference()
      * @param \Ammonkc\Otaehi\StructType\AdditionalReward $additionalReward
      * @param \Ammonkc\Otaehi\StructType\Offer $offer
-     * @param UNKNOWN $awareness
+     * @param  $awareness
      * @param string $awardsPreference
      */
-    public function __construct(\Ammonkc\Otaehi\StructType\AdditionalReward $additionalReward = null, \Ammonkc\Otaehi\StructType\Offer $offer = null, UNKNOWN $awareness = null, $awardsPreference = null)
+    public function __construct(\Ammonkc\Otaehi\StructType\AdditionalReward $additionalReward = null, \Ammonkc\Otaehi\StructType\Offer $offer = null,  $awareness = null, $awardsPreference = null)
     {
         $this
             ->setAdditionalReward($additionalReward)
@@ -87,7 +87,7 @@ class MemberPreferences extends AbstractStructBase
     }
     /**
      * Get Awareness value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getAwareness()
     {
@@ -95,10 +95,10 @@ class MemberPreferences extends AbstractStructBase
     }
     /**
      * Set Awareness value
-     * @param UNKNOWN $awareness
+     * @param  $awareness
      * @return \Ammonkc\Otaehi\StructType\MemberPreferences
      */
-    public function setAwareness(UNKNOWN $awareness = null)
+    public function setAwareness( $awareness = null)
     {
         $this->Awareness = $awareness;
         return $this;

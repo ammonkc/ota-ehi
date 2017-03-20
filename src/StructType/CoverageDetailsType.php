@@ -12,22 +12,22 @@ class CoverageDetailsType extends AbstractStructBase
 {
     /**
      * The CoverageTextType
-     * @var UNKNOWN
+     * @var
      */
     public $CoverageTextType;
     /**
      * Constructor method for CoverageDetailsType
      * @uses CoverageDetailsType::setCoverageTextType()
-     * @param UNKNOWN $coverageTextType
+     * @param  $coverageTextType
      */
-    public function __construct(UNKNOWN $coverageTextType = null)
+    public function __construct( $coverageTextType = null)
     {
         $this
             ->setCoverageTextType($coverageTextType);
     }
     /**
      * Get CoverageTextType value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getCoverageTextType()
     {
@@ -35,10 +35,10 @@ class CoverageDetailsType extends AbstractStructBase
     }
     /**
      * Set CoverageTextType value
-     * @param UNKNOWN $coverageTextType
+     * @param  $coverageTextType
      * @return \Ammonkc\Otaehi\StructType\CoverageDetailsType
      */
-    public function setCoverageTextType(UNKNOWN $coverageTextType = null)
+    public function setCoverageTextType( $coverageTextType = null)
     {
         $this->CoverageTextType = $coverageTextType;
         return $this;

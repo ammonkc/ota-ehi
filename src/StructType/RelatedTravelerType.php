@@ -27,7 +27,7 @@ class RelatedTravelerType extends AbstractStructBase
     public $TPA_Extensions;
     /**
      * The Relation
-     * @var UNKNOWN
+     * @var
      */
     public $Relation;
     /**
@@ -39,9 +39,9 @@ class RelatedTravelerType extends AbstractStructBase
      * @param mixed $uniqueID
      * @param mixed $personName
      * @param mixed $tPA_Extensions
-     * @param UNKNOWN $relation
+     * @param  $relation
      */
-    public function __construct($uniqueID = null, $personName = null, $tPA_Extensions = null, UNKNOWN $relation = null)
+    public function __construct($uniqueID = null, $personName = null, $tPA_Extensions = null,  $relation = null)
     {
         $this
             ->setUniqueID($uniqueID)
@@ -105,7 +105,7 @@ class RelatedTravelerType extends AbstractStructBase
     }
     /**
      * Get Relation value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getRelation()
     {
@@ -113,10 +113,10 @@ class RelatedTravelerType extends AbstractStructBase
     }
     /**
      * Set Relation value
-     * @param UNKNOWN $relation
+     * @param  $relation
      * @return \Ammonkc\Otaehi\StructType\RelatedTravelerType
      */
-    public function setRelation(UNKNOWN $relation = null)
+    public function setRelation( $relation = null)
     {
         $this->Relation = $relation;
         return $this;

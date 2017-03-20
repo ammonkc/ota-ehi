@@ -12,22 +12,22 @@ class EmployeeInfoType extends AbstractStructBase
 {
     /**
      * The EmployeeId
-     * @var UNKNOWN
+     * @var
      */
     public $EmployeeId;
     /**
      * The EmployeeLevel
-     * @var UNKNOWN
+     * @var
      */
     public $EmployeeLevel;
     /**
      * The EmployeeTitle
-     * @var UNKNOWN
+     * @var
      */
     public $EmployeeTitle;
     /**
      * The EmployeeStatus
-     * @var UNKNOWN
+     * @var
      */
     public $EmployeeStatus;
     /**
@@ -36,12 +36,12 @@ class EmployeeInfoType extends AbstractStructBase
      * @uses EmployeeInfoType::setEmployeeLevel()
      * @uses EmployeeInfoType::setEmployeeTitle()
      * @uses EmployeeInfoType::setEmployeeStatus()
-     * @param UNKNOWN $employeeId
-     * @param UNKNOWN $employeeLevel
-     * @param UNKNOWN $employeeTitle
-     * @param UNKNOWN $employeeStatus
+     * @param  $employeeId
+     * @param  $employeeLevel
+     * @param  $employeeTitle
+     * @param  $employeeStatus
      */
-    public function __construct(UNKNOWN $employeeId = null, UNKNOWN $employeeLevel = null, UNKNOWN $employeeTitle = null, UNKNOWN $employeeStatus = null)
+    public function __construct( $employeeId = null,  $employeeLevel = null,  $employeeTitle = null,  $employeeStatus = null)
     {
         $this
             ->setEmployeeId($employeeId)
@@ -51,7 +51,7 @@ class EmployeeInfoType extends AbstractStructBase
     }
     /**
      * Get EmployeeId value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getEmployeeId()
     {
@@ -59,17 +59,17 @@ class EmployeeInfoType extends AbstractStructBase
     }
     /**
      * Set EmployeeId value
-     * @param UNKNOWN $employeeId
+     * @param  $employeeId
      * @return \Ammonkc\Otaehi\StructType\EmployeeInfoType
      */
-    public function setEmployeeId(UNKNOWN $employeeId = null)
+    public function setEmployeeId( $employeeId = null)
     {
         $this->EmployeeId = $employeeId;
         return $this;
     }
     /**
      * Get EmployeeLevel value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getEmployeeLevel()
     {
@@ -77,17 +77,17 @@ class EmployeeInfoType extends AbstractStructBase
     }
     /**
      * Set EmployeeLevel value
-     * @param UNKNOWN $employeeLevel
+     * @param  $employeeLevel
      * @return \Ammonkc\Otaehi\StructType\EmployeeInfoType
      */
-    public function setEmployeeLevel(UNKNOWN $employeeLevel = null)
+    public function setEmployeeLevel( $employeeLevel = null)
     {
         $this->EmployeeLevel = $employeeLevel;
         return $this;
     }
     /**
      * Get EmployeeTitle value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getEmployeeTitle()
     {
@@ -95,17 +95,17 @@ class EmployeeInfoType extends AbstractStructBase
     }
     /**
      * Set EmployeeTitle value
-     * @param UNKNOWN $employeeTitle
+     * @param  $employeeTitle
      * @return \Ammonkc\Otaehi\StructType\EmployeeInfoType
      */
-    public function setEmployeeTitle(UNKNOWN $employeeTitle = null)
+    public function setEmployeeTitle( $employeeTitle = null)
     {
         $this->EmployeeTitle = $employeeTitle;
         return $this;
     }
     /**
      * Get EmployeeStatus value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getEmployeeStatus()
     {
@@ -113,10 +113,10 @@ class EmployeeInfoType extends AbstractStructBase
     }
     /**
      * Set EmployeeStatus value
-     * @param UNKNOWN $employeeStatus
+     * @param  $employeeStatus
      * @return \Ammonkc\Otaehi\StructType\EmployeeInfoType
      */
-    public function setEmployeeStatus(UNKNOWN $employeeStatus = null)
+    public function setEmployeeStatus( $employeeStatus = null)
     {
         $this->EmployeeStatus = $employeeStatus;
         return $this;

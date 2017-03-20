@@ -12,22 +12,22 @@ class ShippingInfo extends AbstractStructBase
 {
     /**
      * The ShippingType
-     * @var UNKNOWN
+     * @var
      */
     public $ShippingType;
     /**
      * The ShippingCarrier
-     * @var UNKNOWN
+     * @var
      */
     public $ShippingCarrier;
     /**
      * Constructor method for ShippingInfo
      * @uses ShippingInfo::setShippingType()
      * @uses ShippingInfo::setShippingCarrier()
-     * @param UNKNOWN $shippingType
-     * @param UNKNOWN $shippingCarrier
+     * @param  $shippingType
+     * @param  $shippingCarrier
      */
-    public function __construct(UNKNOWN $shippingType = null, UNKNOWN $shippingCarrier = null)
+    public function __construct( $shippingType = null,  $shippingCarrier = null)
     {
         $this
             ->setShippingType($shippingType)
@@ -35,7 +35,7 @@ class ShippingInfo extends AbstractStructBase
     }
     /**
      * Get ShippingType value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getShippingType()
     {
@@ -43,17 +43,17 @@ class ShippingInfo extends AbstractStructBase
     }
     /**
      * Set ShippingType value
-     * @param UNKNOWN $shippingType
+     * @param  $shippingType
      * @return \Ammonkc\Otaehi\StructType\ShippingInfo
      */
-    public function setShippingType(UNKNOWN $shippingType = null)
+    public function setShippingType( $shippingType = null)
     {
         $this->ShippingType = $shippingType;
         return $this;
     }
     /**
      * Get ShippingCarrier value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getShippingCarrier()
     {
@@ -61,10 +61,10 @@ class ShippingInfo extends AbstractStructBase
     }
     /**
      * Set ShippingCarrier value
-     * @param UNKNOWN $shippingCarrier
+     * @param  $shippingCarrier
      * @return \Ammonkc\Otaehi\StructType\ShippingInfo
      */
-    public function setShippingCarrier(UNKNOWN $shippingCarrier = null)
+    public function setShippingCarrier( $shippingCarrier = null)
     {
         $this->ShippingCarrier = $shippingCarrier;
         return $this;

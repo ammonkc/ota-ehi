@@ -12,22 +12,22 @@ class Calculation extends AbstractStructBase
 {
     /**
      * The UnitCharge
-     * @var UNKNOWN
+     * @var
      */
     public $UnitCharge;
     /**
      * The UnitName
-     * @var UNKNOWN
+     * @var
      */
     public $UnitName;
     /**
      * The Quantity
-     * @var UNKNOWN
+     * @var
      */
     public $Quantity;
     /**
      * The Percentage
-     * @var UNKNOWN
+     * @var
      */
     public $Percentage;
     /**
@@ -37,12 +37,12 @@ class Calculation extends AbstractStructBase
     public $Applicability;
     /**
      * The MaxQuantity
-     * @var UNKNOWN
+     * @var
      */
     public $MaxQuantity;
     /**
      * The Total
-     * @var UNKNOWN
+     * @var
      */
     public $Total;
     /**
@@ -54,15 +54,15 @@ class Calculation extends AbstractStructBase
      * @uses Calculation::setApplicability()
      * @uses Calculation::setMaxQuantity()
      * @uses Calculation::setTotal()
-     * @param UNKNOWN $unitCharge
-     * @param UNKNOWN $unitName
-     * @param UNKNOWN $quantity
-     * @param UNKNOWN $percentage
+     * @param  $unitCharge
+     * @param  $unitName
+     * @param  $quantity
+     * @param  $percentage
      * @param string $applicability
-     * @param UNKNOWN $maxQuantity
-     * @param UNKNOWN $total
+     * @param  $maxQuantity
+     * @param  $total
      */
-    public function __construct(UNKNOWN $unitCharge = null, UNKNOWN $unitName = null, UNKNOWN $quantity = null, UNKNOWN $percentage = null, $applicability = null, UNKNOWN $maxQuantity = null, UNKNOWN $total = null)
+    public function __construct( $unitCharge = null,  $unitName = null,  $quantity = null,  $percentage = null, $applicability = null,  $maxQuantity = null,  $total = null)
     {
         $this
             ->setUnitCharge($unitCharge)
@@ -75,7 +75,7 @@ class Calculation extends AbstractStructBase
     }
     /**
      * Get UnitCharge value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getUnitCharge()
     {
@@ -83,17 +83,17 @@ class Calculation extends AbstractStructBase
     }
     /**
      * Set UnitCharge value
-     * @param UNKNOWN $unitCharge
+     * @param  $unitCharge
      * @return \Ammonkc\Otaehi\StructType\Calculation
      */
-    public function setUnitCharge(UNKNOWN $unitCharge = null)
+    public function setUnitCharge( $unitCharge = null)
     {
         $this->UnitCharge = $unitCharge;
         return $this;
     }
     /**
      * Get UnitName value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getUnitName()
     {
@@ -101,17 +101,17 @@ class Calculation extends AbstractStructBase
     }
     /**
      * Set UnitName value
-     * @param UNKNOWN $unitName
+     * @param  $unitName
      * @return \Ammonkc\Otaehi\StructType\Calculation
      */
-    public function setUnitName(UNKNOWN $unitName = null)
+    public function setUnitName( $unitName = null)
     {
         $this->UnitName = $unitName;
         return $this;
     }
     /**
      * Get Quantity value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getQuantity()
     {
@@ -119,17 +119,17 @@ class Calculation extends AbstractStructBase
     }
     /**
      * Set Quantity value
-     * @param UNKNOWN $quantity
+     * @param  $quantity
      * @return \Ammonkc\Otaehi\StructType\Calculation
      */
-    public function setQuantity(UNKNOWN $quantity = null)
+    public function setQuantity( $quantity = null)
     {
         $this->Quantity = $quantity;
         return $this;
     }
     /**
      * Get Percentage value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getPercentage()
     {
@@ -137,10 +137,10 @@ class Calculation extends AbstractStructBase
     }
     /**
      * Set Percentage value
-     * @param UNKNOWN $percentage
+     * @param  $percentage
      * @return \Ammonkc\Otaehi\StructType\Calculation
      */
-    public function setPercentage(UNKNOWN $percentage = null)
+    public function setPercentage( $percentage = null)
     {
         $this->Percentage = $percentage;
         return $this;
@@ -169,7 +169,7 @@ class Calculation extends AbstractStructBase
     }
     /**
      * Get MaxQuantity value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getMaxQuantity()
     {
@@ -177,17 +177,17 @@ class Calculation extends AbstractStructBase
     }
     /**
      * Set MaxQuantity value
-     * @param UNKNOWN $maxQuantity
+     * @param  $maxQuantity
      * @return \Ammonkc\Otaehi\StructType\Calculation
      */
-    public function setMaxQuantity(UNKNOWN $maxQuantity = null)
+    public function setMaxQuantity( $maxQuantity = null)
     {
         $this->MaxQuantity = $maxQuantity;
         return $this;
     }
     /**
      * Get Total value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getTotal()
     {
@@ -195,10 +195,10 @@ class Calculation extends AbstractStructBase
     }
     /**
      * Set Total value
-     * @param UNKNOWN $total
+     * @param  $total
      * @return \Ammonkc\Otaehi\StructType\Calculation
      */
-    public function setTotal(UNKNOWN $total = null)
+    public function setTotal( $total = null)
     {
         $this->Total = $total;
         return $this;

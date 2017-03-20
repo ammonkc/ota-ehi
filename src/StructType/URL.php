@@ -12,22 +12,22 @@ class URL extends AbstractStructBase
 {
     /**
      * The TransferAction
-     * @var UNKNOWN
+     * @var
      */
     public $TransferAction;
     /**
      * Constructor method for URL
      * @uses URL::setTransferAction()
-     * @param UNKNOWN $transferAction
+     * @param  $transferAction
      */
-    public function __construct(UNKNOWN $transferAction = null)
+    public function __construct( $transferAction = null)
     {
         $this
             ->setTransferAction($transferAction);
     }
     /**
      * Get TransferAction value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getTransferAction()
     {
@@ -35,10 +35,10 @@ class URL extends AbstractStructBase
     }
     /**
      * Set TransferAction value
-     * @param UNKNOWN $transferAction
+     * @param  $transferAction
      * @return \Ammonkc\Otaehi\StructType\URL
      */
-    public function setTransferAction(UNKNOWN $transferAction = null)
+    public function setTransferAction( $transferAction = null)
     {
         $this->TransferAction = $transferAction;
         return $this;

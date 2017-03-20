@@ -12,17 +12,17 @@ class MealPrefType extends AbstractStructBase
 {
     /**
      * The MealType
-     * @var UNKNOWN
+     * @var
      */
     public $MealType;
     /**
      * The FavoriteFood
-     * @var UNKNOWN
+     * @var
      */
     public $FavoriteFood;
     /**
      * The Beverage
-     * @var UNKNOWN
+     * @var
      */
     public $Beverage;
     /**
@@ -30,11 +30,11 @@ class MealPrefType extends AbstractStructBase
      * @uses MealPrefType::setMealType()
      * @uses MealPrefType::setFavoriteFood()
      * @uses MealPrefType::setBeverage()
-     * @param UNKNOWN $mealType
-     * @param UNKNOWN $favoriteFood
-     * @param UNKNOWN $beverage
+     * @param  $mealType
+     * @param  $favoriteFood
+     * @param  $beverage
      */
-    public function __construct(UNKNOWN $mealType = null, UNKNOWN $favoriteFood = null, UNKNOWN $beverage = null)
+    public function __construct( $mealType = null,  $favoriteFood = null,  $beverage = null)
     {
         $this
             ->setMealType($mealType)
@@ -43,7 +43,7 @@ class MealPrefType extends AbstractStructBase
     }
     /**
      * Get MealType value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getMealType()
     {
@@ -51,17 +51,17 @@ class MealPrefType extends AbstractStructBase
     }
     /**
      * Set MealType value
-     * @param UNKNOWN $mealType
+     * @param  $mealType
      * @return \Ammonkc\Otaehi\StructType\MealPrefType
      */
-    public function setMealType(UNKNOWN $mealType = null)
+    public function setMealType( $mealType = null)
     {
         $this->MealType = $mealType;
         return $this;
     }
     /**
      * Get FavoriteFood value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getFavoriteFood()
     {
@@ -69,17 +69,17 @@ class MealPrefType extends AbstractStructBase
     }
     /**
      * Set FavoriteFood value
-     * @param UNKNOWN $favoriteFood
+     * @param  $favoriteFood
      * @return \Ammonkc\Otaehi\StructType\MealPrefType
      */
-    public function setFavoriteFood(UNKNOWN $favoriteFood = null)
+    public function setFavoriteFood( $favoriteFood = null)
     {
         $this->FavoriteFood = $favoriteFood;
         return $this;
     }
     /**
      * Get Beverage value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getBeverage()
     {
@@ -87,10 +87,10 @@ class MealPrefType extends AbstractStructBase
     }
     /**
      * Set Beverage value
-     * @param UNKNOWN $beverage
+     * @param  $beverage
      * @return \Ammonkc\Otaehi\StructType\MealPrefType
      */
-    public function setBeverage(UNKNOWN $beverage = null)
+    public function setBeverage( $beverage = null)
     {
         $this->Beverage = $beverage;
         return $this;

@@ -17,7 +17,7 @@ class FormattedTextType extends AbstractStructBase
     public $SubSection;
     /**
      * The Title
-     * @var UNKNOWN
+     * @var
      */
     public $Title;
     /**
@@ -31,10 +31,10 @@ class FormattedTextType extends AbstractStructBase
      * @uses FormattedTextType::setTitle()
      * @uses FormattedTextType::setLanguage()
      * @param mixed $subSection
-     * @param UNKNOWN $title
+     * @param  $title
      * @param string $language
      */
-    public function __construct($subSection = null, UNKNOWN $title = null, $language = null)
+    public function __construct($subSection = null,  $title = null, $language = null)
     {
         $this
             ->setSubSection($subSection)
@@ -61,7 +61,7 @@ class FormattedTextType extends AbstractStructBase
     }
     /**
      * Get Title value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getTitle()
     {
@@ -69,10 +69,10 @@ class FormattedTextType extends AbstractStructBase
     }
     /**
      * Set Title value
-     * @param UNKNOWN $title
+     * @param  $title
      * @return \Ammonkc\Otaehi\StructType\FormattedTextType
      */
-    public function setTitle(UNKNOWN $title = null)
+    public function setTitle( $title = null)
     {
         $this->Title = $title;
         return $this;

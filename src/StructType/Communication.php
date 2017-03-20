@@ -12,22 +12,22 @@ class Communication extends AbstractStructBase
 {
     /**
      * The DistribType
-     * @var UNKNOWN
+     * @var
      */
     public $DistribType;
     /**
      * Constructor method for Communication
      * @uses Communication::setDistribType()
-     * @param UNKNOWN $distribType
+     * @param  $distribType
      */
-    public function __construct(UNKNOWN $distribType = null)
+    public function __construct( $distribType = null)
     {
         $this
             ->setDistribType($distribType);
     }
     /**
      * Get DistribType value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getDistribType()
     {
@@ -35,10 +35,10 @@ class Communication extends AbstractStructBase
     }
     /**
      * Set DistribType value
-     * @param UNKNOWN $distribType
+     * @param  $distribType
      * @return \Ammonkc\Otaehi\StructType\Communication
      */
-    public function setDistribType(UNKNOWN $distribType = null)
+    public function setDistribType( $distribType = null)
     {
         $this->DistribType = $distribType;
         return $this;

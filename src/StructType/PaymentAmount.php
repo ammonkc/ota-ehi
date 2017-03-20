@@ -12,7 +12,7 @@ class PaymentAmount extends AbstractStructBase
 {
     /**
      * The ApprovalCode
-     * @var UNKNOWN
+     * @var
      */
     public $ApprovalCode;
     /**
@@ -24,10 +24,10 @@ class PaymentAmount extends AbstractStructBase
      * Constructor method for PaymentAmount
      * @uses PaymentAmount::setApprovalCode()
      * @uses PaymentAmount::setRefundCalcMethod()
-     * @param UNKNOWN $approvalCode
+     * @param  $approvalCode
      * @param string $refundCalcMethod
      */
-    public function __construct(UNKNOWN $approvalCode = null, $refundCalcMethod = null)
+    public function __construct( $approvalCode = null, $refundCalcMethod = null)
     {
         $this
             ->setApprovalCode($approvalCode)
@@ -35,7 +35,7 @@ class PaymentAmount extends AbstractStructBase
     }
     /**
      * Get ApprovalCode value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getApprovalCode()
     {
@@ -43,10 +43,10 @@ class PaymentAmount extends AbstractStructBase
     }
     /**
      * Set ApprovalCode value
-     * @param UNKNOWN $approvalCode
+     * @param  $approvalCode
      * @return \Ammonkc\Otaehi\StructType\PaymentAmount
      */
-    public function setApprovalCode(UNKNOWN $approvalCode = null)
+    public function setApprovalCode( $approvalCode = null)
     {
         $this->ApprovalCode = $approvalCode;
         return $this;

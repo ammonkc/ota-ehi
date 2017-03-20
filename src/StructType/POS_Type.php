@@ -22,8 +22,7 @@ class POS_Type extends AbstractStructBase
      */
     public function __construct($source = null)
     {
-        $this
-            ->setSource($source);
+        $this->setSource($source);
     }
     /**
      * Get Source value

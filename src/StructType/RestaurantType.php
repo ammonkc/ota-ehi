@@ -87,7 +87,7 @@ class RestaurantType extends AbstractStructBase
     public $OfferBrunch;
     /**
      * The ProximityCode
-     * @var UNKNOWN
+     * @var
      */
     public $ProximityCode;
     /**
@@ -141,12 +141,12 @@ class RestaurantType extends AbstractStructBase
      * @param bool $offerLunch
      * @param bool $offerDinner
      * @param bool $offerBrunch
-     * @param UNKNOWN $proximityCode
+     * @param  $proximityCode
      * @param int $sort
      * @param bool $reservationReqInd
      * @param bool $featuredInd
      */
-    public function __construct(\Ammonkc\Otaehi\StructType\MultimediaDescriptions $multimediaDescriptions = null, $relativePosition = null, $operationSchedules = null, \Ammonkc\Otaehi\StructType\InfoCodes $infoCodes = null, \Ammonkc\Otaehi\StructType\CuisineCodes $cuisineCodes = null, DescriptiveText $descriptiveText = null, $tPA_Extensions = null, $restaurantName = null, $maxSeatingCapacity = null, $maxSingleParty = null, $invCode = null, $offerBreakfast = null, $offerLunch = null, $offerDinner = null, $offerBrunch = null, UNKNOWN $proximityCode = null, $sort = null, $reservationReqInd = null, $featuredInd = null)
+    public function __construct(\Ammonkc\Otaehi\StructType\MultimediaDescriptions $multimediaDescriptions = null, $relativePosition = null, $operationSchedules = null, \Ammonkc\Otaehi\StructType\InfoCodes $infoCodes = null, \Ammonkc\Otaehi\StructType\CuisineCodes $cuisineCodes = null, DescriptiveText $descriptiveText = null, $tPA_Extensions = null, $restaurantName = null, $maxSeatingCapacity = null, $maxSingleParty = null, $invCode = null, $offerBreakfast = null, $offerLunch = null, $offerDinner = null, $offerBrunch = null,  $proximityCode = null, $sort = null, $reservationReqInd = null, $featuredInd = null)
     {
         $this
             ->setMultimediaDescriptions($multimediaDescriptions)
@@ -457,7 +457,7 @@ class RestaurantType extends AbstractStructBase
     }
     /**
      * Get ProximityCode value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getProximityCode()
     {
@@ -465,10 +465,10 @@ class RestaurantType extends AbstractStructBase
     }
     /**
      * Set ProximityCode value
-     * @param UNKNOWN $proximityCode
+     * @param  $proximityCode
      * @return \Ammonkc\Otaehi\StructType\RestaurantType
      */
-    public function setProximityCode(UNKNOWN $proximityCode = null)
+    public function setProximityCode( $proximityCode = null)
     {
         $this->ProximityCode = $proximityCode;
         return $this;

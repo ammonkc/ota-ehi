@@ -17,17 +17,17 @@ class SearchDateRange extends AbstractStructBase
     public $SearchQualifier;
     /**
      * The Start
-     * @var UNKNOWN
+     * @var
      */
     public $Start;
     /**
      * The Duration
-     * @var UNKNOWN
+     * @var
      */
     public $Duration;
     /**
      * The End
-     * @var UNKNOWN
+     * @var
      */
     public $End;
     /**
@@ -37,11 +37,11 @@ class SearchDateRange extends AbstractStructBase
      * @uses SearchDateRange::setDuration()
      * @uses SearchDateRange::setEnd()
      * @param string $searchQualifier
-     * @param UNKNOWN $start
-     * @param UNKNOWN $duration
-     * @param UNKNOWN $end
+     * @param  $start
+     * @param  $duration
+     * @param  $end
      */
-    public function __construct($searchQualifier = null, UNKNOWN $start = null, UNKNOWN $duration = null, UNKNOWN $end = null)
+    public function __construct($searchQualifier = null,  $start = null,  $duration = null,  $end = null)
     {
         $this
             ->setSearchQualifier($searchQualifier)
@@ -73,7 +73,7 @@ class SearchDateRange extends AbstractStructBase
     }
     /**
      * Get Start value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getStart()
     {
@@ -81,17 +81,17 @@ class SearchDateRange extends AbstractStructBase
     }
     /**
      * Set Start value
-     * @param UNKNOWN $start
+     * @param  $start
      * @return \Ammonkc\Otaehi\StructType\SearchDateRange
      */
-    public function setStart(UNKNOWN $start = null)
+    public function setStart( $start = null)
     {
         $this->Start = $start;
         return $this;
     }
     /**
      * Get Duration value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getDuration()
     {
@@ -99,17 +99,17 @@ class SearchDateRange extends AbstractStructBase
     }
     /**
      * Set Duration value
-     * @param UNKNOWN $duration
+     * @param  $duration
      * @return \Ammonkc\Otaehi\StructType\SearchDateRange
      */
-    public function setDuration(UNKNOWN $duration = null)
+    public function setDuration( $duration = null)
     {
         $this->Duration = $duration;
         return $this;
     }
     /**
      * Get End value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getEnd()
     {
@@ -117,10 +117,10 @@ class SearchDateRange extends AbstractStructBase
     }
     /**
      * Set End value
-     * @param UNKNOWN $end
+     * @param  $end
      * @return \Ammonkc\Otaehi\StructType\SearchDateRange
      */
-    public function setEnd(UNKNOWN $end = null)
+    public function setEnd( $end = null)
     {
         $this->End = $end;
         return $this;

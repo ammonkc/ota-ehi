@@ -37,7 +37,7 @@ class FeeType extends AbstractStructBase
     public $MandatoryInd;
     /**
      * The RPH
-     * @var UNKNOWN
+     * @var
      */
     public $RPH;
     /**
@@ -47,12 +47,12 @@ class FeeType extends AbstractStructBase
     public $TaxableIndicator;
     /**
      * The MinAge
-     * @var UNKNOWN
+     * @var
      */
     public $MinAge;
     /**
      * The MaxAge
-     * @var UNKNOWN
+     * @var
      */
     public $MaxAge;
     /**
@@ -71,12 +71,12 @@ class FeeType extends AbstractStructBase
      * @param mixed $tPA_Extensions
      * @param bool $taxInclusiveInd
      * @param bool $mandatoryInd
-     * @param UNKNOWN $rPH
+     * @param  $rPH
      * @param bool $taxableIndicator
-     * @param UNKNOWN $minAge
-     * @param UNKNOWN $maxAge
+     * @param  $minAge
+     * @param  $maxAge
      */
-    public function __construct($taxes = null, $description = null, $tPA_Extensions = null, $taxInclusiveInd = null, $mandatoryInd = null, UNKNOWN $rPH = null, $taxableIndicator = null, UNKNOWN $minAge = null, UNKNOWN $maxAge = null)
+    public function __construct($taxes = null, $description = null, $tPA_Extensions = null, $taxInclusiveInd = null, $mandatoryInd = null,  $rPH = null, $taxableIndicator = null,  $minAge = null,  $maxAge = null)
     {
         $this
             ->setTaxes($taxes)
@@ -181,7 +181,7 @@ class FeeType extends AbstractStructBase
     }
     /**
      * Get RPH value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getRPH()
     {
@@ -189,10 +189,10 @@ class FeeType extends AbstractStructBase
     }
     /**
      * Set RPH value
-     * @param UNKNOWN $rPH
+     * @param  $rPH
      * @return \Ammonkc\Otaehi\StructType\FeeType
      */
-    public function setRPH(UNKNOWN $rPH = null)
+    public function setRPH( $rPH = null)
     {
         $this->RPH = $rPH;
         return $this;
@@ -217,7 +217,7 @@ class FeeType extends AbstractStructBase
     }
     /**
      * Get MinAge value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getMinAge()
     {
@@ -225,17 +225,17 @@ class FeeType extends AbstractStructBase
     }
     /**
      * Set MinAge value
-     * @param UNKNOWN $minAge
+     * @param  $minAge
      * @return \Ammonkc\Otaehi\StructType\FeeType
      */
-    public function setMinAge(UNKNOWN $minAge = null)
+    public function setMinAge( $minAge = null)
     {
         $this->MinAge = $minAge;
         return $this;
     }
     /**
      * Get MaxAge value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getMaxAge()
     {
@@ -243,10 +243,10 @@ class FeeType extends AbstractStructBase
     }
     /**
      * Set MaxAge value
-     * @param UNKNOWN $maxAge
+     * @param  $maxAge
      * @return \Ammonkc\Otaehi\StructType\FeeType
      */
-    public function setMaxAge(UNKNOWN $maxAge = null)
+    public function setMaxAge( $maxAge = null)
     {
         $this->MaxAge = $maxAge;
         return $this;

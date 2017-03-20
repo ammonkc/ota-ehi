@@ -32,7 +32,7 @@ class OTA_VehResRQ extends AbstractStructBase
     public $DonationInformation;
     /**
      * The EchoToken
-     * @var UNKNOWN
+     * @var
      */
     public $EchoToken;
     /**
@@ -47,7 +47,7 @@ class OTA_VehResRQ extends AbstractStructBase
     public $Target;
     /**
      * The TargetName
-     * @var UNKNOWN
+     * @var
      */
     public $TargetName;
     /**
@@ -77,7 +77,7 @@ class OTA_VehResRQ extends AbstractStructBase
     public $RetransmissionIndicator;
     /**
      * The CorrelationID
-     * @var UNKNOWN
+     * @var
      */
     public $CorrelationID;
     /**
@@ -92,7 +92,7 @@ class OTA_VehResRQ extends AbstractStructBase
     public $AltLangID;
     /**
      * The ReqRespVersion
-     * @var UNKNOWN
+     * @var
      */
     public $ReqRespVersion;
     /**
@@ -118,21 +118,21 @@ class OTA_VehResRQ extends AbstractStructBase
      * @param \Ammonkc\Otaehi\StructType\VehResRQCore $vehResRQCore
      * @param \Ammonkc\Otaehi\StructType\VehResRQInfo $vehResRQInfo
      * @param \Ammonkc\Otaehi\StructType\DonationType $donationInformation
-     * @param UNKNOWN $echoToken
+     * @param  $echoToken
      * @param string $timeStamp
      * @param string $target
-     * @param UNKNOWN $targetName
+     * @param  $targetName
      * @param float $version
      * @param string $transactionIdentifier
      * @param int $sequenceNmbr
      * @param string $transactionStatusCode
      * @param bool $retransmissionIndicator
-     * @param UNKNOWN $correlationID
+     * @param  $correlationID
      * @param string $primaryLangID
      * @param string $altLangID
-     * @param UNKNOWN $reqRespVersion
+     * @param  $reqRespVersion
      */
-    public function __construct(\Ammonkc\Otaehi\StructType\POS_Type $pOS = null, \Ammonkc\Otaehi\StructType\VehResRQCore $vehResRQCore = null, \Ammonkc\Otaehi\StructType\VehResRQInfo $vehResRQInfo = null, \Ammonkc\Otaehi\StructType\DonationType $donationInformation = null, UNKNOWN $echoToken = null, $timeStamp = null, $target = null, UNKNOWN $targetName = null, $version = null, $transactionIdentifier = null, $sequenceNmbr = null, $transactionStatusCode = null, $retransmissionIndicator = null, UNKNOWN $correlationID = null, $primaryLangID = null, $altLangID = null, UNKNOWN $reqRespVersion = null)
+    public function __construct(\Ammonkc\Otaehi\StructType\POS_Type $pOS = null, \Ammonkc\Otaehi\StructType\VehResRQCore $vehResRQCore = null, \Ammonkc\Otaehi\StructType\VehResRQInfo $vehResRQInfo = null, \Ammonkc\Otaehi\StructType\DonationType $donationInformation = null,  $echoToken = null, $timeStamp = null, $target = null,  $targetName = null, $version = null, $transactionIdentifier = null, $sequenceNmbr = null, $transactionStatusCode = null, $retransmissionIndicator = null,  $correlationID = null, $primaryLangID = null, $altLangID = null,  $reqRespVersion = null)
     {
         $this
             ->setPOS($pOS)
@@ -227,7 +227,7 @@ class OTA_VehResRQ extends AbstractStructBase
     }
     /**
      * Get EchoToken value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getEchoToken()
     {
@@ -235,10 +235,10 @@ class OTA_VehResRQ extends AbstractStructBase
     }
     /**
      * Set EchoToken value
-     * @param UNKNOWN $echoToken
+     * @param  $echoToken
      * @return \Ammonkc\Otaehi\StructType\OTA_VehResRQ
      */
-    public function setEchoToken(UNKNOWN $echoToken = null)
+    public function setEchoToken( $echoToken = null)
     {
         $this->EchoToken = $echoToken;
         return $this;
@@ -289,7 +289,7 @@ class OTA_VehResRQ extends AbstractStructBase
     }
     /**
      * Get TargetName value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getTargetName()
     {
@@ -297,10 +297,10 @@ class OTA_VehResRQ extends AbstractStructBase
     }
     /**
      * Set TargetName value
-     * @param UNKNOWN $targetName
+     * @param  $targetName
      * @return \Ammonkc\Otaehi\StructType\OTA_VehResRQ
      */
-    public function setTargetName(UNKNOWN $targetName = null)
+    public function setTargetName( $targetName = null)
     {
         $this->TargetName = $targetName;
         return $this;
@@ -409,7 +409,7 @@ class OTA_VehResRQ extends AbstractStructBase
     }
     /**
      * Get CorrelationID value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getCorrelationID()
     {
@@ -417,10 +417,10 @@ class OTA_VehResRQ extends AbstractStructBase
     }
     /**
      * Set CorrelationID value
-     * @param UNKNOWN $correlationID
+     * @param  $correlationID
      * @return \Ammonkc\Otaehi\StructType\OTA_VehResRQ
      */
-    public function setCorrelationID(UNKNOWN $correlationID = null)
+    public function setCorrelationID( $correlationID = null)
     {
         $this->CorrelationID = $correlationID;
         return $this;
@@ -471,7 +471,7 @@ class OTA_VehResRQ extends AbstractStructBase
     }
     /**
      * Get ReqRespVersion value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getReqRespVersion()
     {
@@ -479,10 +479,10 @@ class OTA_VehResRQ extends AbstractStructBase
     }
     /**
      * Set ReqRespVersion value
-     * @param UNKNOWN $reqRespVersion
+     * @param  $reqRespVersion
      * @return \Ammonkc\Otaehi\StructType\OTA_VehResRQ
      */
-    public function setReqRespVersion(UNKNOWN $reqRespVersion = null)
+    public function setReqRespVersion( $reqRespVersion = null)
     {
         $this->ReqRespVersion = $reqRespVersion;
         return $this;

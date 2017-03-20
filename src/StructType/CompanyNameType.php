@@ -12,30 +12,29 @@ class CompanyNameType extends AbstractStructBase
 {
     /**
      * The Division
-     * @var UNKNOWN
+     * @var
      */
     public $Division;
     /**
      * The Department
-     * @var UNKNOWN
+     * @var
      */
     public $Department;
     /**
      * Constructor method for CompanyNameType
      * @uses CompanyNameType::setDivision()
      * @uses CompanyNameType::setDepartment()
-     * @param UNKNOWN $division
-     * @param UNKNOWN $department
+     * @param  $division
+     * @param  $department
      */
-    public function __construct(UNKNOWN $division = null, UNKNOWN $department = null)
+    public function __construct( $division = null,  $department = null)
     {
-        $this
-            ->setDivision($division)
-            ->setDepartment($department);
+        $this->setDivision($division)
+             ->setDepartment($department);
     }
     /**
      * Get Division value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getDivision()
     {
@@ -43,17 +42,17 @@ class CompanyNameType extends AbstractStructBase
     }
     /**
      * Set Division value
-     * @param UNKNOWN $division
+     * @param  $division
      * @return \Ammonkc\Otaehi\StructType\CompanyNameType
      */
-    public function setDivision(UNKNOWN $division = null)
+    public function setDivision( $division = null)
     {
         $this->Division = $division;
         return $this;
     }
     /**
      * Get Department value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getDepartment()
     {
@@ -61,10 +60,10 @@ class CompanyNameType extends AbstractStructBase
     }
     /**
      * Set Department value
-     * @param UNKNOWN $department
+     * @param  $department
      * @return \Ammonkc\Otaehi\StructType\CompanyNameType
      */
-    public function setDepartment(UNKNOWN $department = null)
+    public function setDepartment( $department = null)
     {
         $this->Department = $department;
         return $this;

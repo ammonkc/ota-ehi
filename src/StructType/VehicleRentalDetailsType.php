@@ -27,7 +27,7 @@ class VehicleRentalDetailsType extends AbstractStructBase
     public $ConditionReport;
     /**
      * The ParkingLocation
-     * @var UNKNOWN
+     * @var
      */
     public $ParkingLocation;
     /**
@@ -39,9 +39,9 @@ class VehicleRentalDetailsType extends AbstractStructBase
      * @param \Ammonkc\Otaehi\StructType\FuelLevelDetails $fuelLevelDetails
      * @param \Ammonkc\Otaehi\StructType\OdometerReading $odometerReading
      * @param \Ammonkc\Otaehi\StructType\ConditionReport $conditionReport
-     * @param UNKNOWN $parkingLocation
+     * @param  $parkingLocation
      */
-    public function __construct(\Ammonkc\Otaehi\StructType\FuelLevelDetails $fuelLevelDetails = null, \Ammonkc\Otaehi\StructType\OdometerReading $odometerReading = null, \Ammonkc\Otaehi\StructType\ConditionReport $conditionReport = null, UNKNOWN $parkingLocation = null)
+    public function __construct(\Ammonkc\Otaehi\StructType\FuelLevelDetails $fuelLevelDetails = null, \Ammonkc\Otaehi\StructType\OdometerReading $odometerReading = null, \Ammonkc\Otaehi\StructType\ConditionReport $conditionReport = null,  $parkingLocation = null)
     {
         $this
             ->setFuelLevelDetails($fuelLevelDetails)
@@ -105,7 +105,7 @@ class VehicleRentalDetailsType extends AbstractStructBase
     }
     /**
      * Get ParkingLocation value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getParkingLocation()
     {
@@ -113,10 +113,10 @@ class VehicleRentalDetailsType extends AbstractStructBase
     }
     /**
      * Set ParkingLocation value
-     * @param UNKNOWN $parkingLocation
+     * @param  $parkingLocation
      * @return \Ammonkc\Otaehi\StructType\VehicleRentalDetailsType
      */
-    public function setParkingLocation(UNKNOWN $parkingLocation = null)
+    public function setParkingLocation( $parkingLocation = null)
     {
         $this->ParkingLocation = $parkingLocation;
         return $this;

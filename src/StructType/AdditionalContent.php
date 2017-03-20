@@ -12,22 +12,22 @@ class AdditionalContent extends AbstractStructBase
 {
     /**
      * The ContentGroupCode
-     * @var UNKNOWN
+     * @var
      */
     public $ContentGroupCode;
     /**
      * Constructor method for AdditionalContent
      * @uses AdditionalContent::setContentGroupCode()
-     * @param UNKNOWN $contentGroupCode
+     * @param  $contentGroupCode
      */
-    public function __construct(UNKNOWN $contentGroupCode = null)
+    public function __construct( $contentGroupCode = null)
     {
         $this
             ->setContentGroupCode($contentGroupCode);
     }
     /**
      * Get ContentGroupCode value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getContentGroupCode()
     {
@@ -35,10 +35,10 @@ class AdditionalContent extends AbstractStructBase
     }
     /**
      * Set ContentGroupCode value
-     * @param UNKNOWN $contentGroupCode
+     * @param  $contentGroupCode
      * @return \Ammonkc\Otaehi\StructType\AdditionalContent
      */
-    public function setContentGroupCode(UNKNOWN $contentGroupCode = null)
+    public function setContentGroupCode( $contentGroupCode = null)
     {
         $this->ContentGroupCode = $contentGroupCode;
         return $this;

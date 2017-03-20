@@ -22,12 +22,12 @@ class TotalType extends AbstractStructBase
     public $TPA_Extensions;
     /**
      * The AmountBeforeTax
-     * @var UNKNOWN
+     * @var
      */
     public $AmountBeforeTax;
     /**
      * The AmountAfterTax
-     * @var UNKNOWN
+     * @var
      */
     public $AmountAfterTax;
     /**
@@ -37,7 +37,7 @@ class TotalType extends AbstractStructBase
     public $AdditionalFeesExcludedIndicator;
     /**
      * The Type
-     * @var UNKNOWN
+     * @var
      */
     public $Type;
     /**
@@ -52,7 +52,7 @@ class TotalType extends AbstractStructBase
     public $RateOverrideIndicator;
     /**
      * The AmountIncludingMarkup
-     * @var UNKNOWN
+     * @var
      */
     public $AmountIncludingMarkup;
     /**
@@ -68,15 +68,15 @@ class TotalType extends AbstractStructBase
      * @uses TotalType::setAmountIncludingMarkup()
      * @param mixed $taxes
      * @param mixed $tPA_Extensions
-     * @param UNKNOWN $amountBeforeTax
-     * @param UNKNOWN $amountAfterTax
+     * @param  $amountBeforeTax
+     * @param  $amountAfterTax
      * @param bool $additionalFeesExcludedIndicator
-     * @param UNKNOWN $type
+     * @param  $type
      * @param bool $serviceOverrideIndicator
      * @param bool $rateOverrideIndicator
-     * @param UNKNOWN $amountIncludingMarkup
+     * @param  $amountIncludingMarkup
      */
-    public function __construct($taxes = null, $tPA_Extensions = null, UNKNOWN $amountBeforeTax = null, UNKNOWN $amountAfterTax = null, $additionalFeesExcludedIndicator = null, UNKNOWN $type = null, $serviceOverrideIndicator = null, $rateOverrideIndicator = null, UNKNOWN $amountIncludingMarkup = null)
+    public function __construct($taxes = null, $tPA_Extensions = null,  $amountBeforeTax = null,  $amountAfterTax = null, $additionalFeesExcludedIndicator = null,  $type = null, $serviceOverrideIndicator = null, $rateOverrideIndicator = null,  $amountIncludingMarkup = null)
     {
         $this
             ->setTaxes($taxes)
@@ -127,7 +127,7 @@ class TotalType extends AbstractStructBase
     }
     /**
      * Get AmountBeforeTax value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getAmountBeforeTax()
     {
@@ -135,17 +135,17 @@ class TotalType extends AbstractStructBase
     }
     /**
      * Set AmountBeforeTax value
-     * @param UNKNOWN $amountBeforeTax
+     * @param  $amountBeforeTax
      * @return \Ammonkc\Otaehi\StructType\TotalType
      */
-    public function setAmountBeforeTax(UNKNOWN $amountBeforeTax = null)
+    public function setAmountBeforeTax( $amountBeforeTax = null)
     {
         $this->AmountBeforeTax = $amountBeforeTax;
         return $this;
     }
     /**
      * Get AmountAfterTax value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getAmountAfterTax()
     {
@@ -153,10 +153,10 @@ class TotalType extends AbstractStructBase
     }
     /**
      * Set AmountAfterTax value
-     * @param UNKNOWN $amountAfterTax
+     * @param  $amountAfterTax
      * @return \Ammonkc\Otaehi\StructType\TotalType
      */
-    public function setAmountAfterTax(UNKNOWN $amountAfterTax = null)
+    public function setAmountAfterTax( $amountAfterTax = null)
     {
         $this->AmountAfterTax = $amountAfterTax;
         return $this;
@@ -181,7 +181,7 @@ class TotalType extends AbstractStructBase
     }
     /**
      * Get Type value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getType()
     {
@@ -189,10 +189,10 @@ class TotalType extends AbstractStructBase
     }
     /**
      * Set Type value
-     * @param UNKNOWN $type
+     * @param  $type
      * @return \Ammonkc\Otaehi\StructType\TotalType
      */
-    public function setType(UNKNOWN $type = null)
+    public function setType( $type = null)
     {
         $this->Type = $type;
         return $this;
@@ -235,7 +235,7 @@ class TotalType extends AbstractStructBase
     }
     /**
      * Get AmountIncludingMarkup value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getAmountIncludingMarkup()
     {
@@ -243,10 +243,10 @@ class TotalType extends AbstractStructBase
     }
     /**
      * Set AmountIncludingMarkup value
-     * @param UNKNOWN $amountIncludingMarkup
+     * @param  $amountIncludingMarkup
      * @return \Ammonkc\Otaehi\StructType\TotalType
      */
-    public function setAmountIncludingMarkup(UNKNOWN $amountIncludingMarkup = null)
+    public function setAmountIncludingMarkup( $amountIncludingMarkup = null)
     {
         $this->AmountIncludingMarkup = $amountIncludingMarkup;
         return $this;

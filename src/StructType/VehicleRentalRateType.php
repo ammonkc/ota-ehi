@@ -47,7 +47,7 @@ class VehicleRentalRateType extends AbstractStructBase
     public $NoShowFeeInfo;
     /**
      * The QuoteID
-     * @var UNKNOWN
+     * @var
      */
     public $QuoteID;
     /**
@@ -67,9 +67,9 @@ class VehicleRentalRateType extends AbstractStructBase
      * @param \Ammonkc\Otaehi\StructType\RateGuarantee $rateGuarantee
      * @param \Ammonkc\Otaehi\StructType\PickupReturnRule $pickupReturnRule
      * @param mixed $noShowFeeInfo
-     * @param UNKNOWN $quoteID
+     * @param  $quoteID
      */
-    public function __construct(\Ammonkc\Otaehi\StructType\RateDistance $rateDistance = null, \Ammonkc\Otaehi\StructType\VehicleCharges $vehicleCharges = null, \Ammonkc\Otaehi\StructType\RateQualifier $rateQualifier = null, \Ammonkc\Otaehi\StructType\RateRestrictions $rateRestrictions = null, \Ammonkc\Otaehi\StructType\RateGuarantee $rateGuarantee = null, \Ammonkc\Otaehi\StructType\PickupReturnRule $pickupReturnRule = null, $noShowFeeInfo = null, UNKNOWN $quoteID = null)
+    public function __construct(\Ammonkc\Otaehi\StructType\RateDistance $rateDistance = null, \Ammonkc\Otaehi\StructType\VehicleCharges $vehicleCharges = null, \Ammonkc\Otaehi\StructType\RateQualifier $rateQualifier = null, \Ammonkc\Otaehi\StructType\RateRestrictions $rateRestrictions = null, \Ammonkc\Otaehi\StructType\RateGuarantee $rateGuarantee = null, \Ammonkc\Otaehi\StructType\PickupReturnRule $pickupReturnRule = null, $noShowFeeInfo = null,  $quoteID = null)
     {
         $this
             ->setRateDistance($rateDistance)
@@ -209,7 +209,7 @@ class VehicleRentalRateType extends AbstractStructBase
     }
     /**
      * Get QuoteID value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getQuoteID()
     {
@@ -217,10 +217,10 @@ class VehicleRentalRateType extends AbstractStructBase
     }
     /**
      * Set QuoteID value
-     * @param UNKNOWN $quoteID
+     * @param  $quoteID
      * @return \Ammonkc\Otaehi\StructType\VehicleRentalRateType
      */
-    public function setQuoteID(UNKNOWN $quoteID = null)
+    public function setQuoteID( $quoteID = null)
     {
         $this->QuoteID = $quoteID;
         return $this;

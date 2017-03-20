@@ -102,7 +102,7 @@ class CustomerType extends AbstractStructBase
     public $Deceased;
     /**
      * The LockoutType
-     * @var UNKNOWN
+     * @var
      */
     public $LockoutType;
     /**
@@ -112,12 +112,12 @@ class CustomerType extends AbstractStructBase
     public $VIP_Indicator;
     /**
      * The Text
-     * @var UNKNOWN
+     * @var
      */
     public $Text;
     /**
      * The CustomerValue
-     * @var UNKNOWN
+     * @var
      */
     public $CustomerValue;
     /**
@@ -132,7 +132,7 @@ class CustomerType extends AbstractStructBase
     public $PreviouslyMarriedIndicator;
     /**
      * The ChildQuantity
-     * @var UNKNOWN
+     * @var
      */
     public $ChildQuantity;
     /**
@@ -180,15 +180,15 @@ class CustomerType extends AbstractStructBase
      * @param \Ammonkc\Otaehi\StructType\AdditionalLanguage $additionalLanguage
      * @param mixed $tPA_Extensions
      * @param bool $deceased
-     * @param UNKNOWN $lockoutType
+     * @param  $lockoutType
      * @param bool $vIP_Indicator
-     * @param UNKNOWN $text
-     * @param UNKNOWN $customerValue
+     * @param  $text
+     * @param  $customerValue
      * @param string $maritalStatus
      * @param bool $previouslyMarriedIndicator
-     * @param UNKNOWN $childQuantity
+     * @param  $childQuantity
      */
-    public function __construct($personName = null, \Ammonkc\Otaehi\StructType\Telephone $telephone = null, \Ammonkc\Otaehi\StructType\Email $email = null, \Ammonkc\Otaehi\StructType\Address $address = null, \Ammonkc\Otaehi\StructType\URL $uRL = null, \Ammonkc\Otaehi\StructType\CitizenCountryName $citizenCountryName = null, \Ammonkc\Otaehi\StructType\PhysChallName $physChallName = null, $petInfo = null, \Ammonkc\Otaehi\StructType\PaymentForm $paymentForm = null, $relatedTraveler = null, $contactPerson = null, $document = null, \Ammonkc\Otaehi\StructType\CustLoyalty $custLoyalty = null, $employeeInfo = null, $employerInfo = null, \Ammonkc\Otaehi\StructType\AdditionalLanguage $additionalLanguage = null, $tPA_Extensions = null, $deceased = null, UNKNOWN $lockoutType = null, $vIP_Indicator = null, UNKNOWN $text = null, UNKNOWN $customerValue = null, $maritalStatus = null, $previouslyMarriedIndicator = null, UNKNOWN $childQuantity = null)
+    public function __construct($personName = null, \Ammonkc\Otaehi\StructType\Telephone $telephone = null, \Ammonkc\Otaehi\StructType\Email $email = null, \Ammonkc\Otaehi\StructType\Address $address = null, \Ammonkc\Otaehi\StructType\URL $uRL = null, \Ammonkc\Otaehi\StructType\CitizenCountryName $citizenCountryName = null, \Ammonkc\Otaehi\StructType\PhysChallName $physChallName = null, $petInfo = null, \Ammonkc\Otaehi\StructType\PaymentForm $paymentForm = null, $relatedTraveler = null, $contactPerson = null, $document = null, \Ammonkc\Otaehi\StructType\CustLoyalty $custLoyalty = null, $employeeInfo = null, $employerInfo = null, \Ammonkc\Otaehi\StructType\AdditionalLanguage $additionalLanguage = null, $tPA_Extensions = null, $deceased = null,  $lockoutType = null, $vIP_Indicator = null,  $text = null,  $customerValue = null, $maritalStatus = null, $previouslyMarriedIndicator = null,  $childQuantity = null)
     {
         $this
             ->setPersonName($personName)
@@ -543,7 +543,7 @@ class CustomerType extends AbstractStructBase
     }
     /**
      * Get LockoutType value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getLockoutType()
     {
@@ -551,10 +551,10 @@ class CustomerType extends AbstractStructBase
     }
     /**
      * Set LockoutType value
-     * @param UNKNOWN $lockoutType
+     * @param  $lockoutType
      * @return \Ammonkc\Otaehi\StructType\CustomerType
      */
-    public function setLockoutType(UNKNOWN $lockoutType = null)
+    public function setLockoutType( $lockoutType = null)
     {
         $this->LockoutType = $lockoutType;
         return $this;
@@ -579,7 +579,7 @@ class CustomerType extends AbstractStructBase
     }
     /**
      * Get Text value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getText()
     {
@@ -587,17 +587,17 @@ class CustomerType extends AbstractStructBase
     }
     /**
      * Set Text value
-     * @param UNKNOWN $text
+     * @param  $text
      * @return \Ammonkc\Otaehi\StructType\CustomerType
      */
-    public function setText(UNKNOWN $text = null)
+    public function setText( $text = null)
     {
         $this->Text = $text;
         return $this;
     }
     /**
      * Get CustomerValue value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getCustomerValue()
     {
@@ -605,10 +605,10 @@ class CustomerType extends AbstractStructBase
     }
     /**
      * Set CustomerValue value
-     * @param UNKNOWN $customerValue
+     * @param  $customerValue
      * @return \Ammonkc\Otaehi\StructType\CustomerType
      */
-    public function setCustomerValue(UNKNOWN $customerValue = null)
+    public function setCustomerValue( $customerValue = null)
     {
         $this->CustomerValue = $customerValue;
         return $this;
@@ -655,7 +655,7 @@ class CustomerType extends AbstractStructBase
     }
     /**
      * Get ChildQuantity value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getChildQuantity()
     {
@@ -663,10 +663,10 @@ class CustomerType extends AbstractStructBase
     }
     /**
      * Set ChildQuantity value
-     * @param UNKNOWN $childQuantity
+     * @param  $childQuantity
      * @return \Ammonkc\Otaehi\StructType\CustomerType
      */
-    public function setChildQuantity(UNKNOWN $childQuantity = null)
+    public function setChildQuantity( $childQuantity = null)
     {
         $this->ChildQuantity = $childQuantity;
         return $this;

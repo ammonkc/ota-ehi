@@ -17,27 +17,27 @@ class VehiclePrefType extends AbstractStructBase
     public $VehMakeModel;
     /**
      * The TypePref
-     * @var UNKNOWN
+     * @var
      */
     public $TypePref;
     /**
      * The ClassPref
-     * @var UNKNOWN
+     * @var
      */
     public $ClassPref;
     /**
      * The AirConditionPref
-     * @var UNKNOWN
+     * @var
      */
     public $AirConditionPref;
     /**
      * The TransmissionPref
-     * @var UNKNOWN
+     * @var
      */
     public $TransmissionPref;
     /**
      * The VendorCarType
-     * @var UNKNOWN
+     * @var
      */
     public $VendorCarType;
     /**
@@ -55,14 +55,14 @@ class VehiclePrefType extends AbstractStructBase
      * @uses VehiclePrefType::setVendorCarType()
      * @uses VehiclePrefType::setVehicleQty()
      * @param \Ammonkc\Otaehi\StructType\VehMakeModel $vehMakeModel
-     * @param UNKNOWN $typePref
-     * @param UNKNOWN $classPref
-     * @param UNKNOWN $airConditionPref
-     * @param UNKNOWN $transmissionPref
-     * @param UNKNOWN $vendorCarType
+     * @param  $typePref
+     * @param  $classPref
+     * @param  $airConditionPref
+     * @param  $transmissionPref
+     * @param  $vendorCarType
      * @param int $vehicleQty
      */
-    public function __construct(\Ammonkc\Otaehi\StructType\VehMakeModel $vehMakeModel = null, UNKNOWN $typePref = null, UNKNOWN $classPref = null, UNKNOWN $airConditionPref = null, UNKNOWN $transmissionPref = null, UNKNOWN $vendorCarType = null, $vehicleQty = null)
+    public function __construct(\Ammonkc\Otaehi\StructType\VehMakeModel $vehMakeModel = null,  $typePref = null,  $classPref = null,  $airConditionPref = null,  $transmissionPref = null,  $vendorCarType = null, $vehicleQty = null)
     {
         $this
             ->setVehMakeModel($vehMakeModel)
@@ -93,7 +93,7 @@ class VehiclePrefType extends AbstractStructBase
     }
     /**
      * Get TypePref value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getTypePref()
     {
@@ -101,17 +101,17 @@ class VehiclePrefType extends AbstractStructBase
     }
     /**
      * Set TypePref value
-     * @param UNKNOWN $typePref
+     * @param  $typePref
      * @return \Ammonkc\Otaehi\StructType\VehiclePrefType
      */
-    public function setTypePref(UNKNOWN $typePref = null)
+    public function setTypePref( $typePref = null)
     {
         $this->TypePref = $typePref;
         return $this;
     }
     /**
      * Get ClassPref value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getClassPref()
     {
@@ -119,17 +119,17 @@ class VehiclePrefType extends AbstractStructBase
     }
     /**
      * Set ClassPref value
-     * @param UNKNOWN $classPref
+     * @param  $classPref
      * @return \Ammonkc\Otaehi\StructType\VehiclePrefType
      */
-    public function setClassPref(UNKNOWN $classPref = null)
+    public function setClassPref( $classPref = null)
     {
         $this->ClassPref = $classPref;
         return $this;
     }
     /**
      * Get AirConditionPref value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getAirConditionPref()
     {
@@ -137,17 +137,17 @@ class VehiclePrefType extends AbstractStructBase
     }
     /**
      * Set AirConditionPref value
-     * @param UNKNOWN $airConditionPref
+     * @param  $airConditionPref
      * @return \Ammonkc\Otaehi\StructType\VehiclePrefType
      */
-    public function setAirConditionPref(UNKNOWN $airConditionPref = null)
+    public function setAirConditionPref( $airConditionPref = null)
     {
         $this->AirConditionPref = $airConditionPref;
         return $this;
     }
     /**
      * Get TransmissionPref value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getTransmissionPref()
     {
@@ -155,17 +155,17 @@ class VehiclePrefType extends AbstractStructBase
     }
     /**
      * Set TransmissionPref value
-     * @param UNKNOWN $transmissionPref
+     * @param  $transmissionPref
      * @return \Ammonkc\Otaehi\StructType\VehiclePrefType
      */
-    public function setTransmissionPref(UNKNOWN $transmissionPref = null)
+    public function setTransmissionPref( $transmissionPref = null)
     {
         $this->TransmissionPref = $transmissionPref;
         return $this;
     }
     /**
      * Get VendorCarType value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getVendorCarType()
     {
@@ -173,10 +173,10 @@ class VehiclePrefType extends AbstractStructBase
     }
     /**
      * Set VendorCarType value
-     * @param UNKNOWN $vendorCarType
+     * @param  $vendorCarType
      * @return \Ammonkc\Otaehi\StructType\VehiclePrefType
      */
-    public function setVendorCarType(UNKNOWN $vendorCarType = null)
+    public function setVendorCarType( $vendorCarType = null)
     {
         $this->VendorCarType = $vendorCarType;
         return $this;

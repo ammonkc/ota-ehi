@@ -17,17 +17,17 @@ class TotalCharge extends AbstractStructBase
     public $RateConvertInd;
     /**
      * The RateTotalAmount
-     * @var UNKNOWN
+     * @var
      */
     public $RateTotalAmount;
     /**
      * The EstimatedTotalAmount
-     * @var UNKNOWN
+     * @var
      */
     public $EstimatedTotalAmount;
     /**
      * The CurrencyCode
-     * @var UNKNOWN
+     * @var
      */
     public $CurrencyCode;
     /**
@@ -43,12 +43,12 @@ class TotalCharge extends AbstractStructBase
      * @uses TotalCharge::setCurrencyCode()
      * @uses TotalCharge::setDecimalPlaces()
      * @param bool $rateConvertInd
-     * @param UNKNOWN $rateTotalAmount
-     * @param UNKNOWN $estimatedTotalAmount
-     * @param UNKNOWN $currencyCode
+     * @param  $rateTotalAmount
+     * @param  $estimatedTotalAmount
+     * @param  $currencyCode
      * @param int $decimalPlaces
      */
-    public function __construct($rateConvertInd = null, UNKNOWN $rateTotalAmount = null, UNKNOWN $estimatedTotalAmount = null, UNKNOWN $currencyCode = null, $decimalPlaces = null)
+    public function __construct($rateConvertInd = null,  $rateTotalAmount = null,  $estimatedTotalAmount = null,  $currencyCode = null, $decimalPlaces = null)
     {
         $this
             ->setRateConvertInd($rateConvertInd)
@@ -77,7 +77,7 @@ class TotalCharge extends AbstractStructBase
     }
     /**
      * Get RateTotalAmount value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getRateTotalAmount()
     {
@@ -85,17 +85,17 @@ class TotalCharge extends AbstractStructBase
     }
     /**
      * Set RateTotalAmount value
-     * @param UNKNOWN $rateTotalAmount
+     * @param  $rateTotalAmount
      * @return \Ammonkc\Otaehi\StructType\TotalCharge
      */
-    public function setRateTotalAmount(UNKNOWN $rateTotalAmount = null)
+    public function setRateTotalAmount( $rateTotalAmount = null)
     {
         $this->RateTotalAmount = $rateTotalAmount;
         return $this;
     }
     /**
      * Get EstimatedTotalAmount value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getEstimatedTotalAmount()
     {
@@ -103,17 +103,17 @@ class TotalCharge extends AbstractStructBase
     }
     /**
      * Set EstimatedTotalAmount value
-     * @param UNKNOWN $estimatedTotalAmount
+     * @param  $estimatedTotalAmount
      * @return \Ammonkc\Otaehi\StructType\TotalCharge
      */
-    public function setEstimatedTotalAmount(UNKNOWN $estimatedTotalAmount = null)
+    public function setEstimatedTotalAmount( $estimatedTotalAmount = null)
     {
         $this->EstimatedTotalAmount = $estimatedTotalAmount;
         return $this;
     }
     /**
      * Get CurrencyCode value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getCurrencyCode()
     {
@@ -121,10 +121,10 @@ class TotalCharge extends AbstractStructBase
     }
     /**
      * Set CurrencyCode value
-     * @param UNKNOWN $currencyCode
+     * @param  $currencyCode
      * @return \Ammonkc\Otaehi\StructType\TotalCharge
      */
-    public function setCurrencyCode(UNKNOWN $currencyCode = null)
+    public function setCurrencyCode( $currencyCode = null)
     {
         $this->CurrencyCode = $currencyCode;
         return $this;

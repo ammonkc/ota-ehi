@@ -12,22 +12,22 @@ class DeductibleType extends AbstractStructBase
 {
     /**
      * The LiabilityAmount
-     * @var UNKNOWN
+     * @var
      */
     public $LiabilityAmount;
     /**
      * The ExcessAmount
-     * @var UNKNOWN
+     * @var
      */
     public $ExcessAmount;
     /**
      * Constructor method for DeductibleType
      * @uses DeductibleType::setLiabilityAmount()
      * @uses DeductibleType::setExcessAmount()
-     * @param UNKNOWN $liabilityAmount
-     * @param UNKNOWN $excessAmount
+     * @param  $liabilityAmount
+     * @param  $excessAmount
      */
-    public function __construct(UNKNOWN $liabilityAmount = null, UNKNOWN $excessAmount = null)
+    public function __construct( $liabilityAmount = null,  $excessAmount = null)
     {
         $this
             ->setLiabilityAmount($liabilityAmount)
@@ -35,7 +35,7 @@ class DeductibleType extends AbstractStructBase
     }
     /**
      * Get LiabilityAmount value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getLiabilityAmount()
     {
@@ -43,17 +43,17 @@ class DeductibleType extends AbstractStructBase
     }
     /**
      * Set LiabilityAmount value
-     * @param UNKNOWN $liabilityAmount
+     * @param  $liabilityAmount
      * @return \Ammonkc\Otaehi\StructType\DeductibleType
      */
-    public function setLiabilityAmount(UNKNOWN $liabilityAmount = null)
+    public function setLiabilityAmount( $liabilityAmount = null)
     {
         $this->LiabilityAmount = $liabilityAmount;
         return $this;
     }
     /**
      * Get ExcessAmount value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getExcessAmount()
     {
@@ -61,10 +61,10 @@ class DeductibleType extends AbstractStructBase
     }
     /**
      * Set ExcessAmount value
-     * @param UNKNOWN $excessAmount
+     * @param  $excessAmount
      * @return \Ammonkc\Otaehi\StructType\DeductibleType
      */
-    public function setExcessAmount(UNKNOWN $excessAmount = null)
+    public function setExcessAmount( $excessAmount = null)
     {
         $this->ExcessAmount = $excessAmount;
         return $this;

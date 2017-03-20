@@ -27,7 +27,7 @@ class VehicleType extends AbstractStructBase
     public $VehIdentity;
     /**
      * The PassengerQuantity
-     * @var UNKNOWN
+     * @var
      */
     public $PassengerQuantity;
     /**
@@ -37,17 +37,17 @@ class VehicleType extends AbstractStructBase
     public $BaggageQuantity;
     /**
      * The VendorCarType
-     * @var UNKNOWN
+     * @var
      */
     public $VendorCarType;
     /**
      * The OdometerUnitOfMeasure
-     * @var UNKNOWN
+     * @var
      */
     public $OdometerUnitOfMeasure;
     /**
      * The Description
-     * @var UNKNOWN
+     * @var
      */
     public $Description;
     /**
@@ -63,13 +63,13 @@ class VehicleType extends AbstractStructBase
      * @param \Ammonkc\Otaehi\StructType\VehMakeModel $vehMakeModel
      * @param string $pictureURL
      * @param \Ammonkc\Otaehi\StructType\VehIdentity $vehIdentity
-     * @param UNKNOWN $passengerQuantity
+     * @param  $passengerQuantity
      * @param int $baggageQuantity
-     * @param UNKNOWN $vendorCarType
-     * @param UNKNOWN $odometerUnitOfMeasure
-     * @param UNKNOWN $description
+     * @param  $vendorCarType
+     * @param  $odometerUnitOfMeasure
+     * @param  $description
      */
-    public function __construct(\Ammonkc\Otaehi\StructType\VehMakeModel $vehMakeModel = null, $pictureURL = null, \Ammonkc\Otaehi\StructType\VehIdentity $vehIdentity = null, UNKNOWN $passengerQuantity = null, $baggageQuantity = null, UNKNOWN $vendorCarType = null, UNKNOWN $odometerUnitOfMeasure = null, UNKNOWN $description = null)
+    public function __construct(\Ammonkc\Otaehi\StructType\VehMakeModel $vehMakeModel = null, $pictureURL = null, \Ammonkc\Otaehi\StructType\VehIdentity $vehIdentity = null,  $passengerQuantity = null, $baggageQuantity = null,  $vendorCarType = null,  $odometerUnitOfMeasure = null,  $description = null)
     {
         $this
             ->setVehMakeModel($vehMakeModel)
@@ -141,7 +141,7 @@ class VehicleType extends AbstractStructBase
     }
     /**
      * Get PassengerQuantity value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getPassengerQuantity()
     {
@@ -149,10 +149,10 @@ class VehicleType extends AbstractStructBase
     }
     /**
      * Set PassengerQuantity value
-     * @param UNKNOWN $passengerQuantity
+     * @param  $passengerQuantity
      * @return \Ammonkc\Otaehi\StructType\VehicleType
      */
-    public function setPassengerQuantity(UNKNOWN $passengerQuantity = null)
+    public function setPassengerQuantity( $passengerQuantity = null)
     {
         $this->PassengerQuantity = $passengerQuantity;
         return $this;
@@ -181,7 +181,7 @@ class VehicleType extends AbstractStructBase
     }
     /**
      * Get VendorCarType value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getVendorCarType()
     {
@@ -189,17 +189,17 @@ class VehicleType extends AbstractStructBase
     }
     /**
      * Set VendorCarType value
-     * @param UNKNOWN $vendorCarType
+     * @param  $vendorCarType
      * @return \Ammonkc\Otaehi\StructType\VehicleType
      */
-    public function setVendorCarType(UNKNOWN $vendorCarType = null)
+    public function setVendorCarType( $vendorCarType = null)
     {
         $this->VendorCarType = $vendorCarType;
         return $this;
     }
     /**
      * Get OdometerUnitOfMeasure value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getOdometerUnitOfMeasure()
     {
@@ -207,17 +207,17 @@ class VehicleType extends AbstractStructBase
     }
     /**
      * Set OdometerUnitOfMeasure value
-     * @param UNKNOWN $odometerUnitOfMeasure
+     * @param  $odometerUnitOfMeasure
      * @return \Ammonkc\Otaehi\StructType\VehicleType
      */
-    public function setOdometerUnitOfMeasure(UNKNOWN $odometerUnitOfMeasure = null)
+    public function setOdometerUnitOfMeasure( $odometerUnitOfMeasure = null)
     {
         $this->OdometerUnitOfMeasure = $odometerUnitOfMeasure;
         return $this;
     }
     /**
      * Get Description value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getDescription()
     {
@@ -225,10 +225,10 @@ class VehicleType extends AbstractStructBase
     }
     /**
      * Set Description value
-     * @param UNKNOWN $description
+     * @param  $description
      * @return \Ammonkc\Otaehi\StructType\VehicleType
      */
-    public function setDescription(UNKNOWN $description = null)
+    public function setDescription( $description = null)
     {
         $this->Description = $description;
         return $this;

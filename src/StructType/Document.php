@@ -12,22 +12,22 @@ class Document extends AbstractStructBase
 {
     /**
      * The DocID
-     * @var UNKNOWN
+     * @var
      */
     public $DocID;
     /**
      * The DocType
-     * @var UNKNOWN
+     * @var
      */
     public $DocType;
     /**
      * Constructor method for Document
      * @uses Document::setDocID()
      * @uses Document::setDocType()
-     * @param UNKNOWN $docID
-     * @param UNKNOWN $docType
+     * @param  $docID
+     * @param  $docType
      */
-    public function __construct(UNKNOWN $docID = null, UNKNOWN $docType = null)
+    public function __construct( $docID = null,  $docType = null)
     {
         $this
             ->setDocID($docID)
@@ -35,7 +35,7 @@ class Document extends AbstractStructBase
     }
     /**
      * Get DocID value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getDocID()
     {
@@ -43,17 +43,17 @@ class Document extends AbstractStructBase
     }
     /**
      * Set DocID value
-     * @param UNKNOWN $docID
+     * @param  $docID
      * @return \Ammonkc\Otaehi\StructType\Document
      */
-    public function setDocID(UNKNOWN $docID = null)
+    public function setDocID( $docID = null)
     {
         $this->DocID = $docID;
         return $this;
     }
     /**
      * Get DocType value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getDocType()
     {
@@ -61,10 +61,10 @@ class Document extends AbstractStructBase
     }
     /**
      * Set DocType value
-     * @param UNKNOWN $docType
+     * @param  $docType
      * @return \Ammonkc\Otaehi\StructType\Document
      */
-    public function setDocType(UNKNOWN $docType = null)
+    public function setDocType( $docType = null)
     {
         $this->DocType = $docType;
         return $this;

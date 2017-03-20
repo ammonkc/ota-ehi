@@ -12,12 +12,12 @@ class SpecialRequest extends AbstractStructBase
 {
     /**
      * The RequestCode
-     * @var UNKNOWN
+     * @var
      */
     public $RequestCode;
     /**
      * The CodeContext
-     * @var UNKNOWN
+     * @var
      */
     public $CodeContext;
     /**
@@ -30,11 +30,11 @@ class SpecialRequest extends AbstractStructBase
      * @uses SpecialRequest::setRequestCode()
      * @uses SpecialRequest::setCodeContext()
      * @uses SpecialRequest::setNumberOfUnits()
-     * @param UNKNOWN $requestCode
-     * @param UNKNOWN $codeContext
+     * @param  $requestCode
+     * @param  $codeContext
      * @param int $numberOfUnits
      */
-    public function __construct(UNKNOWN $requestCode = null, UNKNOWN $codeContext = null, $numberOfUnits = null)
+    public function __construct( $requestCode = null,  $codeContext = null, $numberOfUnits = null)
     {
         $this
             ->setRequestCode($requestCode)
@@ -43,7 +43,7 @@ class SpecialRequest extends AbstractStructBase
     }
     /**
      * Get RequestCode value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getRequestCode()
     {
@@ -51,17 +51,17 @@ class SpecialRequest extends AbstractStructBase
     }
     /**
      * Set RequestCode value
-     * @param UNKNOWN $requestCode
+     * @param  $requestCode
      * @return \Ammonkc\Otaehi\StructType\SpecialRequest
      */
-    public function setRequestCode(UNKNOWN $requestCode = null)
+    public function setRequestCode( $requestCode = null)
     {
         $this->RequestCode = $requestCode;
         return $this;
     }
     /**
      * Get CodeContext value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getCodeContext()
     {
@@ -69,10 +69,10 @@ class SpecialRequest extends AbstractStructBase
     }
     /**
      * Set CodeContext value
-     * @param UNKNOWN $codeContext
+     * @param  $codeContext
      * @return \Ammonkc\Otaehi\StructType\SpecialRequest
      */
-    public function setCodeContext(UNKNOWN $codeContext = null)
+    public function setCodeContext( $codeContext = null)
     {
         $this->CodeContext = $codeContext;
         return $this;

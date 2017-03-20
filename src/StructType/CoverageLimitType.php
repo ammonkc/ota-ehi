@@ -32,12 +32,12 @@ class CoverageLimitType extends AbstractStructBase
     public $TPA_Extensions;
     /**
      * The CoverageLevel
-     * @var UNKNOWN
+     * @var
      */
     public $CoverageLevel;
     /**
      * The CoverageType
-     * @var UNKNOWN
+     * @var
      */
     public $CoverageType;
     /**
@@ -64,12 +64,12 @@ class CoverageLimitType extends AbstractStructBase
      * @param \Ammonkc\Otaehi\StructType\PolicyLimit $policyLimit
      * @param \Ammonkc\Otaehi\StructType\IndividualLimit $individualLimit
      * @param mixed $tPA_Extensions
-     * @param UNKNOWN $coverageLevel
-     * @param UNKNOWN $coverageType
+     * @param  $coverageLevel
+     * @param  $coverageType
      * @param bool $unlimitedCoverage
      * @param bool $covered
      */
-    public function __construct(\Ammonkc\Otaehi\StructType\Deductible $deductible = null, \Ammonkc\Otaehi\StructType\PolicyLimit $policyLimit = null, \Ammonkc\Otaehi\StructType\IndividualLimit $individualLimit = null, $tPA_Extensions = null, UNKNOWN $coverageLevel = null, UNKNOWN $coverageType = null, $unlimitedCoverage = null, $covered = null)
+    public function __construct(\Ammonkc\Otaehi\StructType\Deductible $deductible = null, \Ammonkc\Otaehi\StructType\PolicyLimit $policyLimit = null, \Ammonkc\Otaehi\StructType\IndividualLimit $individualLimit = null, $tPA_Extensions = null,  $coverageLevel = null,  $coverageType = null, $unlimitedCoverage = null, $covered = null)
     {
         $this
             ->setDeductible($deductible)
@@ -155,7 +155,7 @@ class CoverageLimitType extends AbstractStructBase
     }
     /**
      * Get CoverageLevel value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getCoverageLevel()
     {
@@ -163,17 +163,17 @@ class CoverageLimitType extends AbstractStructBase
     }
     /**
      * Set CoverageLevel value
-     * @param UNKNOWN $coverageLevel
+     * @param  $coverageLevel
      * @return \Ammonkc\Otaehi\StructType\CoverageLimitType
      */
-    public function setCoverageLevel(UNKNOWN $coverageLevel = null)
+    public function setCoverageLevel( $coverageLevel = null)
     {
         $this->CoverageLevel = $coverageLevel;
         return $this;
     }
     /**
      * Get CoverageType value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getCoverageType()
     {
@@ -181,10 +181,10 @@ class CoverageLimitType extends AbstractStructBase
     }
     /**
      * Set CoverageType value
-     * @param UNKNOWN $coverageType
+     * @param  $coverageType
      * @return \Ammonkc\Otaehi\StructType\CoverageLimitType
      */
-    public function setCoverageType(UNKNOWN $coverageType = null)
+    public function setCoverageType( $coverageType = null)
     {
         $this->CoverageType = $coverageType;
         return $this;

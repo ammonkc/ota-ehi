@@ -12,17 +12,17 @@ class Product extends AbstractStructBase
 {
     /**
      * The ProductIssueDate
-     * @var UNKNOWN
+     * @var
      */
     public $ProductIssueDate;
     /**
      * The ProductID
-     * @var UNKNOWN
+     * @var
      */
     public $ProductID;
     /**
      * The ProductType
-     * @var UNKNOWN
+     * @var
      */
     public $ProductType;
     /**
@@ -32,12 +32,12 @@ class Product extends AbstractStructBase
     public $ProductQuantity;
     /**
      * The ProductSerialNumber
-     * @var UNKNOWN
+     * @var
      */
     public $ProductSerialNumber;
     /**
      * The DiscountCode
-     * @var UNKNOWN
+     * @var
      */
     public $DiscountCode;
     /**
@@ -47,7 +47,7 @@ class Product extends AbstractStructBase
     public $Status;
     /**
      * The ListOfRecipientRPH
-     * @var UNKNOWN
+     * @var
      */
     public $ListOfRecipientRPH;
     /**
@@ -60,16 +60,16 @@ class Product extends AbstractStructBase
      * @uses Product::setDiscountCode()
      * @uses Product::setStatus()
      * @uses Product::setListOfRecipientRPH()
-     * @param UNKNOWN $productIssueDate
-     * @param UNKNOWN $productID
-     * @param UNKNOWN $productType
+     * @param  $productIssueDate
+     * @param  $productID
+     * @param  $productType
      * @param int $productQuantity
-     * @param UNKNOWN $productSerialNumber
-     * @param UNKNOWN $discountCode
+     * @param  $productSerialNumber
+     * @param  $discountCode
      * @param string $status
-     * @param UNKNOWN $listOfRecipientRPH
+     * @param  $listOfRecipientRPH
      */
-    public function __construct(UNKNOWN $productIssueDate = null, UNKNOWN $productID = null, UNKNOWN $productType = null, $productQuantity = null, UNKNOWN $productSerialNumber = null, UNKNOWN $discountCode = null, $status = null, UNKNOWN $listOfRecipientRPH = null)
+    public function __construct( $productIssueDate = null,  $productID = null,  $productType = null, $productQuantity = null,  $productSerialNumber = null,  $discountCode = null, $status = null,  $listOfRecipientRPH = null)
     {
         $this
             ->setProductIssueDate($productIssueDate)
@@ -83,7 +83,7 @@ class Product extends AbstractStructBase
     }
     /**
      * Get ProductIssueDate value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getProductIssueDate()
     {
@@ -91,17 +91,17 @@ class Product extends AbstractStructBase
     }
     /**
      * Set ProductIssueDate value
-     * @param UNKNOWN $productIssueDate
+     * @param  $productIssueDate
      * @return \Ammonkc\Otaehi\StructType\Product
      */
-    public function setProductIssueDate(UNKNOWN $productIssueDate = null)
+    public function setProductIssueDate( $productIssueDate = null)
     {
         $this->ProductIssueDate = $productIssueDate;
         return $this;
     }
     /**
      * Get ProductID value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getProductID()
     {
@@ -109,17 +109,17 @@ class Product extends AbstractStructBase
     }
     /**
      * Set ProductID value
-     * @param UNKNOWN $productID
+     * @param  $productID
      * @return \Ammonkc\Otaehi\StructType\Product
      */
-    public function setProductID(UNKNOWN $productID = null)
+    public function setProductID( $productID = null)
     {
         $this->ProductID = $productID;
         return $this;
     }
     /**
      * Get ProductType value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getProductType()
     {
@@ -127,10 +127,10 @@ class Product extends AbstractStructBase
     }
     /**
      * Set ProductType value
-     * @param UNKNOWN $productType
+     * @param  $productType
      * @return \Ammonkc\Otaehi\StructType\Product
      */
-    public function setProductType(UNKNOWN $productType = null)
+    public function setProductType( $productType = null)
     {
         $this->ProductType = $productType;
         return $this;
@@ -159,7 +159,7 @@ class Product extends AbstractStructBase
     }
     /**
      * Get ProductSerialNumber value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getProductSerialNumber()
     {
@@ -167,17 +167,17 @@ class Product extends AbstractStructBase
     }
     /**
      * Set ProductSerialNumber value
-     * @param UNKNOWN $productSerialNumber
+     * @param  $productSerialNumber
      * @return \Ammonkc\Otaehi\StructType\Product
      */
-    public function setProductSerialNumber(UNKNOWN $productSerialNumber = null)
+    public function setProductSerialNumber( $productSerialNumber = null)
     {
         $this->ProductSerialNumber = $productSerialNumber;
         return $this;
     }
     /**
      * Get DiscountCode value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getDiscountCode()
     {
@@ -185,10 +185,10 @@ class Product extends AbstractStructBase
     }
     /**
      * Set DiscountCode value
-     * @param UNKNOWN $discountCode
+     * @param  $discountCode
      * @return \Ammonkc\Otaehi\StructType\Product
      */
-    public function setDiscountCode(UNKNOWN $discountCode = null)
+    public function setDiscountCode( $discountCode = null)
     {
         $this->DiscountCode = $discountCode;
         return $this;
@@ -217,7 +217,7 @@ class Product extends AbstractStructBase
     }
     /**
      * Get ListOfRecipientRPH value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getListOfRecipientRPH()
     {
@@ -225,10 +225,10 @@ class Product extends AbstractStructBase
     }
     /**
      * Set ListOfRecipientRPH value
-     * @param UNKNOWN $listOfRecipientRPH
+     * @param  $listOfRecipientRPH
      * @return \Ammonkc\Otaehi\StructType\Product
      */
-    public function setListOfRecipientRPH(UNKNOWN $listOfRecipientRPH = null)
+    public function setListOfRecipientRPH( $listOfRecipientRPH = null)
     {
         $this->ListOfRecipientRPH = $listOfRecipientRPH;
         return $this;

@@ -17,7 +17,7 @@ class AcceptablePayments extends AbstractStructBase
     public $AcceptablePayment;
     /**
      * The PaymentTypeCode
-     * @var UNKNOWN
+     * @var
      */
     public $PaymentTypeCode;
     /**
@@ -25,9 +25,9 @@ class AcceptablePayments extends AbstractStructBase
      * @uses AcceptablePayments::setAcceptablePayment()
      * @uses AcceptablePayments::setPaymentTypeCode()
      * @param \Ammonkc\Otaehi\StructType\AcceptablePayment $acceptablePayment
-     * @param UNKNOWN $paymentTypeCode
+     * @param  $paymentTypeCode
      */
-    public function __construct(\Ammonkc\Otaehi\StructType\AcceptablePayment $acceptablePayment = null, UNKNOWN $paymentTypeCode = null)
+    public function __construct(\Ammonkc\Otaehi\StructType\AcceptablePayment $acceptablePayment = null,  $paymentTypeCode = null)
     {
         $this
             ->setAcceptablePayment($acceptablePayment)
@@ -53,7 +53,7 @@ class AcceptablePayments extends AbstractStructBase
     }
     /**
      * Get PaymentTypeCode value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getPaymentTypeCode()
     {
@@ -61,10 +61,10 @@ class AcceptablePayments extends AbstractStructBase
     }
     /**
      * Set PaymentTypeCode value
-     * @param UNKNOWN $paymentTypeCode
+     * @param  $paymentTypeCode
      * @return \Ammonkc\Otaehi\StructType\AcceptablePayments
      */
-    public function setPaymentTypeCode(UNKNOWN $paymentTypeCode = null)
+    public function setPaymentTypeCode( $paymentTypeCode = null)
     {
         $this->PaymentTypeCode = $paymentTypeCode;
         return $this;

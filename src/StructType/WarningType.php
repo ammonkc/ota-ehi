@@ -12,22 +12,22 @@ class WarningType extends AbstractStructBase
 {
     /**
      * The Type
-     * @var UNKNOWN
+     * @var
      */
     public $Type;
     /**
      * The RPH
-     * @var UNKNOWN
+     * @var
      */
     public $RPH;
     /**
      * Constructor method for WarningType
      * @uses WarningType::setType()
      * @uses WarningType::setRPH()
-     * @param UNKNOWN $type
-     * @param UNKNOWN $rPH
+     * @param  $type
+     * @param  $rPH
      */
-    public function __construct(UNKNOWN $type = null, UNKNOWN $rPH = null)
+    public function __construct( $type = null,  $rPH = null)
     {
         $this
             ->setType($type)
@@ -35,7 +35,7 @@ class WarningType extends AbstractStructBase
     }
     /**
      * Get Type value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getType()
     {
@@ -43,17 +43,17 @@ class WarningType extends AbstractStructBase
     }
     /**
      * Set Type value
-     * @param UNKNOWN $type
+     * @param  $type
      * @return \Ammonkc\Otaehi\StructType\WarningType
      */
-    public function setType(UNKNOWN $type = null)
+    public function setType( $type = null)
     {
         $this->Type = $type;
         return $this;
     }
     /**
      * Get RPH value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getRPH()
     {
@@ -61,10 +61,10 @@ class WarningType extends AbstractStructBase
     }
     /**
      * Set RPH value
-     * @param UNKNOWN $rPH
+     * @param  $rPH
      * @return \Ammonkc\Otaehi\StructType\WarningType
      */
-    public function setRPH(UNKNOWN $rPH = null)
+    public function setRPH( $rPH = null)
     {
         $this->RPH = $rPH;
         return $this;

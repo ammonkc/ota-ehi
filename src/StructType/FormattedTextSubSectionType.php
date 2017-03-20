@@ -17,17 +17,17 @@ class FormattedTextSubSectionType extends AbstractStructBase
     public $Paragraph;
     /**
      * The SubTitle
-     * @var UNKNOWN
+     * @var
      */
     public $SubTitle;
     /**
      * The SubCode
-     * @var UNKNOWN
+     * @var
      */
     public $SubCode;
     /**
      * The SubSectionNumber
-     * @var UNKNOWN
+     * @var
      */
     public $SubSectionNumber;
     /**
@@ -37,11 +37,11 @@ class FormattedTextSubSectionType extends AbstractStructBase
      * @uses FormattedTextSubSectionType::setSubCode()
      * @uses FormattedTextSubSectionType::setSubSectionNumber()
      * @param mixed $paragraph
-     * @param UNKNOWN $subTitle
-     * @param UNKNOWN $subCode
-     * @param UNKNOWN $subSectionNumber
+     * @param  $subTitle
+     * @param  $subCode
+     * @param  $subSectionNumber
      */
-    public function __construct($paragraph = null, UNKNOWN $subTitle = null, UNKNOWN $subCode = null, UNKNOWN $subSectionNumber = null)
+    public function __construct($paragraph = null,  $subTitle = null,  $subCode = null,  $subSectionNumber = null)
     {
         $this
             ->setParagraph($paragraph)
@@ -69,7 +69,7 @@ class FormattedTextSubSectionType extends AbstractStructBase
     }
     /**
      * Get SubTitle value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getSubTitle()
     {
@@ -77,17 +77,17 @@ class FormattedTextSubSectionType extends AbstractStructBase
     }
     /**
      * Set SubTitle value
-     * @param UNKNOWN $subTitle
+     * @param  $subTitle
      * @return \Ammonkc\Otaehi\StructType\FormattedTextSubSectionType
      */
-    public function setSubTitle(UNKNOWN $subTitle = null)
+    public function setSubTitle( $subTitle = null)
     {
         $this->SubTitle = $subTitle;
         return $this;
     }
     /**
      * Get SubCode value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getSubCode()
     {
@@ -95,17 +95,17 @@ class FormattedTextSubSectionType extends AbstractStructBase
     }
     /**
      * Set SubCode value
-     * @param UNKNOWN $subCode
+     * @param  $subCode
      * @return \Ammonkc\Otaehi\StructType\FormattedTextSubSectionType
      */
-    public function setSubCode(UNKNOWN $subCode = null)
+    public function setSubCode( $subCode = null)
     {
         $this->SubCode = $subCode;
         return $this;
     }
     /**
      * Get SubSectionNumber value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getSubSectionNumber()
     {
@@ -113,10 +113,10 @@ class FormattedTextSubSectionType extends AbstractStructBase
     }
     /**
      * Set SubSectionNumber value
-     * @param UNKNOWN $subSectionNumber
+     * @param  $subSectionNumber
      * @return \Ammonkc\Otaehi\StructType\FormattedTextSubSectionType
      */
-    public function setSubSectionNumber(UNKNOWN $subSectionNumber = null)
+    public function setSubSectionNumber( $subSectionNumber = null)
     {
         $this->SubSectionNumber = $subSectionNumber;
         return $this;

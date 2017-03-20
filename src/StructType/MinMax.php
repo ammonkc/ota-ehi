@@ -12,12 +12,12 @@ class MinMax extends AbstractStructBase
 {
     /**
      * The MaxCharge
-     * @var UNKNOWN
+     * @var
      */
     public $MaxCharge;
     /**
      * The MinCharge
-     * @var UNKNOWN
+     * @var
      */
     public $MinCharge;
     /**
@@ -30,11 +30,11 @@ class MinMax extends AbstractStructBase
      * @uses MinMax::setMaxCharge()
      * @uses MinMax::setMinCharge()
      * @uses MinMax::setMaxChargeDays()
-     * @param UNKNOWN $maxCharge
-     * @param UNKNOWN $minCharge
+     * @param  $maxCharge
+     * @param  $minCharge
      * @param int $maxChargeDays
      */
-    public function __construct(UNKNOWN $maxCharge = null, UNKNOWN $minCharge = null, $maxChargeDays = null)
+    public function __construct( $maxCharge = null,  $minCharge = null, $maxChargeDays = null)
     {
         $this
             ->setMaxCharge($maxCharge)
@@ -43,7 +43,7 @@ class MinMax extends AbstractStructBase
     }
     /**
      * Get MaxCharge value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getMaxCharge()
     {
@@ -51,17 +51,17 @@ class MinMax extends AbstractStructBase
     }
     /**
      * Set MaxCharge value
-     * @param UNKNOWN $maxCharge
+     * @param  $maxCharge
      * @return \Ammonkc\Otaehi\StructType\MinMax
      */
-    public function setMaxCharge(UNKNOWN $maxCharge = null)
+    public function setMaxCharge( $maxCharge = null)
     {
         $this->MaxCharge = $maxCharge;
         return $this;
     }
     /**
      * Get MinCharge value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getMinCharge()
     {
@@ -69,10 +69,10 @@ class MinMax extends AbstractStructBase
     }
     /**
      * Set MinCharge value
-     * @param UNKNOWN $minCharge
+     * @param  $minCharge
      * @return \Ammonkc\Otaehi\StructType\MinMax
      */
-    public function setMinCharge(UNKNOWN $minCharge = null)
+    public function setMinCharge( $minCharge = null)
     {
         $this->MinCharge = $minCharge;
         return $this;

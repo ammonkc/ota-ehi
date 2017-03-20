@@ -12,22 +12,22 @@ class CountryNameType extends AbstractStructBase
 {
     /**
      * The Code
-     * @var UNKNOWN
+     * @var
      */
     public $Code;
     /**
      * Constructor method for CountryNameType
      * @uses CountryNameType::setCode()
-     * @param UNKNOWN $code
+     * @param  $code
      */
-    public function __construct(UNKNOWN $code = null)
+    public function __construct( $code = null)
     {
         $this
             ->setCode($code);
     }
     /**
      * Get Code value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getCode()
     {
@@ -35,10 +35,10 @@ class CountryNameType extends AbstractStructBase
     }
     /**
      * Set Code value
-     * @param UNKNOWN $code
+     * @param  $code
      * @return \Ammonkc\Otaehi\StructType\CountryNameType
      */
-    public function setCode(UNKNOWN $code = null)
+    public function setCode( $code = null)
     {
         $this->Code = $code;
         return $this;

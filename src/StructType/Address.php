@@ -27,12 +27,12 @@ class Address extends AbstractStructBase
     public $ValidationStatus;
     /**
      * The TransferAction
-     * @var UNKNOWN
+     * @var
      */
     public $TransferAction;
     /**
      * The ParentCompanyRef
-     * @var UNKNOWN
+     * @var
      */
     public $ParentCompanyRef;
     /**
@@ -47,12 +47,12 @@ class Address extends AbstractStructBase
     public $AddressSearchScope;
     /**
      * The SiteID
-     * @var UNKNOWN
+     * @var
      */
     public $SiteID;
     /**
      * The SiteName
-     * @var UNKNOWN
+     * @var
      */
     public $SiteName;
     /**
@@ -69,14 +69,14 @@ class Address extends AbstractStructBase
      * @param mixed $companyName
      * @param mixed $addresseeName
      * @param string $validationStatus
-     * @param UNKNOWN $transferAction
-     * @param UNKNOWN $parentCompanyRef
+     * @param  $transferAction
+     * @param  $parentCompanyRef
      * @param bool $sameCountryInd
      * @param string $addressSearchScope
-     * @param UNKNOWN $siteID
-     * @param UNKNOWN $siteName
+     * @param  $siteID
+     * @param  $siteName
      */
-    public function __construct($companyName = null, $addresseeName = null, $validationStatus = null, UNKNOWN $transferAction = null, UNKNOWN $parentCompanyRef = null, $sameCountryInd = null, $addressSearchScope = null, UNKNOWN $siteID = null, UNKNOWN $siteName = null)
+    public function __construct($companyName = null, $addresseeName = null, $validationStatus = null,  $transferAction = null,  $parentCompanyRef = null, $sameCountryInd = null, $addressSearchScope = null,  $siteID = null,  $siteName = null)
     {
         $this
             ->setCompanyName($companyName)
@@ -149,7 +149,7 @@ class Address extends AbstractStructBase
     }
     /**
      * Get TransferAction value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getTransferAction()
     {
@@ -157,17 +157,17 @@ class Address extends AbstractStructBase
     }
     /**
      * Set TransferAction value
-     * @param UNKNOWN $transferAction
+     * @param  $transferAction
      * @return \Ammonkc\Otaehi\StructType\Address
      */
-    public function setTransferAction(UNKNOWN $transferAction = null)
+    public function setTransferAction( $transferAction = null)
     {
         $this->TransferAction = $transferAction;
         return $this;
     }
     /**
      * Get ParentCompanyRef value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getParentCompanyRef()
     {
@@ -175,10 +175,10 @@ class Address extends AbstractStructBase
     }
     /**
      * Set ParentCompanyRef value
-     * @param UNKNOWN $parentCompanyRef
+     * @param  $parentCompanyRef
      * @return \Ammonkc\Otaehi\StructType\Address
      */
-    public function setParentCompanyRef(UNKNOWN $parentCompanyRef = null)
+    public function setParentCompanyRef( $parentCompanyRef = null)
     {
         $this->ParentCompanyRef = $parentCompanyRef;
         return $this;
@@ -225,7 +225,7 @@ class Address extends AbstractStructBase
     }
     /**
      * Get SiteID value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getSiteID()
     {
@@ -233,17 +233,17 @@ class Address extends AbstractStructBase
     }
     /**
      * Set SiteID value
-     * @param UNKNOWN $siteID
+     * @param  $siteID
      * @return \Ammonkc\Otaehi\StructType\Address
      */
-    public function setSiteID(UNKNOWN $siteID = null)
+    public function setSiteID( $siteID = null)
     {
         $this->SiteID = $siteID;
         return $this;
     }
     /**
      * Get SiteName value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getSiteName()
     {
@@ -251,10 +251,10 @@ class Address extends AbstractStructBase
     }
     /**
      * Set SiteName value
-     * @param UNKNOWN $siteName
+     * @param  $siteName
      * @return \Ammonkc\Otaehi\StructType\Address
      */
-    public function setSiteName(UNKNOWN $siteName = null)
+    public function setSiteName( $siteName = null)
     {
         $this->SiteName = $siteName;
         return $this;

@@ -17,12 +17,12 @@ class AddressInfoType extends AbstractStructBase
     public $TPA_Extensions;
     /**
      * The UseType
-     * @var UNKNOWN
+     * @var
      */
     public $UseType;
     /**
      * The RPH
-     * @var UNKNOWN
+     * @var
      */
     public $RPH;
     /**
@@ -31,10 +31,10 @@ class AddressInfoType extends AbstractStructBase
      * @uses AddressInfoType::setUseType()
      * @uses AddressInfoType::setRPH()
      * @param mixed $tPA_Extensions
-     * @param UNKNOWN $useType
-     * @param UNKNOWN $rPH
+     * @param  $useType
+     * @param  $rPH
      */
-    public function __construct($tPA_Extensions = null, UNKNOWN $useType = null, UNKNOWN $rPH = null)
+    public function __construct($tPA_Extensions = null,  $useType = null,  $rPH = null)
     {
         $this
             ->setTPA_Extensions($tPA_Extensions)
@@ -61,7 +61,7 @@ class AddressInfoType extends AbstractStructBase
     }
     /**
      * Get UseType value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getUseType()
     {
@@ -69,17 +69,17 @@ class AddressInfoType extends AbstractStructBase
     }
     /**
      * Set UseType value
-     * @param UNKNOWN $useType
+     * @param  $useType
      * @return \Ammonkc\Otaehi\StructType\AddressInfoType
      */
-    public function setUseType(UNKNOWN $useType = null)
+    public function setUseType( $useType = null)
     {
         $this->UseType = $useType;
         return $this;
     }
     /**
      * Get RPH value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getRPH()
     {
@@ -87,10 +87,10 @@ class AddressInfoType extends AbstractStructBase
     }
     /**
      * Set RPH value
-     * @param UNKNOWN $rPH
+     * @param  $rPH
      * @return \Ammonkc\Otaehi\StructType\AddressInfoType
      */
-    public function setRPH(UNKNOWN $rPH = null)
+    public function setRPH( $rPH = null)
     {
         $this->RPH = $rPH;
         return $this;

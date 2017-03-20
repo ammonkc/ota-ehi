@@ -17,7 +17,7 @@ class OffLocationServiceCoreType extends AbstractStructBase
     public $Address;
     /**
      * The Type
-     * @var UNKNOWN
+     * @var
      */
     public $Type;
     /**
@@ -25,9 +25,9 @@ class OffLocationServiceCoreType extends AbstractStructBase
      * @uses OffLocationServiceCoreType::setAddress()
      * @uses OffLocationServiceCoreType::setType()
      * @param \Ammonkc\Otaehi\StructType\Address $address
-     * @param UNKNOWN $type
+     * @param  $type
      */
-    public function __construct(\Ammonkc\Otaehi\StructType\Address $address = null, UNKNOWN $type = null)
+    public function __construct(\Ammonkc\Otaehi\StructType\Address $address = null,  $type = null)
     {
         $this
             ->setAddress($address)
@@ -53,7 +53,7 @@ class OffLocationServiceCoreType extends AbstractStructBase
     }
     /**
      * Get Type value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getType()
     {
@@ -61,10 +61,10 @@ class OffLocationServiceCoreType extends AbstractStructBase
     }
     /**
      * Set Type value
-     * @param UNKNOWN $type
+     * @param  $type
      * @return \Ammonkc\Otaehi\StructType\OffLocationServiceCoreType
      */
-    public function setType(UNKNOWN $type = null)
+    public function setType( $type = null)
     {
         $this->Type = $type;
         return $this;

@@ -32,27 +32,27 @@ class VehicleLocationDetailsType extends AbstractStructBase
     public $AtAirport;
     /**
      * The Code
-     * @var UNKNOWN
+     * @var
      */
     public $Code;
     /**
      * The Name
-     * @var UNKNOWN
+     * @var
      */
     public $Name;
     /**
      * The CodeContext
-     * @var UNKNOWN
+     * @var
      */
     public $CodeContext;
     /**
      * The ExtendedLocationCode
-     * @var UNKNOWN
+     * @var
      */
     public $ExtendedLocationCode;
     /**
      * The AssocAirportLocList
-     * @var UNKNOWN
+     * @var
      */
     public $AssocAirportLocList;
     /**
@@ -70,13 +70,13 @@ class VehicleLocationDetailsType extends AbstractStructBase
      * @param \Ammonkc\Otaehi\StructType\Telephone $telephone
      * @param mixed $additionalInfo
      * @param bool $atAirport
-     * @param UNKNOWN $code
-     * @param UNKNOWN $name
-     * @param UNKNOWN $codeContext
-     * @param UNKNOWN $extendedLocationCode
-     * @param UNKNOWN $assocAirportLocList
+     * @param  $code
+     * @param  $name
+     * @param  $codeContext
+     * @param  $extendedLocationCode
+     * @param  $assocAirportLocList
      */
-    public function __construct($address = null, \Ammonkc\Otaehi\StructType\Telephone $telephone = null, $additionalInfo = null, $atAirport = null, UNKNOWN $code = null, UNKNOWN $name = null, UNKNOWN $codeContext = null, UNKNOWN $extendedLocationCode = null, UNKNOWN $assocAirportLocList = null)
+    public function __construct($address = null, \Ammonkc\Otaehi\StructType\Telephone $telephone = null, $additionalInfo = null, $atAirport = null,  $code = null,  $name = null,  $codeContext = null,  $extendedLocationCode = null,  $assocAirportLocList = null)
     {
         $this
             ->setAddress($address)
@@ -163,7 +163,7 @@ class VehicleLocationDetailsType extends AbstractStructBase
     }
     /**
      * Get Code value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getCode()
     {
@@ -171,17 +171,17 @@ class VehicleLocationDetailsType extends AbstractStructBase
     }
     /**
      * Set Code value
-     * @param UNKNOWN $code
+     * @param  $code
      * @return \Ammonkc\Otaehi\StructType\VehicleLocationDetailsType
      */
-    public function setCode(UNKNOWN $code = null)
+    public function setCode( $code = null)
     {
         $this->Code = $code;
         return $this;
     }
     /**
      * Get Name value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getName()
     {
@@ -189,17 +189,17 @@ class VehicleLocationDetailsType extends AbstractStructBase
     }
     /**
      * Set Name value
-     * @param UNKNOWN $name
+     * @param  $name
      * @return \Ammonkc\Otaehi\StructType\VehicleLocationDetailsType
      */
-    public function setName(UNKNOWN $name = null)
+    public function setName( $name = null)
     {
         $this->Name = $name;
         return $this;
     }
     /**
      * Get CodeContext value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getCodeContext()
     {
@@ -207,17 +207,17 @@ class VehicleLocationDetailsType extends AbstractStructBase
     }
     /**
      * Set CodeContext value
-     * @param UNKNOWN $codeContext
+     * @param  $codeContext
      * @return \Ammonkc\Otaehi\StructType\VehicleLocationDetailsType
      */
-    public function setCodeContext(UNKNOWN $codeContext = null)
+    public function setCodeContext( $codeContext = null)
     {
         $this->CodeContext = $codeContext;
         return $this;
     }
     /**
      * Get ExtendedLocationCode value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getExtendedLocationCode()
     {
@@ -225,17 +225,17 @@ class VehicleLocationDetailsType extends AbstractStructBase
     }
     /**
      * Set ExtendedLocationCode value
-     * @param UNKNOWN $extendedLocationCode
+     * @param  $extendedLocationCode
      * @return \Ammonkc\Otaehi\StructType\VehicleLocationDetailsType
      */
-    public function setExtendedLocationCode(UNKNOWN $extendedLocationCode = null)
+    public function setExtendedLocationCode( $extendedLocationCode = null)
     {
         $this->ExtendedLocationCode = $extendedLocationCode;
         return $this;
     }
     /**
      * Get AssocAirportLocList value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getAssocAirportLocList()
     {
@@ -243,10 +243,10 @@ class VehicleLocationDetailsType extends AbstractStructBase
     }
     /**
      * Set AssocAirportLocList value
-     * @param UNKNOWN $assocAirportLocList
+     * @param  $assocAirportLocList
      * @return \Ammonkc\Otaehi\StructType\VehicleLocationDetailsType
      */
-    public function setAssocAirportLocList(UNKNOWN $assocAirportLocList = null)
+    public function setAssocAirportLocList( $assocAirportLocList = null)
     {
         $this->AssocAirportLocList = $assocAirportLocList;
         return $this;

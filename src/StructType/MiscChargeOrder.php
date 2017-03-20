@@ -12,7 +12,7 @@ class MiscChargeOrder extends AbstractStructBase
 {
     /**
      * The TicketNumber
-     * @var UNKNOWN
+     * @var
      */
     public $TicketNumber;
     /**
@@ -30,11 +30,11 @@ class MiscChargeOrder extends AbstractStructBase
      * @uses MiscChargeOrder::setTicketNumber()
      * @uses MiscChargeOrder::setPaperMCO_ExistInd()
      * @uses MiscChargeOrder::setInfo()
-     * @param UNKNOWN $ticketNumber
+     * @param  $ticketNumber
      * @param bool $paperMCO_ExistInd
      * @param \Ammonkc\Otaehi\StructType\FormattedTextType $info
      */
-    public function __construct(UNKNOWN $ticketNumber = null, $paperMCO_ExistInd = null, \Ammonkc\Otaehi\StructType\FormattedTextType $info = null)
+    public function __construct( $ticketNumber = null, $paperMCO_ExistInd = null, \Ammonkc\Otaehi\StructType\FormattedTextType $info = null)
     {
         $this
             ->setTicketNumber($ticketNumber)
@@ -43,7 +43,7 @@ class MiscChargeOrder extends AbstractStructBase
     }
     /**
      * Get TicketNumber value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getTicketNumber()
     {
@@ -51,10 +51,10 @@ class MiscChargeOrder extends AbstractStructBase
     }
     /**
      * Set TicketNumber value
-     * @param UNKNOWN $ticketNumber
+     * @param  $ticketNumber
      * @return \Ammonkc\Otaehi\StructType\MiscChargeOrder
      */
-    public function setTicketNumber(UNKNOWN $ticketNumber = null)
+    public function setTicketNumber( $ticketNumber = null)
     {
         $this->TicketNumber = $ticketNumber;
         return $this;

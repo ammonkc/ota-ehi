@@ -12,7 +12,7 @@ class CuisineCode extends AbstractStructBase
 {
     /**
      * The Code
-     * @var UNKNOWN
+     * @var
      */
     public $Code;
     /**
@@ -22,7 +22,7 @@ class CuisineCode extends AbstractStructBase
     public $IsMain;
     /**
      * The ExistsCode
-     * @var UNKNOWN
+     * @var
      */
     public $ExistsCode;
     /**
@@ -30,11 +30,11 @@ class CuisineCode extends AbstractStructBase
      * @uses CuisineCode::setCode()
      * @uses CuisineCode::setIsMain()
      * @uses CuisineCode::setExistsCode()
-     * @param UNKNOWN $code
+     * @param  $code
      * @param bool $isMain
-     * @param UNKNOWN $existsCode
+     * @param  $existsCode
      */
-    public function __construct(UNKNOWN $code = null, $isMain = null, UNKNOWN $existsCode = null)
+    public function __construct( $code = null, $isMain = null,  $existsCode = null)
     {
         $this
             ->setCode($code)
@@ -43,7 +43,7 @@ class CuisineCode extends AbstractStructBase
     }
     /**
      * Get Code value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getCode()
     {
@@ -51,10 +51,10 @@ class CuisineCode extends AbstractStructBase
     }
     /**
      * Set Code value
-     * @param UNKNOWN $code
+     * @param  $code
      * @return \Ammonkc\Otaehi\StructType\CuisineCode
      */
-    public function setCode(UNKNOWN $code = null)
+    public function setCode( $code = null)
     {
         $this->Code = $code;
         return $this;
@@ -79,7 +79,7 @@ class CuisineCode extends AbstractStructBase
     }
     /**
      * Get ExistsCode value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getExistsCode()
     {
@@ -87,10 +87,10 @@ class CuisineCode extends AbstractStructBase
     }
     /**
      * Set ExistsCode value
-     * @param UNKNOWN $existsCode
+     * @param  $existsCode
      * @return \Ammonkc\Otaehi\StructType\CuisineCode
      */
-    public function setExistsCode(UNKNOWN $existsCode = null)
+    public function setExistsCode( $existsCode = null)
     {
         $this->ExistsCode = $existsCode;
         return $this;

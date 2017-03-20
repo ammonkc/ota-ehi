@@ -12,22 +12,22 @@ class Vendor extends AbstractStructBase
 {
     /**
      * The ParticipationLevelCode
-     * @var UNKNOWN
+     * @var
      */
     public $ParticipationLevelCode;
     /**
      * Constructor method for Vendor
      * @uses Vendor::setParticipationLevelCode()
-     * @param UNKNOWN $participationLevelCode
+     * @param  $participationLevelCode
      */
-    public function __construct(UNKNOWN $participationLevelCode = null)
+    public function __construct( $participationLevelCode = null)
     {
         $this
             ->setParticipationLevelCode($participationLevelCode);
     }
     /**
      * Get ParticipationLevelCode value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getParticipationLevelCode()
     {
@@ -35,10 +35,10 @@ class Vendor extends AbstractStructBase
     }
     /**
      * Set ParticipationLevelCode value
-     * @param UNKNOWN $participationLevelCode
+     * @param  $participationLevelCode
      * @return \Ammonkc\Otaehi\StructType\Vendor
      */
-    public function setParticipationLevelCode(UNKNOWN $participationLevelCode = null)
+    public function setParticipationLevelCode( $participationLevelCode = null)
     {
         $this->ParticipationLevelCode = $participationLevelCode;
         return $this;

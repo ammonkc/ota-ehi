@@ -12,22 +12,22 @@ class AddlDriverInfo extends AbstractStructBase
 {
     /**
      * The Type
-     * @var UNKNOWN
+     * @var
      */
     public $Type;
     /**
      * Constructor method for AddlDriverInfo
      * @uses AddlDriverInfo::setType()
-     * @param UNKNOWN $type
+     * @param  $type
      */
-    public function __construct(UNKNOWN $type = null)
+    public function __construct( $type = null)
     {
         $this
             ->setType($type);
     }
     /**
      * Get Type value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getType()
     {
@@ -35,10 +35,10 @@ class AddlDriverInfo extends AbstractStructBase
     }
     /**
      * Set Type value
-     * @param UNKNOWN $type
+     * @param  $type
      * @return \Ammonkc\Otaehi\StructType\AddlDriverInfo
      */
-    public function setType(UNKNOWN $type = null)
+    public function setType( $type = null)
     {
         $this->Type = $type;
         return $this;

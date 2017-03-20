@@ -32,7 +32,7 @@ class AlternateCurrencyType extends AbstractStructBase
     public $AwardCode;
     /**
      * The DiscountPercentage
-     * @var UNKNOWN
+     * @var
      */
     public $DiscountPercentage;
     /**
@@ -52,10 +52,10 @@ class AlternateCurrencyType extends AbstractStructBase
      * @param \Ammonkc\Otaehi\StructType\Conversion $conversion
      * @param mixed $tPA_Extensions
      * @param string $awardCode
-     * @param UNKNOWN $discountPercentage
+     * @param  $discountPercentage
      * @param int $quantity
      */
-    public function __construct($currencyType = null, \Ammonkc\Otaehi\StructType\Conversion $conversion = null, $tPA_Extensions = null, $awardCode = null, UNKNOWN $discountPercentage = null, $quantity = null)
+    public function __construct($currencyType = null, \Ammonkc\Otaehi\StructType\Conversion $conversion = null, $tPA_Extensions = null, $awardCode = null,  $discountPercentage = null, $quantity = null)
     {
         $this
             ->setCurrencyType($currencyType)
@@ -143,7 +143,7 @@ class AlternateCurrencyType extends AbstractStructBase
     }
     /**
      * Get DiscountPercentage value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getDiscountPercentage()
     {
@@ -151,10 +151,10 @@ class AlternateCurrencyType extends AbstractStructBase
     }
     /**
      * Set DiscountPercentage value
-     * @param UNKNOWN $discountPercentage
+     * @param  $discountPercentage
      * @return \Ammonkc\Otaehi\StructType\AlternateCurrencyType
      */
-    public function setDiscountPercentage(UNKNOWN $discountPercentage = null)
+    public function setDiscountPercentage( $discountPercentage = null)
     {
         $this->DiscountPercentage = $discountPercentage;
         return $this;

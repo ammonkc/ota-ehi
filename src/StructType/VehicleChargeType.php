@@ -32,7 +32,7 @@ class VehicleChargeType extends AbstractStructBase
     public $TaxInclusive;
     /**
      * The Description
-     * @var UNKNOWN
+     * @var
      */
     public $Description;
     /**
@@ -70,13 +70,13 @@ class VehicleChargeType extends AbstractStructBase
      * @param \Ammonkc\Otaehi\StructType\MinMax $minMax
      * @param \Ammonkc\Otaehi\StructType\Calculation $calculation
      * @param bool $taxInclusive
-     * @param UNKNOWN $description
+     * @param  $description
      * @param bool $guaranteedInd
      * @param bool $includedInRate
      * @param bool $includedInEstTotalInd
      * @param bool $rateConvertInd
      */
-    public function __construct(\Ammonkc\Otaehi\StructType\TaxAmounts $taxAmounts = null, \Ammonkc\Otaehi\StructType\MinMax $minMax = null, \Ammonkc\Otaehi\StructType\Calculation $calculation = null, $taxInclusive = null, UNKNOWN $description = null, $guaranteedInd = null, $includedInRate = null, $includedInEstTotalInd = null, $rateConvertInd = null)
+    public function __construct(\Ammonkc\Otaehi\StructType\TaxAmounts $taxAmounts = null, \Ammonkc\Otaehi\StructType\MinMax $minMax = null, \Ammonkc\Otaehi\StructType\Calculation $calculation = null, $taxInclusive = null,  $description = null, $guaranteedInd = null, $includedInRate = null, $includedInEstTotalInd = null, $rateConvertInd = null)
     {
         $this
             ->setTaxAmounts($taxAmounts)
@@ -163,7 +163,7 @@ class VehicleChargeType extends AbstractStructBase
     }
     /**
      * Get Description value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getDescription()
     {
@@ -171,10 +171,10 @@ class VehicleChargeType extends AbstractStructBase
     }
     /**
      * Set Description value
-     * @param UNKNOWN $description
+     * @param  $description
      * @return \Ammonkc\Otaehi\StructType\VehicleChargeType
      */
-    public function setDescription(UNKNOWN $description = null)
+    public function setDescription( $description = null)
     {
         $this->Description = $description;
         return $this;

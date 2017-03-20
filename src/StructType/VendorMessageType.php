@@ -12,22 +12,22 @@ class VendorMessageType extends AbstractStructBase
 {
     /**
      * The InfoType
-     * @var UNKNOWN
+     * @var
      */
     public $InfoType;
     /**
      * Constructor method for VendorMessageType
      * @uses VendorMessageType::setInfoType()
-     * @param UNKNOWN $infoType
+     * @param  $infoType
      */
-    public function __construct(UNKNOWN $infoType = null)
+    public function __construct( $infoType = null)
     {
         $this
             ->setInfoType($infoType);
     }
     /**
      * Get InfoType value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getInfoType()
     {
@@ -35,10 +35,10 @@ class VendorMessageType extends AbstractStructBase
     }
     /**
      * Set InfoType value
-     * @param UNKNOWN $infoType
+     * @param  $infoType
      * @return \Ammonkc\Otaehi\StructType\VendorMessageType
      */
-    public function setInfoType(UNKNOWN $infoType = null)
+    public function setInfoType( $infoType = null)
     {
         $this->InfoType = $infoType;
         return $this;

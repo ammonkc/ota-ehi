@@ -17,7 +17,7 @@ class OTA_PingRQ extends AbstractStructBase
     public $EchoData;
     /**
      * The EchoToken
-     * @var UNKNOWN
+     * @var
      */
     public $EchoToken;
     /**
@@ -32,7 +32,7 @@ class OTA_PingRQ extends AbstractStructBase
     public $Target;
     /**
      * The TargetName
-     * @var UNKNOWN
+     * @var
      */
     public $TargetName;
     /**
@@ -62,7 +62,7 @@ class OTA_PingRQ extends AbstractStructBase
     public $RetransmissionIndicator;
     /**
      * The CorrelationID
-     * @var UNKNOWN
+     * @var
      */
     public $CorrelationID;
     /**
@@ -91,35 +91,34 @@ class OTA_PingRQ extends AbstractStructBase
      * @uses OTA_PingRQ::setPrimaryLangID()
      * @uses OTA_PingRQ::setAltLangID()
      * @param string $echoData
-     * @param UNKNOWN $echoToken
+     * @param  $echoToken
      * @param string $timeStamp
      * @param string $target
-     * @param UNKNOWN $targetName
+     * @param  $targetName
      * @param float $version
      * @param string $transactionIdentifier
      * @param int $sequenceNmbr
      * @param string $transactionStatusCode
      * @param bool $retransmissionIndicator
-     * @param UNKNOWN $correlationID
+     * @param  $correlationID
      * @param string $primaryLangID
      * @param string $altLangID
      */
-    public function __construct($echoData = null, UNKNOWN $echoToken = null, $timeStamp = null, $target = null, UNKNOWN $targetName = null, $version = null, $transactionIdentifier = null, $sequenceNmbr = null, $transactionStatusCode = null, $retransmissionIndicator = null, UNKNOWN $correlationID = null, $primaryLangID = null, $altLangID = null)
+    public function __construct($echoData = null,  $echoToken = null, $timeStamp = null, $target = null,  $targetName = null, $version = null, $transactionIdentifier = null, $sequenceNmbr = null, $transactionStatusCode = null, $retransmissionIndicator = null,  $correlationID = null, $primaryLangID = null, $altLangID = null)
     {
-        $this
-            ->setEchoData($echoData)
-            ->setEchoToken($echoToken)
-            ->setTimeStamp($timeStamp)
-            ->setTarget($target)
-            ->setTargetName($targetName)
-            ->setVersion($version)
-            ->setTransactionIdentifier($transactionIdentifier)
-            ->setSequenceNmbr($sequenceNmbr)
-            ->setTransactionStatusCode($transactionStatusCode)
-            ->setRetransmissionIndicator($retransmissionIndicator)
-            ->setCorrelationID($correlationID)
-            ->setPrimaryLangID($primaryLangID)
-            ->setAltLangID($altLangID);
+        $this->setEchoData($echoData)
+             ->setEchoToken($echoToken)
+             ->setTimeStamp($timeStamp)
+             ->setTarget($target)
+             ->setTargetName($targetName)
+             ->setVersion($version)
+             ->setTransactionIdentifier($transactionIdentifier)
+             ->setSequenceNmbr($sequenceNmbr)
+             ->setTransactionStatusCode($transactionStatusCode)
+             ->setRetransmissionIndicator($retransmissionIndicator)
+             ->setCorrelationID($correlationID)
+             ->setPrimaryLangID($primaryLangID)
+             ->setAltLangID($altLangID);
     }
     /**
      * Get EchoData value
@@ -145,7 +144,7 @@ class OTA_PingRQ extends AbstractStructBase
     }
     /**
      * Get EchoToken value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getEchoToken()
     {
@@ -153,10 +152,10 @@ class OTA_PingRQ extends AbstractStructBase
     }
     /**
      * Set EchoToken value
-     * @param UNKNOWN $echoToken
+     * @param  $echoToken
      * @return \Ammonkc\Otaehi\StructType\OTA_PingRQ
      */
-    public function setEchoToken(UNKNOWN $echoToken = null)
+    public function setEchoToken( $echoToken = null)
     {
         $this->EchoToken = $echoToken;
         return $this;
@@ -207,7 +206,7 @@ class OTA_PingRQ extends AbstractStructBase
     }
     /**
      * Get TargetName value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getTargetName()
     {
@@ -215,10 +214,10 @@ class OTA_PingRQ extends AbstractStructBase
     }
     /**
      * Set TargetName value
-     * @param UNKNOWN $targetName
+     * @param  $targetName
      * @return \Ammonkc\Otaehi\StructType\OTA_PingRQ
      */
-    public function setTargetName(UNKNOWN $targetName = null)
+    public function setTargetName( $targetName = null)
     {
         $this->TargetName = $targetName;
         return $this;
@@ -327,7 +326,7 @@ class OTA_PingRQ extends AbstractStructBase
     }
     /**
      * Get CorrelationID value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getCorrelationID()
     {
@@ -335,10 +334,10 @@ class OTA_PingRQ extends AbstractStructBase
     }
     /**
      * Set CorrelationID value
-     * @param UNKNOWN $correlationID
+     * @param  $correlationID
      * @return \Ammonkc\Otaehi\StructType\OTA_PingRQ
      */
-    public function setCorrelationID(UNKNOWN $correlationID = null)
+    public function setCorrelationID( $correlationID = null)
     {
         $this->CorrelationID = $correlationID;
         return $this;

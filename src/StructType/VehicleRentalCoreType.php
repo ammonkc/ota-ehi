@@ -47,7 +47,7 @@ class VehicleRentalCoreType extends AbstractStructBase
     public $OneWayIndicator;
     /**
      * The MultiIslandRentalDays
-     * @var UNKNOWN
+     * @var
      */
     public $MultiIslandRentalDays;
     /**
@@ -57,7 +57,7 @@ class VehicleRentalCoreType extends AbstractStructBase
     public $Quantity;
     /**
      * The DistUnitName
-     * @var UNKNOWN
+     * @var
      */
     public $DistUnitName;
     /**
@@ -79,11 +79,11 @@ class VehicleRentalCoreType extends AbstractStructBase
      * @param string $startChargesDateTime
      * @param string $stopChargesDateTime
      * @param bool $oneWayIndicator
-     * @param UNKNOWN $multiIslandRentalDays
+     * @param  $multiIslandRentalDays
      * @param int $quantity
-     * @param UNKNOWN $distUnitName
+     * @param  $distUnitName
      */
-    public function __construct(\Ammonkc\Otaehi\StructType\PickUpLocation $pickUpLocation = null, \Ammonkc\Otaehi\StructType\ReturnLocation $returnLocation = null, $pickUpDateTime = null, $returnDateTime = null, $startChargesDateTime = null, $stopChargesDateTime = null, $oneWayIndicator = null, UNKNOWN $multiIslandRentalDays = null, $quantity = null, UNKNOWN $distUnitName = null)
+    public function __construct(\Ammonkc\Otaehi\StructType\PickUpLocation $pickUpLocation = null, \Ammonkc\Otaehi\StructType\ReturnLocation $returnLocation = null, $pickUpDateTime = null, $returnDateTime = null, $startChargesDateTime = null, $stopChargesDateTime = null, $oneWayIndicator = null,  $multiIslandRentalDays = null, $quantity = null,  $distUnitName = null)
     {
         $this
             ->setPickUpLocation($pickUpLocation)
@@ -241,7 +241,7 @@ class VehicleRentalCoreType extends AbstractStructBase
     }
     /**
      * Get MultiIslandRentalDays value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getMultiIslandRentalDays()
     {
@@ -249,10 +249,10 @@ class VehicleRentalCoreType extends AbstractStructBase
     }
     /**
      * Set MultiIslandRentalDays value
-     * @param UNKNOWN $multiIslandRentalDays
+     * @param  $multiIslandRentalDays
      * @return \Ammonkc\Otaehi\StructType\VehicleRentalCoreType
      */
-    public function setMultiIslandRentalDays(UNKNOWN $multiIslandRentalDays = null)
+    public function setMultiIslandRentalDays( $multiIslandRentalDays = null)
     {
         $this->MultiIslandRentalDays = $multiIslandRentalDays;
         return $this;
@@ -281,7 +281,7 @@ class VehicleRentalCoreType extends AbstractStructBase
     }
     /**
      * Get DistUnitName value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getDistUnitName()
     {
@@ -289,10 +289,10 @@ class VehicleRentalCoreType extends AbstractStructBase
     }
     /**
      * Set DistUnitName value
-     * @param UNKNOWN $distUnitName
+     * @param  $distUnitName
      * @return \Ammonkc\Otaehi\StructType\VehicleRentalCoreType
      */
-    public function setDistUnitName(UNKNOWN $distUnitName = null)
+    public function setDistUnitName( $distUnitName = null)
     {
         $this->DistUnitName = $distUnitName;
         return $this;

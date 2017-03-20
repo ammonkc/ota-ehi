@@ -27,7 +27,7 @@ class LuggageItem extends AbstractStructBase
     public $LuggagePremium;
     /**
      * The LuggageType
-     * @var UNKNOWN
+     * @var
      */
     public $LuggageType;
     /**
@@ -39,9 +39,9 @@ class LuggageItem extends AbstractStructBase
      * @param mixed $luggageDescription
      * @param \Ammonkc\Otaehi\StructType\ItemDeclaredValue $itemDeclaredValue
      * @param \Ammonkc\Otaehi\StructType\LuggagePremium $luggagePremium
-     * @param UNKNOWN $luggageType
+     * @param  $luggageType
      */
-    public function __construct($luggageDescription = null, \Ammonkc\Otaehi\StructType\ItemDeclaredValue $itemDeclaredValue = null, \Ammonkc\Otaehi\StructType\LuggagePremium $luggagePremium = null, UNKNOWN $luggageType = null)
+    public function __construct($luggageDescription = null, \Ammonkc\Otaehi\StructType\ItemDeclaredValue $itemDeclaredValue = null, \Ammonkc\Otaehi\StructType\LuggagePremium $luggagePremium = null,  $luggageType = null)
     {
         $this
             ->setLuggageDescription($luggageDescription)
@@ -105,7 +105,7 @@ class LuggageItem extends AbstractStructBase
     }
     /**
      * Get LuggageType value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getLuggageType()
     {
@@ -113,10 +113,10 @@ class LuggageItem extends AbstractStructBase
     }
     /**
      * Set LuggageType value
-     * @param UNKNOWN $luggageType
+     * @param  $luggageType
      * @return \Ammonkc\Otaehi\StructType\LuggageItem
      */
-    public function setLuggageType(UNKNOWN $luggageType = null)
+    public function setLuggageType( $luggageType = null)
     {
         $this->LuggageType = $luggageType;
         return $this;

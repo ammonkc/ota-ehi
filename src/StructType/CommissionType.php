@@ -52,22 +52,22 @@ class CommissionType extends AbstractStructBase
     public $StatusType;
     /**
      * The Percent
-     * @var UNKNOWN
+     * @var
      */
     public $Percent;
     /**
      * The ReasonCode
-     * @var UNKNOWN
+     * @var
      */
     public $ReasonCode;
     /**
      * The BillToID
-     * @var UNKNOWN
+     * @var
      */
     public $BillToID;
     /**
      * The Frequency
-     * @var UNKNOWN
+     * @var
      */
     public $Frequency;
     /**
@@ -77,7 +77,7 @@ class CommissionType extends AbstractStructBase
     public $MaxCommissionUnitApplies;
     /**
      * The CapAmount
-     * @var UNKNOWN
+     * @var
      */
     public $CapAmount;
     /**
@@ -104,14 +104,14 @@ class CommissionType extends AbstractStructBase
      * @param mixed $comment
      * @param mixed $tPA_Extensions
      * @param string $statusType
-     * @param UNKNOWN $percent
-     * @param UNKNOWN $reasonCode
-     * @param UNKNOWN $billToID
-     * @param UNKNOWN $frequency
+     * @param  $percent
+     * @param  $reasonCode
+     * @param  $billToID
+     * @param  $frequency
      * @param int $maxCommissionUnitApplies
-     * @param UNKNOWN $capAmount
+     * @param  $capAmount
      */
-    public function __construct($uniqueID = null, \Ammonkc\Otaehi\StructType\CommissionableAmount $commissionableAmount = null, \Ammonkc\Otaehi\StructType\PrepaidAmount $prepaidAmount = null, \Ammonkc\Otaehi\StructType\FlatCommission $flatCommission = null, \Ammonkc\Otaehi\StructType\CommissionPayableAmount $commissionPayableAmount = null, $comment = null, $tPA_Extensions = null, $statusType = null, UNKNOWN $percent = null, UNKNOWN $reasonCode = null, UNKNOWN $billToID = null, UNKNOWN $frequency = null, $maxCommissionUnitApplies = null, UNKNOWN $capAmount = null)
+    public function __construct($uniqueID = null, \Ammonkc\Otaehi\StructType\CommissionableAmount $commissionableAmount = null, \Ammonkc\Otaehi\StructType\PrepaidAmount $prepaidAmount = null, \Ammonkc\Otaehi\StructType\FlatCommission $flatCommission = null, \Ammonkc\Otaehi\StructType\CommissionPayableAmount $commissionPayableAmount = null, $comment = null, $tPA_Extensions = null, $statusType = null,  $percent = null,  $reasonCode = null,  $billToID = null,  $frequency = null, $maxCommissionUnitApplies = null,  $capAmount = null)
     {
         $this
             ->setUniqueID($uniqueID)
@@ -279,7 +279,7 @@ class CommissionType extends AbstractStructBase
     }
     /**
      * Get Percent value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getPercent()
     {
@@ -287,17 +287,17 @@ class CommissionType extends AbstractStructBase
     }
     /**
      * Set Percent value
-     * @param UNKNOWN $percent
+     * @param  $percent
      * @return \Ammonkc\Otaehi\StructType\CommissionType
      */
-    public function setPercent(UNKNOWN $percent = null)
+    public function setPercent( $percent = null)
     {
         $this->Percent = $percent;
         return $this;
     }
     /**
      * Get ReasonCode value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getReasonCode()
     {
@@ -305,17 +305,17 @@ class CommissionType extends AbstractStructBase
     }
     /**
      * Set ReasonCode value
-     * @param UNKNOWN $reasonCode
+     * @param  $reasonCode
      * @return \Ammonkc\Otaehi\StructType\CommissionType
      */
-    public function setReasonCode(UNKNOWN $reasonCode = null)
+    public function setReasonCode( $reasonCode = null)
     {
         $this->ReasonCode = $reasonCode;
         return $this;
     }
     /**
      * Get BillToID value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getBillToID()
     {
@@ -323,17 +323,17 @@ class CommissionType extends AbstractStructBase
     }
     /**
      * Set BillToID value
-     * @param UNKNOWN $billToID
+     * @param  $billToID
      * @return \Ammonkc\Otaehi\StructType\CommissionType
      */
-    public function setBillToID(UNKNOWN $billToID = null)
+    public function setBillToID( $billToID = null)
     {
         $this->BillToID = $billToID;
         return $this;
     }
     /**
      * Get Frequency value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getFrequency()
     {
@@ -341,10 +341,10 @@ class CommissionType extends AbstractStructBase
     }
     /**
      * Set Frequency value
-     * @param UNKNOWN $frequency
+     * @param  $frequency
      * @return \Ammonkc\Otaehi\StructType\CommissionType
      */
-    public function setFrequency(UNKNOWN $frequency = null)
+    public function setFrequency( $frequency = null)
     {
         $this->Frequency = $frequency;
         return $this;
@@ -373,7 +373,7 @@ class CommissionType extends AbstractStructBase
     }
     /**
      * Get CapAmount value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getCapAmount()
     {
@@ -381,10 +381,10 @@ class CommissionType extends AbstractStructBase
     }
     /**
      * Set CapAmount value
-     * @param UNKNOWN $capAmount
+     * @param  $capAmount
      * @return \Ammonkc\Otaehi\StructType\CommissionType
      */
-    public function setCapAmount(UNKNOWN $capAmount = null)
+    public function setCapAmount( $capAmount = null)
     {
         $this->CapAmount = $capAmount;
         return $this;

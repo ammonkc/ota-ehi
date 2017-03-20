@@ -22,7 +22,7 @@ class VideoDescriptionType extends AbstractStructBase
     public $Description;
     /**
      * The Category
-     * @var UNKNOWN
+     * @var
      */
     public $Category;
     /**
@@ -32,9 +32,9 @@ class VideoDescriptionType extends AbstractStructBase
      * @uses VideoDescriptionType::setCategory()
      * @param \Ammonkc\Otaehi\StructType\VideoFormat $videoFormat
      * @param \Ammonkc\Otaehi\StructType\Description $description
-     * @param UNKNOWN $category
+     * @param  $category
      */
-    public function __construct(\Ammonkc\Otaehi\StructType\VideoFormat $videoFormat = null, \Ammonkc\Otaehi\StructType\Description $description = null, UNKNOWN $category = null)
+    public function __construct(\Ammonkc\Otaehi\StructType\VideoFormat $videoFormat = null, \Ammonkc\Otaehi\StructType\Description $description = null,  $category = null)
     {
         $this
             ->setVideoFormat($videoFormat)
@@ -79,7 +79,7 @@ class VideoDescriptionType extends AbstractStructBase
     }
     /**
      * Get Category value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getCategory()
     {
@@ -87,10 +87,10 @@ class VideoDescriptionType extends AbstractStructBase
     }
     /**
      * Set Category value
-     * @param UNKNOWN $category
+     * @param  $category
      * @return \Ammonkc\Otaehi\StructType\VideoDescriptionType
      */
-    public function setCategory(UNKNOWN $category = null)
+    public function setCategory( $category = null)
     {
         $this->Category = $category;
         return $this;

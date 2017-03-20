@@ -12,22 +12,22 @@ class ReturnLocation extends AbstractStructBase
 {
     /**
      * The ExtendedLocationCode
-     * @var UNKNOWN
+     * @var
      */
     public $ExtendedLocationCode;
     /**
      * The CounterLocation
-     * @var UNKNOWN
+     * @var
      */
     public $CounterLocation;
     /**
      * Constructor method for ReturnLocation
      * @uses ReturnLocation::setExtendedLocationCode()
      * @uses ReturnLocation::setCounterLocation()
-     * @param UNKNOWN $extendedLocationCode
-     * @param UNKNOWN $counterLocation
+     * @param  $extendedLocationCode
+     * @param  $counterLocation
      */
-    public function __construct(UNKNOWN $extendedLocationCode = null, UNKNOWN $counterLocation = null)
+    public function __construct( $extendedLocationCode = null,  $counterLocation = null)
     {
         $this
             ->setExtendedLocationCode($extendedLocationCode)
@@ -35,7 +35,7 @@ class ReturnLocation extends AbstractStructBase
     }
     /**
      * Get ExtendedLocationCode value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getExtendedLocationCode()
     {
@@ -43,17 +43,17 @@ class ReturnLocation extends AbstractStructBase
     }
     /**
      * Set ExtendedLocationCode value
-     * @param UNKNOWN $extendedLocationCode
+     * @param  $extendedLocationCode
      * @return \Ammonkc\Otaehi\StructType\ReturnLocation
      */
-    public function setExtendedLocationCode(UNKNOWN $extendedLocationCode = null)
+    public function setExtendedLocationCode( $extendedLocationCode = null)
     {
         $this->ExtendedLocationCode = $extendedLocationCode;
         return $this;
     }
     /**
      * Get CounterLocation value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getCounterLocation()
     {
@@ -61,10 +61,10 @@ class ReturnLocation extends AbstractStructBase
     }
     /**
      * Set CounterLocation value
-     * @param UNKNOWN $counterLocation
+     * @param  $counterLocation
      * @return \Ammonkc\Otaehi\StructType\ReturnLocation
      */
-    public function setCounterLocation(UNKNOWN $counterLocation = null)
+    public function setCounterLocation( $counterLocation = null)
     {
         $this->CounterLocation = $counterLocation;
         return $this;

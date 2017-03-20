@@ -17,12 +17,12 @@ class Tax extends AbstractStructBase
     public $Info;
     /**
      * The TaxCode
-     * @var UNKNOWN
+     * @var
      */
     public $TaxCode;
     /**
      * The Percentage
-     * @var UNKNOWN
+     * @var
      */
     public $Percentage;
     /**
@@ -31,10 +31,10 @@ class Tax extends AbstractStructBase
      * @uses Tax::setTaxCode()
      * @uses Tax::setPercentage()
      * @param mixed $info
-     * @param UNKNOWN $taxCode
-     * @param UNKNOWN $percentage
+     * @param  $taxCode
+     * @param  $percentage
      */
-    public function __construct($info = null, UNKNOWN $taxCode = null, UNKNOWN $percentage = null)
+    public function __construct($info = null,  $taxCode = null,  $percentage = null)
     {
         $this
             ->setInfo($info)
@@ -61,7 +61,7 @@ class Tax extends AbstractStructBase
     }
     /**
      * Get TaxCode value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getTaxCode()
     {
@@ -69,17 +69,17 @@ class Tax extends AbstractStructBase
     }
     /**
      * Set TaxCode value
-     * @param UNKNOWN $taxCode
+     * @param  $taxCode
      * @return \Ammonkc\Otaehi\StructType\Tax
      */
-    public function setTaxCode(UNKNOWN $taxCode = null)
+    public function setTaxCode( $taxCode = null)
     {
         $this->TaxCode = $taxCode;
         return $this;
     }
     /**
      * Get Percentage value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getPercentage()
     {
@@ -87,10 +87,10 @@ class Tax extends AbstractStructBase
     }
     /**
      * Set Percentage value
-     * @param UNKNOWN $percentage
+     * @param  $percentage
      * @return \Ammonkc\Otaehi\StructType\Tax
      */
-    public function setPercentage(UNKNOWN $percentage = null)
+    public function setPercentage( $percentage = null)
     {
         $this->Percentage = $percentage;
         return $this;

@@ -17,17 +17,17 @@ class Order extends AbstractStructBase
     public $Products;
     /**
      * The OrderType
-     * @var UNKNOWN
+     * @var
      */
     public $OrderType;
     /**
      * The OrderID
-     * @var UNKNOWN
+     * @var
      */
     public $OrderID;
     /**
      * The ListOfRecipientRPH
-     * @var UNKNOWN
+     * @var
      */
     public $ListOfRecipientRPH;
     /**
@@ -37,11 +37,11 @@ class Order extends AbstractStructBase
      * @uses Order::setOrderID()
      * @uses Order::setListOfRecipientRPH()
      * @param \Ammonkc\Otaehi\StructType\Products $products
-     * @param UNKNOWN $orderType
-     * @param UNKNOWN $orderID
-     * @param UNKNOWN $listOfRecipientRPH
+     * @param  $orderType
+     * @param  $orderID
+     * @param  $listOfRecipientRPH
      */
-    public function __construct(\Ammonkc\Otaehi\StructType\Products $products = null, UNKNOWN $orderType = null, UNKNOWN $orderID = null, UNKNOWN $listOfRecipientRPH = null)
+    public function __construct(\Ammonkc\Otaehi\StructType\Products $products = null,  $orderType = null,  $orderID = null,  $listOfRecipientRPH = null)
     {
         $this
             ->setProducts($products)
@@ -69,7 +69,7 @@ class Order extends AbstractStructBase
     }
     /**
      * Get OrderType value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getOrderType()
     {
@@ -77,17 +77,17 @@ class Order extends AbstractStructBase
     }
     /**
      * Set OrderType value
-     * @param UNKNOWN $orderType
+     * @param  $orderType
      * @return \Ammonkc\Otaehi\StructType\Order
      */
-    public function setOrderType(UNKNOWN $orderType = null)
+    public function setOrderType( $orderType = null)
     {
         $this->OrderType = $orderType;
         return $this;
     }
     /**
      * Get OrderID value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getOrderID()
     {
@@ -95,17 +95,17 @@ class Order extends AbstractStructBase
     }
     /**
      * Set OrderID value
-     * @param UNKNOWN $orderID
+     * @param  $orderID
      * @return \Ammonkc\Otaehi\StructType\Order
      */
-    public function setOrderID(UNKNOWN $orderID = null)
+    public function setOrderID( $orderID = null)
     {
         $this->OrderID = $orderID;
         return $this;
     }
     /**
      * Get ListOfRecipientRPH value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getListOfRecipientRPH()
     {
@@ -113,10 +113,10 @@ class Order extends AbstractStructBase
     }
     /**
      * Set ListOfRecipientRPH value
-     * @param UNKNOWN $listOfRecipientRPH
+     * @param  $listOfRecipientRPH
      * @return \Ammonkc\Otaehi\StructType\Order
      */
-    public function setListOfRecipientRPH(UNKNOWN $listOfRecipientRPH = null)
+    public function setListOfRecipientRPH( $listOfRecipientRPH = null)
     {
         $this->ListOfRecipientRPH = $listOfRecipientRPH;
         return $this;

@@ -12,7 +12,7 @@ class SeatingPrefType extends AbstractStructBase
 {
     /**
      * The SeatDirection
-     * @var UNKNOWN
+     * @var
      */
     public $SeatDirection;
     /**
@@ -36,12 +36,12 @@ class SeatingPrefType extends AbstractStructBase
      * @uses SeatingPrefType::setSeatLocation()
      * @uses SeatingPrefType::setSeatPosition()
      * @uses SeatingPrefType::setSeatRow()
-     * @param UNKNOWN $seatDirection
+     * @param  $seatDirection
      * @param string $seatLocation
      * @param string $seatPosition
      * @param string $seatRow
      */
-    public function __construct(UNKNOWN $seatDirection = null, $seatLocation = null, $seatPosition = null, $seatRow = null)
+    public function __construct( $seatDirection = null, $seatLocation = null, $seatPosition = null, $seatRow = null)
     {
         $this
             ->setSeatDirection($seatDirection)
@@ -51,7 +51,7 @@ class SeatingPrefType extends AbstractStructBase
     }
     /**
      * Get SeatDirection value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getSeatDirection()
     {
@@ -59,10 +59,10 @@ class SeatingPrefType extends AbstractStructBase
     }
     /**
      * Set SeatDirection value
-     * @param UNKNOWN $seatDirection
+     * @param  $seatDirection
      * @return \Ammonkc\Otaehi\StructType\SeatingPrefType
      */
-    public function setSeatDirection(UNKNOWN $seatDirection = null)
+    public function setSeatDirection( $seatDirection = null)
     {
         $this->SeatDirection = $seatDirection;
         return $this;

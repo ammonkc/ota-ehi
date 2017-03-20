@@ -12,22 +12,22 @@ class TourInfo extends AbstractStructBase
 {
     /**
      * The RPH
-     * @var UNKNOWN
+     * @var
      */
     public $RPH;
     /**
      * Constructor method for TourInfo
      * @uses TourInfo::setRPH()
-     * @param UNKNOWN $rPH
+     * @param  $rPH
      */
-    public function __construct(UNKNOWN $rPH = null)
+    public function __construct( $rPH = null)
     {
         $this
             ->setRPH($rPH);
     }
     /**
      * Get RPH value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getRPH()
     {
@@ -35,10 +35,10 @@ class TourInfo extends AbstractStructBase
     }
     /**
      * Set RPH value
-     * @param UNKNOWN $rPH
+     * @param  $rPH
      * @return \Ammonkc\Otaehi\StructType\TourInfo
      */
-    public function setRPH(UNKNOWN $rPH = null)
+    public function setRPH( $rPH = null)
     {
         $this->RPH = $rPH;
         return $this;

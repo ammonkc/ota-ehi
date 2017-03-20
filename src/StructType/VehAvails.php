@@ -17,12 +17,12 @@ class VehAvails extends AbstractStructBase
     public $VehAvail;
     /**
      * The RateCategory
-     * @var UNKNOWN
+     * @var
      */
     public $RateCategory;
     /**
      * The RatePeriod
-     * @var UNKNOWN
+     * @var
      */
     public $RatePeriod;
     /**
@@ -31,10 +31,10 @@ class VehAvails extends AbstractStructBase
      * @uses VehAvails::setRateCategory()
      * @uses VehAvails::setRatePeriod()
      * @param \Ammonkc\Otaehi\StructType\VehAvail $vehAvail
-     * @param UNKNOWN $rateCategory
-     * @param UNKNOWN $ratePeriod
+     * @param  $rateCategory
+     * @param  $ratePeriod
      */
-    public function __construct(\Ammonkc\Otaehi\StructType\VehAvail $vehAvail = null, UNKNOWN $rateCategory = null, UNKNOWN $ratePeriod = null)
+    public function __construct(\Ammonkc\Otaehi\StructType\VehAvail $vehAvail = null,  $rateCategory = null,  $ratePeriod = null)
     {
         $this
             ->setVehAvail($vehAvail)
@@ -61,7 +61,7 @@ class VehAvails extends AbstractStructBase
     }
     /**
      * Get RateCategory value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getRateCategory()
     {
@@ -69,17 +69,17 @@ class VehAvails extends AbstractStructBase
     }
     /**
      * Set RateCategory value
-     * @param UNKNOWN $rateCategory
+     * @param  $rateCategory
      * @return \Ammonkc\Otaehi\StructType\VehAvails
      */
-    public function setRateCategory(UNKNOWN $rateCategory = null)
+    public function setRateCategory( $rateCategory = null)
     {
         $this->RateCategory = $rateCategory;
         return $this;
     }
     /**
      * Get RatePeriod value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getRatePeriod()
     {
@@ -87,10 +87,10 @@ class VehAvails extends AbstractStructBase
     }
     /**
      * Set RatePeriod value
-     * @param UNKNOWN $ratePeriod
+     * @param  $ratePeriod
      * @return \Ammonkc\Otaehi\StructType\VehAvails
      */
-    public function setRatePeriod(UNKNOWN $ratePeriod = null)
+    public function setRatePeriod( $ratePeriod = null)
     {
         $this->RatePeriod = $ratePeriod;
         return $this;

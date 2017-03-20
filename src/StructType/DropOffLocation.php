@@ -12,17 +12,17 @@ class DropOffLocation extends AbstractStructBase
 {
     /**
      * The ExtendedLocationCode
-     * @var UNKNOWN
+     * @var
      */
     public $ExtendedLocationCode;
     /**
      * The CounterLocation
-     * @var UNKNOWN
+     * @var
      */
     public $CounterLocation;
     /**
      * The Name
-     * @var UNKNOWN
+     * @var
      */
     public $Name;
     /**
@@ -30,11 +30,11 @@ class DropOffLocation extends AbstractStructBase
      * @uses DropOffLocation::setExtendedLocationCode()
      * @uses DropOffLocation::setCounterLocation()
      * @uses DropOffLocation::setName()
-     * @param UNKNOWN $extendedLocationCode
-     * @param UNKNOWN $counterLocation
-     * @param UNKNOWN $name
+     * @param  $extendedLocationCode
+     * @param  $counterLocation
+     * @param  $name
      */
-    public function __construct(UNKNOWN $extendedLocationCode = null, UNKNOWN $counterLocation = null, UNKNOWN $name = null)
+    public function __construct( $extendedLocationCode = null,  $counterLocation = null,  $name = null)
     {
         $this
             ->setExtendedLocationCode($extendedLocationCode)
@@ -43,7 +43,7 @@ class DropOffLocation extends AbstractStructBase
     }
     /**
      * Get ExtendedLocationCode value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getExtendedLocationCode()
     {
@@ -51,17 +51,17 @@ class DropOffLocation extends AbstractStructBase
     }
     /**
      * Set ExtendedLocationCode value
-     * @param UNKNOWN $extendedLocationCode
+     * @param  $extendedLocationCode
      * @return \Ammonkc\Otaehi\StructType\DropOffLocation
      */
-    public function setExtendedLocationCode(UNKNOWN $extendedLocationCode = null)
+    public function setExtendedLocationCode( $extendedLocationCode = null)
     {
         $this->ExtendedLocationCode = $extendedLocationCode;
         return $this;
     }
     /**
      * Get CounterLocation value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getCounterLocation()
     {
@@ -69,17 +69,17 @@ class DropOffLocation extends AbstractStructBase
     }
     /**
      * Set CounterLocation value
-     * @param UNKNOWN $counterLocation
+     * @param  $counterLocation
      * @return \Ammonkc\Otaehi\StructType\DropOffLocation
      */
-    public function setCounterLocation(UNKNOWN $counterLocation = null)
+    public function setCounterLocation( $counterLocation = null)
     {
         $this->CounterLocation = $counterLocation;
         return $this;
     }
     /**
      * Get Name value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getName()
     {
@@ -87,10 +87,10 @@ class DropOffLocation extends AbstractStructBase
     }
     /**
      * Set Name value
-     * @param UNKNOWN $name
+     * @param  $name
      * @return \Ammonkc\Otaehi\StructType\DropOffLocation
      */
-    public function setName(UNKNOWN $name = null)
+    public function setName( $name = null)
     {
         $this->Name = $name;
         return $this;

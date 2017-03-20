@@ -32,7 +32,7 @@ class ParagraphType extends AbstractStructBase
     public $ListItem;
     /**
      * The Name
-     * @var UNKNOWN
+     * @var
      */
     public $Name;
     /**
@@ -52,10 +52,10 @@ class ParagraphType extends AbstractStructBase
      * @param string $image
      * @param string $uRL
      * @param \Ammonkc\Otaehi\StructType\ListItem $listItem
-     * @param UNKNOWN $name
+     * @param  $name
      * @param int $paragraphNumber
      */
-    public function __construct($text = null, $image = null, $uRL = null, \Ammonkc\Otaehi\StructType\ListItem $listItem = null, UNKNOWN $name = null, $paragraphNumber = null)
+    public function __construct($text = null, $image = null, $uRL = null, \Ammonkc\Otaehi\StructType\ListItem $listItem = null,  $name = null, $paragraphNumber = null)
     {
         $this
             ->setText($text)
@@ -147,7 +147,7 @@ class ParagraphType extends AbstractStructBase
     }
     /**
      * Get Name value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getName()
     {
@@ -155,10 +155,10 @@ class ParagraphType extends AbstractStructBase
     }
     /**
      * Set Name value
-     * @param UNKNOWN $name
+     * @param  $name
      * @return \Ammonkc\Otaehi\StructType\ParagraphType
      */
-    public function setName(UNKNOWN $name = null)
+    public function setName( $name = null)
     {
         $this->Name = $name;
         return $this;

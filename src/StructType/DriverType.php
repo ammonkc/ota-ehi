@@ -12,7 +12,7 @@ class DriverType extends AbstractStructBase
 {
     /**
      * The Age
-     * @var UNKNOWN
+     * @var
      */
     public $Age;
     /**
@@ -22,7 +22,7 @@ class DriverType extends AbstractStructBase
     public $Code;
     /**
      * The CodeContext
-     * @var UNKNOWN
+     * @var
      */
     public $CodeContext;
     /**
@@ -42,13 +42,13 @@ class DriverType extends AbstractStructBase
      * @uses DriverType::setCodeContext()
      * @uses DriverType::setURI()
      * @uses DriverType::setQuantity()
-     * @param UNKNOWN $age
+     * @param  $age
      * @param string $code
-     * @param UNKNOWN $codeContext
+     * @param  $codeContext
      * @param string $uRI
      * @param int $quantity
      */
-    public function __construct(UNKNOWN $age = null, $code = null, UNKNOWN $codeContext = null, $uRI = null, $quantity = null)
+    public function __construct( $age = null, $code = null,  $codeContext = null, $uRI = null, $quantity = null)
     {
         $this
             ->setAge($age)
@@ -59,7 +59,7 @@ class DriverType extends AbstractStructBase
     }
     /**
      * Get Age value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getAge()
     {
@@ -67,10 +67,10 @@ class DriverType extends AbstractStructBase
     }
     /**
      * Set Age value
-     * @param UNKNOWN $age
+     * @param  $age
      * @return \Ammonkc\Otaehi\StructType\DriverType
      */
-    public function setAge(UNKNOWN $age = null)
+    public function setAge( $age = null)
     {
         $this->Age = $age;
         return $this;
@@ -99,7 +99,7 @@ class DriverType extends AbstractStructBase
     }
     /**
      * Get CodeContext value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getCodeContext()
     {
@@ -107,10 +107,10 @@ class DriverType extends AbstractStructBase
     }
     /**
      * Set CodeContext value
-     * @param UNKNOWN $codeContext
+     * @param  $codeContext
      * @return \Ammonkc\Otaehi\StructType\DriverType
      */
-    public function setCodeContext(UNKNOWN $codeContext = null)
+    public function setCodeContext( $codeContext = null)
     {
         $this->CodeContext = $codeContext;
         return $this;

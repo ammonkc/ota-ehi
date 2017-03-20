@@ -57,7 +57,7 @@ class PersonNameType extends AbstractStructBase
     public $TPA_Extensions;
     /**
      * The NameType
-     * @var UNKNOWN
+     * @var
      */
     public $NameType;
     /**
@@ -93,11 +93,11 @@ class PersonNameType extends AbstractStructBase
      * @param mixed $nameTitle
      * @param \Ammonkc\Otaehi\StructType\Document $document
      * @param mixed $tPA_Extensions
-     * @param UNKNOWN $nameType
+     * @param  $nameType
      * @param string $language
      * @param bool $defaultInd
      */
-    public function __construct($namePrefix = null, $givenName = null, $middleName = null, $surnamePrefix = null, $surname = null, $nameSuffix = null, $nameTitle = null, \Ammonkc\Otaehi\StructType\Document $document = null, $tPA_Extensions = null, UNKNOWN $nameType = null, $language = null, $defaultInd = null)
+    public function __construct($namePrefix = null, $givenName = null, $middleName = null, $surnamePrefix = null, $surname = null, $nameSuffix = null, $nameTitle = null, \Ammonkc\Otaehi\StructType\Document $document = null, $tPA_Extensions = null,  $nameType = null, $language = null, $defaultInd = null)
     {
         $this
             ->setNamePrefix($namePrefix)
@@ -277,7 +277,7 @@ class PersonNameType extends AbstractStructBase
     }
     /**
      * Get NameType value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getNameType()
     {
@@ -285,10 +285,10 @@ class PersonNameType extends AbstractStructBase
     }
     /**
      * Set NameType value
-     * @param UNKNOWN $nameType
+     * @param  $nameType
      * @return \Ammonkc\Otaehi\StructType\PersonNameType
      */
-    public function setNameType(UNKNOWN $nameType = null)
+    public function setNameType( $nameType = null)
     {
         $this->NameType = $nameType;
         return $this;

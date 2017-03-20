@@ -12,7 +12,7 @@ class ErrorType extends AbstractStructBase
 {
     /**
      * The Type
-     * @var UNKNOWN
+     * @var
      */
     public $Type;
     /**
@@ -24,10 +24,10 @@ class ErrorType extends AbstractStructBase
      * Constructor method for ErrorType
      * @uses ErrorType::setType()
      * @uses ErrorType::setNodeList()
-     * @param UNKNOWN $type
+     * @param  $type
      * @param string $nodeList
      */
-    public function __construct(UNKNOWN $type = null, $nodeList = null)
+    public function __construct( $type = null, $nodeList = null)
     {
         $this
             ->setType($type)
@@ -35,7 +35,7 @@ class ErrorType extends AbstractStructBase
     }
     /**
      * Get Type value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getType()
     {
@@ -43,10 +43,10 @@ class ErrorType extends AbstractStructBase
     }
     /**
      * Set Type value
-     * @param UNKNOWN $type
+     * @param  $type
      * @return \Ammonkc\Otaehi\StructType\ErrorType
      */
-    public function setType(UNKNOWN $type = null)
+    public function setType( $type = null)
     {
         $this->Type = $type;
         return $this;

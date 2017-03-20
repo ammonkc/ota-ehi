@@ -12,22 +12,22 @@ class ContactPref extends AbstractStructBase
 {
     /**
      * The PreferLevel
-     * @var UNKNOWN
+     * @var
      */
     public $PreferLevel;
     /**
      * The ContactMethodCode
-     * @var UNKNOWN
+     * @var
      */
     public $ContactMethodCode;
     /**
      * Constructor method for ContactPref
      * @uses ContactPref::setPreferLevel()
      * @uses ContactPref::setContactMethodCode()
-     * @param UNKNOWN $preferLevel
-     * @param UNKNOWN $contactMethodCode
+     * @param  $preferLevel
+     * @param  $contactMethodCode
      */
-    public function __construct(UNKNOWN $preferLevel = null, UNKNOWN $contactMethodCode = null)
+    public function __construct( $preferLevel = null,  $contactMethodCode = null)
     {
         $this
             ->setPreferLevel($preferLevel)
@@ -35,7 +35,7 @@ class ContactPref extends AbstractStructBase
     }
     /**
      * Get PreferLevel value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getPreferLevel()
     {
@@ -43,17 +43,17 @@ class ContactPref extends AbstractStructBase
     }
     /**
      * Set PreferLevel value
-     * @param UNKNOWN $preferLevel
+     * @param  $preferLevel
      * @return \Ammonkc\Otaehi\StructType\ContactPref
      */
-    public function setPreferLevel(UNKNOWN $preferLevel = null)
+    public function setPreferLevel( $preferLevel = null)
     {
         $this->PreferLevel = $preferLevel;
         return $this;
     }
     /**
      * Get ContactMethodCode value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getContactMethodCode()
     {
@@ -61,10 +61,10 @@ class ContactPref extends AbstractStructBase
     }
     /**
      * Set ContactMethodCode value
-     * @param UNKNOWN $contactMethodCode
+     * @param  $contactMethodCode
      * @return \Ammonkc\Otaehi\StructType\ContactPref
      */
-    public function setContactMethodCode(UNKNOWN $contactMethodCode = null)
+    public function setContactMethodCode( $contactMethodCode = null)
     {
         $this->ContactMethodCode = $contactMethodCode;
         return $this;

@@ -32,12 +32,12 @@ class DirectBillType extends AbstractStructBase
     public $Telephone;
     /**
      * The DirectBill_ID
-     * @var UNKNOWN
+     * @var
      */
     public $DirectBill_ID;
     /**
      * The BillingNumber
-     * @var UNKNOWN
+     * @var
      */
     public $BillingNumber;
     /**
@@ -52,10 +52,10 @@ class DirectBillType extends AbstractStructBase
      * @param mixed $address
      * @param mixed $email
      * @param \Ammonkc\Otaehi\StructType\Telephone $telephone
-     * @param UNKNOWN $directBill_ID
-     * @param UNKNOWN $billingNumber
+     * @param  $directBill_ID
+     * @param  $billingNumber
      */
-    public function __construct(\Ammonkc\Otaehi\StructType\CompanyName $companyName = null, $address = null, $email = null, \Ammonkc\Otaehi\StructType\Telephone $telephone = null, UNKNOWN $directBill_ID = null, UNKNOWN $billingNumber = null)
+    public function __construct(\Ammonkc\Otaehi\StructType\CompanyName $companyName = null, $address = null, $email = null, \Ammonkc\Otaehi\StructType\Telephone $telephone = null,  $directBill_ID = null,  $billingNumber = null)
     {
         $this
             ->setCompanyName($companyName)
@@ -139,7 +139,7 @@ class DirectBillType extends AbstractStructBase
     }
     /**
      * Get DirectBill_ID value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getDirectBill_ID()
     {
@@ -147,17 +147,17 @@ class DirectBillType extends AbstractStructBase
     }
     /**
      * Set DirectBill_ID value
-     * @param UNKNOWN $directBill_ID
+     * @param  $directBill_ID
      * @return \Ammonkc\Otaehi\StructType\DirectBillType
      */
-    public function setDirectBill_ID(UNKNOWN $directBill_ID = null)
+    public function setDirectBill_ID( $directBill_ID = null)
     {
         $this->DirectBill_ID = $directBill_ID;
         return $this;
     }
     /**
      * Get BillingNumber value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getBillingNumber()
     {
@@ -165,10 +165,10 @@ class DirectBillType extends AbstractStructBase
     }
     /**
      * Set BillingNumber value
-     * @param UNKNOWN $billingNumber
+     * @param  $billingNumber
      * @return \Ammonkc\Otaehi\StructType\DirectBillType
      */
-    public function setBillingNumber(UNKNOWN $billingNumber = null)
+    public function setBillingNumber( $billingNumber = null)
     {
         $this->BillingNumber = $billingNumber;
         return $this;

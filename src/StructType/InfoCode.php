@@ -17,7 +17,7 @@ class InfoCode extends AbstractStructBase
     public $Name;
     /**
      * The Code
-     * @var UNKNOWN
+     * @var
      */
     public $Code;
     /**
@@ -25,9 +25,9 @@ class InfoCode extends AbstractStructBase
      * @uses InfoCode::setName()
      * @uses InfoCode::setCode()
      * @param string $name
-     * @param UNKNOWN $code
+     * @param  $code
      */
-    public function __construct($name = null, UNKNOWN $code = null)
+    public function __construct($name = null,  $code = null)
     {
         $this
             ->setName($name)
@@ -57,7 +57,7 @@ class InfoCode extends AbstractStructBase
     }
     /**
      * Get Code value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getCode()
     {
@@ -65,10 +65,10 @@ class InfoCode extends AbstractStructBase
     }
     /**
      * Set Code value
-     * @param UNKNOWN $code
+     * @param  $code
      * @return \Ammonkc\Otaehi\StructType\InfoCode
      */
-    public function setCode(UNKNOWN $code = null)
+    public function setCode( $code = null)
     {
         $this->Code = $code;
         return $this;

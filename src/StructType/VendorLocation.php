@@ -12,17 +12,17 @@ class VendorLocation extends AbstractStructBase
 {
     /**
      * The ExtendedLocationCode
-     * @var UNKNOWN
+     * @var
      */
     public $ExtendedLocationCode;
     /**
      * The CounterLocation
-     * @var UNKNOWN
+     * @var
      */
     public $CounterLocation;
     /**
      * The Name
-     * @var UNKNOWN
+     * @var
      */
     public $Name;
     /**
@@ -36,12 +36,12 @@ class VendorLocation extends AbstractStructBase
      * @uses VendorLocation::setCounterLocation()
      * @uses VendorLocation::setName()
      * @uses VendorLocation::setCounterLocInfo()
-     * @param UNKNOWN $extendedLocationCode
-     * @param UNKNOWN $counterLocation
-     * @param UNKNOWN $name
+     * @param  $extendedLocationCode
+     * @param  $counterLocation
+     * @param  $name
      * @param string $counterLocInfo
      */
-    public function __construct(UNKNOWN $extendedLocationCode = null, UNKNOWN $counterLocation = null, UNKNOWN $name = null, $counterLocInfo = null)
+    public function __construct( $extendedLocationCode = null,  $counterLocation = null,  $name = null, $counterLocInfo = null)
     {
         $this
             ->setExtendedLocationCode($extendedLocationCode)
@@ -51,7 +51,7 @@ class VendorLocation extends AbstractStructBase
     }
     /**
      * Get ExtendedLocationCode value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getExtendedLocationCode()
     {
@@ -59,17 +59,17 @@ class VendorLocation extends AbstractStructBase
     }
     /**
      * Set ExtendedLocationCode value
-     * @param UNKNOWN $extendedLocationCode
+     * @param  $extendedLocationCode
      * @return \Ammonkc\Otaehi\StructType\VendorLocation
      */
-    public function setExtendedLocationCode(UNKNOWN $extendedLocationCode = null)
+    public function setExtendedLocationCode( $extendedLocationCode = null)
     {
         $this->ExtendedLocationCode = $extendedLocationCode;
         return $this;
     }
     /**
      * Get CounterLocation value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getCounterLocation()
     {
@@ -77,17 +77,17 @@ class VendorLocation extends AbstractStructBase
     }
     /**
      * Set CounterLocation value
-     * @param UNKNOWN $counterLocation
+     * @param  $counterLocation
      * @return \Ammonkc\Otaehi\StructType\VendorLocation
      */
-    public function setCounterLocation(UNKNOWN $counterLocation = null)
+    public function setCounterLocation( $counterLocation = null)
     {
         $this->CounterLocation = $counterLocation;
         return $this;
     }
     /**
      * Get Name value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getName()
     {
@@ -95,10 +95,10 @@ class VendorLocation extends AbstractStructBase
     }
     /**
      * Set Name value
-     * @param UNKNOWN $name
+     * @param  $name
      * @return \Ammonkc\Otaehi\StructType\VendorLocation
      */
-    public function setName(UNKNOWN $name = null)
+    public function setName( $name = null)
     {
         $this->Name = $name;
         return $this;

@@ -32,7 +32,7 @@ class PickupReturnRules extends AbstractStructBase
     public $EarliestReturn;
     /**
      * The DayOfWeek
-     * @var UNKNOWN
+     * @var
      */
     public $DayOfWeek;
     /**
@@ -76,14 +76,14 @@ class PickupReturnRules extends AbstractStructBase
      * @param \Ammonkc\Otaehi\StructType\LatestPickup $latestPickup
      * @param \Ammonkc\Otaehi\StructType\LatestReturn $latestReturn
      * @param \Ammonkc\Otaehi\StructType\EarliestReturn $earliestReturn
-     * @param UNKNOWN $dayOfWeek
+     * @param  $dayOfWeek
      * @param string $minimumKeep
      * @param string $maximumKeep
      * @param string $maximumRental
      * @param bool $overnightInd
      * @param bool $returnAllowedInd
      */
-    public function __construct(\Ammonkc\Otaehi\StructType\EarliestPickup $earliestPickup = null, \Ammonkc\Otaehi\StructType\LatestPickup $latestPickup = null, \Ammonkc\Otaehi\StructType\LatestReturn $latestReturn = null, \Ammonkc\Otaehi\StructType\EarliestReturn $earliestReturn = null, UNKNOWN $dayOfWeek = null, $minimumKeep = null, $maximumKeep = null, $maximumRental = null, $overnightInd = null, $returnAllowedInd = null)
+    public function __construct(\Ammonkc\Otaehi\StructType\EarliestPickup $earliestPickup = null, \Ammonkc\Otaehi\StructType\LatestPickup $latestPickup = null, \Ammonkc\Otaehi\StructType\LatestReturn $latestReturn = null, \Ammonkc\Otaehi\StructType\EarliestReturn $earliestReturn = null,  $dayOfWeek = null, $minimumKeep = null, $maximumKeep = null, $maximumRental = null, $overnightInd = null, $returnAllowedInd = null)
     {
         $this
             ->setEarliestPickup($earliestPickup)
@@ -171,7 +171,7 @@ class PickupReturnRules extends AbstractStructBase
     }
     /**
      * Get DayOfWeek value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getDayOfWeek()
     {
@@ -179,10 +179,10 @@ class PickupReturnRules extends AbstractStructBase
     }
     /**
      * Set DayOfWeek value
-     * @param UNKNOWN $dayOfWeek
+     * @param  $dayOfWeek
      * @return \Ammonkc\Otaehi\StructType\PickupReturnRules
      */
-    public function setDayOfWeek(UNKNOWN $dayOfWeek = null)
+    public function setDayOfWeek( $dayOfWeek = null)
     {
         $this->DayOfWeek = $dayOfWeek;
         return $this;

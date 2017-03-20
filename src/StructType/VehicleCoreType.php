@@ -27,7 +27,7 @@ class VehicleCoreType extends AbstractStructBase
     public $AirConditionInd;
     /**
      * The TransmissionType
-     * @var UNKNOWN
+     * @var
      */
     public $TransmissionType;
     /**
@@ -51,11 +51,11 @@ class VehicleCoreType extends AbstractStructBase
      * @param \Ammonkc\Otaehi\StructType\VehType $vehType
      * @param \Ammonkc\Otaehi\StructType\VehClass $vehClass
      * @param bool $airConditionInd
-     * @param UNKNOWN $transmissionType
+     * @param  $transmissionType
      * @param string $fuelType
      * @param string $driveType
      */
-    public function __construct(\Ammonkc\Otaehi\StructType\VehType $vehType = null, \Ammonkc\Otaehi\StructType\VehClass $vehClass = null, $airConditionInd = null, UNKNOWN $transmissionType = null, $fuelType = null, $driveType = null)
+    public function __construct(\Ammonkc\Otaehi\StructType\VehType $vehType = null, \Ammonkc\Otaehi\StructType\VehClass $vehClass = null, $airConditionInd = null,  $transmissionType = null, $fuelType = null, $driveType = null)
     {
         $this
             ->setVehType($vehType)
@@ -121,7 +121,7 @@ class VehicleCoreType extends AbstractStructBase
     }
     /**
      * Get TransmissionType value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getTransmissionType()
     {
@@ -129,10 +129,10 @@ class VehicleCoreType extends AbstractStructBase
     }
     /**
      * Set TransmissionType value
-     * @param UNKNOWN $transmissionType
+     * @param  $transmissionType
      * @return \Ammonkc\Otaehi\StructType\VehicleCoreType
      */
-    public function setTransmissionType(UNKNOWN $transmissionType = null)
+    public function setTransmissionType( $transmissionType = null)
     {
         $this->TransmissionType = $transmissionType;
         return $this;

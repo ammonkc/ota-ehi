@@ -47,7 +47,7 @@ class RateRestrictions extends AbstractStructBase
     public $GuaranteeReqInd;
     /**
      * The MaximumVehiclesAllowed
-     * @var UNKNOWN
+     * @var
      */
     public $MaximumVehiclesAllowed;
     /**
@@ -72,12 +72,12 @@ class RateRestrictions extends AbstractStructBase
     public $ModificationPenaltyInd;
     /**
      * The MinimumAge
-     * @var UNKNOWN
+     * @var
      */
     public $MinimumAge;
     /**
      * The MaximumAge
-     * @var UNKNOWN
+     * @var
      */
     public $MaximumAge;
     /**
@@ -109,16 +109,16 @@ class RateRestrictions extends AbstractStructBase
      * @param bool $restrictedMileageInd
      * @param bool $corporateRateInd
      * @param bool $guaranteeReqInd
-     * @param UNKNOWN $maximumVehiclesAllowed
+     * @param  $maximumVehiclesAllowed
      * @param bool $overnightInd
      * @param string $oneWayPolicy
      * @param bool $cancellationPenaltyInd
      * @param bool $modificationPenaltyInd
-     * @param UNKNOWN $minimumAge
-     * @param UNKNOWN $maximumAge
+     * @param  $minimumAge
+     * @param  $maximumAge
      * @param bool $noShowFeeInd
      */
-    public function __construct($arriveByFlight = null, $minimumDayInd = null, $maximumDayInd = null, $advancedBookingInd = null, $restrictedMileageInd = null, $corporateRateInd = null, $guaranteeReqInd = null, UNKNOWN $maximumVehiclesAllowed = null, $overnightInd = null, $oneWayPolicy = null, $cancellationPenaltyInd = null, $modificationPenaltyInd = null, UNKNOWN $minimumAge = null, UNKNOWN $maximumAge = null, $noShowFeeInd = null)
+    public function __construct($arriveByFlight = null, $minimumDayInd = null, $maximumDayInd = null, $advancedBookingInd = null, $restrictedMileageInd = null, $corporateRateInd = null, $guaranteeReqInd = null,  $maximumVehiclesAllowed = null, $overnightInd = null, $oneWayPolicy = null, $cancellationPenaltyInd = null, $modificationPenaltyInd = null,  $minimumAge = null,  $maximumAge = null, $noShowFeeInd = null)
     {
         $this
             ->setArriveByFlight($arriveByFlight)
@@ -265,7 +265,7 @@ class RateRestrictions extends AbstractStructBase
     }
     /**
      * Get MaximumVehiclesAllowed value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getMaximumVehiclesAllowed()
     {
@@ -273,10 +273,10 @@ class RateRestrictions extends AbstractStructBase
     }
     /**
      * Set MaximumVehiclesAllowed value
-     * @param UNKNOWN $maximumVehiclesAllowed
+     * @param  $maximumVehiclesAllowed
      * @return \Ammonkc\Otaehi\StructType\RateRestrictions
      */
-    public function setMaximumVehiclesAllowed(UNKNOWN $maximumVehiclesAllowed = null)
+    public function setMaximumVehiclesAllowed( $maximumVehiclesAllowed = null)
     {
         $this->MaximumVehiclesAllowed = $maximumVehiclesAllowed;
         return $this;
@@ -359,7 +359,7 @@ class RateRestrictions extends AbstractStructBase
     }
     /**
      * Get MinimumAge value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getMinimumAge()
     {
@@ -367,17 +367,17 @@ class RateRestrictions extends AbstractStructBase
     }
     /**
      * Set MinimumAge value
-     * @param UNKNOWN $minimumAge
+     * @param  $minimumAge
      * @return \Ammonkc\Otaehi\StructType\RateRestrictions
      */
-    public function setMinimumAge(UNKNOWN $minimumAge = null)
+    public function setMinimumAge( $minimumAge = null)
     {
         $this->MinimumAge = $minimumAge;
         return $this;
     }
     /**
      * Get MaximumAge value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getMaximumAge()
     {
@@ -385,10 +385,10 @@ class RateRestrictions extends AbstractStructBase
     }
     /**
      * Set MaximumAge value
-     * @param UNKNOWN $maximumAge
+     * @param  $maximumAge
      * @return \Ammonkc\Otaehi\StructType\RateRestrictions
      */
-    public function setMaximumAge(UNKNOWN $maximumAge = null)
+    public function setMaximumAge( $maximumAge = null)
     {
         $this->MaximumAge = $maximumAge;
         return $this;

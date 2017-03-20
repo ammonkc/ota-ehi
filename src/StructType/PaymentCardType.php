@@ -97,32 +97,32 @@ class PaymentCardType extends AbstractStructBase
     public $SignatureOnFileInd;
     /**
      * The CardCode
-     * @var UNKNOWN
+     * @var
      */
     public $CardCode;
     /**
      * The CardHolderRPH
-     * @var UNKNOWN
+     * @var
      */
     public $CardHolderRPH;
     /**
      * The CompanyCardReference
-     * @var UNKNOWN
+     * @var
      */
     public $CompanyCardReference;
     /**
      * The CountryOfIssue
-     * @var UNKNOWN
+     * @var
      */
     public $CountryOfIssue;
     /**
      * The Remark
-     * @var UNKNOWN
+     * @var
      */
     public $Remark;
     /**
      * The RPH
-     * @var UNKNOWN
+     * @var
      */
     public $RPH;
     /**
@@ -167,14 +167,14 @@ class PaymentCardType extends AbstractStructBase
      * @param bool $extendedPaymentInd
      * @param bool $secureInd
      * @param bool $signatureOnFileInd
-     * @param UNKNOWN $cardCode
-     * @param UNKNOWN $cardHolderRPH
-     * @param UNKNOWN $companyCardReference
-     * @param UNKNOWN $countryOfIssue
-     * @param UNKNOWN $remark
-     * @param UNKNOWN $rPH
+     * @param  $cardCode
+     * @param  $cardHolderRPH
+     * @param  $companyCardReference
+     * @param  $countryOfIssue
+     * @param  $remark
+     * @param  $rPH
      */
-    public function __construct($cardType = null, \Ammonkc\Otaehi\StructType\Issuer $issuer = null, $cardHolderName = null, $cardHolderNameDetails = null, $address = null, \Ammonkc\Otaehi\StructType\Telephone $telephone = null, $email = null, $cardNumber = null, $seriesCode = null, \Ammonkc\Otaehi\StructType\CustLoyalty $custLoyalty = null, $magneticStripe = null, \Ammonkc\Otaehi\StructType\ThreeDomainSecurity $threeDomainSecurity = null, \Ammonkc\Otaehi\StructType\SignatureOnFile $signatureOnFile = null, $tPA_Extensions = null, $extendedPaymentInd = null, $secureInd = null, $signatureOnFileInd = null, UNKNOWN $cardCode = null, UNKNOWN $cardHolderRPH = null, UNKNOWN $companyCardReference = null, UNKNOWN $countryOfIssue = null, UNKNOWN $remark = null, UNKNOWN $rPH = null)
+    public function __construct($cardType = null, \Ammonkc\Otaehi\StructType\Issuer $issuer = null, $cardHolderName = null, $cardHolderNameDetails = null, $address = null, \Ammonkc\Otaehi\StructType\Telephone $telephone = null, $email = null, $cardNumber = null, $seriesCode = null, \Ammonkc\Otaehi\StructType\CustLoyalty $custLoyalty = null, $magneticStripe = null, \Ammonkc\Otaehi\StructType\ThreeDomainSecurity $threeDomainSecurity = null, \Ammonkc\Otaehi\StructType\SignatureOnFile $signatureOnFile = null, $tPA_Extensions = null, $extendedPaymentInd = null, $secureInd = null, $signatureOnFileInd = null,  $cardCode = null,  $cardHolderRPH = null,  $companyCardReference = null,  $countryOfIssue = null,  $remark = null,  $rPH = null)
     {
         $this
             ->setCardType($cardType)
@@ -509,7 +509,7 @@ class PaymentCardType extends AbstractStructBase
     }
     /**
      * Get CardCode value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getCardCode()
     {
@@ -517,17 +517,17 @@ class PaymentCardType extends AbstractStructBase
     }
     /**
      * Set CardCode value
-     * @param UNKNOWN $cardCode
+     * @param  $cardCode
      * @return \Ammonkc\Otaehi\StructType\PaymentCardType
      */
-    public function setCardCode(UNKNOWN $cardCode = null)
+    public function setCardCode( $cardCode = null)
     {
         $this->CardCode = $cardCode;
         return $this;
     }
     /**
      * Get CardHolderRPH value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getCardHolderRPH()
     {
@@ -535,17 +535,17 @@ class PaymentCardType extends AbstractStructBase
     }
     /**
      * Set CardHolderRPH value
-     * @param UNKNOWN $cardHolderRPH
+     * @param  $cardHolderRPH
      * @return \Ammonkc\Otaehi\StructType\PaymentCardType
      */
-    public function setCardHolderRPH(UNKNOWN $cardHolderRPH = null)
+    public function setCardHolderRPH( $cardHolderRPH = null)
     {
         $this->CardHolderRPH = $cardHolderRPH;
         return $this;
     }
     /**
      * Get CompanyCardReference value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getCompanyCardReference()
     {
@@ -553,17 +553,17 @@ class PaymentCardType extends AbstractStructBase
     }
     /**
      * Set CompanyCardReference value
-     * @param UNKNOWN $companyCardReference
+     * @param  $companyCardReference
      * @return \Ammonkc\Otaehi\StructType\PaymentCardType
      */
-    public function setCompanyCardReference(UNKNOWN $companyCardReference = null)
+    public function setCompanyCardReference( $companyCardReference = null)
     {
         $this->CompanyCardReference = $companyCardReference;
         return $this;
     }
     /**
      * Get CountryOfIssue value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getCountryOfIssue()
     {
@@ -571,17 +571,17 @@ class PaymentCardType extends AbstractStructBase
     }
     /**
      * Set CountryOfIssue value
-     * @param UNKNOWN $countryOfIssue
+     * @param  $countryOfIssue
      * @return \Ammonkc\Otaehi\StructType\PaymentCardType
      */
-    public function setCountryOfIssue(UNKNOWN $countryOfIssue = null)
+    public function setCountryOfIssue( $countryOfIssue = null)
     {
         $this->CountryOfIssue = $countryOfIssue;
         return $this;
     }
     /**
      * Get Remark value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getRemark()
     {
@@ -589,17 +589,17 @@ class PaymentCardType extends AbstractStructBase
     }
     /**
      * Set Remark value
-     * @param UNKNOWN $remark
+     * @param  $remark
      * @return \Ammonkc\Otaehi\StructType\PaymentCardType
      */
-    public function setRemark(UNKNOWN $remark = null)
+    public function setRemark( $remark = null)
     {
         $this->Remark = $remark;
         return $this;
     }
     /**
      * Get RPH value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getRPH()
     {
@@ -607,10 +607,10 @@ class PaymentCardType extends AbstractStructBase
     }
     /**
      * Set RPH value
-     * @param UNKNOWN $rPH
+     * @param  $rPH
      * @return \Ammonkc\Otaehi\StructType\PaymentCardType
      */
-    public function setRPH(UNKNOWN $rPH = null)
+    public function setRPH( $rPH = null)
     {
         $this->RPH = $rPH;
         return $this;

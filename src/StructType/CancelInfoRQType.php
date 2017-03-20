@@ -27,7 +27,7 @@ class CancelInfoRQType extends AbstractStructBase
     public $TPA_Extensions;
     /**
      * The CancelType
-     * @var UNKNOWN
+     * @var
      */
     public $CancelType;
     /**
@@ -39,9 +39,9 @@ class CancelInfoRQType extends AbstractStructBase
      * @param mixed $uniqueID
      * @param mixed $personName
      * @param mixed $tPA_Extensions
-     * @param UNKNOWN $cancelType
+     * @param  $cancelType
      */
-    public function __construct($uniqueID = null, $personName = null, $tPA_Extensions = null, UNKNOWN $cancelType = null)
+    public function __construct($uniqueID = null, $personName = null, $tPA_Extensions = null,  $cancelType = null)
     {
         $this
             ->setUniqueID($uniqueID)
@@ -105,7 +105,7 @@ class CancelInfoRQType extends AbstractStructBase
     }
     /**
      * Get CancelType value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getCancelType()
     {
@@ -113,10 +113,10 @@ class CancelInfoRQType extends AbstractStructBase
     }
     /**
      * Set CancelType value
-     * @param UNKNOWN $cancelType
+     * @param  $cancelType
      * @return \Ammonkc\Otaehi\StructType\CancelInfoRQType
      */
-    public function setCancelType(UNKNOWN $cancelType = null)
+    public function setCancelType( $cancelType = null)
     {
         $this->CancelType = $cancelType;
         return $this;

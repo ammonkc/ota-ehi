@@ -12,22 +12,22 @@ class Voucher extends AbstractStructBase
 {
     /**
      * The BillingNumber
-     * @var UNKNOWN
+     * @var
      */
     public $BillingNumber;
     /**
      * The SupplierIdentifier
-     * @var UNKNOWN
+     * @var
      */
     public $SupplierIdentifier;
     /**
      * The Identifier
-     * @var UNKNOWN
+     * @var
      */
     public $Identifier;
     /**
      * The ValueType
-     * @var UNKNOWN
+     * @var
      */
     public $ValueType;
     /**
@@ -48,14 +48,14 @@ class Voucher extends AbstractStructBase
      * @uses Voucher::setValueType()
      * @uses Voucher::setElectronicIndicator()
      * @uses Voucher::setInfo()
-     * @param UNKNOWN $billingNumber
-     * @param UNKNOWN $supplierIdentifier
-     * @param UNKNOWN $identifier
-     * @param UNKNOWN $valueType
+     * @param  $billingNumber
+     * @param  $supplierIdentifier
+     * @param  $identifier
+     * @param  $valueType
      * @param bool $electronicIndicator
      * @param \Ammonkc\Otaehi\StructType\FormattedTextType $info
      */
-    public function __construct(UNKNOWN $billingNumber = null, UNKNOWN $supplierIdentifier = null, UNKNOWN $identifier = null, UNKNOWN $valueType = null, $electronicIndicator = null, \Ammonkc\Otaehi\StructType\FormattedTextType $info = null)
+    public function __construct( $billingNumber = null,  $supplierIdentifier = null,  $identifier = null,  $valueType = null, $electronicIndicator = null, \Ammonkc\Otaehi\StructType\FormattedTextType $info = null)
     {
         $this
             ->setBillingNumber($billingNumber)
@@ -67,7 +67,7 @@ class Voucher extends AbstractStructBase
     }
     /**
      * Get BillingNumber value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getBillingNumber()
     {
@@ -75,17 +75,17 @@ class Voucher extends AbstractStructBase
     }
     /**
      * Set BillingNumber value
-     * @param UNKNOWN $billingNumber
+     * @param  $billingNumber
      * @return \Ammonkc\Otaehi\StructType\Voucher
      */
-    public function setBillingNumber(UNKNOWN $billingNumber = null)
+    public function setBillingNumber( $billingNumber = null)
     {
         $this->BillingNumber = $billingNumber;
         return $this;
     }
     /**
      * Get SupplierIdentifier value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getSupplierIdentifier()
     {
@@ -93,17 +93,17 @@ class Voucher extends AbstractStructBase
     }
     /**
      * Set SupplierIdentifier value
-     * @param UNKNOWN $supplierIdentifier
+     * @param  $supplierIdentifier
      * @return \Ammonkc\Otaehi\StructType\Voucher
      */
-    public function setSupplierIdentifier(UNKNOWN $supplierIdentifier = null)
+    public function setSupplierIdentifier( $supplierIdentifier = null)
     {
         $this->SupplierIdentifier = $supplierIdentifier;
         return $this;
     }
     /**
      * Get Identifier value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getIdentifier()
     {
@@ -111,17 +111,17 @@ class Voucher extends AbstractStructBase
     }
     /**
      * Set Identifier value
-     * @param UNKNOWN $identifier
+     * @param  $identifier
      * @return \Ammonkc\Otaehi\StructType\Voucher
      */
-    public function setIdentifier(UNKNOWN $identifier = null)
+    public function setIdentifier( $identifier = null)
     {
         $this->Identifier = $identifier;
         return $this;
     }
     /**
      * Get ValueType value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getValueType()
     {
@@ -129,10 +129,10 @@ class Voucher extends AbstractStructBase
     }
     /**
      * Set ValueType value
-     * @param UNKNOWN $valueType
+     * @param  $valueType
      * @return \Ammonkc\Otaehi\StructType\Voucher
      */
-    public function setValueType(UNKNOWN $valueType = null)
+    public function setValueType( $valueType = null)
     {
         $this->ValueType = $valueType;
         return $this;

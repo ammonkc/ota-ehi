@@ -12,22 +12,22 @@ class MultimediaDescriptions extends AbstractStructBase
 {
     /**
      * The Attire
-     * @var UNKNOWN
+     * @var
      */
     public $Attire;
     /**
      * Constructor method for MultimediaDescriptions
      * @uses MultimediaDescriptions::setAttire()
-     * @param UNKNOWN $attire
+     * @param  $attire
      */
-    public function __construct(UNKNOWN $attire = null)
+    public function __construct( $attire = null)
     {
         $this
             ->setAttire($attire);
     }
     /**
      * Get Attire value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getAttire()
     {
@@ -35,10 +35,10 @@ class MultimediaDescriptions extends AbstractStructBase
     }
     /**
      * Set Attire value
-     * @param UNKNOWN $attire
+     * @param  $attire
      * @return \Ammonkc\Otaehi\StructType\MultimediaDescriptions
      */
-    public function setAttire(UNKNOWN $attire = null)
+    public function setAttire( $attire = null)
     {
         $this->Attire = $attire;
         return $this;

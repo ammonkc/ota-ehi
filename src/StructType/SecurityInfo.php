@@ -17,12 +17,12 @@ class SecurityInfo extends AbstractStructBase
     public $PasswordHint;
     /**
      * The Username
-     * @var UNKNOWN
+     * @var
      */
     public $Username;
     /**
      * The Password
-     * @var UNKNOWN
+     * @var
      */
     public $Password;
     /**
@@ -31,10 +31,10 @@ class SecurityInfo extends AbstractStructBase
      * @uses SecurityInfo::setUsername()
      * @uses SecurityInfo::setPassword()
      * @param \Ammonkc\Otaehi\StructType\PasswordHint $passwordHint
-     * @param UNKNOWN $username
-     * @param UNKNOWN $password
+     * @param  $username
+     * @param  $password
      */
-    public function __construct(\Ammonkc\Otaehi\StructType\PasswordHint $passwordHint = null, UNKNOWN $username = null, UNKNOWN $password = null)
+    public function __construct(\Ammonkc\Otaehi\StructType\PasswordHint $passwordHint = null,  $username = null,  $password = null)
     {
         $this
             ->setPasswordHint($passwordHint)
@@ -61,7 +61,7 @@ class SecurityInfo extends AbstractStructBase
     }
     /**
      * Get Username value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getUsername()
     {
@@ -69,17 +69,17 @@ class SecurityInfo extends AbstractStructBase
     }
     /**
      * Set Username value
-     * @param UNKNOWN $username
+     * @param  $username
      * @return \Ammonkc\Otaehi\StructType\SecurityInfo
      */
-    public function setUsername(UNKNOWN $username = null)
+    public function setUsername( $username = null)
     {
         $this->Username = $username;
         return $this;
     }
     /**
      * Get Password value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getPassword()
     {
@@ -87,10 +87,10 @@ class SecurityInfo extends AbstractStructBase
     }
     /**
      * Set Password value
-     * @param UNKNOWN $password
+     * @param  $password
      * @return \Ammonkc\Otaehi\StructType\SecurityInfo
      */
-    public function setPassword(UNKNOWN $password = null)
+    public function setPassword( $password = null)
     {
         $this->Password = $password;
         return $this;

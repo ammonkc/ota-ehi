@@ -52,12 +52,12 @@ class FlightSegmentBaseType extends AbstractStructBase
     public $StopQuantity;
     /**
      * The RPH
-     * @var UNKNOWN
+     * @var
      */
     public $RPH;
     /**
      * The InfoSource
-     * @var UNKNOWN
+     * @var
      */
     public $InfoSource;
     /**
@@ -80,10 +80,10 @@ class FlightSegmentBaseType extends AbstractStructBase
      * @param string $departureDateTime
      * @param string $arrivalDateTime
      * @param int $stopQuantity
-     * @param UNKNOWN $rPH
-     * @param UNKNOWN $infoSource
+     * @param  $rPH
+     * @param  $infoSource
      */
-    public function __construct(\Ammonkc\Otaehi\StructType\DepartureAirport $departureAirport = null, \Ammonkc\Otaehi\StructType\ArrivalAirport $arrivalAirport = null, $operatingAirline = null, $equipment = null, $tPA_Extensions = null, $departureDateTime = null, $arrivalDateTime = null, $stopQuantity = null, UNKNOWN $rPH = null, UNKNOWN $infoSource = null)
+    public function __construct(\Ammonkc\Otaehi\StructType\DepartureAirport $departureAirport = null, \Ammonkc\Otaehi\StructType\ArrivalAirport $arrivalAirport = null, $operatingAirline = null, $equipment = null, $tPA_Extensions = null, $departureDateTime = null, $arrivalDateTime = null, $stopQuantity = null,  $rPH = null,  $infoSource = null)
     {
         $this
             ->setDepartureAirport($departureAirport)
@@ -255,7 +255,7 @@ class FlightSegmentBaseType extends AbstractStructBase
     }
     /**
      * Get RPH value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getRPH()
     {
@@ -263,17 +263,17 @@ class FlightSegmentBaseType extends AbstractStructBase
     }
     /**
      * Set RPH value
-     * @param UNKNOWN $rPH
+     * @param  $rPH
      * @return \Ammonkc\Otaehi\StructType\FlightSegmentBaseType
      */
-    public function setRPH(UNKNOWN $rPH = null)
+    public function setRPH( $rPH = null)
     {
         $this->RPH = $rPH;
         return $this;
     }
     /**
      * Get InfoSource value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getInfoSource()
     {
@@ -281,10 +281,10 @@ class FlightSegmentBaseType extends AbstractStructBase
     }
     /**
      * Set InfoSource value
-     * @param UNKNOWN $infoSource
+     * @param  $infoSource
      * @return \Ammonkc\Otaehi\StructType\FlightSegmentBaseType
      */
-    public function setInfoSource(UNKNOWN $infoSource = null)
+    public function setInfoSource( $infoSource = null)
     {
         $this->InfoSource = $infoSource;
         return $this;

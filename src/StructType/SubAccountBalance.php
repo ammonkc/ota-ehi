@@ -12,7 +12,7 @@ class SubAccountBalance extends AbstractStructBase
 {
     /**
      * The Type
-     * @var UNKNOWN
+     * @var
      */
     public $Type;
     /**
@@ -24,10 +24,10 @@ class SubAccountBalance extends AbstractStructBase
      * Constructor method for SubAccountBalance
      * @uses SubAccountBalance::setType()
      * @uses SubAccountBalance::setBalance()
-     * @param UNKNOWN $type
+     * @param  $type
      * @param int $balance
      */
-    public function __construct(UNKNOWN $type = null, $balance = null)
+    public function __construct( $type = null, $balance = null)
     {
         $this
             ->setType($type)
@@ -35,7 +35,7 @@ class SubAccountBalance extends AbstractStructBase
     }
     /**
      * Get Type value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getType()
     {
@@ -43,10 +43,10 @@ class SubAccountBalance extends AbstractStructBase
     }
     /**
      * Set Type value
-     * @param UNKNOWN $type
+     * @param  $type
      * @return \Ammonkc\Otaehi\StructType\SubAccountBalance
      */
-    public function setType(UNKNOWN $type = null)
+    public function setType( $type = null)
     {
         $this->Type = $type;
         return $this;

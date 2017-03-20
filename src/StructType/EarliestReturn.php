@@ -12,22 +12,22 @@ class EarliestReturn extends AbstractStructBase
 {
     /**
      * The DayOfWeek
-     * @var UNKNOWN
+     * @var
      */
     public $DayOfWeek;
     /**
      * The Time
-     * @var UNKNOWN
+     * @var
      */
     public $Time;
     /**
      * Constructor method for EarliestReturn
      * @uses EarliestReturn::setDayOfWeek()
      * @uses EarliestReturn::setTime()
-     * @param UNKNOWN $dayOfWeek
-     * @param UNKNOWN $time
+     * @param  $dayOfWeek
+     * @param  $time
      */
-    public function __construct(UNKNOWN $dayOfWeek = null, UNKNOWN $time = null)
+    public function __construct( $dayOfWeek = null,  $time = null)
     {
         $this
             ->setDayOfWeek($dayOfWeek)
@@ -35,7 +35,7 @@ class EarliestReturn extends AbstractStructBase
     }
     /**
      * Get DayOfWeek value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getDayOfWeek()
     {
@@ -43,17 +43,17 @@ class EarliestReturn extends AbstractStructBase
     }
     /**
      * Set DayOfWeek value
-     * @param UNKNOWN $dayOfWeek
+     * @param  $dayOfWeek
      * @return \Ammonkc\Otaehi\StructType\EarliestReturn
      */
-    public function setDayOfWeek(UNKNOWN $dayOfWeek = null)
+    public function setDayOfWeek( $dayOfWeek = null)
     {
         $this->DayOfWeek = $dayOfWeek;
         return $this;
     }
     /**
      * Get Time value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getTime()
     {
@@ -61,10 +61,10 @@ class EarliestReturn extends AbstractStructBase
     }
     /**
      * Set Time value
-     * @param UNKNOWN $time
+     * @param  $time
      * @return \Ammonkc\Otaehi\StructType\EarliestReturn
      */
-    public function setTime(UNKNOWN $time = null)
+    public function setTime( $time = null)
     {
         $this->Time = $time;
         return $this;

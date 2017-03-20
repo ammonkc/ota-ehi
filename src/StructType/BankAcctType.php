@@ -37,7 +37,7 @@ class BankAcctType extends AbstractStructBase
     public $ChecksAcceptedInd;
     /**
      * The CheckNumber
-     * @var UNKNOWN
+     * @var
      */
     public $CheckNumber;
     /**
@@ -53,9 +53,9 @@ class BankAcctType extends AbstractStructBase
      * @param mixed $bankID
      * @param mixed $type
      * @param bool $checksAcceptedInd
-     * @param UNKNOWN $checkNumber
+     * @param  $checkNumber
      */
-    public function __construct($bankAcctName = null, $bankAcctNumber = null, $bankID = null, $type = null, $checksAcceptedInd = null, UNKNOWN $checkNumber = null)
+    public function __construct($bankAcctName = null, $bankAcctNumber = null, $bankID = null, $type = null, $checksAcceptedInd = null,  $checkNumber = null)
     {
         $this
             ->setBankAcctName($bankAcctName)
@@ -157,7 +157,7 @@ class BankAcctType extends AbstractStructBase
     }
     /**
      * Get CheckNumber value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getCheckNumber()
     {
@@ -165,10 +165,10 @@ class BankAcctType extends AbstractStructBase
     }
     /**
      * Set CheckNumber value
-     * @param UNKNOWN $checkNumber
+     * @param  $checkNumber
      * @return \Ammonkc\Otaehi\StructType\BankAcctType
      */
-    public function setCheckNumber(UNKNOWN $checkNumber = null)
+    public function setCheckNumber( $checkNumber = null)
     {
         $this->CheckNumber = $checkNumber;
         return $this;

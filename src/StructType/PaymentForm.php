@@ -17,7 +17,7 @@ class PaymentForm extends AbstractStructBase
     public $AssociatedSupplier;
     /**
      * The TransferAction
-     * @var UNKNOWN
+     * @var
      */
     public $TransferAction;
     /**
@@ -27,7 +27,7 @@ class PaymentForm extends AbstractStructBase
     public $DefaultInd;
     /**
      * The ParentCompanyRef
-     * @var UNKNOWN
+     * @var
      */
     public $ParentCompanyRef;
     /**
@@ -37,11 +37,11 @@ class PaymentForm extends AbstractStructBase
      * @uses PaymentForm::setDefaultInd()
      * @uses PaymentForm::setParentCompanyRef()
      * @param \Ammonkc\Otaehi\StructType\AssociatedSupplier $associatedSupplier
-     * @param UNKNOWN $transferAction
+     * @param  $transferAction
      * @param bool $defaultInd
-     * @param UNKNOWN $parentCompanyRef
+     * @param  $parentCompanyRef
      */
-    public function __construct(\Ammonkc\Otaehi\StructType\AssociatedSupplier $associatedSupplier = null, UNKNOWN $transferAction = null, $defaultInd = null, UNKNOWN $parentCompanyRef = null)
+    public function __construct(\Ammonkc\Otaehi\StructType\AssociatedSupplier $associatedSupplier = null,  $transferAction = null, $defaultInd = null,  $parentCompanyRef = null)
     {
         $this
             ->setAssociatedSupplier($associatedSupplier)
@@ -69,7 +69,7 @@ class PaymentForm extends AbstractStructBase
     }
     /**
      * Get TransferAction value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getTransferAction()
     {
@@ -77,10 +77,10 @@ class PaymentForm extends AbstractStructBase
     }
     /**
      * Set TransferAction value
-     * @param UNKNOWN $transferAction
+     * @param  $transferAction
      * @return \Ammonkc\Otaehi\StructType\PaymentForm
      */
-    public function setTransferAction(UNKNOWN $transferAction = null)
+    public function setTransferAction( $transferAction = null)
     {
         $this->TransferAction = $transferAction;
         return $this;
@@ -105,7 +105,7 @@ class PaymentForm extends AbstractStructBase
     }
     /**
      * Get ParentCompanyRef value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getParentCompanyRef()
     {
@@ -113,10 +113,10 @@ class PaymentForm extends AbstractStructBase
     }
     /**
      * Set ParentCompanyRef value
-     * @param UNKNOWN $parentCompanyRef
+     * @param  $parentCompanyRef
      * @return \Ammonkc\Otaehi\StructType\PaymentForm
      */
-    public function setParentCompanyRef(UNKNOWN $parentCompanyRef = null)
+    public function setParentCompanyRef( $parentCompanyRef = null)
     {
         $this->ParentCompanyRef = $parentCompanyRef;
         return $this;

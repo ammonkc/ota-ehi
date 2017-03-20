@@ -52,12 +52,12 @@ class PaymentFormType extends AbstractStructBase
     public $Cash;
     /**
      * The CostCenterID
-     * @var UNKNOWN
+     * @var
      */
     public $CostCenterID;
     /**
      * The RPH
-     * @var UNKNOWN
+     * @var
      */
     public $RPH;
     /**
@@ -72,17 +72,17 @@ class PaymentFormType extends AbstractStructBase
     public $GuaranteeIndicator;
     /**
      * The GuaranteeTypeCode
-     * @var UNKNOWN
+     * @var
      */
     public $GuaranteeTypeCode;
     /**
      * The GuaranteeID
-     * @var UNKNOWN
+     * @var
      */
     public $GuaranteeID;
     /**
      * The Remark
-     * @var UNKNOWN
+     * @var
      */
     public $Remark;
     /**
@@ -110,15 +110,15 @@ class PaymentFormType extends AbstractStructBase
      * @param \Ammonkc\Otaehi\StructType\MiscChargeOrder $miscChargeOrder
      * @param \Ammonkc\Otaehi\StructType\Ticket $ticket
      * @param \Ammonkc\Otaehi\StructType\Cash $cash
-     * @param UNKNOWN $costCenterID
-     * @param UNKNOWN $rPH
+     * @param  $costCenterID
+     * @param  $rPH
      * @param string $paymentTransactionTypeCode
      * @param bool $guaranteeIndicator
-     * @param UNKNOWN $guaranteeTypeCode
-     * @param UNKNOWN $guaranteeID
-     * @param UNKNOWN $remark
+     * @param  $guaranteeTypeCode
+     * @param  $guaranteeID
+     * @param  $remark
      */
-    public function __construct($paymentCard = null, $bankAcct = null, $directBill = null, \Ammonkc\Otaehi\StructType\Voucher $voucher = null, \Ammonkc\Otaehi\StructType\LoyaltyRedemption $loyaltyRedemption = null, \Ammonkc\Otaehi\StructType\MiscChargeOrder $miscChargeOrder = null, \Ammonkc\Otaehi\StructType\Ticket $ticket = null, \Ammonkc\Otaehi\StructType\Cash $cash = null, UNKNOWN $costCenterID = null, UNKNOWN $rPH = null, $paymentTransactionTypeCode = null, $guaranteeIndicator = null, UNKNOWN $guaranteeTypeCode = null, UNKNOWN $guaranteeID = null, UNKNOWN $remark = null)
+    public function __construct($paymentCard = null, $bankAcct = null, $directBill = null, \Ammonkc\Otaehi\StructType\Voucher $voucher = null, \Ammonkc\Otaehi\StructType\LoyaltyRedemption $loyaltyRedemption = null, \Ammonkc\Otaehi\StructType\MiscChargeOrder $miscChargeOrder = null, \Ammonkc\Otaehi\StructType\Ticket $ticket = null, \Ammonkc\Otaehi\StructType\Cash $cash = null,  $costCenterID = null,  $rPH = null, $paymentTransactionTypeCode = null, $guaranteeIndicator = null,  $guaranteeTypeCode = null,  $guaranteeID = null,  $remark = null)
     {
         $this
             ->setPaymentCard($paymentCard)
@@ -283,7 +283,7 @@ class PaymentFormType extends AbstractStructBase
     }
     /**
      * Get CostCenterID value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getCostCenterID()
     {
@@ -291,17 +291,17 @@ class PaymentFormType extends AbstractStructBase
     }
     /**
      * Set CostCenterID value
-     * @param UNKNOWN $costCenterID
+     * @param  $costCenterID
      * @return \Ammonkc\Otaehi\StructType\PaymentFormType
      */
-    public function setCostCenterID(UNKNOWN $costCenterID = null)
+    public function setCostCenterID( $costCenterID = null)
     {
         $this->CostCenterID = $costCenterID;
         return $this;
     }
     /**
      * Get RPH value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getRPH()
     {
@@ -309,10 +309,10 @@ class PaymentFormType extends AbstractStructBase
     }
     /**
      * Set RPH value
-     * @param UNKNOWN $rPH
+     * @param  $rPH
      * @return \Ammonkc\Otaehi\StructType\PaymentFormType
      */
-    public function setRPH(UNKNOWN $rPH = null)
+    public function setRPH( $rPH = null)
     {
         $this->RPH = $rPH;
         return $this;
@@ -359,7 +359,7 @@ class PaymentFormType extends AbstractStructBase
     }
     /**
      * Get GuaranteeTypeCode value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getGuaranteeTypeCode()
     {
@@ -367,17 +367,17 @@ class PaymentFormType extends AbstractStructBase
     }
     /**
      * Set GuaranteeTypeCode value
-     * @param UNKNOWN $guaranteeTypeCode
+     * @param  $guaranteeTypeCode
      * @return \Ammonkc\Otaehi\StructType\PaymentFormType
      */
-    public function setGuaranteeTypeCode(UNKNOWN $guaranteeTypeCode = null)
+    public function setGuaranteeTypeCode( $guaranteeTypeCode = null)
     {
         $this->GuaranteeTypeCode = $guaranteeTypeCode;
         return $this;
     }
     /**
      * Get GuaranteeID value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getGuaranteeID()
     {
@@ -385,17 +385,17 @@ class PaymentFormType extends AbstractStructBase
     }
     /**
      * Set GuaranteeID value
-     * @param UNKNOWN $guaranteeID
+     * @param  $guaranteeID
      * @return \Ammonkc\Otaehi\StructType\PaymentFormType
      */
-    public function setGuaranteeID(UNKNOWN $guaranteeID = null)
+    public function setGuaranteeID( $guaranteeID = null)
     {
         $this->GuaranteeID = $guaranteeID;
         return $this;
     }
     /**
      * Get Remark value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getRemark()
     {
@@ -403,10 +403,10 @@ class PaymentFormType extends AbstractStructBase
     }
     /**
      * Set Remark value
-     * @param UNKNOWN $remark
+     * @param  $remark
      * @return \Ammonkc\Otaehi\StructType\PaymentFormType
      */
-    public function setRemark(UNKNOWN $remark = null)
+    public function setRemark( $remark = null)
     {
         $this->Remark = $remark;
         return $this;

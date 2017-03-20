@@ -17,12 +17,12 @@ class RelativePositionType extends AbstractStructBase
     public $Nearest;
     /**
      * The IndexPointCode
-     * @var UNKNOWN
+     * @var
      */
     public $IndexPointCode;
     /**
      * The Name
-     * @var UNKNOWN
+     * @var
      */
     public $Name;
     /**
@@ -42,7 +42,7 @@ class RelativePositionType extends AbstractStructBase
     public $ApproximateDistanceInd;
     /**
      * The PositionAccuracy
-     * @var UNKNOWN
+     * @var
      */
     public $PositionAccuracy;
     /**
@@ -55,14 +55,14 @@ class RelativePositionType extends AbstractStructBase
      * @uses RelativePositionType::setApproximateDistanceInd()
      * @uses RelativePositionType::setPositionAccuracy()
      * @param bool $nearest
-     * @param UNKNOWN $indexPointCode
-     * @param UNKNOWN $name
+     * @param  $indexPointCode
+     * @param  $name
      * @param bool $primaryIndicator
      * @param string $toFrom
      * @param bool $approximateDistanceInd
-     * @param UNKNOWN $positionAccuracy
+     * @param  $positionAccuracy
      */
-    public function __construct($nearest = null, UNKNOWN $indexPointCode = null, UNKNOWN $name = null, $primaryIndicator = null, $toFrom = null, $approximateDistanceInd = null, UNKNOWN $positionAccuracy = null)
+    public function __construct($nearest = null,  $indexPointCode = null,  $name = null, $primaryIndicator = null, $toFrom = null, $approximateDistanceInd = null,  $positionAccuracy = null)
     {
         $this
             ->setNearest($nearest)
@@ -93,7 +93,7 @@ class RelativePositionType extends AbstractStructBase
     }
     /**
      * Get IndexPointCode value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getIndexPointCode()
     {
@@ -101,17 +101,17 @@ class RelativePositionType extends AbstractStructBase
     }
     /**
      * Set IndexPointCode value
-     * @param UNKNOWN $indexPointCode
+     * @param  $indexPointCode
      * @return \Ammonkc\Otaehi\StructType\RelativePositionType
      */
-    public function setIndexPointCode(UNKNOWN $indexPointCode = null)
+    public function setIndexPointCode( $indexPointCode = null)
     {
         $this->IndexPointCode = $indexPointCode;
         return $this;
     }
     /**
      * Get Name value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getName()
     {
@@ -119,10 +119,10 @@ class RelativePositionType extends AbstractStructBase
     }
     /**
      * Set Name value
-     * @param UNKNOWN $name
+     * @param  $name
      * @return \Ammonkc\Otaehi\StructType\RelativePositionType
      */
-    public function setName(UNKNOWN $name = null)
+    public function setName( $name = null)
     {
         $this->Name = $name;
         return $this;
@@ -187,7 +187,7 @@ class RelativePositionType extends AbstractStructBase
     }
     /**
      * Get PositionAccuracy value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getPositionAccuracy()
     {
@@ -195,10 +195,10 @@ class RelativePositionType extends AbstractStructBase
     }
     /**
      * Set PositionAccuracy value
-     * @param UNKNOWN $positionAccuracy
+     * @param  $positionAccuracy
      * @return \Ammonkc\Otaehi\StructType\RelativePositionType
      */
-    public function setPositionAccuracy(UNKNOWN $positionAccuracy = null)
+    public function setPositionAccuracy( $positionAccuracy = null)
     {
         $this->PositionAccuracy = $positionAccuracy;
         return $this;

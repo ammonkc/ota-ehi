@@ -12,22 +12,22 @@ class OneWayDropLocation extends AbstractStructBase
 {
     /**
      * The ExtendedLocationCode
-     * @var UNKNOWN
+     * @var
      */
     public $ExtendedLocationCode;
     /**
      * Constructor method for OneWayDropLocation
      * @uses OneWayDropLocation::setExtendedLocationCode()
-     * @param UNKNOWN $extendedLocationCode
+     * @param  $extendedLocationCode
      */
-    public function __construct(UNKNOWN $extendedLocationCode = null)
+    public function __construct( $extendedLocationCode = null)
     {
         $this
             ->setExtendedLocationCode($extendedLocationCode);
     }
     /**
      * Get ExtendedLocationCode value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getExtendedLocationCode()
     {
@@ -35,10 +35,10 @@ class OneWayDropLocation extends AbstractStructBase
     }
     /**
      * Set ExtendedLocationCode value
-     * @param UNKNOWN $extendedLocationCode
+     * @param  $extendedLocationCode
      * @return \Ammonkc\Otaehi\StructType\OneWayDropLocation
      */
-    public function setExtendedLocationCode(UNKNOWN $extendedLocationCode = null)
+    public function setExtendedLocationCode( $extendedLocationCode = null)
     {
         $this->ExtendedLocationCode = $extendedLocationCode;
         return $this;

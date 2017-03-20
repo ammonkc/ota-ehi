@@ -12,17 +12,17 @@ class EmailType extends AbstractStructBase
 {
     /**
      * The EmailType
-     * @var UNKNOWN
+     * @var
      */
     public $EmailType;
     /**
      * The RPH
-     * @var UNKNOWN
+     * @var
      */
     public $RPH;
     /**
      * The Remark
-     * @var UNKNOWN
+     * @var
      */
     public $Remark;
     /**
@@ -42,13 +42,13 @@ class EmailType extends AbstractStructBase
      * @uses EmailType::setRemark()
      * @uses EmailType::setValidInd()
      * @uses EmailType::setTextFormat()
-     * @param UNKNOWN $emailType
-     * @param UNKNOWN $rPH
-     * @param UNKNOWN $remark
+     * @param  $emailType
+     * @param  $rPH
+     * @param  $remark
      * @param bool $validInd
      * @param string $textFormat
      */
-    public function __construct(UNKNOWN $emailType = null, UNKNOWN $rPH = null, UNKNOWN $remark = null, $validInd = null, $textFormat = null)
+    public function __construct( $emailType = null,  $rPH = null,  $remark = null, $validInd = null, $textFormat = null)
     {
         $this
             ->setEmailType($emailType)
@@ -59,7 +59,7 @@ class EmailType extends AbstractStructBase
     }
     /**
      * Get EmailType value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getEmailType()
     {
@@ -67,17 +67,17 @@ class EmailType extends AbstractStructBase
     }
     /**
      * Set EmailType value
-     * @param UNKNOWN $emailType
+     * @param  $emailType
      * @return \Ammonkc\Otaehi\StructType\EmailType
      */
-    public function setEmailType(UNKNOWN $emailType = null)
+    public function setEmailType( $emailType = null)
     {
         $this->EmailType = $emailType;
         return $this;
     }
     /**
      * Get RPH value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getRPH()
     {
@@ -85,17 +85,17 @@ class EmailType extends AbstractStructBase
     }
     /**
      * Set RPH value
-     * @param UNKNOWN $rPH
+     * @param  $rPH
      * @return \Ammonkc\Otaehi\StructType\EmailType
      */
-    public function setRPH(UNKNOWN $rPH = null)
+    public function setRPH( $rPH = null)
     {
         $this->RPH = $rPH;
         return $this;
     }
     /**
      * Get Remark value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getRemark()
     {
@@ -103,10 +103,10 @@ class EmailType extends AbstractStructBase
     }
     /**
      * Set Remark value
-     * @param UNKNOWN $remark
+     * @param  $remark
      * @return \Ammonkc\Otaehi\StructType\EmailType
      */
-    public function setRemark(UNKNOWN $remark = null)
+    public function setRemark( $remark = null)
     {
         $this->Remark = $remark;
         return $this;

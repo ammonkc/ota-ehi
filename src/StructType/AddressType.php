@@ -52,12 +52,12 @@ class AddressType extends AbstractStructBase
     public $CountryName;
     /**
      * The Type
-     * @var UNKNOWN
+     * @var
      */
     public $Type;
     /**
      * The Remark
-     * @var UNKNOWN
+     * @var
      */
     public $Remark;
     /**
@@ -92,12 +92,12 @@ class AddressType extends AbstractStructBase
      * @param mixed $county
      * @param mixed $stateProv
      * @param mixed $countryName
-     * @param UNKNOWN $type
-     * @param UNKNOWN $remark
+     * @param  $type
+     * @param  $remark
      * @param string $language
      * @param bool $validInd
      */
-    public function __construct(\Ammonkc\Otaehi\StructType\StreetNmbr $streetNmbr = null, \Ammonkc\Otaehi\StructType\BldgRoom $bldgRoom = null, $addressLine = null, $cityName = null, $postalCode = null, $county = null, $stateProv = null, $countryName = null, UNKNOWN $type = null, UNKNOWN $remark = null, $language = null, $validInd = null)
+    public function __construct(\Ammonkc\Otaehi\StructType\StreetNmbr $streetNmbr = null, \Ammonkc\Otaehi\StructType\BldgRoom $bldgRoom = null, $addressLine = null, $cityName = null, $postalCode = null, $county = null, $stateProv = null, $countryName = null,  $type = null,  $remark = null, $language = null, $validInd = null)
     {
         $this
             ->setStreetNmbr($streetNmbr)
@@ -259,7 +259,7 @@ class AddressType extends AbstractStructBase
     }
     /**
      * Get Type value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getType()
     {
@@ -267,17 +267,17 @@ class AddressType extends AbstractStructBase
     }
     /**
      * Set Type value
-     * @param UNKNOWN $type
+     * @param  $type
      * @return \Ammonkc\Otaehi\StructType\AddressType
      */
-    public function setType(UNKNOWN $type = null)
+    public function setType( $type = null)
     {
         $this->Type = $type;
         return $this;
     }
     /**
      * Get Remark value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getRemark()
     {
@@ -285,10 +285,10 @@ class AddressType extends AbstractStructBase
     }
     /**
      * Set Remark value
-     * @param UNKNOWN $remark
+     * @param  $remark
      * @return \Ammonkc\Otaehi\StructType\AddressType
      */
-    public function setRemark(UNKNOWN $remark = null)
+    public function setRemark( $remark = null)
     {
         $this->Remark = $remark;
         return $this;

@@ -17,7 +17,7 @@ class VehicleTourInfoType extends AbstractStructBase
     public $TourOperator;
     /**
      * The TourNumber
-     * @var UNKNOWN
+     * @var
      */
     public $TourNumber;
     /**
@@ -25,9 +25,9 @@ class VehicleTourInfoType extends AbstractStructBase
      * @uses VehicleTourInfoType::setTourOperator()
      * @uses VehicleTourInfoType::setTourNumber()
      * @param mixed $tourOperator
-     * @param UNKNOWN $tourNumber
+     * @param  $tourNumber
      */
-    public function __construct($tourOperator = null, UNKNOWN $tourNumber = null)
+    public function __construct($tourOperator = null,  $tourNumber = null)
     {
         $this
             ->setTourOperator($tourOperator)
@@ -53,7 +53,7 @@ class VehicleTourInfoType extends AbstractStructBase
     }
     /**
      * Get TourNumber value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getTourNumber()
     {
@@ -61,10 +61,10 @@ class VehicleTourInfoType extends AbstractStructBase
     }
     /**
      * Set TourNumber value
-     * @param UNKNOWN $tourNumber
+     * @param  $tourNumber
      * @return \Ammonkc\Otaehi\StructType\VehicleTourInfoType
      */
-    public function setTourNumber(UNKNOWN $tourNumber = null)
+    public function setTourNumber( $tourNumber = null)
     {
         $this->TourNumber = $tourNumber;
         return $this;

@@ -32,52 +32,52 @@ class SourceType extends AbstractStructBase
     public $TPA_Extensions;
     /**
      * The AgentSine
-     * @var UNKNOWN
+     * @var
      */
     public $AgentSine;
     /**
      * The PseudoCityCode
-     * @var UNKNOWN
+     * @var
      */
     public $PseudoCityCode;
     /**
      * The ISOCountry
-     * @var UNKNOWN
+     * @var
      */
     public $ISOCountry;
     /**
      * The ISOCurrency
-     * @var UNKNOWN
+     * @var
      */
     public $ISOCurrency;
     /**
      * The AgentDutyCode
-     * @var UNKNOWN
+     * @var
      */
     public $AgentDutyCode;
     /**
      * The AirlineVendorID
-     * @var UNKNOWN
+     * @var
      */
     public $AirlineVendorID;
     /**
      * The AirportCode
-     * @var UNKNOWN
+     * @var
      */
     public $AirportCode;
     /**
      * The FirstDepartPoint
-     * @var UNKNOWN
+     * @var
      */
     public $FirstDepartPoint;
     /**
      * The ERSP_UserID
-     * @var UNKNOWN
+     * @var
      */
     public $ERSP_UserID;
     /**
      * The TerminalID
-     * @var UNKNOWN
+     * @var
      */
     public $TerminalID;
     /**
@@ -100,34 +100,33 @@ class SourceType extends AbstractStructBase
      * @param \Ammonkc\Otaehi\StructType\Position $position
      * @param \Ammonkc\Otaehi\StructType\BookingChannel $bookingChannel
      * @param mixed $tPA_Extensions
-     * @param UNKNOWN $agentSine
-     * @param UNKNOWN $pseudoCityCode
-     * @param UNKNOWN $iSOCountry
-     * @param UNKNOWN $iSOCurrency
-     * @param UNKNOWN $agentDutyCode
-     * @param UNKNOWN $airlineVendorID
-     * @param UNKNOWN $airportCode
-     * @param UNKNOWN $firstDepartPoint
-     * @param UNKNOWN $eRSP_UserID
-     * @param UNKNOWN $terminalID
+     * @param  $agentSine
+     * @param  $pseudoCityCode
+     * @param  $iSOCountry
+     * @param  $iSOCurrency
+     * @param  $agentDutyCode
+     * @param  $airlineVendorID
+     * @param  $airportCode
+     * @param  $firstDepartPoint
+     * @param  $eRSP_UserID
+     * @param  $terminalID
      */
-    public function __construct(\Ammonkc\Otaehi\StructType\RequestorID $requestorID = null, \Ammonkc\Otaehi\StructType\Position $position = null, \Ammonkc\Otaehi\StructType\BookingChannel $bookingChannel = null, $tPA_Extensions = null, UNKNOWN $agentSine = null, UNKNOWN $pseudoCityCode = null, UNKNOWN $iSOCountry = null, UNKNOWN $iSOCurrency = null, UNKNOWN $agentDutyCode = null, UNKNOWN $airlineVendorID = null, UNKNOWN $airportCode = null, UNKNOWN $firstDepartPoint = null, UNKNOWN $eRSP_UserID = null, UNKNOWN $terminalID = null)
+    public function __construct(\Ammonkc\Otaehi\StructType\RequestorID $requestorID = null, \Ammonkc\Otaehi\StructType\Position $position = null, \Ammonkc\Otaehi\StructType\BookingChannel $bookingChannel = null, $tPA_Extensions = null,  $agentSine = null,  $pseudoCityCode = null,  $iSOCountry = null,  $iSOCurrency = null,  $agentDutyCode = null,  $airlineVendorID = null,  $airportCode = null,  $firstDepartPoint = null,  $eRSP_UserID = null,  $terminalID = null)
     {
-        $this
-            ->setRequestorID($requestorID)
-            ->setPosition($position)
-            ->setBookingChannel($bookingChannel)
-            ->setTPA_Extensions($tPA_Extensions)
-            ->setAgentSine($agentSine)
-            ->setPseudoCityCode($pseudoCityCode)
-            ->setISOCountry($iSOCountry)
-            ->setISOCurrency($iSOCurrency)
-            ->setAgentDutyCode($agentDutyCode)
-            ->setAirlineVendorID($airlineVendorID)
-            ->setAirportCode($airportCode)
-            ->setFirstDepartPoint($firstDepartPoint)
-            ->setERSP_UserID($eRSP_UserID)
-            ->setTerminalID($terminalID);
+        $this->setRequestorID($requestorID)
+             ->setPosition($position)
+             ->setBookingChannel($bookingChannel)
+             ->setTPA_Extensions($tPA_Extensions)
+             ->setAgentSine($agentSine)
+             ->setPseudoCityCode($pseudoCityCode)
+             ->setISOCountry($iSOCountry)
+             ->setISOCurrency($iSOCurrency)
+             ->setAgentDutyCode($agentDutyCode)
+             ->setAirlineVendorID($airlineVendorID)
+             ->setAirportCode($airportCode)
+             ->setFirstDepartPoint($firstDepartPoint)
+             ->setERSP_UserID($eRSP_UserID)
+             ->setTerminalID($terminalID);
     }
     /**
      * Get RequestorID value
@@ -203,7 +202,7 @@ class SourceType extends AbstractStructBase
     }
     /**
      * Get AgentSine value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getAgentSine()
     {
@@ -211,17 +210,17 @@ class SourceType extends AbstractStructBase
     }
     /**
      * Set AgentSine value
-     * @param UNKNOWN $agentSine
+     * @param  $agentSine
      * @return \Ammonkc\Otaehi\StructType\SourceType
      */
-    public function setAgentSine(UNKNOWN $agentSine = null)
+    public function setAgentSine( $agentSine = null)
     {
         $this->AgentSine = $agentSine;
         return $this;
     }
     /**
      * Get PseudoCityCode value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getPseudoCityCode()
     {
@@ -229,17 +228,17 @@ class SourceType extends AbstractStructBase
     }
     /**
      * Set PseudoCityCode value
-     * @param UNKNOWN $pseudoCityCode
+     * @param  $pseudoCityCode
      * @return \Ammonkc\Otaehi\StructType\SourceType
      */
-    public function setPseudoCityCode(UNKNOWN $pseudoCityCode = null)
+    public function setPseudoCityCode( $pseudoCityCode = null)
     {
         $this->PseudoCityCode = $pseudoCityCode;
         return $this;
     }
     /**
      * Get ISOCountry value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getISOCountry()
     {
@@ -247,17 +246,17 @@ class SourceType extends AbstractStructBase
     }
     /**
      * Set ISOCountry value
-     * @param UNKNOWN $iSOCountry
+     * @param  $iSOCountry
      * @return \Ammonkc\Otaehi\StructType\SourceType
      */
-    public function setISOCountry(UNKNOWN $iSOCountry = null)
+    public function setISOCountry( $iSOCountry = null)
     {
         $this->ISOCountry = $iSOCountry;
         return $this;
     }
     /**
      * Get ISOCurrency value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getISOCurrency()
     {
@@ -265,17 +264,17 @@ class SourceType extends AbstractStructBase
     }
     /**
      * Set ISOCurrency value
-     * @param UNKNOWN $iSOCurrency
+     * @param  $iSOCurrency
      * @return \Ammonkc\Otaehi\StructType\SourceType
      */
-    public function setISOCurrency(UNKNOWN $iSOCurrency = null)
+    public function setISOCurrency( $iSOCurrency = null)
     {
         $this->ISOCurrency = $iSOCurrency;
         return $this;
     }
     /**
      * Get AgentDutyCode value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getAgentDutyCode()
     {
@@ -283,17 +282,17 @@ class SourceType extends AbstractStructBase
     }
     /**
      * Set AgentDutyCode value
-     * @param UNKNOWN $agentDutyCode
+     * @param  $agentDutyCode
      * @return \Ammonkc\Otaehi\StructType\SourceType
      */
-    public function setAgentDutyCode(UNKNOWN $agentDutyCode = null)
+    public function setAgentDutyCode( $agentDutyCode = null)
     {
         $this->AgentDutyCode = $agentDutyCode;
         return $this;
     }
     /**
      * Get AirlineVendorID value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getAirlineVendorID()
     {
@@ -301,17 +300,17 @@ class SourceType extends AbstractStructBase
     }
     /**
      * Set AirlineVendorID value
-     * @param UNKNOWN $airlineVendorID
+     * @param  $airlineVendorID
      * @return \Ammonkc\Otaehi\StructType\SourceType
      */
-    public function setAirlineVendorID(UNKNOWN $airlineVendorID = null)
+    public function setAirlineVendorID( $airlineVendorID = null)
     {
         $this->AirlineVendorID = $airlineVendorID;
         return $this;
     }
     /**
      * Get AirportCode value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getAirportCode()
     {
@@ -319,17 +318,17 @@ class SourceType extends AbstractStructBase
     }
     /**
      * Set AirportCode value
-     * @param UNKNOWN $airportCode
+     * @param  $airportCode
      * @return \Ammonkc\Otaehi\StructType\SourceType
      */
-    public function setAirportCode(UNKNOWN $airportCode = null)
+    public function setAirportCode( $airportCode = null)
     {
         $this->AirportCode = $airportCode;
         return $this;
     }
     /**
      * Get FirstDepartPoint value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getFirstDepartPoint()
     {
@@ -337,17 +336,17 @@ class SourceType extends AbstractStructBase
     }
     /**
      * Set FirstDepartPoint value
-     * @param UNKNOWN $firstDepartPoint
+     * @param  $firstDepartPoint
      * @return \Ammonkc\Otaehi\StructType\SourceType
      */
-    public function setFirstDepartPoint(UNKNOWN $firstDepartPoint = null)
+    public function setFirstDepartPoint( $firstDepartPoint = null)
     {
         $this->FirstDepartPoint = $firstDepartPoint;
         return $this;
     }
     /**
      * Get ERSP_UserID value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getERSP_UserID()
     {
@@ -355,17 +354,17 @@ class SourceType extends AbstractStructBase
     }
     /**
      * Set ERSP_UserID value
-     * @param UNKNOWN $eRSP_UserID
+     * @param  $eRSP_UserID
      * @return \Ammonkc\Otaehi\StructType\SourceType
      */
-    public function setERSP_UserID(UNKNOWN $eRSP_UserID = null)
+    public function setERSP_UserID( $eRSP_UserID = null)
     {
         $this->ERSP_UserID = $eRSP_UserID;
         return $this;
     }
     /**
      * Get TerminalID value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getTerminalID()
     {
@@ -373,10 +372,10 @@ class SourceType extends AbstractStructBase
     }
     /**
      * Set TerminalID value
-     * @param UNKNOWN $terminalID
+     * @param  $terminalID
      * @return \Ammonkc\Otaehi\StructType\SourceType
      */
-    public function setTerminalID(UNKNOWN $terminalID = null)
+    public function setTerminalID( $terminalID = null)
     {
         $this->TerminalID = $terminalID;
         return $this;

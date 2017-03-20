@@ -17,7 +17,7 @@ class Comment extends AbstractStructBase
     public $TPA_Extensions;
     /**
      * The CommentOriginatorCode
-     * @var UNKNOWN
+     * @var
      */
     public $CommentOriginatorCode;
     /**
@@ -31,10 +31,10 @@ class Comment extends AbstractStructBase
      * @uses Comment::setCommentOriginatorCode()
      * @uses Comment::setGuestViewable()
      * @param mixed $tPA_Extensions
-     * @param UNKNOWN $commentOriginatorCode
+     * @param  $commentOriginatorCode
      * @param bool $guestViewable
      */
-    public function __construct($tPA_Extensions = null, UNKNOWN $commentOriginatorCode = null, $guestViewable = null)
+    public function __construct($tPA_Extensions = null,  $commentOriginatorCode = null, $guestViewable = null)
     {
         $this
             ->setTPA_Extensions($tPA_Extensions)
@@ -61,7 +61,7 @@ class Comment extends AbstractStructBase
     }
     /**
      * Get CommentOriginatorCode value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getCommentOriginatorCode()
     {
@@ -69,10 +69,10 @@ class Comment extends AbstractStructBase
     }
     /**
      * Set CommentOriginatorCode value
-     * @param UNKNOWN $commentOriginatorCode
+     * @param  $commentOriginatorCode
      * @return \Ammonkc\Otaehi\StructType\Comment
      */
-    public function setCommentOriginatorCode(UNKNOWN $commentOriginatorCode = null)
+    public function setCommentOriginatorCode( $commentOriginatorCode = null)
     {
         $this->CommentOriginatorCode = $commentOriginatorCode;
         return $this;

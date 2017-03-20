@@ -27,12 +27,12 @@ class VehicleArrivalDetailsType extends AbstractStructBase
     public $OperatingCompany;
     /**
      * The TransportationCode
-     * @var UNKNOWN
+     * @var
      */
     public $TransportationCode;
     /**
      * The Number
-     * @var UNKNOWN
+     * @var
      */
     public $Number;
     /**
@@ -51,11 +51,11 @@ class VehicleArrivalDetailsType extends AbstractStructBase
      * @param mixed $arrivalLocation
      * @param mixed $marketingCompany
      * @param mixed $operatingCompany
-     * @param UNKNOWN $transportationCode
-     * @param UNKNOWN $number
+     * @param  $transportationCode
+     * @param  $number
      * @param string $arrivalDateTime
      */
-    public function __construct($arrivalLocation = null, $marketingCompany = null, $operatingCompany = null, UNKNOWN $transportationCode = null, UNKNOWN $number = null, $arrivalDateTime = null)
+    public function __construct($arrivalLocation = null, $marketingCompany = null, $operatingCompany = null,  $transportationCode = null,  $number = null, $arrivalDateTime = null)
     {
         $this
             ->setArrivalLocation($arrivalLocation)
@@ -121,7 +121,7 @@ class VehicleArrivalDetailsType extends AbstractStructBase
     }
     /**
      * Get TransportationCode value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getTransportationCode()
     {
@@ -129,17 +129,17 @@ class VehicleArrivalDetailsType extends AbstractStructBase
     }
     /**
      * Set TransportationCode value
-     * @param UNKNOWN $transportationCode
+     * @param  $transportationCode
      * @return \Ammonkc\Otaehi\StructType\VehicleArrivalDetailsType
      */
-    public function setTransportationCode(UNKNOWN $transportationCode = null)
+    public function setTransportationCode( $transportationCode = null)
     {
         $this->TransportationCode = $transportationCode;
         return $this;
     }
     /**
      * Get Number value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getNumber()
     {
@@ -147,10 +147,10 @@ class VehicleArrivalDetailsType extends AbstractStructBase
     }
     /**
      * Set Number value
-     * @param UNKNOWN $number
+     * @param  $number
      * @return \Ammonkc\Otaehi\StructType\VehicleArrivalDetailsType
      */
-    public function setNumber(UNKNOWN $number = null)
+    public function setNumber( $number = null)
     {
         $this->Number = $number;
         return $this;

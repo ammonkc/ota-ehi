@@ -12,12 +12,12 @@ class Additional extends AbstractStructBase
 {
     /**
      * The CorpDiscountName
-     * @var UNKNOWN
+     * @var
      */
     public $CorpDiscountName;
     /**
      * The CorpDiscountNmbr
-     * @var UNKNOWN
+     * @var
      */
     public $CorpDiscountNmbr;
     /**
@@ -30,11 +30,11 @@ class Additional extends AbstractStructBase
      * @uses Additional::setCorpDiscountName()
      * @uses Additional::setCorpDiscountNmbr()
      * @uses Additional::setQualificationMethod()
-     * @param UNKNOWN $corpDiscountName
-     * @param UNKNOWN $corpDiscountNmbr
+     * @param  $corpDiscountName
+     * @param  $corpDiscountNmbr
      * @param string $qualificationMethod
      */
-    public function __construct(UNKNOWN $corpDiscountName = null, UNKNOWN $corpDiscountNmbr = null, $qualificationMethod = null)
+    public function __construct( $corpDiscountName = null,  $corpDiscountNmbr = null, $qualificationMethod = null)
     {
         $this
             ->setCorpDiscountName($corpDiscountName)
@@ -43,7 +43,7 @@ class Additional extends AbstractStructBase
     }
     /**
      * Get CorpDiscountName value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getCorpDiscountName()
     {
@@ -51,17 +51,17 @@ class Additional extends AbstractStructBase
     }
     /**
      * Set CorpDiscountName value
-     * @param UNKNOWN $corpDiscountName
+     * @param  $corpDiscountName
      * @return \Ammonkc\Otaehi\StructType\Additional
      */
-    public function setCorpDiscountName(UNKNOWN $corpDiscountName = null)
+    public function setCorpDiscountName( $corpDiscountName = null)
     {
         $this->CorpDiscountName = $corpDiscountName;
         return $this;
     }
     /**
      * Get CorpDiscountNmbr value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getCorpDiscountNmbr()
     {
@@ -69,10 +69,10 @@ class Additional extends AbstractStructBase
     }
     /**
      * Set CorpDiscountNmbr value
-     * @param UNKNOWN $corpDiscountNmbr
+     * @param  $corpDiscountNmbr
      * @return \Ammonkc\Otaehi\StructType\Additional
      */
-    public function setCorpDiscountNmbr(UNKNOWN $corpDiscountNmbr = null)
+    public function setCorpDiscountNmbr( $corpDiscountNmbr = null)
     {
         $this->CorpDiscountNmbr = $corpDiscountNmbr;
         return $this;

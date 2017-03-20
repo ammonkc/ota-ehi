@@ -22,12 +22,12 @@ class CancelRuleType extends AbstractStructBase
     public $TPA_Extensions;
     /**
      * The CancelByDate
-     * @var UNKNOWN
+     * @var
      */
     public $CancelByDate;
     /**
      * The Percent
-     * @var UNKNOWN
+     * @var
      */
     public $Percent;
     /**
@@ -44,11 +44,11 @@ class CancelRuleType extends AbstractStructBase
      * @uses CancelRuleType::setType()
      * @param mixed $paymentCard
      * @param mixed $tPA_Extensions
-     * @param UNKNOWN $cancelByDate
-     * @param UNKNOWN $percent
+     * @param  $cancelByDate
+     * @param  $percent
      * @param string $type
      */
-    public function __construct($paymentCard = null, $tPA_Extensions = null, UNKNOWN $cancelByDate = null, UNKNOWN $percent = null, $type = null)
+    public function __construct($paymentCard = null, $tPA_Extensions = null,  $cancelByDate = null,  $percent = null, $type = null)
     {
         $this
             ->setPaymentCard($paymentCard)
@@ -95,7 +95,7 @@ class CancelRuleType extends AbstractStructBase
     }
     /**
      * Get CancelByDate value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getCancelByDate()
     {
@@ -103,17 +103,17 @@ class CancelRuleType extends AbstractStructBase
     }
     /**
      * Set CancelByDate value
-     * @param UNKNOWN $cancelByDate
+     * @param  $cancelByDate
      * @return \Ammonkc\Otaehi\StructType\CancelRuleType
      */
-    public function setCancelByDate(UNKNOWN $cancelByDate = null)
+    public function setCancelByDate( $cancelByDate = null)
     {
         $this->CancelByDate = $cancelByDate;
         return $this;
     }
     /**
      * Get Percent value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getPercent()
     {
@@ -121,10 +121,10 @@ class CancelRuleType extends AbstractStructBase
     }
     /**
      * Set Percent value
-     * @param UNKNOWN $percent
+     * @param  $percent
      * @return \Ammonkc\Otaehi\StructType\CancelRuleType
      */
-    public function setPercent(UNKNOWN $percent = null)
+    public function setPercent( $percent = null)
     {
         $this->Percent = $percent;
         return $this;

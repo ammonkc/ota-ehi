@@ -12,12 +12,12 @@ class MonetaryRuleType extends AbstractStructBase
 {
     /**
      * The RuleType
-     * @var UNKNOWN
+     * @var
      */
     public $RuleType;
     /**
      * The Percent
-     * @var UNKNOWN
+     * @var
      */
     public $Percent;
     /**
@@ -27,7 +27,7 @@ class MonetaryRuleType extends AbstractStructBase
     public $DateTime;
     /**
      * The PaymentType
-     * @var UNKNOWN
+     * @var
      */
     public $PaymentType;
     /**
@@ -42,13 +42,13 @@ class MonetaryRuleType extends AbstractStructBase
      * @uses MonetaryRuleType::setDateTime()
      * @uses MonetaryRuleType::setPaymentType()
      * @uses MonetaryRuleType::setRateConvertedInd()
-     * @param UNKNOWN $ruleType
-     * @param UNKNOWN $percent
+     * @param  $ruleType
+     * @param  $percent
      * @param string $dateTime
-     * @param UNKNOWN $paymentType
+     * @param  $paymentType
      * @param bool $rateConvertedInd
      */
-    public function __construct(UNKNOWN $ruleType = null, UNKNOWN $percent = null, $dateTime = null, UNKNOWN $paymentType = null, $rateConvertedInd = null)
+    public function __construct( $ruleType = null,  $percent = null, $dateTime = null,  $paymentType = null, $rateConvertedInd = null)
     {
         $this
             ->setRuleType($ruleType)
@@ -59,7 +59,7 @@ class MonetaryRuleType extends AbstractStructBase
     }
     /**
      * Get RuleType value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getRuleType()
     {
@@ -67,17 +67,17 @@ class MonetaryRuleType extends AbstractStructBase
     }
     /**
      * Set RuleType value
-     * @param UNKNOWN $ruleType
+     * @param  $ruleType
      * @return \Ammonkc\Otaehi\StructType\MonetaryRuleType
      */
-    public function setRuleType(UNKNOWN $ruleType = null)
+    public function setRuleType( $ruleType = null)
     {
         $this->RuleType = $ruleType;
         return $this;
     }
     /**
      * Get Percent value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getPercent()
     {
@@ -85,10 +85,10 @@ class MonetaryRuleType extends AbstractStructBase
     }
     /**
      * Set Percent value
-     * @param UNKNOWN $percent
+     * @param  $percent
      * @return \Ammonkc\Otaehi\StructType\MonetaryRuleType
      */
-    public function setPercent(UNKNOWN $percent = null)
+    public function setPercent( $percent = null)
     {
         $this->Percent = $percent;
         return $this;
@@ -117,7 +117,7 @@ class MonetaryRuleType extends AbstractStructBase
     }
     /**
      * Get PaymentType value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getPaymentType()
     {
@@ -125,10 +125,10 @@ class MonetaryRuleType extends AbstractStructBase
     }
     /**
      * Set PaymentType value
-     * @param UNKNOWN $paymentType
+     * @param  $paymentType
      * @return \Ammonkc\Otaehi\StructType\MonetaryRuleType
      */
-    public function setPaymentType(UNKNOWN $paymentType = null)
+    public function setPaymentType( $paymentType = null)
     {
         $this->PaymentType = $paymentType;
         return $this;

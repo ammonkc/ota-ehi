@@ -12,22 +12,22 @@ class CodeRef extends AbstractStructBase
 {
     /**
      * The VicinityCode
-     * @var UNKNOWN
+     * @var
      */
     public $VicinityCode;
     /**
      * Constructor method for CodeRef
      * @uses CodeRef::setVicinityCode()
-     * @param UNKNOWN $vicinityCode
+     * @param  $vicinityCode
      */
-    public function __construct(UNKNOWN $vicinityCode = null)
+    public function __construct( $vicinityCode = null)
     {
         $this
             ->setVicinityCode($vicinityCode);
     }
     /**
      * Get VicinityCode value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getVicinityCode()
     {
@@ -35,10 +35,10 @@ class CodeRef extends AbstractStructBase
     }
     /**
      * Set VicinityCode value
-     * @param UNKNOWN $vicinityCode
+     * @param  $vicinityCode
      * @return \Ammonkc\Otaehi\StructType\CodeRef
      */
-    public function setVicinityCode(UNKNOWN $vicinityCode = null)
+    public function setVicinityCode( $vicinityCode = null)
     {
         $this->VicinityCode = $vicinityCode;
         return $this;

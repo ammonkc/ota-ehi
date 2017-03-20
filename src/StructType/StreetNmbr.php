@@ -12,17 +12,17 @@ class StreetNmbr extends AbstractStructBase
 {
     /**
      * The StreetNmbrSuffix
-     * @var UNKNOWN
+     * @var
      */
     public $StreetNmbrSuffix;
     /**
      * The StreetDirection
-     * @var UNKNOWN
+     * @var
      */
     public $StreetDirection;
     /**
      * The RuralRouteNmbr
-     * @var UNKNOWN
+     * @var
      */
     public $RuralRouteNmbr;
     /**
@@ -30,11 +30,11 @@ class StreetNmbr extends AbstractStructBase
      * @uses StreetNmbr::setStreetNmbrSuffix()
      * @uses StreetNmbr::setStreetDirection()
      * @uses StreetNmbr::setRuralRouteNmbr()
-     * @param UNKNOWN $streetNmbrSuffix
-     * @param UNKNOWN $streetDirection
-     * @param UNKNOWN $ruralRouteNmbr
+     * @param  $streetNmbrSuffix
+     * @param  $streetDirection
+     * @param  $ruralRouteNmbr
      */
-    public function __construct(UNKNOWN $streetNmbrSuffix = null, UNKNOWN $streetDirection = null, UNKNOWN $ruralRouteNmbr = null)
+    public function __construct( $streetNmbrSuffix = null,  $streetDirection = null,  $ruralRouteNmbr = null)
     {
         $this
             ->setStreetNmbrSuffix($streetNmbrSuffix)
@@ -43,7 +43,7 @@ class StreetNmbr extends AbstractStructBase
     }
     /**
      * Get StreetNmbrSuffix value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getStreetNmbrSuffix()
     {
@@ -51,17 +51,17 @@ class StreetNmbr extends AbstractStructBase
     }
     /**
      * Set StreetNmbrSuffix value
-     * @param UNKNOWN $streetNmbrSuffix
+     * @param  $streetNmbrSuffix
      * @return \Ammonkc\Otaehi\StructType\StreetNmbr
      */
-    public function setStreetNmbrSuffix(UNKNOWN $streetNmbrSuffix = null)
+    public function setStreetNmbrSuffix( $streetNmbrSuffix = null)
     {
         $this->StreetNmbrSuffix = $streetNmbrSuffix;
         return $this;
     }
     /**
      * Get StreetDirection value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getStreetDirection()
     {
@@ -69,17 +69,17 @@ class StreetNmbr extends AbstractStructBase
     }
     /**
      * Set StreetDirection value
-     * @param UNKNOWN $streetDirection
+     * @param  $streetDirection
      * @return \Ammonkc\Otaehi\StructType\StreetNmbr
      */
-    public function setStreetDirection(UNKNOWN $streetDirection = null)
+    public function setStreetDirection( $streetDirection = null)
     {
         $this->StreetDirection = $streetDirection;
         return $this;
     }
     /**
      * Get RuralRouteNmbr value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getRuralRouteNmbr()
     {
@@ -87,10 +87,10 @@ class StreetNmbr extends AbstractStructBase
     }
     /**
      * Set RuralRouteNmbr value
-     * @param UNKNOWN $ruralRouteNmbr
+     * @param  $ruralRouteNmbr
      * @return \Ammonkc\Otaehi\StructType\StreetNmbr
      */
-    public function setRuralRouteNmbr(UNKNOWN $ruralRouteNmbr = null)
+    public function setRuralRouteNmbr( $ruralRouteNmbr = null)
     {
         $this->RuralRouteNmbr = $ruralRouteNmbr;
         return $this;

@@ -57,12 +57,12 @@ class VehicleAvailRQCoreType extends AbstractStructBase
     public $TPA_Extensions;
     /**
      * The Status
-     * @var UNKNOWN
+     * @var
      */
     public $Status;
     /**
      * The TargetSource
-     * @var UNKNOWN
+     * @var
      */
     public $TargetSource;
     /**
@@ -87,10 +87,10 @@ class VehicleAvailRQCoreType extends AbstractStructBase
      * @param \Ammonkc\Otaehi\StructType\RateRange $rateRange
      * @param \Ammonkc\Otaehi\StructType\SpecialEquipPrefs $specialEquipPrefs
      * @param mixed $tPA_Extensions
-     * @param UNKNOWN $status
-     * @param UNKNOWN $targetSource
+     * @param  $status
+     * @param  $targetSource
      */
-    public function __construct($vehRentalCore = null, $multimodalOffer = null, \Ammonkc\Otaehi\StructType\VendorPrefs $vendorPrefs = null, \Ammonkc\Otaehi\StructType\VehPrefs $vehPrefs = null, \Ammonkc\Otaehi\StructType\DriverType $driverType = null, \Ammonkc\Otaehi\StructType\RateQualifier $rateQualifier = null, \Ammonkc\Otaehi\StructType\RateRange $rateRange = null, \Ammonkc\Otaehi\StructType\SpecialEquipPrefs $specialEquipPrefs = null, $tPA_Extensions = null, UNKNOWN $status = null, UNKNOWN $targetSource = null)
+    public function __construct($vehRentalCore = null, $multimodalOffer = null, \Ammonkc\Otaehi\StructType\VendorPrefs $vendorPrefs = null, \Ammonkc\Otaehi\StructType\VehPrefs $vehPrefs = null, \Ammonkc\Otaehi\StructType\DriverType $driverType = null, \Ammonkc\Otaehi\StructType\RateQualifier $rateQualifier = null, \Ammonkc\Otaehi\StructType\RateRange $rateRange = null, \Ammonkc\Otaehi\StructType\SpecialEquipPrefs $specialEquipPrefs = null, $tPA_Extensions = null,  $status = null,  $targetSource = null)
     {
         $this
             ->setVehRentalCore($vehRentalCore)
@@ -269,7 +269,7 @@ class VehicleAvailRQCoreType extends AbstractStructBase
     }
     /**
      * Get Status value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getStatus()
     {
@@ -277,17 +277,17 @@ class VehicleAvailRQCoreType extends AbstractStructBase
     }
     /**
      * Set Status value
-     * @param UNKNOWN $status
+     * @param  $status
      * @return \Ammonkc\Otaehi\StructType\VehicleAvailRQCoreType
      */
-    public function setStatus(UNKNOWN $status = null)
+    public function setStatus( $status = null)
     {
         $this->Status = $status;
         return $this;
     }
     /**
      * Get TargetSource value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getTargetSource()
     {
@@ -295,10 +295,10 @@ class VehicleAvailRQCoreType extends AbstractStructBase
     }
     /**
      * Set TargetSource value
-     * @param UNKNOWN $targetSource
+     * @param  $targetSource
      * @return \Ammonkc\Otaehi\StructType\VehicleAvailRQCoreType
      */
-    public function setTargetSource(UNKNOWN $targetSource = null)
+    public function setTargetSource( $targetSource = null)
     {
         $this->TargetSource = $targetSource;
         return $this;

@@ -12,22 +12,22 @@ class MapArea extends AbstractStructBase
 {
     /**
      * The NorthLatitude
-     * @var UNKNOWN
+     * @var
      */
     public $NorthLatitude;
     /**
      * The SouthLatitude
-     * @var UNKNOWN
+     * @var
      */
     public $SouthLatitude;
     /**
      * The EastLongitude
-     * @var UNKNOWN
+     * @var
      */
     public $EastLongitude;
     /**
      * The WestLongitude
-     * @var UNKNOWN
+     * @var
      */
     public $WestLongitude;
     /**
@@ -36,12 +36,12 @@ class MapArea extends AbstractStructBase
      * @uses MapArea::setSouthLatitude()
      * @uses MapArea::setEastLongitude()
      * @uses MapArea::setWestLongitude()
-     * @param UNKNOWN $northLatitude
-     * @param UNKNOWN $southLatitude
-     * @param UNKNOWN $eastLongitude
-     * @param UNKNOWN $westLongitude
+     * @param  $northLatitude
+     * @param  $southLatitude
+     * @param  $eastLongitude
+     * @param  $westLongitude
      */
-    public function __construct(UNKNOWN $northLatitude = null, UNKNOWN $southLatitude = null, UNKNOWN $eastLongitude = null, UNKNOWN $westLongitude = null)
+    public function __construct( $northLatitude = null,  $southLatitude = null,  $eastLongitude = null,  $westLongitude = null)
     {
         $this
             ->setNorthLatitude($northLatitude)
@@ -51,7 +51,7 @@ class MapArea extends AbstractStructBase
     }
     /**
      * Get NorthLatitude value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getNorthLatitude()
     {
@@ -59,17 +59,17 @@ class MapArea extends AbstractStructBase
     }
     /**
      * Set NorthLatitude value
-     * @param UNKNOWN $northLatitude
+     * @param  $northLatitude
      * @return \Ammonkc\Otaehi\StructType\MapArea
      */
-    public function setNorthLatitude(UNKNOWN $northLatitude = null)
+    public function setNorthLatitude( $northLatitude = null)
     {
         $this->NorthLatitude = $northLatitude;
         return $this;
     }
     /**
      * Get SouthLatitude value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getSouthLatitude()
     {
@@ -77,17 +77,17 @@ class MapArea extends AbstractStructBase
     }
     /**
      * Set SouthLatitude value
-     * @param UNKNOWN $southLatitude
+     * @param  $southLatitude
      * @return \Ammonkc\Otaehi\StructType\MapArea
      */
-    public function setSouthLatitude(UNKNOWN $southLatitude = null)
+    public function setSouthLatitude( $southLatitude = null)
     {
         $this->SouthLatitude = $southLatitude;
         return $this;
     }
     /**
      * Get EastLongitude value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getEastLongitude()
     {
@@ -95,17 +95,17 @@ class MapArea extends AbstractStructBase
     }
     /**
      * Set EastLongitude value
-     * @param UNKNOWN $eastLongitude
+     * @param  $eastLongitude
      * @return \Ammonkc\Otaehi\StructType\MapArea
      */
-    public function setEastLongitude(UNKNOWN $eastLongitude = null)
+    public function setEastLongitude( $eastLongitude = null)
     {
         $this->EastLongitude = $eastLongitude;
         return $this;
     }
     /**
      * Get WestLongitude value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getWestLongitude()
     {
@@ -113,10 +113,10 @@ class MapArea extends AbstractStructBase
     }
     /**
      * Set WestLongitude value
-     * @param UNKNOWN $westLongitude
+     * @param  $westLongitude
      * @return \Ammonkc\Otaehi\StructType\MapArea
      */
-    public function setWestLongitude(UNKNOWN $westLongitude = null)
+    public function setWestLongitude( $westLongitude = null)
     {
         $this->WestLongitude = $westLongitude;
         return $this;

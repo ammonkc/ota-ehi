@@ -12,12 +12,12 @@ class Email extends AbstractStructBase
 {
     /**
      * The TransferAction
-     * @var UNKNOWN
+     * @var
      */
     public $TransferAction;
     /**
      * The ParentCompanyRef
-     * @var UNKNOWN
+     * @var
      */
     public $ParentCompanyRef;
     /**
@@ -36,12 +36,12 @@ class Email extends AbstractStructBase
      * @uses Email::setParentCompanyRef()
      * @uses Email::set_()
      * @uses Email::setOntologyRefID()
-     * @param UNKNOWN $transferAction
-     * @param UNKNOWN $parentCompanyRef
+     * @param  $transferAction
+     * @param  $parentCompanyRef
      * @param string $_
      * @param string $ontologyRefID
      */
-    public function __construct(UNKNOWN $transferAction = null, UNKNOWN $parentCompanyRef = null, $_ = null, $ontologyRefID = null)
+    public function __construct( $transferAction = null,  $parentCompanyRef = null, $_ = null, $ontologyRefID = null)
     {
         $this
             ->setTransferAction($transferAction)
@@ -51,7 +51,7 @@ class Email extends AbstractStructBase
     }
     /**
      * Get TransferAction value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getTransferAction()
     {
@@ -59,17 +59,17 @@ class Email extends AbstractStructBase
     }
     /**
      * Set TransferAction value
-     * @param UNKNOWN $transferAction
+     * @param  $transferAction
      * @return \Ammonkc\Otaehi\StructType\Email
      */
-    public function setTransferAction(UNKNOWN $transferAction = null)
+    public function setTransferAction( $transferAction = null)
     {
         $this->TransferAction = $transferAction;
         return $this;
     }
     /**
      * Get ParentCompanyRef value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getParentCompanyRef()
     {
@@ -77,10 +77,10 @@ class Email extends AbstractStructBase
     }
     /**
      * Set ParentCompanyRef value
-     * @param UNKNOWN $parentCompanyRef
+     * @param  $parentCompanyRef
      * @return \Ammonkc\Otaehi\StructType\Email
      */
-    public function setParentCompanyRef(UNKNOWN $parentCompanyRef = null)
+    public function setParentCompanyRef( $parentCompanyRef = null)
     {
         $this->ParentCompanyRef = $parentCompanyRef;
         return $this;

@@ -22,7 +22,7 @@ class AddlDriverInfos extends AbstractStructBase
     public $Vehicles;
     /**
      * The ChargeType
-     * @var UNKNOWN
+     * @var
      */
     public $ChargeType;
     /**
@@ -32,9 +32,9 @@ class AddlDriverInfos extends AbstractStructBase
      * @uses AddlDriverInfos::setChargeType()
      * @param \Ammonkc\Otaehi\StructType\AddlDriverInfo $addlDriverInfo
      * @param \Ammonkc\Otaehi\StructType\Vehicles $vehicles
-     * @param UNKNOWN $chargeType
+     * @param  $chargeType
      */
-    public function __construct(\Ammonkc\Otaehi\StructType\AddlDriverInfo $addlDriverInfo = null, \Ammonkc\Otaehi\StructType\Vehicles $vehicles = null, UNKNOWN $chargeType = null)
+    public function __construct(\Ammonkc\Otaehi\StructType\AddlDriverInfo $addlDriverInfo = null, \Ammonkc\Otaehi\StructType\Vehicles $vehicles = null,  $chargeType = null)
     {
         $this
             ->setAddlDriverInfo($addlDriverInfo)
@@ -79,7 +79,7 @@ class AddlDriverInfos extends AbstractStructBase
     }
     /**
      * Get ChargeType value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getChargeType()
     {
@@ -87,10 +87,10 @@ class AddlDriverInfos extends AbstractStructBase
     }
     /**
      * Set ChargeType value
-     * @param UNKNOWN $chargeType
+     * @param  $chargeType
      * @return \Ammonkc\Otaehi\StructType\AddlDriverInfos
      */
-    public function setChargeType(UNKNOWN $chargeType = null)
+    public function setChargeType( $chargeType = null)
     {
         $this->ChargeType = $chargeType;
         return $this;

@@ -12,17 +12,17 @@ class AgeSurcharge extends AbstractStructBase
 {
     /**
      * The Age
-     * @var UNKNOWN
+     * @var
      */
     public $Age;
     /**
      * The ChargeType
-     * @var UNKNOWN
+     * @var
      */
     public $ChargeType;
     /**
      * The CurrencyCode
-     * @var UNKNOWN
+     * @var
      */
     public $CurrencyCode;
     /**
@@ -32,7 +32,7 @@ class AgeSurcharge extends AbstractStructBase
     public $DecimalPlaces;
     /**
      * The Amount
-     * @var UNKNOWN
+     * @var
      */
     public $Amount;
     /**
@@ -42,13 +42,13 @@ class AgeSurcharge extends AbstractStructBase
      * @uses AgeSurcharge::setCurrencyCode()
      * @uses AgeSurcharge::setDecimalPlaces()
      * @uses AgeSurcharge::setAmount()
-     * @param UNKNOWN $age
-     * @param UNKNOWN $chargeType
-     * @param UNKNOWN $currencyCode
+     * @param  $age
+     * @param  $chargeType
+     * @param  $currencyCode
      * @param int $decimalPlaces
-     * @param UNKNOWN $amount
+     * @param  $amount
      */
-    public function __construct(UNKNOWN $age = null, UNKNOWN $chargeType = null, UNKNOWN $currencyCode = null, $decimalPlaces = null, UNKNOWN $amount = null)
+    public function __construct( $age = null,  $chargeType = null,  $currencyCode = null, $decimalPlaces = null,  $amount = null)
     {
         $this
             ->setAge($age)
@@ -59,7 +59,7 @@ class AgeSurcharge extends AbstractStructBase
     }
     /**
      * Get Age value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getAge()
     {
@@ -67,17 +67,17 @@ class AgeSurcharge extends AbstractStructBase
     }
     /**
      * Set Age value
-     * @param UNKNOWN $age
+     * @param  $age
      * @return \Ammonkc\Otaehi\StructType\AgeSurcharge
      */
-    public function setAge(UNKNOWN $age = null)
+    public function setAge( $age = null)
     {
         $this->Age = $age;
         return $this;
     }
     /**
      * Get ChargeType value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getChargeType()
     {
@@ -85,17 +85,17 @@ class AgeSurcharge extends AbstractStructBase
     }
     /**
      * Set ChargeType value
-     * @param UNKNOWN $chargeType
+     * @param  $chargeType
      * @return \Ammonkc\Otaehi\StructType\AgeSurcharge
      */
-    public function setChargeType(UNKNOWN $chargeType = null)
+    public function setChargeType( $chargeType = null)
     {
         $this->ChargeType = $chargeType;
         return $this;
     }
     /**
      * Get CurrencyCode value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getCurrencyCode()
     {
@@ -103,10 +103,10 @@ class AgeSurcharge extends AbstractStructBase
     }
     /**
      * Set CurrencyCode value
-     * @param UNKNOWN $currencyCode
+     * @param  $currencyCode
      * @return \Ammonkc\Otaehi\StructType\AgeSurcharge
      */
-    public function setCurrencyCode(UNKNOWN $currencyCode = null)
+    public function setCurrencyCode( $currencyCode = null)
     {
         $this->CurrencyCode = $currencyCode;
         return $this;
@@ -135,7 +135,7 @@ class AgeSurcharge extends AbstractStructBase
     }
     /**
      * Get Amount value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getAmount()
     {
@@ -143,10 +143,10 @@ class AgeSurcharge extends AbstractStructBase
     }
     /**
      * Set Amount value
-     * @param UNKNOWN $amount
+     * @param  $amount
      * @return \Ammonkc\Otaehi\StructType\AgeSurcharge
      */
-    public function setAmount(UNKNOWN $amount = null)
+    public function setAmount( $amount = null)
     {
         $this->Amount = $amount;
         return $this;

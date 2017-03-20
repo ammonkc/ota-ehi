@@ -17,7 +17,7 @@ class URL_Type extends AbstractStructBase
     public $_;
     /**
      * The Type
-     * @var UNKNOWN
+     * @var
      */
     public $Type;
     /**
@@ -25,9 +25,9 @@ class URL_Type extends AbstractStructBase
      * @uses URL_Type::set_()
      * @uses URL_Type::setType()
      * @param string $_
-     * @param UNKNOWN $type
+     * @param  $type
      */
-    public function __construct($_ = null, UNKNOWN $type = null)
+    public function __construct($_ = null,  $type = null)
     {
         $this
             ->set_($_)
@@ -57,7 +57,7 @@ class URL_Type extends AbstractStructBase
     }
     /**
      * Get Type value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getType()
     {
@@ -65,10 +65,10 @@ class URL_Type extends AbstractStructBase
     }
     /**
      * Set Type value
-     * @param UNKNOWN $type
+     * @param  $type
      * @return \Ammonkc\Otaehi\StructType\URL_Type
      */
-    public function setType(UNKNOWN $type = null)
+    public function setType( $type = null)
     {
         $this->Type = $type;
         return $this;

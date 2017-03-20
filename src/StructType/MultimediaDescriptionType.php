@@ -27,12 +27,12 @@ class MultimediaDescriptionType extends AbstractStructBase
     public $TextItems;
     /**
      * The InfoCode
-     * @var UNKNOWN
+     * @var
      */
     public $InfoCode;
     /**
      * The AdditionalDetailCode
-     * @var UNKNOWN
+     * @var
      */
     public $AdditionalDetailCode;
     /**
@@ -57,12 +57,12 @@ class MultimediaDescriptionType extends AbstractStructBase
      * @param mixed $videoItems
      * @param mixed $imageItems
      * @param mixed $textItems
-     * @param UNKNOWN $infoCode
-     * @param UNKNOWN $additionalDetailCode
+     * @param  $infoCode
+     * @param  $additionalDetailCode
      * @param string $lastUpdated
      * @param string $version
      */
-    public function __construct($videoItems = null, $imageItems = null, $textItems = null, UNKNOWN $infoCode = null, UNKNOWN $additionalDetailCode = null, $lastUpdated = null, $version = null)
+    public function __construct($videoItems = null, $imageItems = null, $textItems = null,  $infoCode = null,  $additionalDetailCode = null, $lastUpdated = null, $version = null)
     {
         $this
             ->setVideoItems($videoItems)
@@ -129,7 +129,7 @@ class MultimediaDescriptionType extends AbstractStructBase
     }
     /**
      * Get InfoCode value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getInfoCode()
     {
@@ -137,17 +137,17 @@ class MultimediaDescriptionType extends AbstractStructBase
     }
     /**
      * Set InfoCode value
-     * @param UNKNOWN $infoCode
+     * @param  $infoCode
      * @return \Ammonkc\Otaehi\StructType\MultimediaDescriptionType
      */
-    public function setInfoCode(UNKNOWN $infoCode = null)
+    public function setInfoCode( $infoCode = null)
     {
         $this->InfoCode = $infoCode;
         return $this;
     }
     /**
      * Get AdditionalDetailCode value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getAdditionalDetailCode()
     {
@@ -155,10 +155,10 @@ class MultimediaDescriptionType extends AbstractStructBase
     }
     /**
      * Set AdditionalDetailCode value
-     * @param UNKNOWN $additionalDetailCode
+     * @param  $additionalDetailCode
      * @return \Ammonkc\Otaehi\StructType\MultimediaDescriptionType
      */
-    public function setAdditionalDetailCode(UNKNOWN $additionalDetailCode = null)
+    public function setAdditionalDetailCode( $additionalDetailCode = null)
     {
         $this->AdditionalDetailCode = $additionalDetailCode;
         return $this;

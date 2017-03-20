@@ -12,12 +12,12 @@ class PickupReturnRule extends AbstractStructBase
 {
     /**
      * The DayOfWeek
-     * @var UNKNOWN
+     * @var
      */
     public $DayOfWeek;
     /**
      * The Time
-     * @var UNKNOWN
+     * @var
      */
     public $Time;
     /**
@@ -30,11 +30,11 @@ class PickupReturnRule extends AbstractStructBase
      * @uses PickupReturnRule::setDayOfWeek()
      * @uses PickupReturnRule::setTime()
      * @uses PickupReturnRule::setRuleType()
-     * @param UNKNOWN $dayOfWeek
-     * @param UNKNOWN $time
+     * @param  $dayOfWeek
+     * @param  $time
      * @param string $ruleType
      */
-    public function __construct(UNKNOWN $dayOfWeek = null, UNKNOWN $time = null, $ruleType = null)
+    public function __construct( $dayOfWeek = null,  $time = null, $ruleType = null)
     {
         $this
             ->setDayOfWeek($dayOfWeek)
@@ -43,7 +43,7 @@ class PickupReturnRule extends AbstractStructBase
     }
     /**
      * Get DayOfWeek value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getDayOfWeek()
     {
@@ -51,17 +51,17 @@ class PickupReturnRule extends AbstractStructBase
     }
     /**
      * Set DayOfWeek value
-     * @param UNKNOWN $dayOfWeek
+     * @param  $dayOfWeek
      * @return \Ammonkc\Otaehi\StructType\PickupReturnRule
      */
-    public function setDayOfWeek(UNKNOWN $dayOfWeek = null)
+    public function setDayOfWeek( $dayOfWeek = null)
     {
         $this->DayOfWeek = $dayOfWeek;
         return $this;
     }
     /**
      * Get Time value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getTime()
     {
@@ -69,10 +69,10 @@ class PickupReturnRule extends AbstractStructBase
     }
     /**
      * Set Time value
-     * @param UNKNOWN $time
+     * @param  $time
      * @return \Ammonkc\Otaehi\StructType\PickupReturnRule
      */
-    public function setTime(UNKNOWN $time = null)
+    public function setTime( $time = null)
     {
         $this->Time = $time;
         return $this;

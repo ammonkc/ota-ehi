@@ -27,7 +27,7 @@ class OffLocationServiceType extends AbstractStructBase
     public $TrackingID;
     /**
      * The SpecInstructions
-     * @var UNKNOWN
+     * @var
      */
     public $SpecInstructions;
     /**
@@ -39,9 +39,9 @@ class OffLocationServiceType extends AbstractStructBase
      * @param mixed $personName
      * @param \Ammonkc\Otaehi\StructType\Telephone $telephone
      * @param mixed $trackingID
-     * @param UNKNOWN $specInstructions
+     * @param  $specInstructions
      */
-    public function __construct($personName = null, \Ammonkc\Otaehi\StructType\Telephone $telephone = null, $trackingID = null, UNKNOWN $specInstructions = null)
+    public function __construct($personName = null, \Ammonkc\Otaehi\StructType\Telephone $telephone = null, $trackingID = null,  $specInstructions = null)
     {
         $this
             ->setPersonName($personName)
@@ -105,7 +105,7 @@ class OffLocationServiceType extends AbstractStructBase
     }
     /**
      * Get SpecInstructions value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getSpecInstructions()
     {
@@ -113,10 +113,10 @@ class OffLocationServiceType extends AbstractStructBase
     }
     /**
      * Set SpecInstructions value
-     * @param UNKNOWN $specInstructions
+     * @param  $specInstructions
      * @return \Ammonkc\Otaehi\StructType\OffLocationServiceType
      */
-    public function setSpecInstructions(UNKNOWN $specInstructions = null)
+    public function setSpecInstructions( $specInstructions = null)
     {
         $this->SpecInstructions = $specInstructions;
         return $this;

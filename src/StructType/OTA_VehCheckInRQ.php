@@ -72,7 +72,7 @@ class OTA_VehCheckInRQ extends AbstractStructBase
     public $Remarks;
     /**
      * The EchoToken
-     * @var UNKNOWN
+     * @var
      */
     public $EchoToken;
     /**
@@ -87,7 +87,7 @@ class OTA_VehCheckInRQ extends AbstractStructBase
     public $Target;
     /**
      * The TargetName
-     * @var UNKNOWN
+     * @var
      */
     public $TargetName;
     /**
@@ -117,7 +117,7 @@ class OTA_VehCheckInRQ extends AbstractStructBase
     public $RetransmissionIndicator;
     /**
      * The CorrelationID
-     * @var UNKNOWN
+     * @var
      */
     public $CorrelationID;
     /**
@@ -132,7 +132,7 @@ class OTA_VehCheckInRQ extends AbstractStructBase
     public $AltLangID;
     /**
      * The RentalActionCode
-     * @var UNKNOWN
+     * @var
      */
     public $RentalActionCode;
     /**
@@ -142,7 +142,7 @@ class OTA_VehCheckInRQ extends AbstractStructBase
     public $RentalAgreementStatusCode;
     /**
      * The ReqRespVersion
-     * @var UNKNOWN
+     * @var
      */
     public $ReqRespVersion;
     /**
@@ -186,23 +186,23 @@ class OTA_VehCheckInRQ extends AbstractStructBase
      * @param \Ammonkc\Otaehi\StructType\AdjustmentDetails $adjustmentDetails
      * @param \Ammonkc\Otaehi\StructType\OffLocationServiceCoreType $offLocationServiceDetails
      * @param \Ammonkc\Otaehi\StructType\Remarks $remarks
-     * @param UNKNOWN $echoToken
+     * @param  $echoToken
      * @param string $timeStamp
      * @param string $target
-     * @param UNKNOWN $targetName
+     * @param  $targetName
      * @param float $version
      * @param string $transactionIdentifier
      * @param int $sequenceNmbr
      * @param string $transactionStatusCode
      * @param bool $retransmissionIndicator
-     * @param UNKNOWN $correlationID
+     * @param  $correlationID
      * @param string $primaryLangID
      * @param string $altLangID
-     * @param UNKNOWN $rentalActionCode
+     * @param  $rentalActionCode
      * @param string $rentalAgreementStatusCode
-     * @param UNKNOWN $reqRespVersion
+     * @param  $reqRespVersion
      */
-    public function __construct(\Ammonkc\Otaehi\StructType\POS_Type $pOS = null, \Ammonkc\Otaehi\StructType\UniqueID_Type $confID = null, \Ammonkc\Otaehi\StructType\UniqueID_Type $contractID = null, \Ammonkc\Otaehi\StructType\CustomerPrimaryAdditionalType $customer = null, \Ammonkc\Otaehi\StructType\VehicleRentalCoreType $pickUpReturnDetails = null, \Ammonkc\Otaehi\StructType\PaymentDetailType $paymentDetails = null, \Ammonkc\Otaehi\StructType\VehicleType $vehicle = null, \Ammonkc\Otaehi\StructType\VehicleRentalDetailsType $vehRentalDetails = null, \Ammonkc\Otaehi\StructType\PricedEquips $pricedEquips = null, \Ammonkc\Otaehi\StructType\AdjustmentDetails $adjustmentDetails = null, \Ammonkc\Otaehi\StructType\OffLocationServiceCoreType $offLocationServiceDetails = null, \Ammonkc\Otaehi\StructType\Remarks $remarks = null, UNKNOWN $echoToken = null, $timeStamp = null, $target = null, UNKNOWN $targetName = null, $version = null, $transactionIdentifier = null, $sequenceNmbr = null, $transactionStatusCode = null, $retransmissionIndicator = null, UNKNOWN $correlationID = null, $primaryLangID = null, $altLangID = null, UNKNOWN $rentalActionCode = null, $rentalAgreementStatusCode = null, UNKNOWN $reqRespVersion = null)
+    public function __construct(\Ammonkc\Otaehi\StructType\POS_Type $pOS = null, \Ammonkc\Otaehi\StructType\UniqueID_Type $confID = null, \Ammonkc\Otaehi\StructType\UniqueID_Type $contractID = null, \Ammonkc\Otaehi\StructType\CustomerPrimaryAdditionalType $customer = null, \Ammonkc\Otaehi\StructType\VehicleRentalCoreType $pickUpReturnDetails = null, \Ammonkc\Otaehi\StructType\PaymentDetailType $paymentDetails = null, \Ammonkc\Otaehi\StructType\VehicleType $vehicle = null, \Ammonkc\Otaehi\StructType\VehicleRentalDetailsType $vehRentalDetails = null, \Ammonkc\Otaehi\StructType\PricedEquips $pricedEquips = null, \Ammonkc\Otaehi\StructType\AdjustmentDetails $adjustmentDetails = null, \Ammonkc\Otaehi\StructType\OffLocationServiceCoreType $offLocationServiceDetails = null, \Ammonkc\Otaehi\StructType\Remarks $remarks = null,  $echoToken = null, $timeStamp = null, $target = null,  $targetName = null, $version = null, $transactionIdentifier = null, $sequenceNmbr = null, $transactionStatusCode = null, $retransmissionIndicator = null,  $correlationID = null, $primaryLangID = null, $altLangID = null,  $rentalActionCode = null, $rentalAgreementStatusCode = null,  $reqRespVersion = null)
     {
         $this
             ->setPOS($pOS)
@@ -451,7 +451,7 @@ class OTA_VehCheckInRQ extends AbstractStructBase
     }
     /**
      * Get EchoToken value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getEchoToken()
     {
@@ -459,10 +459,10 @@ class OTA_VehCheckInRQ extends AbstractStructBase
     }
     /**
      * Set EchoToken value
-     * @param UNKNOWN $echoToken
+     * @param  $echoToken
      * @return \Ammonkc\Otaehi\StructType\OTA_VehCheckInRQ
      */
-    public function setEchoToken(UNKNOWN $echoToken = null)
+    public function setEchoToken( $echoToken = null)
     {
         $this->EchoToken = $echoToken;
         return $this;
@@ -513,7 +513,7 @@ class OTA_VehCheckInRQ extends AbstractStructBase
     }
     /**
      * Get TargetName value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getTargetName()
     {
@@ -521,10 +521,10 @@ class OTA_VehCheckInRQ extends AbstractStructBase
     }
     /**
      * Set TargetName value
-     * @param UNKNOWN $targetName
+     * @param  $targetName
      * @return \Ammonkc\Otaehi\StructType\OTA_VehCheckInRQ
      */
-    public function setTargetName(UNKNOWN $targetName = null)
+    public function setTargetName( $targetName = null)
     {
         $this->TargetName = $targetName;
         return $this;
@@ -633,7 +633,7 @@ class OTA_VehCheckInRQ extends AbstractStructBase
     }
     /**
      * Get CorrelationID value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getCorrelationID()
     {
@@ -641,10 +641,10 @@ class OTA_VehCheckInRQ extends AbstractStructBase
     }
     /**
      * Set CorrelationID value
-     * @param UNKNOWN $correlationID
+     * @param  $correlationID
      * @return \Ammonkc\Otaehi\StructType\OTA_VehCheckInRQ
      */
-    public function setCorrelationID(UNKNOWN $correlationID = null)
+    public function setCorrelationID( $correlationID = null)
     {
         $this->CorrelationID = $correlationID;
         return $this;
@@ -695,7 +695,7 @@ class OTA_VehCheckInRQ extends AbstractStructBase
     }
     /**
      * Get RentalActionCode value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getRentalActionCode()
     {
@@ -703,10 +703,10 @@ class OTA_VehCheckInRQ extends AbstractStructBase
     }
     /**
      * Set RentalActionCode value
-     * @param UNKNOWN $rentalActionCode
+     * @param  $rentalActionCode
      * @return \Ammonkc\Otaehi\StructType\OTA_VehCheckInRQ
      */
-    public function setRentalActionCode(UNKNOWN $rentalActionCode = null)
+    public function setRentalActionCode( $rentalActionCode = null)
     {
         $this->RentalActionCode = $rentalActionCode;
         return $this;
@@ -735,7 +735,7 @@ class OTA_VehCheckInRQ extends AbstractStructBase
     }
     /**
      * Get ReqRespVersion value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getReqRespVersion()
     {
@@ -743,10 +743,10 @@ class OTA_VehCheckInRQ extends AbstractStructBase
     }
     /**
      * Set ReqRespVersion value
-     * @param UNKNOWN $reqRespVersion
+     * @param  $reqRespVersion
      * @return \Ammonkc\Otaehi\StructType\OTA_VehCheckInRQ
      */
-    public function setReqRespVersion(UNKNOWN $reqRespVersion = null)
+    public function setReqRespVersion( $reqRespVersion = null)
     {
         $this->ReqRespVersion = $reqRespVersion;
         return $this;

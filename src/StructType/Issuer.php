@@ -12,22 +12,22 @@ class Issuer extends AbstractStructBase
 {
     /**
      * The BankID
-     * @var UNKNOWN
+     * @var
      */
     public $BankID;
     /**
      * Constructor method for Issuer
      * @uses Issuer::setBankID()
-     * @param UNKNOWN $bankID
+     * @param  $bankID
      */
-    public function __construct(UNKNOWN $bankID = null)
+    public function __construct( $bankID = null)
     {
         $this
             ->setBankID($bankID);
     }
     /**
      * Get BankID value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getBankID()
     {
@@ -35,10 +35,10 @@ class Issuer extends AbstractStructBase
     }
     /**
      * Set BankID value
-     * @param UNKNOWN $bankID
+     * @param  $bankID
      * @return \Ammonkc\Otaehi\StructType\Issuer
      */
-    public function setBankID(UNKNOWN $bankID = null)
+    public function setBankID( $bankID = null)
     {
         $this->BankID = $bankID;
         return $this;

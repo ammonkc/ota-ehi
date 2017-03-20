@@ -32,12 +32,12 @@ class RateQualifierType extends AbstractStructBase
     public $ArriveByFlight;
     /**
      * The RateAuthorizationCode
-     * @var UNKNOWN
+     * @var
      */
     public $RateAuthorizationCode;
     /**
      * The VendorRateID
-     * @var UNKNOWN
+     * @var
      */
     public $VendorRateID;
     /**
@@ -52,10 +52,10 @@ class RateQualifierType extends AbstractStructBase
      * @param \Ammonkc\Otaehi\StructType\RateComments $rateComments
      * @param mixed $tPA_Extensions
      * @param bool $arriveByFlight
-     * @param UNKNOWN $rateAuthorizationCode
-     * @param UNKNOWN $vendorRateID
+     * @param  $rateAuthorizationCode
+     * @param  $vendorRateID
      */
-    public function __construct($promoDesc = null, \Ammonkc\Otaehi\StructType\RateComments $rateComments = null, $tPA_Extensions = null, $arriveByFlight = null, UNKNOWN $rateAuthorizationCode = null, UNKNOWN $vendorRateID = null)
+    public function __construct($promoDesc = null, \Ammonkc\Otaehi\StructType\RateComments $rateComments = null, $tPA_Extensions = null, $arriveByFlight = null,  $rateAuthorizationCode = null,  $vendorRateID = null)
     {
         $this
             ->setPromoDesc($promoDesc)
@@ -143,7 +143,7 @@ class RateQualifierType extends AbstractStructBase
     }
     /**
      * Get RateAuthorizationCode value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getRateAuthorizationCode()
     {
@@ -151,17 +151,17 @@ class RateQualifierType extends AbstractStructBase
     }
     /**
      * Set RateAuthorizationCode value
-     * @param UNKNOWN $rateAuthorizationCode
+     * @param  $rateAuthorizationCode
      * @return \Ammonkc\Otaehi\StructType\RateQualifierType
      */
-    public function setRateAuthorizationCode(UNKNOWN $rateAuthorizationCode = null)
+    public function setRateAuthorizationCode( $rateAuthorizationCode = null)
     {
         $this->RateAuthorizationCode = $rateAuthorizationCode;
         return $this;
     }
     /**
      * Get VendorRateID value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getVendorRateID()
     {
@@ -169,10 +169,10 @@ class RateQualifierType extends AbstractStructBase
     }
     /**
      * Set VendorRateID value
-     * @param UNKNOWN $vendorRateID
+     * @param  $vendorRateID
      * @return \Ammonkc\Otaehi\StructType\RateQualifierType
      */
-    public function setVendorRateID(UNKNOWN $vendorRateID = null)
+    public function setVendorRateID( $vendorRateID = null)
     {
         $this->VendorRateID = $vendorRateID;
         return $this;

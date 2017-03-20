@@ -2,32 +2,31 @@
 
 namespace Ammonkc\Otaehi\StructType;
 
-use WsdlToPhp\PackageBase\AbstractStructBase;
+use Ammonkc\Otaehi\StructType\UniqueID_Type;
 
 /**
  * This class stands for RequestorID StructType
  * @subpackage Structs
  */
-class RequestorID extends AbstractStructBase
+class RequestorID extends UniqueID_Type
 {
     /**
      * The MessagePassword
-     * @var UNKNOWN
+     * @var
      */
     public $MessagePassword;
     /**
      * Constructor method for RequestorID
      * @uses RequestorID::setMessagePassword()
-     * @param UNKNOWN $messagePassword
+     * @param  $messagePassword
      */
-    public function __construct(UNKNOWN $messagePassword = null)
+    public function __construct( $messagePassword = null)
     {
-        $this
-            ->setMessagePassword($messagePassword);
+        $this->setMessagePassword($messagePassword);
     }
     /**
      * Get MessagePassword value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getMessagePassword()
     {
@@ -35,10 +34,10 @@ class RequestorID extends AbstractStructBase
     }
     /**
      * Set MessagePassword value
-     * @param UNKNOWN $messagePassword
+     * @param  $messagePassword
      * @return \Ammonkc\Otaehi\StructType\RequestorID
      */
-    public function setMessagePassword(UNKNOWN $messagePassword = null)
+    public function setMessagePassword( $messagePassword = null)
     {
         $this->MessagePassword = $messagePassword;
         return $this;

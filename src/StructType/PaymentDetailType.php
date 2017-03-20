@@ -22,7 +22,7 @@ class PaymentDetailType extends AbstractStructBase
     public $Commission;
     /**
      * The PaymentType
-     * @var UNKNOWN
+     * @var
      */
     public $PaymentType;
     /**
@@ -32,7 +32,7 @@ class PaymentDetailType extends AbstractStructBase
     public $SplitPaymentInd;
     /**
      * The AuthorizedDays
-     * @var UNKNOWN
+     * @var
      */
     public $AuthorizedDays;
     /**
@@ -50,12 +50,12 @@ class PaymentDetailType extends AbstractStructBase
      * @uses PaymentDetailType::setPrimaryPaymentInd()
      * @param \Ammonkc\Otaehi\StructType\PaymentAmount $paymentAmount
      * @param mixed $commission
-     * @param UNKNOWN $paymentType
+     * @param  $paymentType
      * @param bool $splitPaymentInd
-     * @param UNKNOWN $authorizedDays
+     * @param  $authorizedDays
      * @param bool $primaryPaymentInd
      */
-    public function __construct(\Ammonkc\Otaehi\StructType\PaymentAmount $paymentAmount = null, $commission = null, UNKNOWN $paymentType = null, $splitPaymentInd = null, UNKNOWN $authorizedDays = null, $primaryPaymentInd = null)
+    public function __construct(\Ammonkc\Otaehi\StructType\PaymentAmount $paymentAmount = null, $commission = null,  $paymentType = null, $splitPaymentInd = null,  $authorizedDays = null, $primaryPaymentInd = null)
     {
         $this
             ->setPaymentAmount($paymentAmount)
@@ -103,7 +103,7 @@ class PaymentDetailType extends AbstractStructBase
     }
     /**
      * Get PaymentType value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getPaymentType()
     {
@@ -111,10 +111,10 @@ class PaymentDetailType extends AbstractStructBase
     }
     /**
      * Set PaymentType value
-     * @param UNKNOWN $paymentType
+     * @param  $paymentType
      * @return \Ammonkc\Otaehi\StructType\PaymentDetailType
      */
-    public function setPaymentType(UNKNOWN $paymentType = null)
+    public function setPaymentType( $paymentType = null)
     {
         $this->PaymentType = $paymentType;
         return $this;
@@ -139,7 +139,7 @@ class PaymentDetailType extends AbstractStructBase
     }
     /**
      * Get AuthorizedDays value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getAuthorizedDays()
     {
@@ -147,10 +147,10 @@ class PaymentDetailType extends AbstractStructBase
     }
     /**
      * Set AuthorizedDays value
-     * @param UNKNOWN $authorizedDays
+     * @param  $authorizedDays
      * @return \Ammonkc\Otaehi\StructType\PaymentDetailType
      */
-    public function setAuthorizedDays(UNKNOWN $authorizedDays = null)
+    public function setAuthorizedDays( $authorizedDays = null)
     {
         $this->AuthorizedDays = $authorizedDays;
         return $this;

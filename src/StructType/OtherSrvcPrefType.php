@@ -42,7 +42,7 @@ class OtherSrvcPrefType extends AbstractStructBase
     public $TPA_Extensions;
     /**
      * The TravelPurpose
-     * @var UNKNOWN
+     * @var
      */
     public $TravelPurpose;
     /**
@@ -60,9 +60,9 @@ class OtherSrvcPrefType extends AbstractStructBase
      * @param mixed $paymentFormPref
      * @param mixed $specRequestPref
      * @param mixed $tPA_Extensions
-     * @param UNKNOWN $travelPurpose
+     * @param  $travelPurpose
      */
-    public function __construct($otherSrvcName = null, $vendorPref = null, $loyaltyPref = null, $paymentFormPref = null, $specRequestPref = null, $tPA_Extensions = null, UNKNOWN $travelPurpose = null)
+    public function __construct($otherSrvcName = null, $vendorPref = null, $loyaltyPref = null, $paymentFormPref = null, $specRequestPref = null, $tPA_Extensions = null,  $travelPurpose = null)
     {
         $this
             ->setOtherSrvcName($otherSrvcName)
@@ -183,7 +183,7 @@ class OtherSrvcPrefType extends AbstractStructBase
     }
     /**
      * Get TravelPurpose value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getTravelPurpose()
     {
@@ -191,10 +191,10 @@ class OtherSrvcPrefType extends AbstractStructBase
     }
     /**
      * Set TravelPurpose value
-     * @param UNKNOWN $travelPurpose
+     * @param  $travelPurpose
      * @return \Ammonkc\Otaehi\StructType\OtherSrvcPrefType
      */
-    public function setTravelPurpose(UNKNOWN $travelPurpose = null)
+    public function setTravelPurpose( $travelPurpose = null)
     {
         $this->TravelPurpose = $travelPurpose;
         return $this;

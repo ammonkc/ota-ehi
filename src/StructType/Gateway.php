@@ -27,7 +27,7 @@ class Gateway extends AbstractStructBase
     public $TPA_Extensions;
     /**
      * The ECI
-     * @var UNKNOWN
+     * @var
      */
     public $ECI;
     /**
@@ -57,12 +57,12 @@ class Gateway extends AbstractStructBase
      * @param \Ammonkc\Otaehi\StructType\AuthenticationVerificationValue $authenticationVerificationValue
      * @param \Ammonkc\Otaehi\StructType\TransactionPassword $transactionPassword
      * @param mixed $tPA_Extensions
-     * @param UNKNOWN $eCI
+     * @param  $eCI
      * @param string $merchantID
      * @param string $processorID
      * @param string $uRL
      */
-    public function __construct(\Ammonkc\Otaehi\StructType\AuthenticationVerificationValue $authenticationVerificationValue = null, \Ammonkc\Otaehi\StructType\TransactionPassword $transactionPassword = null, $tPA_Extensions = null, UNKNOWN $eCI = null, $merchantID = null, $processorID = null, $uRL = null)
+    public function __construct(\Ammonkc\Otaehi\StructType\AuthenticationVerificationValue $authenticationVerificationValue = null, \Ammonkc\Otaehi\StructType\TransactionPassword $transactionPassword = null, $tPA_Extensions = null,  $eCI = null, $merchantID = null, $processorID = null, $uRL = null)
     {
         $this
             ->setAuthenticationVerificationValue($authenticationVerificationValue)
@@ -129,7 +129,7 @@ class Gateway extends AbstractStructBase
     }
     /**
      * Get ECI value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getECI()
     {
@@ -137,10 +137,10 @@ class Gateway extends AbstractStructBase
     }
     /**
      * Set ECI value
-     * @param UNKNOWN $eCI
+     * @param  $eCI
      * @return \Ammonkc\Otaehi\StructType\Gateway
      */
-    public function setECI(UNKNOWN $eCI = null)
+    public function setECI( $eCI = null)
     {
         $this->ECI = $eCI;
         return $this;

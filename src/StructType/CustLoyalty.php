@@ -27,7 +27,7 @@ class CustLoyalty extends AbstractStructBase
     public $SubAccountBalance;
     /**
      * The Remark
-     * @var UNKNOWN
+     * @var
      */
     public $Remark;
     /**
@@ -42,22 +42,22 @@ class CustLoyalty extends AbstractStructBase
     public $ShareMarketInd;
     /**
      * The ProgramID
-     * @var UNKNOWN
+     * @var
      */
     public $ProgramID;
     /**
      * The MembershipID
-     * @var UNKNOWN
+     * @var
      */
     public $MembershipID;
     /**
      * The TravelSector
-     * @var UNKNOWN
+     * @var
      */
     public $TravelSector;
     /**
      * The VendorCode
-     * @var UNKNOWN
+     * @var
      */
     public $VendorCode;
     /**
@@ -67,32 +67,32 @@ class CustLoyalty extends AbstractStructBase
     public $PrimaryLoyaltyIndicator;
     /**
      * The AllianceLoyaltyLevelName
-     * @var UNKNOWN
+     * @var
      */
     public $AllianceLoyaltyLevelName;
     /**
      * The CustomerType
-     * @var UNKNOWN
+     * @var
      */
     public $CustomerType;
     /**
      * The CustomerValue
-     * @var UNKNOWN
+     * @var
      */
     public $CustomerValue;
     /**
      * The Password
-     * @var UNKNOWN
+     * @var
      */
     public $Password;
     /**
      * The LoyalLevel
-     * @var UNKNOWN
+     * @var
      */
     public $LoyalLevel;
     /**
      * The LoyalLevelCode
-     * @var UNKNOWN
+     * @var
      */
     public $LoyalLevelCode;
     /**
@@ -122,7 +122,7 @@ class CustLoyalty extends AbstractStructBase
     public $ExpireDateExclusiveIndicator;
     /**
      * The RPH
-     * @var UNKNOWN
+     * @var
      */
     public $RPH;
     /**
@@ -153,28 +153,28 @@ class CustLoyalty extends AbstractStructBase
      * @param \Ammonkc\Otaehi\StructType\MemberPreferences $memberPreferences
      * @param \Ammonkc\Otaehi\StructType\SecurityInfo $securityInfo
      * @param \Ammonkc\Otaehi\StructType\SubAccountBalance $subAccountBalance
-     * @param UNKNOWN $remark
+     * @param  $remark
      * @param string $shareSynchInd
      * @param string $shareMarketInd
-     * @param UNKNOWN $programID
-     * @param UNKNOWN $membershipID
-     * @param UNKNOWN $travelSector
-     * @param UNKNOWN $vendorCode
+     * @param  $programID
+     * @param  $membershipID
+     * @param  $travelSector
+     * @param  $vendorCode
      * @param bool $primaryLoyaltyIndicator
-     * @param UNKNOWN $allianceLoyaltyLevelName
-     * @param UNKNOWN $customerType
-     * @param UNKNOWN $customerValue
-     * @param UNKNOWN $password
-     * @param UNKNOWN $loyalLevel
-     * @param UNKNOWN $loyalLevelCode
+     * @param  $allianceLoyaltyLevelName
+     * @param  $customerType
+     * @param  $customerValue
+     * @param  $password
+     * @param  $loyalLevel
+     * @param  $loyalLevelCode
      * @param string $singleVendorInd
      * @param string $signupDate
      * @param string $effectiveDate
      * @param string $expireDate
      * @param bool $expireDateExclusiveIndicator
-     * @param UNKNOWN $rPH
+     * @param  $rPH
      */
-    public function __construct(\Ammonkc\Otaehi\StructType\MemberPreferences $memberPreferences = null, \Ammonkc\Otaehi\StructType\SecurityInfo $securityInfo = null, \Ammonkc\Otaehi\StructType\SubAccountBalance $subAccountBalance = null, UNKNOWN $remark = null, $shareSynchInd = null, $shareMarketInd = null, UNKNOWN $programID = null, UNKNOWN $membershipID = null, UNKNOWN $travelSector = null, UNKNOWN $vendorCode = null, $primaryLoyaltyIndicator = null, UNKNOWN $allianceLoyaltyLevelName = null, UNKNOWN $customerType = null, UNKNOWN $customerValue = null, UNKNOWN $password = null, UNKNOWN $loyalLevel = null, UNKNOWN $loyalLevelCode = null, $singleVendorInd = null, $signupDate = null, $effectiveDate = null, $expireDate = null, $expireDateExclusiveIndicator = null, UNKNOWN $rPH = null)
+    public function __construct(\Ammonkc\Otaehi\StructType\MemberPreferences $memberPreferences = null, \Ammonkc\Otaehi\StructType\SecurityInfo $securityInfo = null, \Ammonkc\Otaehi\StructType\SubAccountBalance $subAccountBalance = null,  $remark = null, $shareSynchInd = null, $shareMarketInd = null,  $programID = null,  $membershipID = null,  $travelSector = null,  $vendorCode = null, $primaryLoyaltyIndicator = null,  $allianceLoyaltyLevelName = null,  $customerType = null,  $customerValue = null,  $password = null,  $loyalLevel = null,  $loyalLevelCode = null, $singleVendorInd = null, $signupDate = null, $effectiveDate = null, $expireDate = null, $expireDateExclusiveIndicator = null,  $rPH = null)
     {
         $this
             ->setMemberPreferences($memberPreferences)
@@ -257,7 +257,7 @@ class CustLoyalty extends AbstractStructBase
     }
     /**
      * Get Remark value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getRemark()
     {
@@ -265,10 +265,10 @@ class CustLoyalty extends AbstractStructBase
     }
     /**
      * Set Remark value
-     * @param UNKNOWN $remark
+     * @param  $remark
      * @return \Ammonkc\Otaehi\StructType\CustLoyalty
      */
-    public function setRemark(UNKNOWN $remark = null)
+    public function setRemark( $remark = null)
     {
         $this->Remark = $remark;
         return $this;
@@ -319,7 +319,7 @@ class CustLoyalty extends AbstractStructBase
     }
     /**
      * Get ProgramID value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getProgramID()
     {
@@ -327,17 +327,17 @@ class CustLoyalty extends AbstractStructBase
     }
     /**
      * Set ProgramID value
-     * @param UNKNOWN $programID
+     * @param  $programID
      * @return \Ammonkc\Otaehi\StructType\CustLoyalty
      */
-    public function setProgramID(UNKNOWN $programID = null)
+    public function setProgramID( $programID = null)
     {
         $this->ProgramID = $programID;
         return $this;
     }
     /**
      * Get MembershipID value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getMembershipID()
     {
@@ -345,17 +345,17 @@ class CustLoyalty extends AbstractStructBase
     }
     /**
      * Set MembershipID value
-     * @param UNKNOWN $membershipID
+     * @param  $membershipID
      * @return \Ammonkc\Otaehi\StructType\CustLoyalty
      */
-    public function setMembershipID(UNKNOWN $membershipID = null)
+    public function setMembershipID( $membershipID = null)
     {
         $this->MembershipID = $membershipID;
         return $this;
     }
     /**
      * Get TravelSector value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getTravelSector()
     {
@@ -363,17 +363,17 @@ class CustLoyalty extends AbstractStructBase
     }
     /**
      * Set TravelSector value
-     * @param UNKNOWN $travelSector
+     * @param  $travelSector
      * @return \Ammonkc\Otaehi\StructType\CustLoyalty
      */
-    public function setTravelSector(UNKNOWN $travelSector = null)
+    public function setTravelSector( $travelSector = null)
     {
         $this->TravelSector = $travelSector;
         return $this;
     }
     /**
      * Get VendorCode value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getVendorCode()
     {
@@ -381,10 +381,10 @@ class CustLoyalty extends AbstractStructBase
     }
     /**
      * Set VendorCode value
-     * @param UNKNOWN $vendorCode
+     * @param  $vendorCode
      * @return \Ammonkc\Otaehi\StructType\CustLoyalty
      */
-    public function setVendorCode(UNKNOWN $vendorCode = null)
+    public function setVendorCode( $vendorCode = null)
     {
         $this->VendorCode = $vendorCode;
         return $this;
@@ -409,7 +409,7 @@ class CustLoyalty extends AbstractStructBase
     }
     /**
      * Get AllianceLoyaltyLevelName value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getAllianceLoyaltyLevelName()
     {
@@ -417,17 +417,17 @@ class CustLoyalty extends AbstractStructBase
     }
     /**
      * Set AllianceLoyaltyLevelName value
-     * @param UNKNOWN $allianceLoyaltyLevelName
+     * @param  $allianceLoyaltyLevelName
      * @return \Ammonkc\Otaehi\StructType\CustLoyalty
      */
-    public function setAllianceLoyaltyLevelName(UNKNOWN $allianceLoyaltyLevelName = null)
+    public function setAllianceLoyaltyLevelName( $allianceLoyaltyLevelName = null)
     {
         $this->AllianceLoyaltyLevelName = $allianceLoyaltyLevelName;
         return $this;
     }
     /**
      * Get CustomerType value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getCustomerType()
     {
@@ -435,17 +435,17 @@ class CustLoyalty extends AbstractStructBase
     }
     /**
      * Set CustomerType value
-     * @param UNKNOWN $customerType
+     * @param  $customerType
      * @return \Ammonkc\Otaehi\StructType\CustLoyalty
      */
-    public function setCustomerType(UNKNOWN $customerType = null)
+    public function setCustomerType( $customerType = null)
     {
         $this->CustomerType = $customerType;
         return $this;
     }
     /**
      * Get CustomerValue value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getCustomerValue()
     {
@@ -453,17 +453,17 @@ class CustLoyalty extends AbstractStructBase
     }
     /**
      * Set CustomerValue value
-     * @param UNKNOWN $customerValue
+     * @param  $customerValue
      * @return \Ammonkc\Otaehi\StructType\CustLoyalty
      */
-    public function setCustomerValue(UNKNOWN $customerValue = null)
+    public function setCustomerValue( $customerValue = null)
     {
         $this->CustomerValue = $customerValue;
         return $this;
     }
     /**
      * Get Password value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getPassword()
     {
@@ -471,17 +471,17 @@ class CustLoyalty extends AbstractStructBase
     }
     /**
      * Set Password value
-     * @param UNKNOWN $password
+     * @param  $password
      * @return \Ammonkc\Otaehi\StructType\CustLoyalty
      */
-    public function setPassword(UNKNOWN $password = null)
+    public function setPassword( $password = null)
     {
         $this->Password = $password;
         return $this;
     }
     /**
      * Get LoyalLevel value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getLoyalLevel()
     {
@@ -489,17 +489,17 @@ class CustLoyalty extends AbstractStructBase
     }
     /**
      * Set LoyalLevel value
-     * @param UNKNOWN $loyalLevel
+     * @param  $loyalLevel
      * @return \Ammonkc\Otaehi\StructType\CustLoyalty
      */
-    public function setLoyalLevel(UNKNOWN $loyalLevel = null)
+    public function setLoyalLevel( $loyalLevel = null)
     {
         $this->LoyalLevel = $loyalLevel;
         return $this;
     }
     /**
      * Get LoyalLevelCode value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getLoyalLevelCode()
     {
@@ -507,10 +507,10 @@ class CustLoyalty extends AbstractStructBase
     }
     /**
      * Set LoyalLevelCode value
-     * @param UNKNOWN $loyalLevelCode
+     * @param  $loyalLevelCode
      * @return \Ammonkc\Otaehi\StructType\CustLoyalty
      */
-    public function setLoyalLevelCode(UNKNOWN $loyalLevelCode = null)
+    public function setLoyalLevelCode( $loyalLevelCode = null)
     {
         $this->LoyalLevelCode = $loyalLevelCode;
         return $this;
@@ -623,7 +623,7 @@ class CustLoyalty extends AbstractStructBase
     }
     /**
      * Get RPH value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getRPH()
     {
@@ -631,10 +631,10 @@ class CustLoyalty extends AbstractStructBase
     }
     /**
      * Set RPH value
-     * @param UNKNOWN $rPH
+     * @param  $rPH
      * @return \Ammonkc\Otaehi\StructType\CustLoyalty
      */
-    public function setRPH(UNKNOWN $rPH = null)
+    public function setRPH( $rPH = null)
     {
         $this->RPH = $rPH;
         return $this;

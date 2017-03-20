@@ -12,22 +12,22 @@ class StateProvType extends AbstractStructBase
 {
     /**
      * The StateCode
-     * @var UNKNOWN
+     * @var
      */
     public $StateCode;
     /**
      * Constructor method for StateProvType
      * @uses StateProvType::setStateCode()
-     * @param UNKNOWN $stateCode
+     * @param  $stateCode
      */
-    public function __construct(UNKNOWN $stateCode = null)
+    public function __construct( $stateCode = null)
     {
         $this
             ->setStateCode($stateCode);
     }
     /**
      * Get StateCode value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getStateCode()
     {
@@ -35,10 +35,10 @@ class StateProvType extends AbstractStructBase
     }
     /**
      * Set StateCode value
-     * @param UNKNOWN $stateCode
+     * @param  $stateCode
      * @return \Ammonkc\Otaehi\StructType\StateProvType
      */
-    public function setStateCode(UNKNOWN $stateCode = null)
+    public function setStateCode( $stateCode = null)
     {
         $this->StateCode = $stateCode;
         return $this;

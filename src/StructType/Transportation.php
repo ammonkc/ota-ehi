@@ -32,17 +32,17 @@ class Transportation extends AbstractStructBase
     public $TPA_Extensions;
     /**
      * The NotificationRequired
-     * @var UNKNOWN
+     * @var
      */
     public $NotificationRequired;
     /**
      * The TransportationCode
-     * @var UNKNOWN
+     * @var
      */
     public $TransportationCode;
     /**
      * The ChargeUnit
-     * @var UNKNOWN
+     * @var
      */
     public $ChargeUnit;
     /**
@@ -52,7 +52,7 @@ class Transportation extends AbstractStructBase
     public $Included;
     /**
      * The Description
-     * @var UNKNOWN
+     * @var
      */
     public $Description;
     /**
@@ -62,7 +62,7 @@ class Transportation extends AbstractStructBase
     public $TypicalTravelTime;
     /**
      * The ExistsCode
-     * @var UNKNOWN
+     * @var
      */
     public $ExistsCode;
     /**
@@ -82,15 +82,15 @@ class Transportation extends AbstractStructBase
      * @param mixed $operationSchedules
      * @param DescriptiveText $descriptiveText
      * @param mixed $tPA_Extensions
-     * @param UNKNOWN $notificationRequired
-     * @param UNKNOWN $transportationCode
-     * @param UNKNOWN $chargeUnit
+     * @param  $notificationRequired
+     * @param  $transportationCode
+     * @param  $chargeUnit
      * @param bool $included
-     * @param UNKNOWN $description
+     * @param  $description
      * @param string $typicalTravelTime
-     * @param UNKNOWN $existsCode
+     * @param  $existsCode
      */
-    public function __construct($multimediaDescriptions = null, $operationSchedules = null, DescriptiveText $descriptiveText = null, $tPA_Extensions = null, UNKNOWN $notificationRequired = null, UNKNOWN $transportationCode = null, UNKNOWN $chargeUnit = null, $included = null, UNKNOWN $description = null, $typicalTravelTime = null, UNKNOWN $existsCode = null)
+    public function __construct($multimediaDescriptions = null, $operationSchedules = null, DescriptiveText $descriptiveText = null, $tPA_Extensions = null,  $notificationRequired = null,  $transportationCode = null,  $chargeUnit = null, $included = null,  $description = null, $typicalTravelTime = null,  $existsCode = null)
     {
         $this
             ->setMultimediaDescriptions($multimediaDescriptions)
@@ -179,7 +179,7 @@ class Transportation extends AbstractStructBase
     }
     /**
      * Get NotificationRequired value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getNotificationRequired()
     {
@@ -187,17 +187,17 @@ class Transportation extends AbstractStructBase
     }
     /**
      * Set NotificationRequired value
-     * @param UNKNOWN $notificationRequired
+     * @param  $notificationRequired
      * @return \Ammonkc\Otaehi\StructType\Transportation
      */
-    public function setNotificationRequired(UNKNOWN $notificationRequired = null)
+    public function setNotificationRequired( $notificationRequired = null)
     {
         $this->NotificationRequired = $notificationRequired;
         return $this;
     }
     /**
      * Get TransportationCode value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getTransportationCode()
     {
@@ -205,17 +205,17 @@ class Transportation extends AbstractStructBase
     }
     /**
      * Set TransportationCode value
-     * @param UNKNOWN $transportationCode
+     * @param  $transportationCode
      * @return \Ammonkc\Otaehi\StructType\Transportation
      */
-    public function setTransportationCode(UNKNOWN $transportationCode = null)
+    public function setTransportationCode( $transportationCode = null)
     {
         $this->TransportationCode = $transportationCode;
         return $this;
     }
     /**
      * Get ChargeUnit value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getChargeUnit()
     {
@@ -223,10 +223,10 @@ class Transportation extends AbstractStructBase
     }
     /**
      * Set ChargeUnit value
-     * @param UNKNOWN $chargeUnit
+     * @param  $chargeUnit
      * @return \Ammonkc\Otaehi\StructType\Transportation
      */
-    public function setChargeUnit(UNKNOWN $chargeUnit = null)
+    public function setChargeUnit( $chargeUnit = null)
     {
         $this->ChargeUnit = $chargeUnit;
         return $this;
@@ -251,7 +251,7 @@ class Transportation extends AbstractStructBase
     }
     /**
      * Get Description value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getDescription()
     {
@@ -259,10 +259,10 @@ class Transportation extends AbstractStructBase
     }
     /**
      * Set Description value
-     * @param UNKNOWN $description
+     * @param  $description
      * @return \Ammonkc\Otaehi\StructType\Transportation
      */
-    public function setDescription(UNKNOWN $description = null)
+    public function setDescription( $description = null)
     {
         $this->Description = $description;
         return $this;
@@ -291,7 +291,7 @@ class Transportation extends AbstractStructBase
     }
     /**
      * Get ExistsCode value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getExistsCode()
     {
@@ -299,10 +299,10 @@ class Transportation extends AbstractStructBase
     }
     /**
      * Set ExistsCode value
-     * @param UNKNOWN $existsCode
+     * @param  $existsCode
      * @return \Ammonkc\Otaehi\StructType\Transportation
      */
-    public function setExistsCode(UNKNOWN $existsCode = null)
+    public function setExistsCode( $existsCode = null)
     {
         $this->ExistsCode = $existsCode;
         return $this;

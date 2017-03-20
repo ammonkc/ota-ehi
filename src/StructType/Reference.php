@@ -17,12 +17,12 @@ class Reference extends AbstractStructBase
     public $DateTime;
     /**
      * The Amount
-     * @var UNKNOWN
+     * @var
      */
     public $Amount;
     /**
      * The CurrencyCode
-     * @var UNKNOWN
+     * @var
      */
     public $CurrencyCode;
     /**
@@ -37,11 +37,11 @@ class Reference extends AbstractStructBase
      * @uses Reference::setCurrencyCode()
      * @uses Reference::setDecimalPlaces()
      * @param string $dateTime
-     * @param UNKNOWN $amount
-     * @param UNKNOWN $currencyCode
+     * @param  $amount
+     * @param  $currencyCode
      * @param int $decimalPlaces
      */
-    public function __construct($dateTime = null, UNKNOWN $amount = null, UNKNOWN $currencyCode = null, $decimalPlaces = null)
+    public function __construct($dateTime = null,  $amount = null,  $currencyCode = null, $decimalPlaces = null)
     {
         $this
             ->setDateTime($dateTime)
@@ -73,7 +73,7 @@ class Reference extends AbstractStructBase
     }
     /**
      * Get Amount value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getAmount()
     {
@@ -81,17 +81,17 @@ class Reference extends AbstractStructBase
     }
     /**
      * Set Amount value
-     * @param UNKNOWN $amount
+     * @param  $amount
      * @return \Ammonkc\Otaehi\StructType\Reference
      */
-    public function setAmount(UNKNOWN $amount = null)
+    public function setAmount( $amount = null)
     {
         $this->Amount = $amount;
         return $this;
     }
     /**
      * Get CurrencyCode value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getCurrencyCode()
     {
@@ -99,10 +99,10 @@ class Reference extends AbstractStructBase
     }
     /**
      * Set CurrencyCode value
-     * @param UNKNOWN $currencyCode
+     * @param  $currencyCode
      * @return \Ammonkc\Otaehi\StructType\Reference
      */
-    public function setCurrencyCode(UNKNOWN $currencyCode = null)
+    public function setCurrencyCode( $currencyCode = null)
     {
         $this->CurrencyCode = $currencyCode;
         return $this;

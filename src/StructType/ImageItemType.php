@@ -17,7 +17,7 @@ class ImageItemType extends AbstractStructBase
     public $URL;
     /**
      * The UnitOfMeasureCode
-     * @var UNKNOWN
+     * @var
      */
     public $UnitOfMeasureCode;
     /**
@@ -37,11 +37,11 @@ class ImageItemType extends AbstractStructBase
      * @uses ImageItemType::setWidth()
      * @uses ImageItemType::setHeight()
      * @param string $uRL
-     * @param UNKNOWN $unitOfMeasureCode
+     * @param  $unitOfMeasureCode
      * @param int $width
      * @param int $height
      */
-    public function __construct($uRL = null, UNKNOWN $unitOfMeasureCode = null, $width = null, $height = null)
+    public function __construct($uRL = null,  $unitOfMeasureCode = null, $width = null, $height = null)
     {
         $this
             ->setURL($uRL)
@@ -73,7 +73,7 @@ class ImageItemType extends AbstractStructBase
     }
     /**
      * Get UnitOfMeasureCode value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getUnitOfMeasureCode()
     {
@@ -81,10 +81,10 @@ class ImageItemType extends AbstractStructBase
     }
     /**
      * Set UnitOfMeasureCode value
-     * @param UNKNOWN $unitOfMeasureCode
+     * @param  $unitOfMeasureCode
      * @return \Ammonkc\Otaehi\StructType\ImageItemType
      */
-    public function setUnitOfMeasureCode(UNKNOWN $unitOfMeasureCode = null)
+    public function setUnitOfMeasureCode( $unitOfMeasureCode = null)
     {
         $this->UnitOfMeasureCode = $unitOfMeasureCode;
         return $this;

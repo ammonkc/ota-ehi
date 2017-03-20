@@ -22,7 +22,7 @@ class AdditionalReward extends AbstractStructBase
     public $Name;
     /**
      * The MemberID
-     * @var UNKNOWN
+     * @var
      */
     public $MemberID;
     /**
@@ -32,9 +32,9 @@ class AdditionalReward extends AbstractStructBase
      * @uses AdditionalReward::setMemberID()
      * @param mixed $companyName
      * @param mixed $name
-     * @param UNKNOWN $memberID
+     * @param  $memberID
      */
-    public function __construct($companyName = null, $name = null, UNKNOWN $memberID = null)
+    public function __construct($companyName = null, $name = null,  $memberID = null)
     {
         $this
             ->setCompanyName($companyName)
@@ -79,7 +79,7 @@ class AdditionalReward extends AbstractStructBase
     }
     /**
      * Get MemberID value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getMemberID()
     {
@@ -87,10 +87,10 @@ class AdditionalReward extends AbstractStructBase
     }
     /**
      * Set MemberID value
-     * @param UNKNOWN $memberID
+     * @param  $memberID
      * @return \Ammonkc\Otaehi\StructType\AdditionalReward
      */
-    public function setMemberID(UNKNOWN $memberID = null)
+    public function setMemberID( $memberID = null)
     {
         $this->MemberID = $memberID;
         return $this;

@@ -12,22 +12,22 @@ class VehicleWhereAtFacilityType extends AbstractStructBase
 {
     /**
      * The Location
-     * @var UNKNOWN
+     * @var
      */
     public $Location;
     /**
      * Constructor method for VehicleWhereAtFacilityType
      * @uses VehicleWhereAtFacilityType::setLocation()
-     * @param UNKNOWN $location
+     * @param  $location
      */
-    public function __construct(UNKNOWN $location = null)
+    public function __construct( $location = null)
     {
         $this
             ->setLocation($location);
     }
     /**
      * Get Location value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getLocation()
     {
@@ -35,10 +35,10 @@ class VehicleWhereAtFacilityType extends AbstractStructBase
     }
     /**
      * Set Location value
-     * @param UNKNOWN $location
+     * @param  $location
      * @return \Ammonkc\Otaehi\StructType\VehicleWhereAtFacilityType
      */
-    public function setLocation(UNKNOWN $location = null)
+    public function setLocation( $location = null)
     {
         $this->Location = $location;
         return $this;

@@ -22,7 +22,7 @@ class TextDescriptionType extends AbstractStructBase
     public $Description;
     /**
      * The Category
-     * @var UNKNOWN
+     * @var
      */
     public $Category;
     /**
@@ -38,10 +38,10 @@ class TextDescriptionType extends AbstractStructBase
      * @uses TextDescriptionType::setLanguage()
      * @param string $uRL
      * @param \Ammonkc\Otaehi\StructType\Description $description
-     * @param UNKNOWN $category
+     * @param  $category
      * @param string $language
      */
-    public function __construct($uRL = null, \Ammonkc\Otaehi\StructType\Description $description = null, UNKNOWN $category = null, $language = null)
+    public function __construct($uRL = null, \Ammonkc\Otaehi\StructType\Description $description = null,  $category = null, $language = null)
     {
         $this
             ->setURL($uRL)
@@ -91,7 +91,7 @@ class TextDescriptionType extends AbstractStructBase
     }
     /**
      * Get Category value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getCategory()
     {
@@ -99,10 +99,10 @@ class TextDescriptionType extends AbstractStructBase
     }
     /**
      * Set Category value
-     * @param UNKNOWN $category
+     * @param  $category
      * @return \Ammonkc\Otaehi\StructType\TextDescriptionType
      */
-    public function setCategory(UNKNOWN $category = null)
+    public function setCategory( $category = null)
     {
         $this->Category = $category;
         return $this;

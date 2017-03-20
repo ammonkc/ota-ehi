@@ -62,7 +62,7 @@ class OperationTime extends AbstractStructBase
     public $Sun;
     /**
      * The Start
-     * @var UNKNOWN
+     * @var
      */
     public $Start;
     /**
@@ -72,17 +72,17 @@ class OperationTime extends AbstractStructBase
     public $Duration;
     /**
      * The End
-     * @var UNKNOWN
+     * @var
      */
     public $End;
     /**
      * The AdditionalOperationInfoCode
-     * @var UNKNOWN
+     * @var
      */
     public $AdditionalOperationInfoCode;
     /**
      * The Text
-     * @var UNKNOWN
+     * @var
      */
     public $Text;
     /**
@@ -112,13 +112,13 @@ class OperationTime extends AbstractStructBase
      * @param bool $fri
      * @param bool $sat
      * @param bool $sun
-     * @param UNKNOWN $start
+     * @param  $start
      * @param string $duration
-     * @param UNKNOWN $end
-     * @param UNKNOWN $additionalOperationInfoCode
-     * @param UNKNOWN $text
+     * @param  $end
+     * @param  $additionalOperationInfoCode
+     * @param  $text
      */
-    public function __construct($additionalInfo = null, $frequency = null, $description = null, $mon = null, $tue = null, $weds = null, $thur = null, $fri = null, $sat = null, $sun = null, UNKNOWN $start = null, $duration = null, UNKNOWN $end = null, UNKNOWN $additionalOperationInfoCode = null, UNKNOWN $text = null)
+    public function __construct($additionalInfo = null, $frequency = null, $description = null, $mon = null, $tue = null, $weds = null, $thur = null, $fri = null, $sat = null, $sun = null,  $start = null, $duration = null,  $end = null,  $additionalOperationInfoCode = null,  $text = null)
     {
         $this
             ->setAdditionalInfo($additionalInfo)
@@ -327,7 +327,7 @@ class OperationTime extends AbstractStructBase
     }
     /**
      * Get Start value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getStart()
     {
@@ -335,10 +335,10 @@ class OperationTime extends AbstractStructBase
     }
     /**
      * Set Start value
-     * @param UNKNOWN $start
+     * @param  $start
      * @return \Ammonkc\Otaehi\StructType\OperationTime
      */
-    public function setStart(UNKNOWN $start = null)
+    public function setStart( $start = null)
     {
         $this->Start = $start;
         return $this;
@@ -367,7 +367,7 @@ class OperationTime extends AbstractStructBase
     }
     /**
      * Get End value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getEnd()
     {
@@ -375,17 +375,17 @@ class OperationTime extends AbstractStructBase
     }
     /**
      * Set End value
-     * @param UNKNOWN $end
+     * @param  $end
      * @return \Ammonkc\Otaehi\StructType\OperationTime
      */
-    public function setEnd(UNKNOWN $end = null)
+    public function setEnd( $end = null)
     {
         $this->End = $end;
         return $this;
     }
     /**
      * Get AdditionalOperationInfoCode value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getAdditionalOperationInfoCode()
     {
@@ -393,17 +393,17 @@ class OperationTime extends AbstractStructBase
     }
     /**
      * Set AdditionalOperationInfoCode value
-     * @param UNKNOWN $additionalOperationInfoCode
+     * @param  $additionalOperationInfoCode
      * @return \Ammonkc\Otaehi\StructType\OperationTime
      */
-    public function setAdditionalOperationInfoCode(UNKNOWN $additionalOperationInfoCode = null)
+    public function setAdditionalOperationInfoCode( $additionalOperationInfoCode = null)
     {
         $this->AdditionalOperationInfoCode = $additionalOperationInfoCode;
         return $this;
     }
     /**
      * Get Text value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getText()
     {
@@ -411,10 +411,10 @@ class OperationTime extends AbstractStructBase
     }
     /**
      * Set Text value
-     * @param UNKNOWN $text
+     * @param  $text
      * @return \Ammonkc\Otaehi\StructType\OperationTime
      */
-    public function setText(UNKNOWN $text = null)
+    public function setText( $text = null)
     {
         $this->Text = $text;
         return $this;

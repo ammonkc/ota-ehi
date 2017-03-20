@@ -52,7 +52,7 @@ class OTA_VehCheckInRS extends AbstractStructBase
     public $Errors;
     /**
      * The EchoToken
-     * @var UNKNOWN
+     * @var
      */
     public $EchoToken;
     /**
@@ -67,7 +67,7 @@ class OTA_VehCheckInRS extends AbstractStructBase
     public $Target;
     /**
      * The TargetName
-     * @var UNKNOWN
+     * @var
      */
     public $TargetName;
     /**
@@ -97,7 +97,7 @@ class OTA_VehCheckInRS extends AbstractStructBase
     public $RetransmissionIndicator;
     /**
      * The CorrelationID
-     * @var UNKNOWN
+     * @var
      */
     public $CorrelationID;
     /**
@@ -112,7 +112,7 @@ class OTA_VehCheckInRS extends AbstractStructBase
     public $AltLangID;
     /**
      * The RentalActionCode
-     * @var UNKNOWN
+     * @var
      */
     public $RentalActionCode;
     /**
@@ -152,22 +152,22 @@ class OTA_VehCheckInRS extends AbstractStructBase
      * @param \Ammonkc\Otaehi\StructType\VehicleSegmentAdditionalInfoType $vehCheckInInfo
      * @param \Ammonkc\Otaehi\StructType\Remarks $remarks
      * @param \Ammonkc\Otaehi\StructType\ErrorsType $errors
-     * @param UNKNOWN $echoToken
+     * @param  $echoToken
      * @param string $timeStamp
      * @param string $target
-     * @param UNKNOWN $targetName
+     * @param  $targetName
      * @param float $version
      * @param string $transactionIdentifier
      * @param int $sequenceNmbr
      * @param string $transactionStatusCode
      * @param bool $retransmissionIndicator
-     * @param UNKNOWN $correlationID
+     * @param  $correlationID
      * @param string $primaryLangID
      * @param string $altLangID
-     * @param UNKNOWN $rentalActionCode
+     * @param  $rentalActionCode
      * @param string $rentalAgreementStatusCode
      */
-    public function __construct(\Ammonkc\Otaehi\StructType\SuccessType $success = null, \Ammonkc\Otaehi\StructType\WarningsType $warnings = null, \Ammonkc\Otaehi\StructType\POS_Type $pOS = null, \Ammonkc\Otaehi\StructType\CustomerPrimaryAdditionalType $customer = null, \Ammonkc\Otaehi\StructType\VehicleRentalTransactionType $vehRentalTransaction = null, \Ammonkc\Otaehi\StructType\VehicleSegmentAdditionalInfoType $vehCheckInInfo = null, \Ammonkc\Otaehi\StructType\Remarks $remarks = null, \Ammonkc\Otaehi\StructType\ErrorsType $errors = null, UNKNOWN $echoToken = null, $timeStamp = null, $target = null, UNKNOWN $targetName = null, $version = null, $transactionIdentifier = null, $sequenceNmbr = null, $transactionStatusCode = null, $retransmissionIndicator = null, UNKNOWN $correlationID = null, $primaryLangID = null, $altLangID = null, UNKNOWN $rentalActionCode = null, $rentalAgreementStatusCode = null)
+    public function __construct(\Ammonkc\Otaehi\StructType\SuccessType $success = null, \Ammonkc\Otaehi\StructType\WarningsType $warnings = null, \Ammonkc\Otaehi\StructType\POS_Type $pOS = null, \Ammonkc\Otaehi\StructType\CustomerPrimaryAdditionalType $customer = null, \Ammonkc\Otaehi\StructType\VehicleRentalTransactionType $vehRentalTransaction = null, \Ammonkc\Otaehi\StructType\VehicleSegmentAdditionalInfoType $vehCheckInInfo = null, \Ammonkc\Otaehi\StructType\Remarks $remarks = null, \Ammonkc\Otaehi\StructType\ErrorsType $errors = null,  $echoToken = null, $timeStamp = null, $target = null,  $targetName = null, $version = null, $transactionIdentifier = null, $sequenceNmbr = null, $transactionStatusCode = null, $retransmissionIndicator = null,  $correlationID = null, $primaryLangID = null, $altLangID = null,  $rentalActionCode = null, $rentalAgreementStatusCode = null)
     {
         $this
             ->setSuccess($success)
@@ -339,7 +339,7 @@ class OTA_VehCheckInRS extends AbstractStructBase
     }
     /**
      * Get EchoToken value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getEchoToken()
     {
@@ -347,10 +347,10 @@ class OTA_VehCheckInRS extends AbstractStructBase
     }
     /**
      * Set EchoToken value
-     * @param UNKNOWN $echoToken
+     * @param  $echoToken
      * @return \Ammonkc\Otaehi\StructType\OTA_VehCheckInRS
      */
-    public function setEchoToken(UNKNOWN $echoToken = null)
+    public function setEchoToken( $echoToken = null)
     {
         $this->EchoToken = $echoToken;
         return $this;
@@ -401,7 +401,7 @@ class OTA_VehCheckInRS extends AbstractStructBase
     }
     /**
      * Get TargetName value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getTargetName()
     {
@@ -409,10 +409,10 @@ class OTA_VehCheckInRS extends AbstractStructBase
     }
     /**
      * Set TargetName value
-     * @param UNKNOWN $targetName
+     * @param  $targetName
      * @return \Ammonkc\Otaehi\StructType\OTA_VehCheckInRS
      */
-    public function setTargetName(UNKNOWN $targetName = null)
+    public function setTargetName( $targetName = null)
     {
         $this->TargetName = $targetName;
         return $this;
@@ -521,7 +521,7 @@ class OTA_VehCheckInRS extends AbstractStructBase
     }
     /**
      * Get CorrelationID value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getCorrelationID()
     {
@@ -529,10 +529,10 @@ class OTA_VehCheckInRS extends AbstractStructBase
     }
     /**
      * Set CorrelationID value
-     * @param UNKNOWN $correlationID
+     * @param  $correlationID
      * @return \Ammonkc\Otaehi\StructType\OTA_VehCheckInRS
      */
-    public function setCorrelationID(UNKNOWN $correlationID = null)
+    public function setCorrelationID( $correlationID = null)
     {
         $this->CorrelationID = $correlationID;
         return $this;
@@ -583,7 +583,7 @@ class OTA_VehCheckInRS extends AbstractStructBase
     }
     /**
      * Get RentalActionCode value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getRentalActionCode()
     {
@@ -591,10 +591,10 @@ class OTA_VehCheckInRS extends AbstractStructBase
     }
     /**
      * Set RentalActionCode value
-     * @param UNKNOWN $rentalActionCode
+     * @param  $rentalActionCode
      * @return \Ammonkc\Otaehi\StructType\OTA_VehCheckInRS
      */
-    public function setRentalActionCode(UNKNOWN $rentalActionCode = null)
+    public function setRentalActionCode( $rentalActionCode = null)
     {
         $this->RentalActionCode = $rentalActionCode;
         return $this;

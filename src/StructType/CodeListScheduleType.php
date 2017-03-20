@@ -17,7 +17,7 @@ class CodeListScheduleType extends AbstractStructBase
     public $OperationTimes;
     /**
      * The Start
-     * @var UNKNOWN
+     * @var
      */
     public $Start;
     /**
@@ -27,7 +27,7 @@ class CodeListScheduleType extends AbstractStructBase
     public $Duration;
     /**
      * The End
-     * @var UNKNOWN
+     * @var
      */
     public $End;
     /**
@@ -49,13 +49,13 @@ class CodeListScheduleType extends AbstractStructBase
      * @uses CodeListScheduleType::setFeeRefRPH()
      * @uses CodeListScheduleType::setScheduleRPH()
      * @param \Ammonkc\Otaehi\StructType\OperationTimes $operationTimes
-     * @param UNKNOWN $start
+     * @param  $start
      * @param string $duration
-     * @param UNKNOWN $end
+     * @param  $end
      * @param string $feeRefRPH
      * @param string $scheduleRPH
      */
-    public function __construct(\Ammonkc\Otaehi\StructType\OperationTimes $operationTimes = null, UNKNOWN $start = null, $duration = null, UNKNOWN $end = null, $feeRefRPH = null, $scheduleRPH = null)
+    public function __construct(\Ammonkc\Otaehi\StructType\OperationTimes $operationTimes = null,  $start = null, $duration = null,  $end = null, $feeRefRPH = null, $scheduleRPH = null)
     {
         $this
             ->setOperationTimes($operationTimes)
@@ -85,7 +85,7 @@ class CodeListScheduleType extends AbstractStructBase
     }
     /**
      * Get Start value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getStart()
     {
@@ -93,10 +93,10 @@ class CodeListScheduleType extends AbstractStructBase
     }
     /**
      * Set Start value
-     * @param UNKNOWN $start
+     * @param  $start
      * @return \Ammonkc\Otaehi\StructType\CodeListScheduleType
      */
-    public function setStart(UNKNOWN $start = null)
+    public function setStart( $start = null)
     {
         $this->Start = $start;
         return $this;
@@ -125,7 +125,7 @@ class CodeListScheduleType extends AbstractStructBase
     }
     /**
      * Get End value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getEnd()
     {
@@ -133,10 +133,10 @@ class CodeListScheduleType extends AbstractStructBase
     }
     /**
      * Set End value
-     * @param UNKNOWN $end
+     * @param  $end
      * @return \Ammonkc\Otaehi\StructType\CodeListScheduleType
      */
-    public function setEnd(UNKNOWN $end = null)
+    public function setEnd( $end = null)
     {
         $this->End = $end;
         return $this;

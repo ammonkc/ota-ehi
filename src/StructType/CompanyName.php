@@ -12,22 +12,22 @@ class CompanyName extends AbstractStructBase
 {
     /**
      * The ContactName
-     * @var UNKNOWN
+     * @var
      */
     public $ContactName;
     /**
      * Constructor method for CompanyName
      * @uses CompanyName::setContactName()
-     * @param UNKNOWN $contactName
+     * @param  $contactName
      */
-    public function __construct(UNKNOWN $contactName = null)
+    public function __construct( $contactName = null)
     {
         $this
             ->setContactName($contactName);
     }
     /**
      * Get ContactName value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getContactName()
     {
@@ -35,10 +35,10 @@ class CompanyName extends AbstractStructBase
     }
     /**
      * Set ContactName value
-     * @param UNKNOWN $contactName
+     * @param  $contactName
      * @return \Ammonkc\Otaehi\StructType\CompanyName
      */
-    public function setContactName(UNKNOWN $contactName = null)
+    public function setContactName( $contactName = null)
     {
         $this->ContactName = $contactName;
         return $this;

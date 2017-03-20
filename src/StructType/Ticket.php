@@ -17,7 +17,7 @@ class Ticket extends AbstractStructBase
     public $ConjunctionTicketNbr;
     /**
      * The TicketNumber
-     * @var UNKNOWN
+     * @var
      */
     public $TicketNumber;
     /**
@@ -27,7 +27,7 @@ class Ticket extends AbstractStructBase
     public $ReroutingType;
     /**
      * The ReasonForReroute
-     * @var UNKNOWN
+     * @var
      */
     public $ReasonForReroute;
     /**
@@ -37,11 +37,11 @@ class Ticket extends AbstractStructBase
      * @uses Ticket::setReroutingType()
      * @uses Ticket::setReasonForReroute()
      * @param \Ammonkc\Otaehi\StructType\ConjunctionTicketNbr $conjunctionTicketNbr
-     * @param UNKNOWN $ticketNumber
+     * @param  $ticketNumber
      * @param string $reroutingType
-     * @param UNKNOWN $reasonForReroute
+     * @param  $reasonForReroute
      */
-    public function __construct(\Ammonkc\Otaehi\StructType\ConjunctionTicketNbr $conjunctionTicketNbr = null, UNKNOWN $ticketNumber = null, $reroutingType = null, UNKNOWN $reasonForReroute = null)
+    public function __construct(\Ammonkc\Otaehi\StructType\ConjunctionTicketNbr $conjunctionTicketNbr = null,  $ticketNumber = null, $reroutingType = null,  $reasonForReroute = null)
     {
         $this
             ->setConjunctionTicketNbr($conjunctionTicketNbr)
@@ -69,7 +69,7 @@ class Ticket extends AbstractStructBase
     }
     /**
      * Get TicketNumber value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getTicketNumber()
     {
@@ -77,10 +77,10 @@ class Ticket extends AbstractStructBase
     }
     /**
      * Set TicketNumber value
-     * @param UNKNOWN $ticketNumber
+     * @param  $ticketNumber
      * @return \Ammonkc\Otaehi\StructType\Ticket
      */
-    public function setTicketNumber(UNKNOWN $ticketNumber = null)
+    public function setTicketNumber( $ticketNumber = null)
     {
         $this->TicketNumber = $ticketNumber;
         return $this;
@@ -109,7 +109,7 @@ class Ticket extends AbstractStructBase
     }
     /**
      * Get ReasonForReroute value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getReasonForReroute()
     {
@@ -117,10 +117,10 @@ class Ticket extends AbstractStructBase
     }
     /**
      * Set ReasonForReroute value
-     * @param UNKNOWN $reasonForReroute
+     * @param  $reasonForReroute
      * @return \Ammonkc\Otaehi\StructType\Ticket
      */
-    public function setReasonForReroute(UNKNOWN $reasonForReroute = null)
+    public function setReasonForReroute( $reasonForReroute = null)
     {
         $this->ReasonForReroute = $reasonForReroute;
         return $this;

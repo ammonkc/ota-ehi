@@ -37,7 +37,7 @@ class OTA_VehAvailRateRQ extends AbstractStructBase
     public $MaxPerVendorInd;
     /**
      * The EchoToken
-     * @var UNKNOWN
+     * @var
      */
     public $EchoToken;
     /**
@@ -52,7 +52,7 @@ class OTA_VehAvailRateRQ extends AbstractStructBase
     public $Target;
     /**
      * The TargetName
-     * @var UNKNOWN
+     * @var
      */
     public $TargetName;
     /**
@@ -82,7 +82,7 @@ class OTA_VehAvailRateRQ extends AbstractStructBase
     public $RetransmissionIndicator;
     /**
      * The CorrelationID
-     * @var UNKNOWN
+     * @var
      */
     public $CorrelationID;
     /**
@@ -97,7 +97,7 @@ class OTA_VehAvailRateRQ extends AbstractStructBase
     public $AltLangID;
     /**
      * The ReqRespVersion
-     * @var UNKNOWN
+     * @var
      */
     public $ReqRespVersion;
     /**
@@ -131,22 +131,22 @@ class OTA_VehAvailRateRQ extends AbstractStructBase
      * @param \Ammonkc\Otaehi\StructType\VehAvailRQCore $vehAvailRQCore
      * @param \Ammonkc\Otaehi\StructType\VehicleAvailRQAdditionalInfoType $vehAvailRQInfo
      * @param bool $maxPerVendorInd
-     * @param UNKNOWN $echoToken
+     * @param  $echoToken
      * @param string $timeStamp
      * @param string $target
-     * @param UNKNOWN $targetName
+     * @param  $targetName
      * @param float $version
      * @param string $transactionIdentifier
      * @param int $sequenceNmbr
      * @param string $transactionStatusCode
      * @param bool $retransmissionIndicator
-     * @param UNKNOWN $correlationID
+     * @param  $correlationID
      * @param string $primaryLangID
      * @param string $altLangID
-     * @param UNKNOWN $reqRespVersion
+     * @param  $reqRespVersion
      * @param int $maxResponses
      */
-    public function __construct(\Ammonkc\Otaehi\StructType\POS_Type $pOS = null, \Ammonkc\Otaehi\StructType\UniqueID_Type $customerID = null, \Ammonkc\Otaehi\StructType\VehAvailRQCore $vehAvailRQCore = null, \Ammonkc\Otaehi\StructType\VehicleAvailRQAdditionalInfoType $vehAvailRQInfo = null, $maxPerVendorInd = null, UNKNOWN $echoToken = null, $timeStamp = null, $target = null, UNKNOWN $targetName = null, $version = null, $transactionIdentifier = null, $sequenceNmbr = null, $transactionStatusCode = null, $retransmissionIndicator = null, UNKNOWN $correlationID = null, $primaryLangID = null, $altLangID = null, UNKNOWN $reqRespVersion = null, $maxResponses = null)
+    public function __construct(\Ammonkc\Otaehi\StructType\POS_Type $pOS = null, \Ammonkc\Otaehi\StructType\UniqueID_Type $customerID = null, \Ammonkc\Otaehi\StructType\VehAvailRQCore $vehAvailRQCore = null, \Ammonkc\Otaehi\StructType\VehicleAvailRQAdditionalInfoType $vehAvailRQInfo = null, $maxPerVendorInd = null,  $echoToken = null, $timeStamp = null, $target = null,  $targetName = null, $version = null, $transactionIdentifier = null, $sequenceNmbr = null, $transactionStatusCode = null, $retransmissionIndicator = null,  $correlationID = null, $primaryLangID = null, $altLangID = null,  $reqRespVersion = null, $maxResponses = null)
     {
         $this
             ->setPOS($pOS)
@@ -261,7 +261,7 @@ class OTA_VehAvailRateRQ extends AbstractStructBase
     }
     /**
      * Get EchoToken value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getEchoToken()
     {
@@ -269,10 +269,10 @@ class OTA_VehAvailRateRQ extends AbstractStructBase
     }
     /**
      * Set EchoToken value
-     * @param UNKNOWN $echoToken
+     * @param  $echoToken
      * @return \Ammonkc\Otaehi\StructType\OTA_VehAvailRateRQ
      */
-    public function setEchoToken(UNKNOWN $echoToken = null)
+    public function setEchoToken( $echoToken = null)
     {
         $this->EchoToken = $echoToken;
         return $this;
@@ -323,7 +323,7 @@ class OTA_VehAvailRateRQ extends AbstractStructBase
     }
     /**
      * Get TargetName value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getTargetName()
     {
@@ -331,10 +331,10 @@ class OTA_VehAvailRateRQ extends AbstractStructBase
     }
     /**
      * Set TargetName value
-     * @param UNKNOWN $targetName
+     * @param  $targetName
      * @return \Ammonkc\Otaehi\StructType\OTA_VehAvailRateRQ
      */
-    public function setTargetName(UNKNOWN $targetName = null)
+    public function setTargetName( $targetName = null)
     {
         $this->TargetName = $targetName;
         return $this;
@@ -443,7 +443,7 @@ class OTA_VehAvailRateRQ extends AbstractStructBase
     }
     /**
      * Get CorrelationID value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getCorrelationID()
     {
@@ -451,10 +451,10 @@ class OTA_VehAvailRateRQ extends AbstractStructBase
     }
     /**
      * Set CorrelationID value
-     * @param UNKNOWN $correlationID
+     * @param  $correlationID
      * @return \Ammonkc\Otaehi\StructType\OTA_VehAvailRateRQ
      */
-    public function setCorrelationID(UNKNOWN $correlationID = null)
+    public function setCorrelationID( $correlationID = null)
     {
         $this->CorrelationID = $correlationID;
         return $this;
@@ -505,7 +505,7 @@ class OTA_VehAvailRateRQ extends AbstractStructBase
     }
     /**
      * Get ReqRespVersion value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getReqRespVersion()
     {
@@ -513,10 +513,10 @@ class OTA_VehAvailRateRQ extends AbstractStructBase
     }
     /**
      * Set ReqRespVersion value
-     * @param UNKNOWN $reqRespVersion
+     * @param  $reqRespVersion
      * @return \Ammonkc\Otaehi\StructType\OTA_VehAvailRateRQ
      */
-    public function setReqRespVersion(UNKNOWN $reqRespVersion = null)
+    public function setReqRespVersion( $reqRespVersion = null)
     {
         $this->ReqRespVersion = $reqRespVersion;
         return $this;

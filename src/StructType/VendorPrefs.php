@@ -17,12 +17,12 @@ class VendorPrefs extends AbstractStructBase
     public $VendorPref;
     /**
      * The ParticipationLevelCode
-     * @var UNKNOWN
+     * @var
      */
     public $ParticipationLevelCode;
     /**
      * The LocationCategory
-     * @var UNKNOWN
+     * @var
      */
     public $LocationCategory;
     /**
@@ -31,10 +31,10 @@ class VendorPrefs extends AbstractStructBase
      * @uses VendorPrefs::setParticipationLevelCode()
      * @uses VendorPrefs::setLocationCategory()
      * @param \Ammonkc\Otaehi\StructType\VendorPref $vendorPref
-     * @param UNKNOWN $participationLevelCode
-     * @param UNKNOWN $locationCategory
+     * @param  $participationLevelCode
+     * @param  $locationCategory
      */
-    public function __construct(\Ammonkc\Otaehi\StructType\VendorPref $vendorPref = null, UNKNOWN $participationLevelCode = null, UNKNOWN $locationCategory = null)
+    public function __construct(\Ammonkc\Otaehi\StructType\VendorPref $vendorPref = null,  $participationLevelCode = null,  $locationCategory = null)
     {
         $this
             ->setVendorPref($vendorPref)
@@ -61,7 +61,7 @@ class VendorPrefs extends AbstractStructBase
     }
     /**
      * Get ParticipationLevelCode value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getParticipationLevelCode()
     {
@@ -69,17 +69,17 @@ class VendorPrefs extends AbstractStructBase
     }
     /**
      * Set ParticipationLevelCode value
-     * @param UNKNOWN $participationLevelCode
+     * @param  $participationLevelCode
      * @return \Ammonkc\Otaehi\StructType\VendorPrefs
      */
-    public function setParticipationLevelCode(UNKNOWN $participationLevelCode = null)
+    public function setParticipationLevelCode( $participationLevelCode = null)
     {
         $this->ParticipationLevelCode = $participationLevelCode;
         return $this;
     }
     /**
      * Get LocationCategory value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getLocationCategory()
     {
@@ -87,10 +87,10 @@ class VendorPrefs extends AbstractStructBase
     }
     /**
      * Set LocationCategory value
-     * @param UNKNOWN $locationCategory
+     * @param  $locationCategory
      * @return \Ammonkc\Otaehi\StructType\VendorPrefs
      */
-    public function setLocationCategory(UNKNOWN $locationCategory = null)
+    public function setLocationCategory( $locationCategory = null)
     {
         $this->LocationCategory = $locationCategory;
         return $this;

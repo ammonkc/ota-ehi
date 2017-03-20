@@ -17,7 +17,7 @@ class VehicleEquipmentType extends AbstractStructBase
     public $Description;
     /**
      * The Restriction
-     * @var UNKNOWN
+     * @var
      */
     public $Restriction;
     /**
@@ -25,9 +25,9 @@ class VehicleEquipmentType extends AbstractStructBase
      * @uses VehicleEquipmentType::setDescription()
      * @uses VehicleEquipmentType::setRestriction()
      * @param string $description
-     * @param UNKNOWN $restriction
+     * @param  $restriction
      */
-    public function __construct($description = null, UNKNOWN $restriction = null)
+    public function __construct($description = null,  $restriction = null)
     {
         $this
             ->setDescription($description)
@@ -57,7 +57,7 @@ class VehicleEquipmentType extends AbstractStructBase
     }
     /**
      * Get Restriction value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getRestriction()
     {
@@ -65,10 +65,10 @@ class VehicleEquipmentType extends AbstractStructBase
     }
     /**
      * Set Restriction value
-     * @param UNKNOWN $restriction
+     * @param  $restriction
      * @return \Ammonkc\Otaehi\StructType\VehicleEquipmentType
      */
-    public function setRestriction(UNKNOWN $restriction = null)
+    public function setRestriction( $restriction = null)
     {
         $this->Restriction = $restriction;
         return $this;

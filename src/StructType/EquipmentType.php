@@ -12,7 +12,7 @@ class EquipmentType extends AbstractStructBase
 {
     /**
      * The AirEquipType
-     * @var UNKNOWN
+     * @var
      */
     public $AirEquipType;
     /**
@@ -30,11 +30,11 @@ class EquipmentType extends AbstractStructBase
      * @uses EquipmentType::setAirEquipType()
      * @uses EquipmentType::setChangeofGauge()
      * @uses EquipmentType::setAircraftTailNumber()
-     * @param UNKNOWN $airEquipType
+     * @param  $airEquipType
      * @param bool $changeofGauge
      * @param string $aircraftTailNumber
      */
-    public function __construct(UNKNOWN $airEquipType = null, $changeofGauge = null, $aircraftTailNumber = null)
+    public function __construct( $airEquipType = null, $changeofGauge = null, $aircraftTailNumber = null)
     {
         $this
             ->setAirEquipType($airEquipType)
@@ -43,7 +43,7 @@ class EquipmentType extends AbstractStructBase
     }
     /**
      * Get AirEquipType value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getAirEquipType()
     {
@@ -51,10 +51,10 @@ class EquipmentType extends AbstractStructBase
     }
     /**
      * Set AirEquipType value
-     * @param UNKNOWN $airEquipType
+     * @param  $airEquipType
      * @return \Ammonkc\Otaehi\StructType\EquipmentType
      */
-    public function setAirEquipType(UNKNOWN $airEquipType = null)
+    public function setAirEquipType( $airEquipType = null)
     {
         $this->AirEquipType = $airEquipType;
         return $this;

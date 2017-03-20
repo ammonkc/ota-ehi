@@ -22,22 +22,22 @@ class OrdersType extends AbstractStructBase
     public $TPA_Extensions;
     /**
      * The OrderType
-     * @var UNKNOWN
+     * @var
      */
     public $OrderType;
     /**
      * The DiscountCode
-     * @var UNKNOWN
+     * @var
      */
     public $DiscountCode;
     /**
      * The VendorPurchaseOrderID
-     * @var UNKNOWN
+     * @var
      */
     public $VendorPurchaseOrderID;
     /**
      * The OrderID
-     * @var UNKNOWN
+     * @var
      */
     public $OrderID;
     /**
@@ -50,12 +50,12 @@ class OrdersType extends AbstractStructBase
      * @uses OrdersType::setOrderID()
      * @param \Ammonkc\Otaehi\StructType\Order $order
      * @param mixed $tPA_Extensions
-     * @param UNKNOWN $orderType
-     * @param UNKNOWN $discountCode
-     * @param UNKNOWN $vendorPurchaseOrderID
-     * @param UNKNOWN $orderID
+     * @param  $orderType
+     * @param  $discountCode
+     * @param  $vendorPurchaseOrderID
+     * @param  $orderID
      */
-    public function __construct(\Ammonkc\Otaehi\StructType\Order $order = null, $tPA_Extensions = null, UNKNOWN $orderType = null, UNKNOWN $discountCode = null, UNKNOWN $vendorPurchaseOrderID = null, UNKNOWN $orderID = null)
+    public function __construct(\Ammonkc\Otaehi\StructType\Order $order = null, $tPA_Extensions = null,  $orderType = null,  $discountCode = null,  $vendorPurchaseOrderID = null,  $orderID = null)
     {
         $this
             ->setOrder($order)
@@ -103,7 +103,7 @@ class OrdersType extends AbstractStructBase
     }
     /**
      * Get OrderType value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getOrderType()
     {
@@ -111,17 +111,17 @@ class OrdersType extends AbstractStructBase
     }
     /**
      * Set OrderType value
-     * @param UNKNOWN $orderType
+     * @param  $orderType
      * @return \Ammonkc\Otaehi\StructType\OrdersType
      */
-    public function setOrderType(UNKNOWN $orderType = null)
+    public function setOrderType( $orderType = null)
     {
         $this->OrderType = $orderType;
         return $this;
     }
     /**
      * Get DiscountCode value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getDiscountCode()
     {
@@ -129,17 +129,17 @@ class OrdersType extends AbstractStructBase
     }
     /**
      * Set DiscountCode value
-     * @param UNKNOWN $discountCode
+     * @param  $discountCode
      * @return \Ammonkc\Otaehi\StructType\OrdersType
      */
-    public function setDiscountCode(UNKNOWN $discountCode = null)
+    public function setDiscountCode( $discountCode = null)
     {
         $this->DiscountCode = $discountCode;
         return $this;
     }
     /**
      * Get VendorPurchaseOrderID value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getVendorPurchaseOrderID()
     {
@@ -147,17 +147,17 @@ class OrdersType extends AbstractStructBase
     }
     /**
      * Set VendorPurchaseOrderID value
-     * @param UNKNOWN $vendorPurchaseOrderID
+     * @param  $vendorPurchaseOrderID
      * @return \Ammonkc\Otaehi\StructType\OrdersType
      */
-    public function setVendorPurchaseOrderID(UNKNOWN $vendorPurchaseOrderID = null)
+    public function setVendorPurchaseOrderID( $vendorPurchaseOrderID = null)
     {
         $this->VendorPurchaseOrderID = $vendorPurchaseOrderID;
         return $this;
     }
     /**
      * Get OrderID value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getOrderID()
     {
@@ -165,10 +165,10 @@ class OrdersType extends AbstractStructBase
     }
     /**
      * Set OrderID value
-     * @param UNKNOWN $orderID
+     * @param  $orderID
      * @return \Ammonkc\Otaehi\StructType\OrdersType
      */
-    public function setOrderID(UNKNOWN $orderID = null)
+    public function setOrderID( $orderID = null)
     {
         $this->OrderID = $orderID;
         return $this;

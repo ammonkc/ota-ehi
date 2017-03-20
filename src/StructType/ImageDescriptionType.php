@@ -27,7 +27,7 @@ class ImageDescriptionType extends AbstractStructBase
     public $TPA_Extensions;
     /**
      * The Category
-     * @var UNKNOWN
+     * @var
      */
     public $Category;
     /**
@@ -39,9 +39,9 @@ class ImageDescriptionType extends AbstractStructBase
      * @param \Ammonkc\Otaehi\StructType\ImageFormat $imageFormat
      * @param \Ammonkc\Otaehi\StructType\Description $description
      * @param mixed $tPA_Extensions
-     * @param UNKNOWN $category
+     * @param  $category
      */
-    public function __construct(\Ammonkc\Otaehi\StructType\ImageFormat $imageFormat = null, \Ammonkc\Otaehi\StructType\Description $description = null, $tPA_Extensions = null, UNKNOWN $category = null)
+    public function __construct(\Ammonkc\Otaehi\StructType\ImageFormat $imageFormat = null, \Ammonkc\Otaehi\StructType\Description $description = null, $tPA_Extensions = null,  $category = null)
     {
         $this
             ->setImageFormat($imageFormat)
@@ -105,7 +105,7 @@ class ImageDescriptionType extends AbstractStructBase
     }
     /**
      * Get Category value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getCategory()
     {
@@ -113,10 +113,10 @@ class ImageDescriptionType extends AbstractStructBase
     }
     /**
      * Set Category value
-     * @param UNKNOWN $category
+     * @param  $category
      * @return \Ammonkc\Otaehi\StructType\ImageDescriptionType
      */
-    public function setCategory(UNKNOWN $category = null)
+    public function setCategory( $category = null)
     {
         $this->Category = $category;
         return $this;

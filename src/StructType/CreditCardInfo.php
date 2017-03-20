@@ -12,22 +12,22 @@ class CreditCardInfo extends AbstractStructBase
 {
     /**
      * The Currency
-     * @var UNKNOWN
+     * @var
      */
     public $Currency;
     /**
      * The DonationAmount
-     * @var UNKNOWN
+     * @var
      */
     public $DonationAmount;
     /**
      * Constructor method for CreditCardInfo
      * @uses CreditCardInfo::setCurrency()
      * @uses CreditCardInfo::setDonationAmount()
-     * @param UNKNOWN $currency
-     * @param UNKNOWN $donationAmount
+     * @param  $currency
+     * @param  $donationAmount
      */
-    public function __construct(UNKNOWN $currency = null, UNKNOWN $donationAmount = null)
+    public function __construct( $currency = null,  $donationAmount = null)
     {
         $this
             ->setCurrency($currency)
@@ -35,7 +35,7 @@ class CreditCardInfo extends AbstractStructBase
     }
     /**
      * Get Currency value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getCurrency()
     {
@@ -43,17 +43,17 @@ class CreditCardInfo extends AbstractStructBase
     }
     /**
      * Set Currency value
-     * @param UNKNOWN $currency
+     * @param  $currency
      * @return \Ammonkc\Otaehi\StructType\CreditCardInfo
      */
-    public function setCurrency(UNKNOWN $currency = null)
+    public function setCurrency( $currency = null)
     {
         $this->Currency = $currency;
         return $this;
     }
     /**
      * Get DonationAmount value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getDonationAmount()
     {
@@ -61,10 +61,10 @@ class CreditCardInfo extends AbstractStructBase
     }
     /**
      * Set DonationAmount value
-     * @param UNKNOWN $donationAmount
+     * @param  $donationAmount
      * @return \Ammonkc\Otaehi\StructType\CreditCardInfo
      */
-    public function setDonationAmount(UNKNOWN $donationAmount = null)
+    public function setDonationAmount( $donationAmount = null)
     {
         $this->DonationAmount = $donationAmount;
         return $this;

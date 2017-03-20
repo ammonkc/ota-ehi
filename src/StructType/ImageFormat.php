@@ -17,12 +17,12 @@ class ImageFormat extends AbstractStructBase
     public $Language;
     /**
      * The Format
-     * @var UNKNOWN
+     * @var
      */
     public $Format;
     /**
      * The FileName
-     * @var UNKNOWN
+     * @var
      */
     public $FileName;
     /**
@@ -32,7 +32,7 @@ class ImageFormat extends AbstractStructBase
     public $FileSize;
     /**
      * The DimensionCategory
-     * @var UNKNOWN
+     * @var
      */
     public $DimensionCategory;
     /**
@@ -57,22 +57,22 @@ class ImageFormat extends AbstractStructBase
     public $Resolution;
     /**
      * The ColorSpace
-     * @var UNKNOWN
+     * @var
      */
     public $ColorSpace;
     /**
      * The Latitude
-     * @var UNKNOWN
+     * @var
      */
     public $Latitude;
     /**
      * The Longitude
-     * @var UNKNOWN
+     * @var
      */
     public $Longitude;
     /**
      * The OriginalFileName
-     * @var UNKNOWN
+     * @var
      */
     public $OriginalFileName;
     /**
@@ -91,20 +91,20 @@ class ImageFormat extends AbstractStructBase
      * @uses ImageFormat::setLongitude()
      * @uses ImageFormat::setOriginalFileName()
      * @param string $language
-     * @param UNKNOWN $format
-     * @param UNKNOWN $fileName
+     * @param  $format
+     * @param  $fileName
      * @param int $fileSize
-     * @param UNKNOWN $dimensionCategory
+     * @param  $dimensionCategory
      * @param bool $isOriginalIndicator
      * @param string $authorContact
      * @param int $sort
      * @param int $resolution
-     * @param UNKNOWN $colorSpace
-     * @param UNKNOWN $latitude
-     * @param UNKNOWN $longitude
-     * @param UNKNOWN $originalFileName
+     * @param  $colorSpace
+     * @param  $latitude
+     * @param  $longitude
+     * @param  $originalFileName
      */
-    public function __construct($language = null, UNKNOWN $format = null, UNKNOWN $fileName = null, $fileSize = null, UNKNOWN $dimensionCategory = null, $isOriginalIndicator = null, $authorContact = null, $sort = null, $resolution = null, UNKNOWN $colorSpace = null, UNKNOWN $latitude = null, UNKNOWN $longitude = null, UNKNOWN $originalFileName = null)
+    public function __construct($language = null,  $format = null,  $fileName = null, $fileSize = null,  $dimensionCategory = null, $isOriginalIndicator = null, $authorContact = null, $sort = null, $resolution = null,  $colorSpace = null,  $latitude = null,  $longitude = null,  $originalFileName = null)
     {
         $this
             ->setLanguage($language)
@@ -145,7 +145,7 @@ class ImageFormat extends AbstractStructBase
     }
     /**
      * Get Format value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getFormat()
     {
@@ -153,17 +153,17 @@ class ImageFormat extends AbstractStructBase
     }
     /**
      * Set Format value
-     * @param UNKNOWN $format
+     * @param  $format
      * @return \Ammonkc\Otaehi\StructType\ImageFormat
      */
-    public function setFormat(UNKNOWN $format = null)
+    public function setFormat( $format = null)
     {
         $this->Format = $format;
         return $this;
     }
     /**
      * Get FileName value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getFileName()
     {
@@ -171,10 +171,10 @@ class ImageFormat extends AbstractStructBase
     }
     /**
      * Set FileName value
-     * @param UNKNOWN $fileName
+     * @param  $fileName
      * @return \Ammonkc\Otaehi\StructType\ImageFormat
      */
-    public function setFileName(UNKNOWN $fileName = null)
+    public function setFileName( $fileName = null)
     {
         $this->FileName = $fileName;
         return $this;
@@ -203,7 +203,7 @@ class ImageFormat extends AbstractStructBase
     }
     /**
      * Get DimensionCategory value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getDimensionCategory()
     {
@@ -211,10 +211,10 @@ class ImageFormat extends AbstractStructBase
     }
     /**
      * Set DimensionCategory value
-     * @param UNKNOWN $dimensionCategory
+     * @param  $dimensionCategory
      * @return \Ammonkc\Otaehi\StructType\ImageFormat
      */
-    public function setDimensionCategory(UNKNOWN $dimensionCategory = null)
+    public function setDimensionCategory( $dimensionCategory = null)
     {
         $this->DimensionCategory = $dimensionCategory;
         return $this;
@@ -305,7 +305,7 @@ class ImageFormat extends AbstractStructBase
     }
     /**
      * Get ColorSpace value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getColorSpace()
     {
@@ -313,17 +313,17 @@ class ImageFormat extends AbstractStructBase
     }
     /**
      * Set ColorSpace value
-     * @param UNKNOWN $colorSpace
+     * @param  $colorSpace
      * @return \Ammonkc\Otaehi\StructType\ImageFormat
      */
-    public function setColorSpace(UNKNOWN $colorSpace = null)
+    public function setColorSpace( $colorSpace = null)
     {
         $this->ColorSpace = $colorSpace;
         return $this;
     }
     /**
      * Get Latitude value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getLatitude()
     {
@@ -331,17 +331,17 @@ class ImageFormat extends AbstractStructBase
     }
     /**
      * Set Latitude value
-     * @param UNKNOWN $latitude
+     * @param  $latitude
      * @return \Ammonkc\Otaehi\StructType\ImageFormat
      */
-    public function setLatitude(UNKNOWN $latitude = null)
+    public function setLatitude( $latitude = null)
     {
         $this->Latitude = $latitude;
         return $this;
     }
     /**
      * Get Longitude value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getLongitude()
     {
@@ -349,17 +349,17 @@ class ImageFormat extends AbstractStructBase
     }
     /**
      * Set Longitude value
-     * @param UNKNOWN $longitude
+     * @param  $longitude
      * @return \Ammonkc\Otaehi\StructType\ImageFormat
      */
-    public function setLongitude(UNKNOWN $longitude = null)
+    public function setLongitude( $longitude = null)
     {
         $this->Longitude = $longitude;
         return $this;
     }
     /**
      * Get OriginalFileName value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getOriginalFileName()
     {
@@ -367,10 +367,10 @@ class ImageFormat extends AbstractStructBase
     }
     /**
      * Set OriginalFileName value
-     * @param UNKNOWN $originalFileName
+     * @param  $originalFileName
      * @return \Ammonkc\Otaehi\StructType\ImageFormat
      */
-    public function setOriginalFileName(UNKNOWN $originalFileName = null)
+    public function setOriginalFileName( $originalFileName = null)
     {
         $this->OriginalFileName = $originalFileName;
         return $this;

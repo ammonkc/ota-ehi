@@ -12,17 +12,17 @@ class CoveragePref extends AbstractStructBase
 {
     /**
      * The CoverageType
-     * @var UNKNOWN
+     * @var
      */
     public $CoverageType;
     /**
      * The Code
-     * @var UNKNOWN
+     * @var
      */
     public $Code;
     /**
      * The PreferLevel
-     * @var UNKNOWN
+     * @var
      */
     public $PreferLevel;
     /**
@@ -30,11 +30,11 @@ class CoveragePref extends AbstractStructBase
      * @uses CoveragePref::setCoverageType()
      * @uses CoveragePref::setCode()
      * @uses CoveragePref::setPreferLevel()
-     * @param UNKNOWN $coverageType
-     * @param UNKNOWN $code
-     * @param UNKNOWN $preferLevel
+     * @param  $coverageType
+     * @param  $code
+     * @param  $preferLevel
      */
-    public function __construct(UNKNOWN $coverageType = null, UNKNOWN $code = null, UNKNOWN $preferLevel = null)
+    public function __construct( $coverageType = null,  $code = null,  $preferLevel = null)
     {
         $this
             ->setCoverageType($coverageType)
@@ -43,7 +43,7 @@ class CoveragePref extends AbstractStructBase
     }
     /**
      * Get CoverageType value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getCoverageType()
     {
@@ -51,17 +51,17 @@ class CoveragePref extends AbstractStructBase
     }
     /**
      * Set CoverageType value
-     * @param UNKNOWN $coverageType
+     * @param  $coverageType
      * @return \Ammonkc\Otaehi\StructType\CoveragePref
      */
-    public function setCoverageType(UNKNOWN $coverageType = null)
+    public function setCoverageType( $coverageType = null)
     {
         $this->CoverageType = $coverageType;
         return $this;
     }
     /**
      * Get Code value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getCode()
     {
@@ -69,17 +69,17 @@ class CoveragePref extends AbstractStructBase
     }
     /**
      * Set Code value
-     * @param UNKNOWN $code
+     * @param  $code
      * @return \Ammonkc\Otaehi\StructType\CoveragePref
      */
-    public function setCode(UNKNOWN $code = null)
+    public function setCode( $code = null)
     {
         $this->Code = $code;
         return $this;
     }
     /**
      * Get PreferLevel value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getPreferLevel()
     {
@@ -87,10 +87,10 @@ class CoveragePref extends AbstractStructBase
     }
     /**
      * Set PreferLevel value
-     * @param UNKNOWN $preferLevel
+     * @param  $preferLevel
      * @return \Ammonkc\Otaehi\StructType\CoveragePref
      */
-    public function setPreferLevel(UNKNOWN $preferLevel = null)
+    public function setPreferLevel( $preferLevel = null)
     {
         $this->PreferLevel = $preferLevel;
         return $this;

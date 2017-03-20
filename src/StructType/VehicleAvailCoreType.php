@@ -67,7 +67,7 @@ class VehicleAvailCoreType extends AbstractStructBase
     public $TPA_Extensions;
     /**
      * The Status
-     * @var UNKNOWN
+     * @var
      */
     public $Status;
     /**
@@ -101,10 +101,10 @@ class VehicleAvailCoreType extends AbstractStructBase
      * @param \Ammonkc\Otaehi\StructType\DropOffLocation $dropOffLocation
      * @param \Ammonkc\Otaehi\StructType\Discount $discount
      * @param mixed $tPA_Extensions
-     * @param UNKNOWN $status
+     * @param  $status
      * @param bool $isAlternateInd
      */
-    public function __construct($vehicle = null, $rentalRate = null, \Ammonkc\Otaehi\StructType\TotalCharge $totalCharge = null, \Ammonkc\Otaehi\StructType\PricedEquips $pricedEquips = null, \Ammonkc\Otaehi\StructType\Fees $fees = null, \Ammonkc\Otaehi\StructType\Reference $reference = null, \Ammonkc\Otaehi\StructType\Vendor $vendor = null, \Ammonkc\Otaehi\StructType\VendorLocation $vendorLocation = null, \Ammonkc\Otaehi\StructType\DropOffLocation $dropOffLocation = null, \Ammonkc\Otaehi\StructType\Discount $discount = null, $tPA_Extensions = null, UNKNOWN $status = null, $isAlternateInd = null)
+    public function __construct($vehicle = null, $rentalRate = null, \Ammonkc\Otaehi\StructType\TotalCharge $totalCharge = null, \Ammonkc\Otaehi\StructType\PricedEquips $pricedEquips = null, \Ammonkc\Otaehi\StructType\Fees $fees = null, \Ammonkc\Otaehi\StructType\Reference $reference = null, \Ammonkc\Otaehi\StructType\Vendor $vendor = null, \Ammonkc\Otaehi\StructType\VendorLocation $vendorLocation = null, \Ammonkc\Otaehi\StructType\DropOffLocation $dropOffLocation = null, \Ammonkc\Otaehi\StructType\Discount $discount = null, $tPA_Extensions = null,  $status = null, $isAlternateInd = null)
     {
         $this
             ->setVehicle($vehicle)
@@ -321,7 +321,7 @@ class VehicleAvailCoreType extends AbstractStructBase
     }
     /**
      * Get Status value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getStatus()
     {
@@ -329,10 +329,10 @@ class VehicleAvailCoreType extends AbstractStructBase
     }
     /**
      * Set Status value
-     * @param UNKNOWN $status
+     * @param  $status
      * @return \Ammonkc\Otaehi\StructType\VehicleAvailCoreType
      */
-    public function setStatus(UNKNOWN $status = null)
+    public function setStatus( $status = null)
     {
         $this->Status = $status;
         return $this;

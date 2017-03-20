@@ -22,7 +22,7 @@ class Coverage extends AbstractStructBase
     public $CoverageFees;
     /**
      * The Type
-     * @var UNKNOWN
+     * @var
      */
     public $Type;
     /**
@@ -38,10 +38,10 @@ class Coverage extends AbstractStructBase
      * @uses Coverage::setRequiredInd()
      * @param mixed $coverageInfo
      * @param \Ammonkc\Otaehi\StructType\CoverageFees $coverageFees
-     * @param UNKNOWN $type
+     * @param  $type
      * @param bool $requiredInd
      */
-    public function __construct($coverageInfo = null, \Ammonkc\Otaehi\StructType\CoverageFees $coverageFees = null, UNKNOWN $type = null, $requiredInd = null)
+    public function __construct($coverageInfo = null, \Ammonkc\Otaehi\StructType\CoverageFees $coverageFees = null,  $type = null, $requiredInd = null)
     {
         $this
             ->setCoverageInfo($coverageInfo)
@@ -87,7 +87,7 @@ class Coverage extends AbstractStructBase
     }
     /**
      * Get Type value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getType()
     {
@@ -95,10 +95,10 @@ class Coverage extends AbstractStructBase
     }
     /**
      * Set Type value
-     * @param UNKNOWN $type
+     * @param  $type
      * @return \Ammonkc\Otaehi\StructType\Coverage
      */
-    public function setType(UNKNOWN $type = null)
+    public function setType( $type = null)
     {
         $this->Type = $type;
         return $this;

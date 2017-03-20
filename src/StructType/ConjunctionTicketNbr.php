@@ -12,22 +12,22 @@ class ConjunctionTicketNbr extends AbstractStructBase
 {
     /**
      * The Coupons
-     * @var UNKNOWN
+     * @var
      */
     public $Coupons;
     /**
      * Constructor method for ConjunctionTicketNbr
      * @uses ConjunctionTicketNbr::setCoupons()
-     * @param UNKNOWN $coupons
+     * @param  $coupons
      */
-    public function __construct(UNKNOWN $coupons = null)
+    public function __construct( $coupons = null)
     {
         $this
             ->setCoupons($coupons);
     }
     /**
      * Get Coupons value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getCoupons()
     {
@@ -35,10 +35,10 @@ class ConjunctionTicketNbr extends AbstractStructBase
     }
     /**
      * Set Coupons value
-     * @param UNKNOWN $coupons
+     * @param  $coupons
      * @return \Ammonkc\Otaehi\StructType\ConjunctionTicketNbr
      */
-    public function setCoupons(UNKNOWN $coupons = null)
+    public function setCoupons( $coupons = null)
     {
         $this->Coupons = $coupons;
         return $this;

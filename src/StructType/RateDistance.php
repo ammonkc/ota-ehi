@@ -22,12 +22,12 @@ class RateDistance extends AbstractStructBase
     public $Quantity;
     /**
      * The DistUnitName
-     * @var UNKNOWN
+     * @var
      */
     public $DistUnitName;
     /**
      * The VehiclePeriodUnitName
-     * @var UNKNOWN
+     * @var
      */
     public $VehiclePeriodUnitName;
     /**
@@ -38,10 +38,10 @@ class RateDistance extends AbstractStructBase
      * @uses RateDistance::setVehiclePeriodUnitName()
      * @param bool $unlimited
      * @param int $quantity
-     * @param UNKNOWN $distUnitName
-     * @param UNKNOWN $vehiclePeriodUnitName
+     * @param  $distUnitName
+     * @param  $vehiclePeriodUnitName
      */
-    public function __construct($unlimited = null, $quantity = null, UNKNOWN $distUnitName = null, UNKNOWN $vehiclePeriodUnitName = null)
+    public function __construct($unlimited = null, $quantity = null,  $distUnitName = null,  $vehiclePeriodUnitName = null)
     {
         $this
             ->setUnlimited($unlimited)
@@ -91,7 +91,7 @@ class RateDistance extends AbstractStructBase
     }
     /**
      * Get DistUnitName value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getDistUnitName()
     {
@@ -99,17 +99,17 @@ class RateDistance extends AbstractStructBase
     }
     /**
      * Set DistUnitName value
-     * @param UNKNOWN $distUnitName
+     * @param  $distUnitName
      * @return \Ammonkc\Otaehi\StructType\RateDistance
      */
-    public function setDistUnitName(UNKNOWN $distUnitName = null)
+    public function setDistUnitName( $distUnitName = null)
     {
         $this->DistUnitName = $distUnitName;
         return $this;
     }
     /**
      * Get VehiclePeriodUnitName value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getVehiclePeriodUnitName()
     {
@@ -117,10 +117,10 @@ class RateDistance extends AbstractStructBase
     }
     /**
      * Set VehiclePeriodUnitName value
-     * @param UNKNOWN $vehiclePeriodUnitName
+     * @param  $vehiclePeriodUnitName
      * @return \Ammonkc\Otaehi\StructType\RateDistance
      */
-    public function setVehiclePeriodUnitName(UNKNOWN $vehiclePeriodUnitName = null)
+    public function setVehiclePeriodUnitName( $vehiclePeriodUnitName = null)
     {
         $this->VehiclePeriodUnitName = $vehiclePeriodUnitName;
         return $this;

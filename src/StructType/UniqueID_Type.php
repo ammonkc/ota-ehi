@@ -29,9 +29,8 @@ class UniqueID_Type extends AbstractStructBase
      */
     public function __construct($companyName = null, $tPA_Extensions = null)
     {
-        $this
-            ->setCompanyName($companyName)
-            ->setTPA_Extensions($tPA_Extensions);
+        $this->setCompanyName($companyName)
+             ->setTPA_Extensions($tPA_Extensions);
     }
     /**
      * Get CompanyName value

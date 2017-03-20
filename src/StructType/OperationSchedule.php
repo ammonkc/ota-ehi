@@ -12,22 +12,22 @@ class OperationSchedule extends AbstractStructBase
 {
     /**
      * The Name
-     * @var UNKNOWN
+     * @var
      */
     public $Name;
     /**
      * Constructor method for OperationSchedule
      * @uses OperationSchedule::setName()
-     * @param UNKNOWN $name
+     * @param  $name
      */
-    public function __construct(UNKNOWN $name = null)
+    public function __construct( $name = null)
     {
         $this
             ->setName($name);
     }
     /**
      * Get Name value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getName()
     {
@@ -35,10 +35,10 @@ class OperationSchedule extends AbstractStructBase
     }
     /**
      * Set Name value
-     * @param UNKNOWN $name
+     * @param  $name
      * @return \Ammonkc\Otaehi\StructType\OperationSchedule
      */
-    public function setName(UNKNOWN $name = null)
+    public function setName( $name = null)
     {
         $this->Name = $name;
         return $this;

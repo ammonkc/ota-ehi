@@ -52,12 +52,12 @@ class ContactPersonType extends AbstractStructBase
     public $TPA_Extensions;
     /**
      * The ContactType
-     * @var UNKNOWN
+     * @var
      */
     public $ContactType;
     /**
      * The Relation
-     * @var UNKNOWN
+     * @var
      */
     public $Relation;
     /**
@@ -67,17 +67,17 @@ class ContactPersonType extends AbstractStructBase
     public $EmergencyFlag;
     /**
      * The RPH
-     * @var UNKNOWN
+     * @var
      */
     public $RPH;
     /**
      * The CommunicationMethodCode
-     * @var UNKNOWN
+     * @var
      */
     public $CommunicationMethodCode;
     /**
      * The DocumentDistribMethodCode
-     * @var UNKNOWN
+     * @var
      */
     public $DocumentDistribMethodCode;
     /**
@@ -104,14 +104,14 @@ class ContactPersonType extends AbstractStructBase
      * @param mixed $companyName
      * @param mixed $employeeInfo
      * @param mixed $tPA_Extensions
-     * @param UNKNOWN $contactType
-     * @param UNKNOWN $relation
+     * @param  $contactType
+     * @param  $relation
      * @param bool $emergencyFlag
-     * @param UNKNOWN $rPH
-     * @param UNKNOWN $communicationMethodCode
-     * @param UNKNOWN $documentDistribMethodCode
+     * @param  $rPH
+     * @param  $communicationMethodCode
+     * @param  $documentDistribMethodCode
      */
-    public function __construct($personName = null, \Ammonkc\Otaehi\StructType\Telephone $telephone = null, $address = null, $email = null, $uRL = null, $companyName = null, $employeeInfo = null, $tPA_Extensions = null, UNKNOWN $contactType = null, UNKNOWN $relation = null, $emergencyFlag = null, UNKNOWN $rPH = null, UNKNOWN $communicationMethodCode = null, UNKNOWN $documentDistribMethodCode = null)
+    public function __construct($personName = null, \Ammonkc\Otaehi\StructType\Telephone $telephone = null, $address = null, $email = null, $uRL = null, $companyName = null, $employeeInfo = null, $tPA_Extensions = null,  $contactType = null,  $relation = null, $emergencyFlag = null,  $rPH = null,  $communicationMethodCode = null,  $documentDistribMethodCode = null)
     {
         $this
             ->setPersonName($personName)
@@ -275,7 +275,7 @@ class ContactPersonType extends AbstractStructBase
     }
     /**
      * Get ContactType value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getContactType()
     {
@@ -283,17 +283,17 @@ class ContactPersonType extends AbstractStructBase
     }
     /**
      * Set ContactType value
-     * @param UNKNOWN $contactType
+     * @param  $contactType
      * @return \Ammonkc\Otaehi\StructType\ContactPersonType
      */
-    public function setContactType(UNKNOWN $contactType = null)
+    public function setContactType( $contactType = null)
     {
         $this->ContactType = $contactType;
         return $this;
     }
     /**
      * Get Relation value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getRelation()
     {
@@ -301,10 +301,10 @@ class ContactPersonType extends AbstractStructBase
     }
     /**
      * Set Relation value
-     * @param UNKNOWN $relation
+     * @param  $relation
      * @return \Ammonkc\Otaehi\StructType\ContactPersonType
      */
-    public function setRelation(UNKNOWN $relation = null)
+    public function setRelation( $relation = null)
     {
         $this->Relation = $relation;
         return $this;
@@ -329,7 +329,7 @@ class ContactPersonType extends AbstractStructBase
     }
     /**
      * Get RPH value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getRPH()
     {
@@ -337,17 +337,17 @@ class ContactPersonType extends AbstractStructBase
     }
     /**
      * Set RPH value
-     * @param UNKNOWN $rPH
+     * @param  $rPH
      * @return \Ammonkc\Otaehi\StructType\ContactPersonType
      */
-    public function setRPH(UNKNOWN $rPH = null)
+    public function setRPH( $rPH = null)
     {
         $this->RPH = $rPH;
         return $this;
     }
     /**
      * Get CommunicationMethodCode value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getCommunicationMethodCode()
     {
@@ -355,17 +355,17 @@ class ContactPersonType extends AbstractStructBase
     }
     /**
      * Set CommunicationMethodCode value
-     * @param UNKNOWN $communicationMethodCode
+     * @param  $communicationMethodCode
      * @return \Ammonkc\Otaehi\StructType\ContactPersonType
      */
-    public function setCommunicationMethodCode(UNKNOWN $communicationMethodCode = null)
+    public function setCommunicationMethodCode( $communicationMethodCode = null)
     {
         $this->CommunicationMethodCode = $communicationMethodCode;
         return $this;
     }
     /**
      * Get DocumentDistribMethodCode value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getDocumentDistribMethodCode()
     {
@@ -373,10 +373,10 @@ class ContactPersonType extends AbstractStructBase
     }
     /**
      * Set DocumentDistribMethodCode value
-     * @param UNKNOWN $documentDistribMethodCode
+     * @param  $documentDistribMethodCode
      * @return \Ammonkc\Otaehi\StructType\ContactPersonType
      */
-    public function setDocumentDistribMethodCode(UNKNOWN $documentDistribMethodCode = null)
+    public function setDocumentDistribMethodCode( $documentDistribMethodCode = null)
     {
         $this->DocumentDistribMethodCode = $documentDistribMethodCode;
         return $this;

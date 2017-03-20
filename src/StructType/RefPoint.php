@@ -12,27 +12,27 @@ class RefPoint extends AbstractStructBase
 {
     /**
      * The StateProv
-     * @var UNKNOWN
+     * @var
      */
     public $StateProv;
     /**
      * The CountryCode
-     * @var UNKNOWN
+     * @var
      */
     public $CountryCode;
     /**
      * The RefPointType
-     * @var UNKNOWN
+     * @var
      */
     public $RefPointType;
     /**
      * The Name
-     * @var UNKNOWN
+     * @var
      */
     public $Name;
     /**
      * The CityName
-     * @var UNKNOWN
+     * @var
      */
     public $CityName;
     /**
@@ -42,13 +42,13 @@ class RefPoint extends AbstractStructBase
      * @uses RefPoint::setRefPointType()
      * @uses RefPoint::setName()
      * @uses RefPoint::setCityName()
-     * @param UNKNOWN $stateProv
-     * @param UNKNOWN $countryCode
-     * @param UNKNOWN $refPointType
-     * @param UNKNOWN $name
-     * @param UNKNOWN $cityName
+     * @param  $stateProv
+     * @param  $countryCode
+     * @param  $refPointType
+     * @param  $name
+     * @param  $cityName
      */
-    public function __construct(UNKNOWN $stateProv = null, UNKNOWN $countryCode = null, UNKNOWN $refPointType = null, UNKNOWN $name = null, UNKNOWN $cityName = null)
+    public function __construct( $stateProv = null,  $countryCode = null,  $refPointType = null,  $name = null,  $cityName = null)
     {
         $this
             ->setStateProv($stateProv)
@@ -59,7 +59,7 @@ class RefPoint extends AbstractStructBase
     }
     /**
      * Get StateProv value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getStateProv()
     {
@@ -67,17 +67,17 @@ class RefPoint extends AbstractStructBase
     }
     /**
      * Set StateProv value
-     * @param UNKNOWN $stateProv
+     * @param  $stateProv
      * @return \Ammonkc\Otaehi\StructType\RefPoint
      */
-    public function setStateProv(UNKNOWN $stateProv = null)
+    public function setStateProv( $stateProv = null)
     {
         $this->StateProv = $stateProv;
         return $this;
     }
     /**
      * Get CountryCode value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getCountryCode()
     {
@@ -85,17 +85,17 @@ class RefPoint extends AbstractStructBase
     }
     /**
      * Set CountryCode value
-     * @param UNKNOWN $countryCode
+     * @param  $countryCode
      * @return \Ammonkc\Otaehi\StructType\RefPoint
      */
-    public function setCountryCode(UNKNOWN $countryCode = null)
+    public function setCountryCode( $countryCode = null)
     {
         $this->CountryCode = $countryCode;
         return $this;
     }
     /**
      * Get RefPointType value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getRefPointType()
     {
@@ -103,17 +103,17 @@ class RefPoint extends AbstractStructBase
     }
     /**
      * Set RefPointType value
-     * @param UNKNOWN $refPointType
+     * @param  $refPointType
      * @return \Ammonkc\Otaehi\StructType\RefPoint
      */
-    public function setRefPointType(UNKNOWN $refPointType = null)
+    public function setRefPointType( $refPointType = null)
     {
         $this->RefPointType = $refPointType;
         return $this;
     }
     /**
      * Get Name value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getName()
     {
@@ -121,17 +121,17 @@ class RefPoint extends AbstractStructBase
     }
     /**
      * Set Name value
-     * @param UNKNOWN $name
+     * @param  $name
      * @return \Ammonkc\Otaehi\StructType\RefPoint
      */
-    public function setName(UNKNOWN $name = null)
+    public function setName( $name = null)
     {
         $this->Name = $name;
         return $this;
     }
     /**
      * Get CityName value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getCityName()
     {
@@ -139,10 +139,10 @@ class RefPoint extends AbstractStructBase
     }
     /**
      * Set CityName value
-     * @param UNKNOWN $cityName
+     * @param  $cityName
      * @return \Ammonkc\Otaehi\StructType\RefPoint
      */
-    public function setCityName(UNKNOWN $cityName = null)
+    public function setCityName( $cityName = null)
     {
         $this->CityName = $cityName;
         return $this;

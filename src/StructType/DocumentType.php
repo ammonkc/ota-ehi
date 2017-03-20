@@ -37,52 +37,52 @@ class DocumentType extends AbstractStructBase
     public $TPA_Extensions;
     /**
      * The DocIssueAuthority
-     * @var UNKNOWN
+     * @var
      */
     public $DocIssueAuthority;
     /**
      * The DocIssueLocation
-     * @var UNKNOWN
+     * @var
      */
     public $DocIssueLocation;
     /**
      * The DocID
-     * @var UNKNOWN
+     * @var
      */
     public $DocID;
     /**
      * The DocType
-     * @var UNKNOWN
+     * @var
      */
     public $DocType;
     /**
      * The DocIssueStateProv
-     * @var UNKNOWN
+     * @var
      */
     public $DocIssueStateProv;
     /**
      * The DocIssueCountry
-     * @var UNKNOWN
+     * @var
      */
     public $DocIssueCountry;
     /**
      * The BirthCountry
-     * @var UNKNOWN
+     * @var
      */
     public $BirthCountry;
     /**
      * The BirthPlace
-     * @var UNKNOWN
+     * @var
      */
     public $BirthPlace;
     /**
      * The DocHolderNationality
-     * @var UNKNOWN
+     * @var
      */
     public $DocHolderNationality;
     /**
      * The ContactName
-     * @var UNKNOWN
+     * @var
      */
     public $ContactName;
     /**
@@ -92,12 +92,12 @@ class DocumentType extends AbstractStructBase
     public $HolderType;
     /**
      * The Remark
-     * @var UNKNOWN
+     * @var
      */
     public $Remark;
     /**
      * The PostalCode
-     * @var UNKNOWN
+     * @var
      */
     public $PostalCode;
     /**
@@ -125,21 +125,21 @@ class DocumentType extends AbstractStructBase
      * @param mixed $docLimitations
      * @param \Ammonkc\Otaehi\StructType\AdditionalPersonNames $additionalPersonNames
      * @param mixed $tPA_Extensions
-     * @param UNKNOWN $docIssueAuthority
-     * @param UNKNOWN $docIssueLocation
-     * @param UNKNOWN $docID
-     * @param UNKNOWN $docType
-     * @param UNKNOWN $docIssueStateProv
-     * @param UNKNOWN $docIssueCountry
-     * @param UNKNOWN $birthCountry
-     * @param UNKNOWN $birthPlace
-     * @param UNKNOWN $docHolderNationality
-     * @param UNKNOWN $contactName
+     * @param  $docIssueAuthority
+     * @param  $docIssueLocation
+     * @param  $docID
+     * @param  $docType
+     * @param  $docIssueStateProv
+     * @param  $docIssueCountry
+     * @param  $birthCountry
+     * @param  $birthPlace
+     * @param  $docHolderNationality
+     * @param  $contactName
      * @param string $holderType
-     * @param UNKNOWN $remark
-     * @param UNKNOWN $postalCode
+     * @param  $remark
+     * @param  $postalCode
      */
-    public function __construct($docHolderName = null, $docHolderFormattedName = null, $docLimitations = null, \Ammonkc\Otaehi\StructType\AdditionalPersonNames $additionalPersonNames = null, $tPA_Extensions = null, UNKNOWN $docIssueAuthority = null, UNKNOWN $docIssueLocation = null, UNKNOWN $docID = null, UNKNOWN $docType = null, UNKNOWN $docIssueStateProv = null, UNKNOWN $docIssueCountry = null, UNKNOWN $birthCountry = null, UNKNOWN $birthPlace = null, UNKNOWN $docHolderNationality = null, UNKNOWN $contactName = null, $holderType = null, UNKNOWN $remark = null, UNKNOWN $postalCode = null)
+    public function __construct($docHolderName = null, $docHolderFormattedName = null, $docLimitations = null, \Ammonkc\Otaehi\StructType\AdditionalPersonNames $additionalPersonNames = null, $tPA_Extensions = null,  $docIssueAuthority = null,  $docIssueLocation = null,  $docID = null,  $docType = null,  $docIssueStateProv = null,  $docIssueCountry = null,  $birthCountry = null,  $birthPlace = null,  $docHolderNationality = null,  $contactName = null, $holderType = null,  $remark = null,  $postalCode = null)
     {
         $this
             ->setDocHolderName($docHolderName)
@@ -253,7 +253,7 @@ class DocumentType extends AbstractStructBase
     }
     /**
      * Get DocIssueAuthority value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getDocIssueAuthority()
     {
@@ -261,17 +261,17 @@ class DocumentType extends AbstractStructBase
     }
     /**
      * Set DocIssueAuthority value
-     * @param UNKNOWN $docIssueAuthority
+     * @param  $docIssueAuthority
      * @return \Ammonkc\Otaehi\StructType\DocumentType
      */
-    public function setDocIssueAuthority(UNKNOWN $docIssueAuthority = null)
+    public function setDocIssueAuthority( $docIssueAuthority = null)
     {
         $this->DocIssueAuthority = $docIssueAuthority;
         return $this;
     }
     /**
      * Get DocIssueLocation value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getDocIssueLocation()
     {
@@ -279,17 +279,17 @@ class DocumentType extends AbstractStructBase
     }
     /**
      * Set DocIssueLocation value
-     * @param UNKNOWN $docIssueLocation
+     * @param  $docIssueLocation
      * @return \Ammonkc\Otaehi\StructType\DocumentType
      */
-    public function setDocIssueLocation(UNKNOWN $docIssueLocation = null)
+    public function setDocIssueLocation( $docIssueLocation = null)
     {
         $this->DocIssueLocation = $docIssueLocation;
         return $this;
     }
     /**
      * Get DocID value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getDocID()
     {
@@ -297,17 +297,17 @@ class DocumentType extends AbstractStructBase
     }
     /**
      * Set DocID value
-     * @param UNKNOWN $docID
+     * @param  $docID
      * @return \Ammonkc\Otaehi\StructType\DocumentType
      */
-    public function setDocID(UNKNOWN $docID = null)
+    public function setDocID( $docID = null)
     {
         $this->DocID = $docID;
         return $this;
     }
     /**
      * Get DocType value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getDocType()
     {
@@ -315,17 +315,17 @@ class DocumentType extends AbstractStructBase
     }
     /**
      * Set DocType value
-     * @param UNKNOWN $docType
+     * @param  $docType
      * @return \Ammonkc\Otaehi\StructType\DocumentType
      */
-    public function setDocType(UNKNOWN $docType = null)
+    public function setDocType( $docType = null)
     {
         $this->DocType = $docType;
         return $this;
     }
     /**
      * Get DocIssueStateProv value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getDocIssueStateProv()
     {
@@ -333,17 +333,17 @@ class DocumentType extends AbstractStructBase
     }
     /**
      * Set DocIssueStateProv value
-     * @param UNKNOWN $docIssueStateProv
+     * @param  $docIssueStateProv
      * @return \Ammonkc\Otaehi\StructType\DocumentType
      */
-    public function setDocIssueStateProv(UNKNOWN $docIssueStateProv = null)
+    public function setDocIssueStateProv( $docIssueStateProv = null)
     {
         $this->DocIssueStateProv = $docIssueStateProv;
         return $this;
     }
     /**
      * Get DocIssueCountry value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getDocIssueCountry()
     {
@@ -351,17 +351,17 @@ class DocumentType extends AbstractStructBase
     }
     /**
      * Set DocIssueCountry value
-     * @param UNKNOWN $docIssueCountry
+     * @param  $docIssueCountry
      * @return \Ammonkc\Otaehi\StructType\DocumentType
      */
-    public function setDocIssueCountry(UNKNOWN $docIssueCountry = null)
+    public function setDocIssueCountry( $docIssueCountry = null)
     {
         $this->DocIssueCountry = $docIssueCountry;
         return $this;
     }
     /**
      * Get BirthCountry value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getBirthCountry()
     {
@@ -369,17 +369,17 @@ class DocumentType extends AbstractStructBase
     }
     /**
      * Set BirthCountry value
-     * @param UNKNOWN $birthCountry
+     * @param  $birthCountry
      * @return \Ammonkc\Otaehi\StructType\DocumentType
      */
-    public function setBirthCountry(UNKNOWN $birthCountry = null)
+    public function setBirthCountry( $birthCountry = null)
     {
         $this->BirthCountry = $birthCountry;
         return $this;
     }
     /**
      * Get BirthPlace value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getBirthPlace()
     {
@@ -387,17 +387,17 @@ class DocumentType extends AbstractStructBase
     }
     /**
      * Set BirthPlace value
-     * @param UNKNOWN $birthPlace
+     * @param  $birthPlace
      * @return \Ammonkc\Otaehi\StructType\DocumentType
      */
-    public function setBirthPlace(UNKNOWN $birthPlace = null)
+    public function setBirthPlace( $birthPlace = null)
     {
         $this->BirthPlace = $birthPlace;
         return $this;
     }
     /**
      * Get DocHolderNationality value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getDocHolderNationality()
     {
@@ -405,17 +405,17 @@ class DocumentType extends AbstractStructBase
     }
     /**
      * Set DocHolderNationality value
-     * @param UNKNOWN $docHolderNationality
+     * @param  $docHolderNationality
      * @return \Ammonkc\Otaehi\StructType\DocumentType
      */
-    public function setDocHolderNationality(UNKNOWN $docHolderNationality = null)
+    public function setDocHolderNationality( $docHolderNationality = null)
     {
         $this->DocHolderNationality = $docHolderNationality;
         return $this;
     }
     /**
      * Get ContactName value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getContactName()
     {
@@ -423,10 +423,10 @@ class DocumentType extends AbstractStructBase
     }
     /**
      * Set ContactName value
-     * @param UNKNOWN $contactName
+     * @param  $contactName
      * @return \Ammonkc\Otaehi\StructType\DocumentType
      */
-    public function setContactName(UNKNOWN $contactName = null)
+    public function setContactName( $contactName = null)
     {
         $this->ContactName = $contactName;
         return $this;
@@ -455,7 +455,7 @@ class DocumentType extends AbstractStructBase
     }
     /**
      * Get Remark value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getRemark()
     {
@@ -463,17 +463,17 @@ class DocumentType extends AbstractStructBase
     }
     /**
      * Set Remark value
-     * @param UNKNOWN $remark
+     * @param  $remark
      * @return \Ammonkc\Otaehi\StructType\DocumentType
      */
-    public function setRemark(UNKNOWN $remark = null)
+    public function setRemark( $remark = null)
     {
         $this->Remark = $remark;
         return $this;
     }
     /**
      * Get PostalCode value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getPostalCode()
     {
@@ -481,10 +481,10 @@ class DocumentType extends AbstractStructBase
     }
     /**
      * Set PostalCode value
-     * @param UNKNOWN $postalCode
+     * @param  $postalCode
      * @return \Ammonkc\Otaehi\StructType\DocumentType
      */
-    public function setPostalCode(UNKNOWN $postalCode = null)
+    public function setPostalCode( $postalCode = null)
     {
         $this->PostalCode = $postalCode;
         return $this;

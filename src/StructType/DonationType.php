@@ -47,12 +47,12 @@ class DonationType extends AbstractStructBase
     public $AskForReceiptInd;
     /**
      * The CountryCode
-     * @var UNKNOWN
+     * @var
      */
     public $CountryCode;
     /**
      * The StateCode
-     * @var UNKNOWN
+     * @var
      */
     public $StateCode;
     /**
@@ -73,10 +73,10 @@ class DonationType extends AbstractStructBase
      * @param string $language
      * @param string $gDS_ID
      * @param bool $askForReceiptInd
-     * @param UNKNOWN $countryCode
-     * @param UNKNOWN $stateCode
+     * @param  $countryCode
+     * @param  $stateCode
      */
-    public function __construct(\Ammonkc\Otaehi\StructType\FrontOfficeInfo $frontOfficeInfo = null, \Ammonkc\Otaehi\StructType\CreditCardInfo $creditCardInfo = null, \Ammonkc\Otaehi\StructType\DonorInfo $donorInfo = null, $tPA_Extensions = null, $language = null, $gDS_ID = null, $askForReceiptInd = null, UNKNOWN $countryCode = null, UNKNOWN $stateCode = null)
+    public function __construct(\Ammonkc\Otaehi\StructType\FrontOfficeInfo $frontOfficeInfo = null, \Ammonkc\Otaehi\StructType\CreditCardInfo $creditCardInfo = null, \Ammonkc\Otaehi\StructType\DonorInfo $donorInfo = null, $tPA_Extensions = null, $language = null, $gDS_ID = null, $askForReceiptInd = null,  $countryCode = null,  $stateCode = null)
     {
         $this
             ->setFrontOfficeInfo($frontOfficeInfo)
@@ -225,7 +225,7 @@ class DonationType extends AbstractStructBase
     }
     /**
      * Get CountryCode value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getCountryCode()
     {
@@ -233,17 +233,17 @@ class DonationType extends AbstractStructBase
     }
     /**
      * Set CountryCode value
-     * @param UNKNOWN $countryCode
+     * @param  $countryCode
      * @return \Ammonkc\Otaehi\StructType\DonationType
      */
-    public function setCountryCode(UNKNOWN $countryCode = null)
+    public function setCountryCode( $countryCode = null)
     {
         $this->CountryCode = $countryCode;
         return $this;
     }
     /**
      * Get StateCode value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getStateCode()
     {
@@ -251,10 +251,10 @@ class DonationType extends AbstractStructBase
     }
     /**
      * Set StateCode value
-     * @param UNKNOWN $stateCode
+     * @param  $stateCode
      * @return \Ammonkc\Otaehi\StructType\DonationType
      */
-    public function setStateCode(UNKNOWN $stateCode = null)
+    public function setStateCode( $stateCode = null)
     {
         $this->StateCode = $stateCode;
         return $this;

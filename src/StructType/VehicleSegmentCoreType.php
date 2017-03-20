@@ -57,7 +57,7 @@ class VehicleSegmentCoreType extends AbstractStructBase
     public $TPA_Extensions;
     /**
      * The IndexNumber
-     * @var UNKNOWN
+     * @var
      */
     public $IndexNumber;
     /**
@@ -81,9 +81,9 @@ class VehicleSegmentCoreType extends AbstractStructBase
      * @param \Ammonkc\Otaehi\StructType\Fees $fees
      * @param \Ammonkc\Otaehi\StructType\TotalCharge $totalCharge
      * @param mixed $tPA_Extensions
-     * @param UNKNOWN $indexNumber
+     * @param  $indexNumber
      */
-    public function __construct(\Ammonkc\Otaehi\StructType\ConfID $confID = null, $vendor = null, $vehRentalCore = null, $vehicle = null, $rentalRate = null, \Ammonkc\Otaehi\StructType\PricedEquips $pricedEquips = null, \Ammonkc\Otaehi\StructType\Fees $fees = null, \Ammonkc\Otaehi\StructType\TotalCharge $totalCharge = null, $tPA_Extensions = null, UNKNOWN $indexNumber = null)
+    public function __construct(\Ammonkc\Otaehi\StructType\ConfID $confID = null, $vendor = null, $vehRentalCore = null, $vehicle = null, $rentalRate = null, \Ammonkc\Otaehi\StructType\PricedEquips $pricedEquips = null, \Ammonkc\Otaehi\StructType\Fees $fees = null, \Ammonkc\Otaehi\StructType\TotalCharge $totalCharge = null, $tPA_Extensions = null,  $indexNumber = null)
     {
         $this
             ->setConfID($confID)
@@ -261,7 +261,7 @@ class VehicleSegmentCoreType extends AbstractStructBase
     }
     /**
      * Get IndexNumber value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getIndexNumber()
     {
@@ -269,10 +269,10 @@ class VehicleSegmentCoreType extends AbstractStructBase
     }
     /**
      * Set IndexNumber value
-     * @param UNKNOWN $indexNumber
+     * @param  $indexNumber
      * @return \Ammonkc\Otaehi\StructType\VehicleSegmentCoreType
      */
-    public function setIndexNumber(UNKNOWN $indexNumber = null)
+    public function setIndexNumber( $indexNumber = null)
     {
         $this->IndexNumber = $indexNumber;
         return $this;

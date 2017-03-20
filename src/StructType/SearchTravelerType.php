@@ -37,12 +37,12 @@ class SearchTravelerType extends AbstractStructBase
     public $Age;
     /**
      * The Relation
-     * @var UNKNOWN
+     * @var
      */
     public $Relation;
     /**
      * The Gender
-     * @var UNKNOWN
+     * @var
      */
     public $Gender;
     /**
@@ -59,10 +59,10 @@ class SearchTravelerType extends AbstractStructBase
      * @param mixed $indCoverageReqs
      * @param mixed $tPA_Extensions
      * @param int $age
-     * @param UNKNOWN $relation
-     * @param UNKNOWN $gender
+     * @param  $relation
+     * @param  $gender
      */
-    public function __construct($address = null, \Ammonkc\Otaehi\StructType\CitizenCountryName $citizenCountryName = null, $indCoverageReqs = null, $tPA_Extensions = null, $age = null, UNKNOWN $relation = null, UNKNOWN $gender = null)
+    public function __construct($address = null, \Ammonkc\Otaehi\StructType\CitizenCountryName $citizenCountryName = null, $indCoverageReqs = null, $tPA_Extensions = null, $age = null,  $relation = null,  $gender = null)
     {
         $this
             ->setAddress($address)
@@ -169,7 +169,7 @@ class SearchTravelerType extends AbstractStructBase
     }
     /**
      * Get Relation value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getRelation()
     {
@@ -177,17 +177,17 @@ class SearchTravelerType extends AbstractStructBase
     }
     /**
      * Set Relation value
-     * @param UNKNOWN $relation
+     * @param  $relation
      * @return \Ammonkc\Otaehi\StructType\SearchTravelerType
      */
-    public function setRelation(UNKNOWN $relation = null)
+    public function setRelation( $relation = null)
     {
         $this->Relation = $relation;
         return $this;
     }
     /**
      * Get Gender value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getGender()
     {
@@ -195,10 +195,10 @@ class SearchTravelerType extends AbstractStructBase
     }
     /**
      * Set Gender value
-     * @param UNKNOWN $gender
+     * @param  $gender
      * @return \Ammonkc\Otaehi\StructType\SearchTravelerType
      */
-    public function setGender(UNKNOWN $gender = null)
+    public function setGender( $gender = null)
     {
         $this->Gender = $gender;
         return $this;

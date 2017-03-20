@@ -12,22 +12,22 @@ class AcceptablePayment extends AbstractStructBase
 {
     /**
      * The CreditCardCode
-     * @var UNKNOWN
+     * @var
      */
     public $CreditCardCode;
     /**
      * Constructor method for AcceptablePayment
      * @uses AcceptablePayment::setCreditCardCode()
-     * @param UNKNOWN $creditCardCode
+     * @param  $creditCardCode
      */
-    public function __construct(UNKNOWN $creditCardCode = null)
+    public function __construct( $creditCardCode = null)
     {
         $this
             ->setCreditCardCode($creditCardCode);
     }
     /**
      * Get CreditCardCode value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getCreditCardCode()
     {
@@ -35,10 +35,10 @@ class AcceptablePayment extends AbstractStructBase
     }
     /**
      * Set CreditCardCode value
-     * @param UNKNOWN $creditCardCode
+     * @param  $creditCardCode
      * @return \Ammonkc\Otaehi\StructType\AcceptablePayment
      */
-    public function setCreditCardCode(UNKNOWN $creditCardCode = null)
+    public function setCreditCardCode( $creditCardCode = null)
     {
         $this->CreditCardCode = $creditCardCode;
         return $this;

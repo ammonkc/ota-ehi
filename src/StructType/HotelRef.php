@@ -12,17 +12,17 @@ class HotelRef extends AbstractStructBase
 {
     /**
      * The SegmentCategoryCode
-     * @var UNKNOWN
+     * @var
      */
     public $SegmentCategoryCode;
     /**
      * The PropertyClassCode
-     * @var UNKNOWN
+     * @var
      */
     public $PropertyClassCode;
     /**
      * The ArchitecturalStyleCode
-     * @var UNKNOWN
+     * @var
      */
     public $ArchitecturalStyleCode;
     /**
@@ -32,7 +32,7 @@ class HotelRef extends AbstractStructBase
     public $SupplierIntegrationLevel;
     /**
      * The LocationCategoryCode
-     * @var UNKNOWN
+     * @var
      */
     public $LocationCategoryCode;
     /**
@@ -48,14 +48,14 @@ class HotelRef extends AbstractStructBase
      * @uses HotelRef::setSupplierIntegrationLevel()
      * @uses HotelRef::setLocationCategoryCode()
      * @uses HotelRef::setExtendedCitySearchIndicator()
-     * @param UNKNOWN $segmentCategoryCode
-     * @param UNKNOWN $propertyClassCode
-     * @param UNKNOWN $architecturalStyleCode
+     * @param  $segmentCategoryCode
+     * @param  $propertyClassCode
+     * @param  $architecturalStyleCode
      * @param int $supplierIntegrationLevel
-     * @param UNKNOWN $locationCategoryCode
+     * @param  $locationCategoryCode
      * @param bool $extendedCitySearchIndicator
      */
-    public function __construct(UNKNOWN $segmentCategoryCode = null, UNKNOWN $propertyClassCode = null, UNKNOWN $architecturalStyleCode = null, $supplierIntegrationLevel = null, UNKNOWN $locationCategoryCode = null, $extendedCitySearchIndicator = null)
+    public function __construct( $segmentCategoryCode = null,  $propertyClassCode = null,  $architecturalStyleCode = null, $supplierIntegrationLevel = null,  $locationCategoryCode = null, $extendedCitySearchIndicator = null)
     {
         $this
             ->setSegmentCategoryCode($segmentCategoryCode)
@@ -67,7 +67,7 @@ class HotelRef extends AbstractStructBase
     }
     /**
      * Get SegmentCategoryCode value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getSegmentCategoryCode()
     {
@@ -75,17 +75,17 @@ class HotelRef extends AbstractStructBase
     }
     /**
      * Set SegmentCategoryCode value
-     * @param UNKNOWN $segmentCategoryCode
+     * @param  $segmentCategoryCode
      * @return \Ammonkc\Otaehi\StructType\HotelRef
      */
-    public function setSegmentCategoryCode(UNKNOWN $segmentCategoryCode = null)
+    public function setSegmentCategoryCode( $segmentCategoryCode = null)
     {
         $this->SegmentCategoryCode = $segmentCategoryCode;
         return $this;
     }
     /**
      * Get PropertyClassCode value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getPropertyClassCode()
     {
@@ -93,17 +93,17 @@ class HotelRef extends AbstractStructBase
     }
     /**
      * Set PropertyClassCode value
-     * @param UNKNOWN $propertyClassCode
+     * @param  $propertyClassCode
      * @return \Ammonkc\Otaehi\StructType\HotelRef
      */
-    public function setPropertyClassCode(UNKNOWN $propertyClassCode = null)
+    public function setPropertyClassCode( $propertyClassCode = null)
     {
         $this->PropertyClassCode = $propertyClassCode;
         return $this;
     }
     /**
      * Get ArchitecturalStyleCode value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getArchitecturalStyleCode()
     {
@@ -111,10 +111,10 @@ class HotelRef extends AbstractStructBase
     }
     /**
      * Set ArchitecturalStyleCode value
-     * @param UNKNOWN $architecturalStyleCode
+     * @param  $architecturalStyleCode
      * @return \Ammonkc\Otaehi\StructType\HotelRef
      */
-    public function setArchitecturalStyleCode(UNKNOWN $architecturalStyleCode = null)
+    public function setArchitecturalStyleCode( $architecturalStyleCode = null)
     {
         $this->ArchitecturalStyleCode = $architecturalStyleCode;
         return $this;
@@ -143,7 +143,7 @@ class HotelRef extends AbstractStructBase
     }
     /**
      * Get LocationCategoryCode value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getLocationCategoryCode()
     {
@@ -151,10 +151,10 @@ class HotelRef extends AbstractStructBase
     }
     /**
      * Set LocationCategoryCode value
-     * @param UNKNOWN $locationCategoryCode
+     * @param  $locationCategoryCode
      * @return \Ammonkc\Otaehi\StructType\HotelRef
      */
-    public function setLocationCategoryCode(UNKNOWN $locationCategoryCode = null)
+    public function setLocationCategoryCode( $locationCategoryCode = null)
     {
         $this->LocationCategoryCode = $locationCategoryCode;
         return $this;

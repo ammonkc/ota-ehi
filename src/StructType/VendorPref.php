@@ -12,22 +12,22 @@ class VendorPref extends AbstractStructBase
 {
     /**
      * The CorpDiscountNmbr
-     * @var UNKNOWN
+     * @var
      */
     public $CorpDiscountNmbr;
     /**
      * Constructor method for VendorPref
      * @uses VendorPref::setCorpDiscountNmbr()
-     * @param UNKNOWN $corpDiscountNmbr
+     * @param  $corpDiscountNmbr
      */
-    public function __construct(UNKNOWN $corpDiscountNmbr = null)
+    public function __construct( $corpDiscountNmbr = null)
     {
         $this
             ->setCorpDiscountNmbr($corpDiscountNmbr);
     }
     /**
      * Get CorpDiscountNmbr value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getCorpDiscountNmbr()
     {
@@ -35,10 +35,10 @@ class VendorPref extends AbstractStructBase
     }
     /**
      * Set CorpDiscountNmbr value
-     * @param UNKNOWN $corpDiscountNmbr
+     * @param  $corpDiscountNmbr
      * @return \Ammonkc\Otaehi\StructType\VendorPref
      */
-    public function setCorpDiscountNmbr(UNKNOWN $corpDiscountNmbr = null)
+    public function setCorpDiscountNmbr( $corpDiscountNmbr = null)
     {
         $this->CorpDiscountNmbr = $corpDiscountNmbr;
         return $this;

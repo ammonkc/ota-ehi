@@ -12,7 +12,7 @@ class SpecialEquipPref extends AbstractStructBase
 {
     /**
      * The EquipType
-     * @var UNKNOWN
+     * @var
      */
     public $EquipType;
     /**
@@ -22,12 +22,12 @@ class SpecialEquipPref extends AbstractStructBase
     public $Quantity;
     /**
      * The PreferLevel
-     * @var UNKNOWN
+     * @var
      */
     public $PreferLevel;
     /**
      * The Action
-     * @var UNKNOWN
+     * @var
      */
     public $Action;
     /**
@@ -36,12 +36,12 @@ class SpecialEquipPref extends AbstractStructBase
      * @uses SpecialEquipPref::setQuantity()
      * @uses SpecialEquipPref::setPreferLevel()
      * @uses SpecialEquipPref::setAction()
-     * @param UNKNOWN $equipType
+     * @param  $equipType
      * @param int $quantity
-     * @param UNKNOWN $preferLevel
-     * @param UNKNOWN $action
+     * @param  $preferLevel
+     * @param  $action
      */
-    public function __construct(UNKNOWN $equipType = null, $quantity = null, UNKNOWN $preferLevel = null, UNKNOWN $action = null)
+    public function __construct( $equipType = null, $quantity = null,  $preferLevel = null,  $action = null)
     {
         $this
             ->setEquipType($equipType)
@@ -51,7 +51,7 @@ class SpecialEquipPref extends AbstractStructBase
     }
     /**
      * Get EquipType value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getEquipType()
     {
@@ -59,10 +59,10 @@ class SpecialEquipPref extends AbstractStructBase
     }
     /**
      * Set EquipType value
-     * @param UNKNOWN $equipType
+     * @param  $equipType
      * @return \Ammonkc\Otaehi\StructType\SpecialEquipPref
      */
-    public function setEquipType(UNKNOWN $equipType = null)
+    public function setEquipType( $equipType = null)
     {
         $this->EquipType = $equipType;
         return $this;
@@ -91,7 +91,7 @@ class SpecialEquipPref extends AbstractStructBase
     }
     /**
      * Get PreferLevel value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getPreferLevel()
     {
@@ -99,17 +99,17 @@ class SpecialEquipPref extends AbstractStructBase
     }
     /**
      * Set PreferLevel value
-     * @param UNKNOWN $preferLevel
+     * @param  $preferLevel
      * @return \Ammonkc\Otaehi\StructType\SpecialEquipPref
      */
-    public function setPreferLevel(UNKNOWN $preferLevel = null)
+    public function setPreferLevel( $preferLevel = null)
     {
         $this->PreferLevel = $preferLevel;
         return $this;
     }
     /**
      * Get Action value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getAction()
     {
@@ -117,10 +117,10 @@ class SpecialEquipPref extends AbstractStructBase
     }
     /**
      * Set Action value
-     * @param UNKNOWN $action
+     * @param  $action
      * @return \Ammonkc\Otaehi\StructType\SpecialEquipPref
      */
-    public function setAction(UNKNOWN $action = null)
+    public function setAction( $action = null)
     {
         $this->Action = $action;
         return $this;

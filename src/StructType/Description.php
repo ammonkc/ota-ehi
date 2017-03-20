@@ -12,7 +12,7 @@ class Description extends AbstractStructBase
 {
     /**
      * The Caption
-     * @var UNKNOWN
+     * @var
      */
     public $Caption;
     /**
@@ -24,10 +24,10 @@ class Description extends AbstractStructBase
      * Constructor method for Description
      * @uses Description::setCaption()
      * @uses Description::setListItem()
-     * @param UNKNOWN $caption
+     * @param  $caption
      * @param int $listItem
      */
-    public function __construct(UNKNOWN $caption = null, $listItem = null)
+    public function __construct( $caption = null, $listItem = null)
     {
         $this
             ->setCaption($caption)
@@ -35,7 +35,7 @@ class Description extends AbstractStructBase
     }
     /**
      * Get Caption value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getCaption()
     {
@@ -43,10 +43,10 @@ class Description extends AbstractStructBase
     }
     /**
      * Set Caption value
-     * @param UNKNOWN $caption
+     * @param  $caption
      * @return \Ammonkc\Otaehi\StructType\Description
      */
-    public function setCaption(UNKNOWN $caption = null)
+    public function setCaption( $caption = null)
     {
         $this->Caption = $caption;
         return $this;

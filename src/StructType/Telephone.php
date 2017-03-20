@@ -12,12 +12,12 @@ class Telephone extends AbstractStructBase
 {
     /**
      * The TransferAction
-     * @var UNKNOWN
+     * @var
      */
     public $TransferAction;
     /**
      * The ParentCompanyRef
-     * @var UNKNOWN
+     * @var
      */
     public $ParentCompanyRef;
     /**
@@ -32,47 +32,47 @@ class Telephone extends AbstractStructBase
     public $ShareMarketInd;
     /**
      * The PhoneLocationType
-     * @var UNKNOWN
+     * @var
      */
     public $PhoneLocationType;
     /**
      * The PhoneTechType
-     * @var UNKNOWN
+     * @var
      */
     public $PhoneTechType;
     /**
      * The PhoneUseType
-     * @var UNKNOWN
+     * @var
      */
     public $PhoneUseType;
     /**
      * The CountryAccessCode
-     * @var UNKNOWN
+     * @var
      */
     public $CountryAccessCode;
     /**
      * The AreaCityCode
-     * @var UNKNOWN
+     * @var
      */
     public $AreaCityCode;
     /**
      * The PhoneNumber
-     * @var UNKNOWN
+     * @var
      */
     public $PhoneNumber;
     /**
      * The Extension
-     * @var UNKNOWN
+     * @var
      */
     public $Extension;
     /**
      * The PIN
-     * @var UNKNOWN
+     * @var
      */
     public $PIN;
     /**
      * The Remark
-     * @var UNKNOWN
+     * @var
      */
     public $Remark;
     /**
@@ -96,22 +96,22 @@ class Telephone extends AbstractStructBase
      * @uses Telephone::setPIN()
      * @uses Telephone::setRemark()
      * @uses Telephone::setFormattedInd()
-     * @param UNKNOWN $transferAction
-     * @param UNKNOWN $parentCompanyRef
+     * @param  $transferAction
+     * @param  $parentCompanyRef
      * @param string $shareSynchInd
      * @param string $shareMarketInd
-     * @param UNKNOWN $phoneLocationType
-     * @param UNKNOWN $phoneTechType
-     * @param UNKNOWN $phoneUseType
-     * @param UNKNOWN $countryAccessCode
-     * @param UNKNOWN $areaCityCode
-     * @param UNKNOWN $phoneNumber
-     * @param UNKNOWN $extension
-     * @param UNKNOWN $pIN
-     * @param UNKNOWN $remark
+     * @param  $phoneLocationType
+     * @param  $phoneTechType
+     * @param  $phoneUseType
+     * @param  $countryAccessCode
+     * @param  $areaCityCode
+     * @param  $phoneNumber
+     * @param  $extension
+     * @param  $pIN
+     * @param  $remark
      * @param bool $formattedInd
      */
-    public function __construct(UNKNOWN $transferAction = null, UNKNOWN $parentCompanyRef = null, $shareSynchInd = null, $shareMarketInd = null, UNKNOWN $phoneLocationType = null, UNKNOWN $phoneTechType = null, UNKNOWN $phoneUseType = null, UNKNOWN $countryAccessCode = null, UNKNOWN $areaCityCode = null, UNKNOWN $phoneNumber = null, UNKNOWN $extension = null, UNKNOWN $pIN = null, UNKNOWN $remark = null, $formattedInd = null)
+    public function __construct( $transferAction = null,  $parentCompanyRef = null, $shareSynchInd = null, $shareMarketInd = null,  $phoneLocationType = null,  $phoneTechType = null,  $phoneUseType = null,  $countryAccessCode = null,  $areaCityCode = null,  $phoneNumber = null,  $extension = null,  $pIN = null,  $remark = null, $formattedInd = null)
     {
         $this
             ->setTransferAction($transferAction)
@@ -131,7 +131,7 @@ class Telephone extends AbstractStructBase
     }
     /**
      * Get TransferAction value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getTransferAction()
     {
@@ -139,17 +139,17 @@ class Telephone extends AbstractStructBase
     }
     /**
      * Set TransferAction value
-     * @param UNKNOWN $transferAction
+     * @param  $transferAction
      * @return \Ammonkc\Otaehi\StructType\Telephone
      */
-    public function setTransferAction(UNKNOWN $transferAction = null)
+    public function setTransferAction( $transferAction = null)
     {
         $this->TransferAction = $transferAction;
         return $this;
     }
     /**
      * Get ParentCompanyRef value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getParentCompanyRef()
     {
@@ -157,10 +157,10 @@ class Telephone extends AbstractStructBase
     }
     /**
      * Set ParentCompanyRef value
-     * @param UNKNOWN $parentCompanyRef
+     * @param  $parentCompanyRef
      * @return \Ammonkc\Otaehi\StructType\Telephone
      */
-    public function setParentCompanyRef(UNKNOWN $parentCompanyRef = null)
+    public function setParentCompanyRef( $parentCompanyRef = null)
     {
         $this->ParentCompanyRef = $parentCompanyRef;
         return $this;
@@ -211,7 +211,7 @@ class Telephone extends AbstractStructBase
     }
     /**
      * Get PhoneLocationType value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getPhoneLocationType()
     {
@@ -219,17 +219,17 @@ class Telephone extends AbstractStructBase
     }
     /**
      * Set PhoneLocationType value
-     * @param UNKNOWN $phoneLocationType
+     * @param  $phoneLocationType
      * @return \Ammonkc\Otaehi\StructType\Telephone
      */
-    public function setPhoneLocationType(UNKNOWN $phoneLocationType = null)
+    public function setPhoneLocationType( $phoneLocationType = null)
     {
         $this->PhoneLocationType = $phoneLocationType;
         return $this;
     }
     /**
      * Get PhoneTechType value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getPhoneTechType()
     {
@@ -237,17 +237,17 @@ class Telephone extends AbstractStructBase
     }
     /**
      * Set PhoneTechType value
-     * @param UNKNOWN $phoneTechType
+     * @param  $phoneTechType
      * @return \Ammonkc\Otaehi\StructType\Telephone
      */
-    public function setPhoneTechType(UNKNOWN $phoneTechType = null)
+    public function setPhoneTechType( $phoneTechType = null)
     {
         $this->PhoneTechType = $phoneTechType;
         return $this;
     }
     /**
      * Get PhoneUseType value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getPhoneUseType()
     {
@@ -255,17 +255,17 @@ class Telephone extends AbstractStructBase
     }
     /**
      * Set PhoneUseType value
-     * @param UNKNOWN $phoneUseType
+     * @param  $phoneUseType
      * @return \Ammonkc\Otaehi\StructType\Telephone
      */
-    public function setPhoneUseType(UNKNOWN $phoneUseType = null)
+    public function setPhoneUseType( $phoneUseType = null)
     {
         $this->PhoneUseType = $phoneUseType;
         return $this;
     }
     /**
      * Get CountryAccessCode value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getCountryAccessCode()
     {
@@ -273,17 +273,17 @@ class Telephone extends AbstractStructBase
     }
     /**
      * Set CountryAccessCode value
-     * @param UNKNOWN $countryAccessCode
+     * @param  $countryAccessCode
      * @return \Ammonkc\Otaehi\StructType\Telephone
      */
-    public function setCountryAccessCode(UNKNOWN $countryAccessCode = null)
+    public function setCountryAccessCode( $countryAccessCode = null)
     {
         $this->CountryAccessCode = $countryAccessCode;
         return $this;
     }
     /**
      * Get AreaCityCode value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getAreaCityCode()
     {
@@ -291,17 +291,17 @@ class Telephone extends AbstractStructBase
     }
     /**
      * Set AreaCityCode value
-     * @param UNKNOWN $areaCityCode
+     * @param  $areaCityCode
      * @return \Ammonkc\Otaehi\StructType\Telephone
      */
-    public function setAreaCityCode(UNKNOWN $areaCityCode = null)
+    public function setAreaCityCode( $areaCityCode = null)
     {
         $this->AreaCityCode = $areaCityCode;
         return $this;
     }
     /**
      * Get PhoneNumber value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getPhoneNumber()
     {
@@ -309,17 +309,17 @@ class Telephone extends AbstractStructBase
     }
     /**
      * Set PhoneNumber value
-     * @param UNKNOWN $phoneNumber
+     * @param  $phoneNumber
      * @return \Ammonkc\Otaehi\StructType\Telephone
      */
-    public function setPhoneNumber(UNKNOWN $phoneNumber = null)
+    public function setPhoneNumber( $phoneNumber = null)
     {
         $this->PhoneNumber = $phoneNumber;
         return $this;
     }
     /**
      * Get Extension value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getExtension()
     {
@@ -327,17 +327,17 @@ class Telephone extends AbstractStructBase
     }
     /**
      * Set Extension value
-     * @param UNKNOWN $extension
+     * @param  $extension
      * @return \Ammonkc\Otaehi\StructType\Telephone
      */
-    public function setExtension(UNKNOWN $extension = null)
+    public function setExtension( $extension = null)
     {
         $this->Extension = $extension;
         return $this;
     }
     /**
      * Get PIN value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getPIN()
     {
@@ -345,17 +345,17 @@ class Telephone extends AbstractStructBase
     }
     /**
      * Set PIN value
-     * @param UNKNOWN $pIN
+     * @param  $pIN
      * @return \Ammonkc\Otaehi\StructType\Telephone
      */
-    public function setPIN(UNKNOWN $pIN = null)
+    public function setPIN( $pIN = null)
     {
         $this->PIN = $pIN;
         return $this;
     }
     /**
      * Get Remark value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getRemark()
     {
@@ -363,10 +363,10 @@ class Telephone extends AbstractStructBase
     }
     /**
      * Set Remark value
-     * @param UNKNOWN $remark
+     * @param  $remark
      * @return \Ammonkc\Otaehi\StructType\Telephone
      */
-    public function setRemark(UNKNOWN $remark = null)
+    public function setRemark( $remark = null)
     {
         $this->Remark = $remark;
         return $this;

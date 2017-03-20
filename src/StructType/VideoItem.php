@@ -17,7 +17,7 @@ class VideoItem extends AbstractStructBase
     public $Language;
     /**
      * The Caption
-     * @var UNKNOWN
+     * @var
      */
     public $Caption;
     /**
@@ -31,10 +31,10 @@ class VideoItem extends AbstractStructBase
      * @uses VideoItem::setCaption()
      * @uses VideoItem::setVersion()
      * @param string $language
-     * @param UNKNOWN $caption
+     * @param  $caption
      * @param string $version
      */
-    public function __construct($language = null, UNKNOWN $caption = null, $version = null)
+    public function __construct($language = null,  $caption = null, $version = null)
     {
         $this
             ->setLanguage($language)
@@ -65,7 +65,7 @@ class VideoItem extends AbstractStructBase
     }
     /**
      * Get Caption value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getCaption()
     {
@@ -73,10 +73,10 @@ class VideoItem extends AbstractStructBase
     }
     /**
      * Set Caption value
-     * @param UNKNOWN $caption
+     * @param  $caption
      * @return \Ammonkc\Otaehi\StructType\VideoItem
      */
-    public function setCaption(UNKNOWN $caption = null)
+    public function setCaption( $caption = null)
     {
         $this->Caption = $caption;
         return $this;

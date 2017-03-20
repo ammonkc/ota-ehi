@@ -12,7 +12,7 @@ class VehicleChargePurposeType extends AbstractStructBase
 {
     /**
      * The Purpose
-     * @var UNKNOWN
+     * @var
      */
     public $Purpose;
     /**
@@ -24,10 +24,10 @@ class VehicleChargePurposeType extends AbstractStructBase
      * Constructor method for VehicleChargePurposeType
      * @uses VehicleChargePurposeType::setPurpose()
      * @uses VehicleChargePurposeType::setRequiredInd()
-     * @param UNKNOWN $purpose
+     * @param  $purpose
      * @param bool $requiredInd
      */
-    public function __construct(UNKNOWN $purpose = null, $requiredInd = null)
+    public function __construct( $purpose = null, $requiredInd = null)
     {
         $this
             ->setPurpose($purpose)
@@ -35,7 +35,7 @@ class VehicleChargePurposeType extends AbstractStructBase
     }
     /**
      * Get Purpose value
-     * @return UNKNOWN|null
+     * @return |null
      */
     public function getPurpose()
     {
@@ -43,10 +43,10 @@ class VehicleChargePurposeType extends AbstractStructBase
     }
     /**
      * Set Purpose value
-     * @param UNKNOWN $purpose
+     * @param  $purpose
      * @return \Ammonkc\Otaehi\StructType\VehicleChargePurposeType
      */
-    public function setPurpose(UNKNOWN $purpose = null)
+    public function setPurpose( $purpose = null)
     {
         $this->Purpose = $purpose;
         return $this;
