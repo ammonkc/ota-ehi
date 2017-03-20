@@ -12,22 +12,22 @@ class Date extends AbstractStructBase
 {
     /**
      * The PickUpDateTime
-     * @var DateOrDateTimeType
+     * @var \DateTime
      */
     public $PickUpDateTime;
     /**
      * The ReturnDateTime
-     * @var DateOrDateTimeType
+     * @var \DateTime
      */
     public $ReturnDateTime;
     /**
      * Constructor method for Date
      * @uses Date::setPickUpDateTime()
      * @uses Date::setReturnDateTime()
-     * @param DateOrDateTimeType $pickUpDateTime
-     * @param DateOrDateTimeType $returnDateTime
+     * @param \DateTime $pickUpDateTime
+     * @param \DateTime $returnDateTime
      */
-    public function __construct(DateOrDateTimeType $pickUpDateTime = null, DateOrDateTimeType $returnDateTime = null)
+    public function __construct(\DateTime $pickUpDateTime = null, \DateTime $returnDateTime = null)
     {
         $this
             ->setPickUpDateTime($pickUpDateTime)
@@ -35,7 +35,7 @@ class Date extends AbstractStructBase
     }
     /**
      * Get PickUpDateTime value
-     * @return DateOrDateTimeType|null
+     * @return \DateTime|null
      */
     public function getPickUpDateTime()
     {
@@ -43,17 +43,17 @@ class Date extends AbstractStructBase
     }
     /**
      * Set PickUpDateTime value
-     * @param DateOrDateTimeType $pickUpDateTime
+     * @param \DateTime $pickUpDateTime
      * @return \Ammonkc\Otaehi\StructType\Date
      */
-    public function setPickUpDateTime(DateOrDateTimeType $pickUpDateTime = null)
+    public function setPickUpDateTime(\DateTime $pickUpDateTime = null)
     {
         $this->PickUpDateTime = $pickUpDateTime;
         return $this;
     }
     /**
      * Get ReturnDateTime value
-     * @return DateOrDateTimeType|null
+     * @return \DateTime|null
      */
     public function getReturnDateTime()
     {
@@ -61,10 +61,10 @@ class Date extends AbstractStructBase
     }
     /**
      * Set ReturnDateTime value
-     * @param DateOrDateTimeType $returnDateTime
+     * @param \DateTime $returnDateTime
      * @return \Ammonkc\Otaehi\StructType\Date
      */
-    public function setReturnDateTime(DateOrDateTimeType $returnDateTime = null)
+    public function setReturnDateTime(\DateTime $returnDateTime = null)
     {
         $this->ReturnDateTime = $returnDateTime;
         return $this;
