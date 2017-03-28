@@ -17,7 +17,7 @@ class Location extends LocationType
     public $_;
     /**
      * The ExtendedLocationCode
-     * @var StringLength1to8
+     * @var
      */
     public $ExtendedLocationCode;
     /**
@@ -31,10 +31,10 @@ class Location extends LocationType
      * @uses Location::setExtendedLocationCode()
      * @uses Location::setCounterLocation()
      * @param \Ammonkc\Otaehi\StructType\LocationType $_
-     * @param StringLength1to8 $extendedLocationCode
+     * @param  $extendedLocationCode
      * @param OTA_CodeType $counterLocation
      */
-    public function __construct($_ = null, StringLength1to8 $extendedLocationCode = null, OTA_CodeType $counterLocation = null)
+    public function __construct($_ = null, $extendedLocationCode = null, OTA_CodeType $counterLocation = null)
     {
         $this->set_($_)
              ->setExtendedLocationCode($extendedLocationCode)
@@ -60,7 +60,7 @@ class Location extends LocationType
     }
     /**
      * Get ExtendedLocationCode value
-     * @return StringLength1to8|null
+     * @return |null
      */
     public function getExtendedLocationCode()
     {
@@ -68,10 +68,10 @@ class Location extends LocationType
     }
     /**
      * Set ExtendedLocationCode value
-     * @param StringLength1to8 $extendedLocationCode
+     * @param  $extendedLocationCode
      * @return \Ammonkc\Otaehi\StructType\Location
      */
-    public function setExtendedLocationCode(StringLength1to8 $extendedLocationCode = null)
+    public function setExtendedLocationCode($extendedLocationCode = null)
     {
         $this->ExtendedLocationCode = $extendedLocationCode;
         return $this;
